@@ -1,0 +1,415 @@
+@prefix : <http://www.foodstandards.gov.scot/def/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:skosCollection_c72b3066 a skos:Collection ;
+    dct:created "2019-01-16T15:46:27.014000+00:00"^^xsd:dateTime ;
+    skos:prefLabel "Allergens"@en .
+
+:c_17a62578 a skos:Concept ;
+    dct:created "2019-01-16T16:05:29.443000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:06:05.920000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Sulphur Dioxide and Sulphites"@en ;
+    skos:scopeNote "Sulphur dioxide and sulphites are often used as a preservative in dried fruits such as raisins, dried apricots, prunes etc. They can also be found in meat products, prawns, vegetables, soft drinks, wine and beer, etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_1b3ed2b8 a skos:Concept ;
+    dct:created "2019-01-16T16:03:17.435000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:03:37.058000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Sesame Seeds"@en ;
+    skos:scopeNote "Sesame seeds are often found on hamburger buns and in salads. They are also found in breads and breadsticks, hummus, sesame oil, tahini etc"@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_1fde9191 a skos:Concept ;
+    dct:created "2019-01-16T20:33:24.479000+00:00"^^xsd:dateTime ;
+    skos:broader :c_16467237 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Fish Oils"@en .
+
+:c_23a66404 a skos:Concept ;
+    dct:created "2019-01-16T20:36:31.232000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Textured Soya Protein"@en .
+
+:c_29df323e a skos:Concept ;
+    dct:created "2019-01-16T16:06:25.459000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:06:44.630000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Celery"@en ;
+    skos:scopeNote "Celery includes celery stalks, leaves, seeds and the root called celeriac. Celery is also found in celery salt, salads, some meat products, soups, stock cubes etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_30cc5064 a skos:Concept ;
+    dct:created "2019-01-16T20:31:06.648000+00:00"^^xsd:dateTime ;
+    skos:broader :c_dbfa8a09 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Rye"@en .
+
+:c_32a1fbb1 a skos:Concept ;
+    dct:created "2019-01-16T20:32:40.057000+00:00"^^xsd:dateTime ;
+    skos:broader :c_a3fe05ab ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Duck Eggs"@en .
+
+:c_375504da a skos:Concept ;
+    dct:created "2019-01-16T20:36:51.616000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Soya Flour"@en .
+
+:c_3903a36e a skos:Concept ;
+    dct:created "2019-01-16T20:39:59.501000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T20:40:18.170000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Queensland Nuts"@en ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Macadamia Nuts"@en .
+
+:c_422576a8 a skos:Concept ;
+    dct:created "2019-01-16T16:09:09.488000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:10:00.758000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Groundnuts"@en ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Peanuts"@en ;
+    skos:scopeNote "Peanuts are legumes and grow underground, which is why they are sometimes called groundnuts. Peanuts are often used as an ingredient in biscuits, cakes, curries, desserts, and sauces (such as satay sauce). They are also found in groundnut oil, peanut flour and peanut butter etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_4edb95e9 a skos:Concept ;
+    dct:created "2019-01-16T16:02:27.695000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:02:46.009000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Mustard"@en ;
+    skos:scopeNote "Mustard, mustard powder and mustard seeds are included in this category. Mustard can also be found in breads, curries, marinades, meat products, salad dressings, sauces and soups etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_53f6b1d2 a skos:Concept ;
+    dct:created "2019-01-16T16:12:41.735000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:13:00.533000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Lupin"@en ;
+    skos:scopeNote "Lupin flour and seeds can be used in some types of bread, pastries, pasta etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_6083c784 a skos:Concept ;
+    dct:created "2019-01-16T20:34:05.366000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bbf1ae54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Sheep Milk"@en .
+
+:c_63a579a9 a skos:Concept ;
+    dct:created "2019-01-16T20:34:14.518000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bbf1ae54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Goats Milk"@en .
+
+:c_6b602073 a skos:Concept ;
+    dct:created "2019-01-16T20:36:06.336000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Edamame Beans"@en .
+
+:c_71bf6fc4 a skos:Concept ;
+    dct:created "2019-01-16T20:39:31.581000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Pecan Nuts"@en .
+
+:c_71f141b7 a skos:Concept ;
+    dct:created "2019-01-16T20:31:26.303000+00:00"^^xsd:dateTime ;
+    skos:broader :c_dbfa8a09 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Oats"@en .
+
+:c_7ca1bcd9 a skos:Concept ;
+    dct:created "2019-01-16T20:39:23.311000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Cashews"@en .
+
+:c_7d75ff54 a skos:Concept ;
+    dct:created "2019-01-16T20:33:54.996000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bbf1ae54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Cow Milk"@en .
+
+:c_80cce693 a skos:Concept ;
+    dct:created "2019-01-16T20:34:44.320000+00:00"^^xsd:dateTime ;
+    skos:broader :c_70ba548a ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Scallops"@en .
+
+:c_85d99110 a skos:Concept ;
+    dct:created "2019-01-16T20:36:15.083000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Miso Paste"@en .
+
+:c_9172ed03 a skos:Concept ;
+    dct:created "2019-01-16T20:39:16.152000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Walnuts"@en .
+
+:c_926683bb a skos:Concept ;
+    dct:created "2019-01-16T20:39:08.060000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Hazelnuts"@en .
+
+:c_95d09e3c a skos:Concept ;
+    dct:created "2019-01-16T20:33:32.470000+00:00"^^xsd:dateTime ;
+    skos:broader :c_16467237 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Caviar"@en .
+
+:c_9931f964 a skos:Concept ;
+    dct:created "2019-01-16T20:32:32.209000+00:00"^^xsd:dateTime ;
+    skos:broader :c_a3fe05ab ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Hen Eggs"@en .
+
+:c_a1438192 a skos:Concept ;
+    dct:created "2019-01-16T20:35:44.076000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Tofu"@en .
+
+:c_aae92b53 a skos:Concept ;
+    dct:created "2019-01-16T20:32:11.398000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3322f526 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Scampi"@en .
+
+:c_ab4a68b0 a skos:Concept ;
+    dct:created "2019-01-16T20:31:50.926000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3322f526 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Lobster"@en .
+
+:c_ade2a8ed a skos:Concept ;
+    dct:created "2019-01-16T20:32:52.610000+00:00"^^xsd:dateTime ;
+    skos:broader :c_a3fe05ab ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Quail Eggs"@en .
+
+:c_aff1e00a a skos:Concept ;
+    dct:created "2019-01-16T20:30:32.124000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2c2141d0 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Spelt"@en .
+
+:c_b3ea3134 a skos:Concept ;
+    dct:created "2019-01-16T20:39:48.824000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Pistachio Nuts"@en .
+
+:c_c3711dfc a skos:Concept ;
+    dct:created "2019-01-16T20:39:00.662000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Almonds"@en .
+
+:c_ca435d82 a skos:Concept ;
+    dct:created "2019-01-16T20:39:41.222000+00:00"^^xsd:dateTime ;
+    skos:broader :c_8813fd54 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Brazil Nuts"@en .
+
+:c_d4e3d62f a skos:Concept ;
+    dct:created "2019-01-16T20:38:07.244000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T20:38:38.441000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc89e678 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:notation "E322"@en ;
+    skos:prefLabel "Lecithin (made from soybeans)"@en .
+
+:c_d51d41d9 a skos:Concept ;
+    dct:created "2019-01-16T20:32:02.700000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3322f526 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Prawns"@en .
+
+:c_d8db9dd1 a skos:Concept ;
+    dct:created "2019-01-16T20:34:30.873000+00:00"^^xsd:dateTime ;
+    skos:broader :c_70ba548a ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Mussels"@en .
+
+:c_dca417e9 a skos:Concept ;
+    dct:created "2019-01-16T20:31:19.599000+00:00"^^xsd:dateTime ;
+    skos:broader :c_dbfa8a09 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Barley"@en .
+
+:c_dd476af5 a skos:Concept ;
+    dct:created "2019-01-16T20:33:16.612000+00:00"^^xsd:dateTime ;
+    skos:broader :c_16467237 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Finned Fish"@en .
+
+:c_e8cd753f a skos:Concept ;
+    dct:created "2019-01-16T20:34:37.544000+00:00"^^xsd:dateTime ;
+    skos:broader :c_70ba548a ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Oysters"@en .
+
+:c_eb98970e a skos:Concept ;
+    dct:created "2019-01-16T20:34:51.957000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T20:35:07.319000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Snails"@en ;
+    skos:broader :c_70ba548a ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Escargots"@en .
+
+:c_ff635bdb a skos:Concept ;
+    dct:created "2019-01-16T20:30:46.188000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2c2141d0 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Khorasan"@en .
+
+:c_ffa7641c a skos:Concept ;
+    dct:created "2019-01-16T20:31:43.218000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3322f526 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:prefLabel "Crab"@en .
+
+:c_2c2141d0 a skos:Concept ;
+    dct:created "2019-01-16T20:30:19.348000+00:00"^^xsd:dateTime ;
+    skos:broader :c_dbfa8a09 ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_aff1e00a,
+        :c_ff635bdb ;
+    skos:prefLabel "Wheat"@en .
+
+:c_16467237 a skos:Concept ;
+    dct:created "2019-01-16T16:10:18.869000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:10:42.843000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_1fde9191,
+        :c_95d09e3c,
+        :c_dd476af5 ;
+    skos:prefLabel "Fish"@en ;
+    skos:scopeNote "Fish includes all species of finned fish, fish oils and caviar. Fish is also found in condiments such as fish sauce, Worcestershire sauce, salad dressings (e.g. Caesar salad), stock cubes etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_a3fe05ab a skos:Concept ;
+    dct:created "2019-01-16T16:01:43.322000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:02:04.329000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_32a1fbb1,
+        :c_9931f964,
+        :c_ade2a8ed ;
+    skos:prefLabel "Eggs"@en ;
+    skos:scopeNote "Egg includes eggs from all birds including hen, duck, quail etc. Eggs can also be found in foods such as cakes, some meat products, mayonnaise, mousses, pasta, quiche, sauces, pastries or foods brushed or glazed with egg etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_bbf1ae54 a skos:Concept ;
+    dct:created "2019-01-16T16:07:04.656000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:07:27.241000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_6083c784,
+        :c_63a579a9,
+        :c_7d75ff54 ;
+    skos:prefLabel "Milk"@en ;
+    skos:scopeNote "Milk includes milk from all animals including cows, sheep, goats etc. Butter, cheese, cream, milk powders and yoghurt are derived from milk. Milk can also be found used in a variety of foods including foods brushed or glazed with milk, and in powdered soups and sauces etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_3322f526 a skos:Concept ;
+    dct:created "2019-01-16T16:04:42.348000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:05:01.677000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_aae92b53,
+        :c_ab4a68b0,
+        :c_d51d41d9,
+        :c_ffa7641c ;
+    skos:prefLabel "Crustaceans"@en ;
+    skos:scopeNote "Crustaceans include crabs, lobster, prawns and scampi. They may also be found in shrimp sauce, shrimp paste (commonly used in Thai and south-east Asian food), shellfish stock, paella, fish soups such as bisques and bouillabaisse etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_70ba548a a skos:Concept ;
+    dct:created "2019-01-16T16:11:30.658000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:12:01.745000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_80cce693,
+        :c_d8db9dd1,
+        :c_e8cd753f,
+        :c_eb98970e ;
+    skos:prefLabel "Molluscs"@en ;
+    skos:scopeNote "Molluscs include mussels, oysters, scallops, escargot (snails), octopus and squid including its ink. They may also be found in oyster sauce, paella, fish soups etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_dbfa8a09 a skos:Concept ;
+    dct:created "2019-01-16T16:00:27.661000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:01:19.662000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_2c2141d0,
+        :c_30cc5064,
+        :c_71f141b7,
+        :c_dca417e9 ;
+    skos:prefLabel "Cereals Containing Gluten"@en ;
+    skos:scopeNote "Wheat (all varieties including spelt, Khorasan etc.), rye, barley and oats are cereals that contain gluten. These cereals can also be found in foods containing flour, such as batter, breadcrumbs, bread, cakes, couscous, processed meat products, pasta, pastry, sauces, soups, fried foods which are dusted with flour, some brands of baking powder etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_fc89e678 a skos:Concept ;
+    dct:created "2019-01-16T16:08:00.471000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:08:38.018000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Soya"@en ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_23a66404,
+        :c_375504da,
+        :c_6b602073,
+        :c_85d99110,
+        :c_a1438192,
+        :c_d4e3d62f ;
+    skos:prefLabel "Soybeans"@en ;
+    skos:scopeNote "Soybeans also called soya, is found in tofu/bean curd, edamame beans, miso paste, textured soya protein, soya flour or lecithin E322 (if made from soya). Soya is a staple ingredient in oriental food. It can also be found in desserts, ice cream, meat products, sauces, vegetarian products etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:c_8813fd54 a skos:Concept ;
+    dct:created "2019-01-16T16:04:01.621000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-01-16T16:04:17.583000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_22b942d3 ;
+    skos:narrower :c_3903a36e,
+        :c_71bf6fc4,
+        :c_7ca1bcd9,
+        :c_9172ed03,
+        :c_926683bb,
+        :c_b3ea3134,
+        :c_c3711dfc,
+        :c_ca435d82 ;
+    skos:prefLabel "Tree Nuts"@en ;
+    skos:scopeNote "Tree nuts refer to nuts which grow on trees, namely - almonds, hazelnuts, walnuts, cashews, pecan nuts, brazil nuts, pistachio nuts, macadamia (or Queensland) nuts. Tree nuts are also found in many foods including breads, biscuits, crackers, desserts, nut butters, nut powders (often used in Asian curries), stir-fried dishes, ice cream, marzipan (almond paste), nut oils, sauces etc."@en ;
+    skos:topConceptOf :conceptScheme_22b942d3 .
+
+:conceptScheme_22b942d3 a skos:ConceptScheme ;
+    dct:created "2019-01-16T15:59:41.353000+00:00"^^xsd:dateTime ;
+    skos:hasTopConcept :c_16467237,
+        :c_17a62578,
+        :c_1b3ed2b8,
+        :c_29df323e,
+        :c_3322f526,
+        :c_422576a8,
+        :c_4edb95e9,
+        :c_53f6b1d2,
+        :c_70ba548a,
+        :c_8813fd54,
+        :c_a3fe05ab,
+        :c_bbf1ae54,
+        :c_dbfa8a09,
+        :c_fc89e678 ;
+    skos:prefLabel "AllergensList"@en .
+
+

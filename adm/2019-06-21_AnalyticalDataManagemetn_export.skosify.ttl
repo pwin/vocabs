@@ -1,0 +1,371 @@
+@prefix : <http://statistics.gov.scot/def/adm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:conceptScheme_2a161f80 a skos:ConceptScheme ;
+    dct:created "2019-06-21T11:41:35.657000+00:00"^^xsd:dateTime ;
+    skos:prefLabel "Data Topic"@en .
+
+:c_0bd69413 a skos:Concept ;
+    dct:created "2019-06-21T11:51:45.346000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Growing Up in Scotland"@en .
+
+:c_0e74e66e a skos:Concept ;
+    dct:created "2019-06-21T11:44:28.505000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Civil Justice Statistics"@en .
+
+:c_14ba8877 a skos:Concept ;
+    dct:created "2019-06-21T11:55:23.103000+00:00"^^xsd:dateTime ;
+    skos:broader :c_14b1cba5 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Rural Communities"@en .
+
+:c_1ab8f7ee a skos:Concept ;
+    dct:created "2019-06-21T11:43:02.512000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Housing and Regeneration Analysis"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_241e97fa a skos:Concept ;
+    dct:created "2019-06-21T11:47:23.445000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Drug Seizures"@en .
+
+:c_25917a14 a skos:Concept ;
+    dct:created "2019-06-21T11:43:27.551000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Rural and Environmental Science Publisher"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_32f6901c a skos:Concept ;
+    dct:created "2019-06-21T11:56:17.497000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Agriculture"@en .
+
+:c_34b5a2ab a skos:Concept ;
+    dct:created "2019-06-21T11:57:50.791000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Towns and Cities"@en .
+
+:c_3c1479d4 a skos:Concept ;
+    dct:created "2019-06-21T11:45:35.063000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Domestic Abuse From SCJS"@en .
+
+:c_3e91e6ea a skos:Concept ;
+    dct:created "2019-06-21T11:47:33.801000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Firearm Certificates"@en .
+
+:c_43f72ae9 a skos:Concept ;
+    dct:created "2019-06-21T11:51:11.789000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Child and Maternal Health"@en .
+
+:c_4aead4fb a skos:Concept ;
+    dct:created "2019-06-21T11:48:31.770000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Liquor Licensing"@en .
+
+:c_50101f04 a skos:Concept ;
+    dct:created "2019-06-21T11:42:34.532000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Children and Families"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_50f80453 a skos:Concept ;
+    dct:created "2019-06-21T11:52:35.566000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Secure Accommodation"@en .
+
+:c_5ef4e52e a skos:Concept ;
+    dct:created "2019-06-21T11:49:28.550000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-06-21T11:50:00.253000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:notation "SCJS"@en ;
+    skos:prefLabel "Scottish Crime and Justice Survey"@en .
+
+:c_703b9d4b a skos:Concept ;
+    dct:created "2019-06-21T11:57:17.603000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Housing"@en .
+
+:c_7175cde4 a skos:Concept ;
+    dct:created "2019-06-21T11:48:48.032000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Racist Incidents"@en .
+
+:c_783c01a6 a skos:Concept ;
+    dct:created "2019-06-21T11:51:56.520000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Looked After Children"@en .
+
+:c_7efc79c4 a skos:Concept ;
+    dct:created "2019-06-21T11:47:48.729000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Homicide"@en .
+
+:c_83147c2b a skos:Concept ;
+    dct:created "2019-06-21T11:42:44.271000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Core Statistics"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_888f4e92 a skos:Concept ;
+    dct:created "2019-06-21T11:56:44.185000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Economy and Finance"@en .
+
+:c_89d17dc6 a skos:Concept ;
+    dct:created "2019-06-21T11:52:11.484000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Pre-inspection Report"@en .
+
+:c_8d199ced a skos:Concept ;
+    dct:created "2019-06-21T11:57:29.153000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Statistical and Census"@en .
+
+:c_9656c03b a skos:Concept ;
+    dct:created "2019-06-21T11:42:23.652000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Geographic Information Systems"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_9deec429 a skos:Concept ;
+    dct:created "2019-06-21T11:56:50.364000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Energy"@en .
+
+:c_a2c77a9c a skos:Concept ;
+    dct:created "2019-06-21T11:48:56.254000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Reconvictions"@en .
+
+:c_b3ed217d a skos:Concept ;
+    dct:created "2019-06-21T11:51:01.906000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Annual Social Work Services"@en .
+
+:c_b456272b a skos:Concept ;
+    dct:created "2019-06-21T11:51:34.698000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Early Learning and Childcare"@en .
+
+:c_ba166b8e a skos:Concept ;
+    dct:created "2019-06-21T11:54:35.605000+00:00"^^xsd:dateTime ;
+    skos:broader :c_48c90734 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Scottish Household Survey"@en .
+
+:c_ba761748 a skos:Concept ;
+    dct:created "2019-06-21T11:44:55.740000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Criminal Justice Social Work"@en .
+
+:c_c82c08e1 a skos:Concept ;
+    dct:created "2019-06-21T11:45:15.100000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Domestic Abuse"@en .
+
+:c_c88698aa a skos:Concept ;
+    dct:created "2019-06-21T11:56:57.385000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Environment"@en .
+
+:c_c90e55cf a skos:Concept ;
+    dct:created "2019-06-21T11:57:08.076000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Health and Social Care"@en .
+
+:c_d289188d a skos:Concept ;
+    dct:created "2019-06-21T11:56:33.952000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Crime, Justice and Safety"@en .
+
+:c_d4e13216 a skos:Concept ;
+    dct:created "2019-06-21T11:51:21.245000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Child Protection"@en .
+
+:c_d686c2b4 a skos:Concept ;
+    dct:created "2019-06-21T11:52:25.232000+00:00"^^xsd:dateTime ;
+    skos:broader :c_02c1c60f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Realigning Childrens Services"@en .
+
+:c_e162e316 a skos:Concept ;
+    dct:created "2019-06-21T11:53:58.555000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fe784dc5 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Scottish Surveys Core Questions"@en .
+
+:c_e84e1074 a skos:Concept ;
+    dct:created "2019-06-21T11:42:11.166000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_2a3301ec ;
+    skos:prefLabel "Justice Analytical Services"@en ;
+    skos:topConceptOf :conceptScheme_2a3301ec .
+
+:c_ebdf5706 a skos:Concept ;
+    dct:created "2019-06-21T11:45:05.968000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Criminal Proceedings"@en .
+
+:c_ec0576dc a skos:Concept ;
+    dct:created "2019-06-21T11:57:57.374000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Transport"@en .
+
+:c_f52a9080 a skos:Concept ;
+    dct:created "2019-06-21T11:44:44.010000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Crimes Involving a Firearm"@en .
+
+:c_f7dc0fba a skos:Concept ;
+    dct:created "2019-06-21T11:57:40.954000+00:00"^^xsd:dateTime ;
+    skos:broader :c_fc8c1ca4 ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Statistical Resources"@en .
+
+:c_fa4b7c4f a skos:Concept ;
+    dct:created "2019-06-21T11:49:09.097000+00:00"^^xsd:dateTime ;
+    skos:broader :c_42727e1f ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:prefLabel "Recorded Crime"@en .
+
+:c_14b1cba5 a skos:Concept ;
+    dct:created "2019-06-21T11:55:11.808000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_14ba8877 ;
+    skos:prefLabel "Rural and Environmental Science"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:c_48c90734 a skos:Concept ;
+    dct:created "2019-06-21T11:54:21.673000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_ba166b8e ;
+    skos:prefLabel "Housing and Regeneration"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:c_fe784dc5 a skos:Concept ;
+    dct:created "2019-06-21T11:53:43.791000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_e162e316 ;
+    skos:prefLabel "Equalities Statistics"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:c_02c1c60f a skos:Concept ;
+    dct:created "2019-06-21T11:50:48.495000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_0bd69413,
+        :c_43f72ae9,
+        :c_50f80453,
+        :c_783c01a6,
+        :c_89d17dc6,
+        :c_b3ed217d,
+        :c_b456272b,
+        :c_d4e13216,
+        :c_d686c2b4 ;
+    skos:prefLabel "Children and Young People"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:c_fc8c1ca4 a skos:Concept ;
+    dct:created "2019-06-21T11:55:55.786000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_32f6901c,
+        :c_34b5a2ab,
+        :c_703b9d4b,
+        :c_888f4e92,
+        :c_8d199ced,
+        :c_9deec429,
+        :c_c88698aa,
+        :c_c90e55cf,
+        :c_d289188d,
+        :c_ec0576dc,
+        :c_f7dc0fba ;
+    skos:prefLabel "Spatial Data and GIS"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:conceptScheme_2a3301ec a skos:ConceptScheme ;
+    dct:created "2019-06-21T11:40:26.484000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-06-21T11:41:20.181000+00:00"^^xsd:dateTime ;
+    skos:hasTopConcept :c_1ab8f7ee,
+        :c_25917a14,
+        :c_50101f04,
+        :c_83147c2b,
+        :c_9656c03b,
+        :c_e84e1074 ;
+    skos:prefLabel "Data Publisher"@en .
+
+:c_42727e1f a skos:Concept ;
+    dct:created "2019-06-21T11:44:16.502000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_288d4c22 ;
+    skos:narrower :c_0e74e66e,
+        :c_241e97fa,
+        :c_3c1479d4,
+        :c_3e91e6ea,
+        :c_4aead4fb,
+        :c_5ef4e52e,
+        :c_7175cde4,
+        :c_7efc79c4,
+        :c_a2c77a9c,
+        :c_ba761748,
+        :c_c82c08e1,
+        :c_ebdf5706,
+        :c_f52a9080,
+        :c_fa4b7c4f ;
+    skos:prefLabel "Crime and Justice"@en ;
+    skos:topConceptOf :conceptScheme_288d4c22 .
+
+:conceptScheme_288d4c22 a skos:ConceptScheme ;
+    dct:created "2019-06-21T11:40:59.557000+00:00"^^xsd:dateTime ;
+    skos:hasTopConcept :c_02c1c60f,
+        :c_14b1cba5,
+        :c_42727e1f,
+        :c_48c90734,
+        :c_fc8c1ca4,
+        :c_fe784dc5 ;
+    skos:prefLabel "Data Management Theme"@en .
+

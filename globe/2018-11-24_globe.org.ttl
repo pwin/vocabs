@@ -1,0 +1,1959 @@
+@prefix : <http://globe.org#> . @prefix dc: <http://purl.org/dc/elements/1.1/> . @prefix dct: <http://purl.org/dc/terms/> . 
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> . @prefix grddl: <http://www.w3.org/2003/g/data-view#> . @prefix owl: 
+<http://www.w3.org/2002/07/owl#> . @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . @prefix rdfs: 
+<http://www.w3.org/2000/01/rdf-schema#> . @prefix sesame: <http://www.openrdf.org/schema/sesame#> . @prefix skos: 
+<http://www.w3.org/2004/02/skos/core#> . @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> . @prefix xsd: 
+<http://www.w3.org/2001/XMLSchema#> . <http://globe.org> a owl:Ontology .
+:conceptScheme_46fdd617 a skos:ConceptScheme;
+  dct:created "2018-11-06T11:38:31.260Z"^^xsd:dateTime;
+  skosxl:prefLabel :xl_en_fde2532d .
+:xl_en_fde2532d a skosxl:Label;
+  skosxl:literalForm "Geographical Areas and Countries"@en .
+:c_77cf1b9c a skos:Concept;
+  dct:created "2018-11-06T11:38:48.059Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_5fa33d0e .
+:xl_en_5fa33d0e a skosxl:Label;
+  skosxl:literalForm "Africa"@en .
+:c_86783a65 a skos:Concept;
+  dct:created "2018-11-06T11:38:55.983Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_deb3ce55 .
+:xl_en_deb3ce55 a skosxl:Label;
+  skosxl:literalForm "Europe"@en .
+:c_83555fa1 a skos:Concept;
+  dct:created "2018-11-06T11:39:07.175Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_dd72b948 .
+:xl_en_dd72b948 a skosxl:Label;
+  skosxl:literalForm "Oceania"@en .
+:c_85e8af68 a skos:Concept;
+  dct:created "2018-11-06T11:39:16.805Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ba55f857 .
+:xl_en_ba55f857 a skosxl:Label;
+  skosxl:literalForm "Antarctica"@en .
+:c_38389fed a skos:Concept;
+  dct:created "2018-11-06T11:39:23.908Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_706fe726 .
+:xl_en_706fe726 a skosxl:Label;
+  skosxl:literalForm "Asia"@en .
+:c_abcc86f7 a skos:Concept;
+  dct:created "2018-11-06T11:39:35.933Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_82f412f9 .
+:xl_en_82f412f9 a skosxl:Label;
+  skosxl:literalForm "Americas"@en .
+:skosCollection_d7126bf6 a skos:Collection;
+  dct:created "2018-11-06T11:40:26.842Z"^^xsd:dateTime;
+  skosxl:prefLabel :xl_en_f1d4c4c5 .
+:xl_en_f1d4c4c5 a skosxl:Label;
+  skosxl:literalForm "Mercosur"@en .
+:c_0c9bb2f0 a skos:Concept;
+  dct:created "2018-11-06T11:41:36.092Z"^^xsd:dateTime;
+  skos:broader :c_abcc86f7;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f42dfba3 .
+:xl_en_f42dfba3 a skosxl:Label;
+  skosxl:literalForm "North America"@en .
+:c_1c645055 a skos:Concept;
+  dct:created "2018-11-06T11:41:47.848Z"^^xsd:dateTime;
+  skos:broader :c_abcc86f7;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_16a61873 .
+:xl_en_16a61873 a skosxl:Label;
+  skosxl:literalForm "South America"@en .
+:c_386c0db3 a skos:Concept;
+  dct:created "2018-11-06T11:43:29.346Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_427b592a .
+:xl_en_427b592a a skosxl:Label;
+  skosxl:literalForm "Albania"@en .
+:c_30734c94 a skos:Concept;
+  dct:created "2018-11-06T11:43:42.482Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_872a90fa .
+:xl_en_872a90fa a skosxl:Label;
+  skosxl:literalForm "Andorra"@en .
+:c_de557bbc a skos:Concept;
+  dct:created "2018-11-06T11:43:56.382Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ea14f6ed .
+:xl_en_ea14f6ed a skosxl:Label;
+  skosxl:literalForm "Armenia"@en .
+:c_a3970417 a skos:Concept;
+  dct:created "2018-11-06T11:44:06.158Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_9a92ae65 .
+:xl_en_9a92ae65 a skosxl:Label;
+  skosxl:literalForm "Austria"@en .
+:c_4a8baefc a skos:Concept;
+  dct:created "2018-11-06T11:44:17.079Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_41655ce4 .
+:xl_en_41655ce4 a skosxl:Label;
+  skosxl:literalForm "Azerbaijan"@en .
+:c_f5c8666d a skos:Concept;
+  dct:created "2018-11-06T11:44:27.336Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_aaf1a00f .
+:xl_en_aaf1a00f a skosxl:Label;
+  skosxl:literalForm "Belarus"@en .
+:c_be21d29f a skos:Concept;
+  dct:created "2018-11-06T11:44:37.364Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3cc203c8 .
+:xl_en_3cc203c8 a skosxl:Label;
+  skosxl:literalForm "Belgium"@en .
+:c_0d615371 a skos:Concept;
+  dct:created "2018-11-06T11:44:47.729Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_fb97d20d .
+:xl_en_fb97d20d a skosxl:Label;
+  skosxl:literalForm "Bosnia and Herzegovina"@en .
+:c_6c1e0675 a skos:Concept;
+  dct:created "2018-11-06T11:44:58.072Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_1627cb7a .
+:xl_en_1627cb7a a skosxl:Label;
+  skosxl:literalForm "Bulgaria"@en .
+:c_7ab2e16e a skos:Concept;
+  dct:created "2018-11-06T11:45:07.762Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_81fe1f25 .
+:xl_en_81fe1f25 a skosxl:Label;
+  skosxl:literalForm "Croatia"@en .
+:c_d609dfc6 a skos:Concept;
+  dct:created "2018-11-06T11:45:17.634Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8c8a8c3d .
+:xl_en_8c8a8c3d a skosxl:Label;
+  skosxl:literalForm "Cyprus"@en .
+:c_fa33478e a skos:Concept;
+  dct:created "2018-11-06T11:45:28.881Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_18b68fe8 .
+:xl_en_18b68fe8 a skosxl:Label;
+  skosxl:literalForm "Czech Republic"@en .
+:c_532d93bd a skos:Concept;
+  dct:created "2018-11-06T11:45:41.215Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bd5a2a6f .
+:xl_en_bd5a2a6f a skosxl:Label;
+  skosxl:literalForm "Denmark"@en .
+:c_e27cd7ea a skos:Concept;
+  dct:created "2018-11-06T11:45:51.314Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_7dac2bcc .
+:xl_en_7dac2bcc a skosxl:Label;
+  skosxl:literalForm "Estonia"@en .
+:c_ac4dfff3 a skos:Concept;
+  dct:created "2018-11-06T11:46:05.920Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4b578c45 .
+:xl_en_4b578c45 a skosxl:Label;
+  skosxl:literalForm "Finland"@en .
+:c_42b63695 a skos:Concept;
+  dct:created "2018-11-06T11:46:15.142Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_12ea8a23 .
+:xl_en_12ea8a23 a skosxl:Label;
+  skosxl:literalForm "France"@en .
+:c_9321115e a skos:Concept;
+  dct:created "2018-11-06T11:46:24.475Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a1b959aa .
+:xl_en_a1b959aa a skosxl:Label;
+  skosxl:literalForm "Georgia"@en .
+:c_97a443af a skos:Concept;
+  dct:created "2018-11-06T11:46:37.201Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_7c061114 .
+:xl_en_7c061114 a skosxl:Label;
+  skosxl:literalForm "Germany"@en .
+:c_cd0ee5d0 a skos:Concept;
+  dct:created "2018-11-06T11:46:47.614Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_60c29a8a .
+:xl_en_60c29a8a a skosxl:Label;
+  skosxl:literalForm "Greece"@en .
+:c_aa88a3b2 a skos:Concept;
+  dct:created "2018-11-06T11:47:14.511Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e9a894b6 .
+:xl_en_e9a894b6 a skosxl:Label;
+  skosxl:literalForm "Hungary"@en .
+:c_aa852b83 a skos:Concept;
+  dct:created "2018-11-06T11:47:26.843Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_5965ab2e .
+:xl_en_5965ab2e a skosxl:Label;
+  skosxl:literalForm "Iceland"@en .
+:c_99108114 a skos:Concept;
+  dct:created "2018-11-06T11:47:35.402Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_1aed3d7a .
+:xl_en_1aed3d7a a skosxl:Label;
+  skosxl:literalForm "Ireland"@en .
+:c_b11179d8 a skos:Concept;
+  dct:created "2018-11-06T11:47:44.636Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_9f9a8941 .
+:xl_en_9f9a8941 a skosxl:Label;
+  skosxl:literalForm "Italy"@en .
+:c_a56b6f57 a skos:Concept;
+  dct:created "2018-11-06T11:47:54.578Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d381c2c3 .
+:xl_en_d381c2c3 a skosxl:Label;
+  skosxl:literalForm "Kazakhstan"@en .
+:c_477aa8a6 a skos:Concept;
+  dct:created "2018-11-06T11:48:04.506Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_68a35267 .
+:xl_en_68a35267 a skosxl:Label;
+  skosxl:literalForm "Kosovo"@en .
+:c_23620b9d a skos:Concept;
+  dct:created "2018-11-06T11:48:14.653Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bebbee0a .
+:xl_en_bebbee0a a skosxl:Label;
+  skosxl:literalForm "Latvia"@en .
+:c_8454624d a skos:Concept;
+  dct:created "2018-11-06T11:48:22.683Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a6210818 .
+:xl_en_a6210818 a skosxl:Label;
+  skosxl:literalForm "Liechtenstein"@en .
+:c_94cc8938 a skos:Concept;
+  dct:created "2018-11-06T11:48:55.472Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_694eff62 .
+:xl_en_694eff62 a skosxl:Label;
+  skosxl:literalForm "Lithuania"@en .
+:c_80f9b222 a skos:Concept;
+  dct:created "2018-11-06T11:49:08.892Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_10dadc80 .
+:xl_en_10dadc80 a skosxl:Label;
+  skosxl:literalForm "Luxembourg"@en .
+:c_355ffd72 a skos:Concept;
+  dct:created "2018-11-06T11:49:22.198Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_224b551d .
+:xl_en_224b551d a skosxl:Label;
+  skosxl:literalForm "Macedonia"@en .
+:c_f6942435 a skos:Concept;
+  dct:created "2018-11-06T11:49:39.092Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_aa1ef57e .
+:xl_en_aa1ef57e a skosxl:Label;
+  skosxl:literalForm "Malta"@en .
+:c_449c9b03 a skos:Concept;
+  dct:created "2018-11-06T11:53:56.247Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_03c138ef .
+:xl_en_03c138ef a skosxl:Label;
+  skosxl:literalForm "Moldova"@en .
+:c_330b2b91 a skos:Concept;
+  dct:created "2018-11-06T11:54:08.207Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_065e4577 .
+:xl_en_065e4577 a skosxl:Label;
+  skosxl:literalForm "Monaco"@en .
+:c_a59ed422 a skos:Concept;
+  dct:created "2018-11-06T11:54:17.429Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ed282664 .
+:xl_en_ed282664 a skosxl:Label;
+  skosxl:literalForm "Montenegro"@en .
+:c_6fb5993b a skos:Concept;
+  dct:created "2018-11-06T11:54:34.779Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e69e52c1 .
+:xl_en_e69e52c1 a skosxl:Label;
+  skosxl:literalForm "Netherlands"@en .
+:c_8b538fce a skos:Concept;
+  dct:created "2018-11-06T11:54:45.152Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_05094064 .
+:xl_en_05094064 a skosxl:Label;
+  skosxl:literalForm "Norway"@en .
+:c_5dd4a991 a skos:Concept;
+  dct:created "2018-11-06T11:54:54.731Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_aba6047a .
+:xl_en_aba6047a a skosxl:Label;
+  skosxl:literalForm "Poland"@en .
+:c_cebf45a5 a skos:Concept;
+  dct:created "2018-11-06T11:55:03.957Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3467a98c .
+:xl_en_3467a98c a skosxl:Label;
+  skosxl:literalForm "Portugal"@en .
+:c_69249479 a skos:Concept;
+  dct:created "2018-11-06T11:55:12.227Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_30d7f86f .
+:xl_en_30d7f86f a skosxl:Label;
+  skosxl:literalForm "Romania"@en .
+:c_22d39579 a skos:Concept;
+  dct:created "2018-11-06T11:55:20.444Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8b262271 .
+:xl_en_8b262271 a skosxl:Label;
+  skosxl:literalForm "Russia"@en .
+:c_f45d4e31 a skos:Concept;
+  dct:created "2018-11-06T11:55:28.981Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_951cfaa6 .
+:xl_en_951cfaa6 a skosxl:Label;
+  skosxl:literalForm "San Marino"@en .
+:c_a2f236b4 a skos:Concept;
+  dct:created "2018-11-06T11:55:38.076Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2d0e7e03 .
+:xl_en_2d0e7e03 a skosxl:Label;
+  skosxl:literalForm "Serbia"@en .
+:c_02528837 a skos:Concept;
+  dct:created "2018-11-06T11:55:45.761Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_1635f347 .
+:xl_en_1635f347 a skosxl:Label;
+  skosxl:literalForm "Slovakia"@en .
+:c_600ef614 a skos:Concept;
+  dct:created "2018-11-06T11:55:54.390Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2682ea68 .
+:xl_en_2682ea68 a skosxl:Label;
+  skosxl:literalForm "Slovenia"@en .
+:c_ff78ca42 a skos:Concept;
+  dct:created "2018-11-06T11:56:03.704Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d91a65a0 .
+:xl_en_d91a65a0 a skosxl:Label;
+  skosxl:literalForm "Spain"@en .
+:c_8e499581 a skos:Concept;
+  dct:created "2018-11-06T11:56:13.206Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bf87295d .
+:xl_en_bf87295d a skosxl:Label;
+  skosxl:literalForm "Sweden"@en .
+:c_83e207d0 a skos:Concept;
+  dct:created "2018-11-06T11:56:22.568Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a17a1072 .
+:xl_en_a17a1072 a skosxl:Label;
+  skosxl:literalForm "Switzerland"@en .
+:c_802ffb2c a skos:Concept;
+  dct:created "2018-11-06T11:56:30.771Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_34295765 .
+:xl_en_34295765 a skosxl:Label;
+  skosxl:literalForm "Turkey"@en .
+:c_0a240914 a skos:Concept;
+  dct:created "2018-11-06T11:56:42.656Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2d1f9787 .
+:xl_en_2d1f9787 a skosxl:Label;
+  skosxl:literalForm "Ukraine"@en .
+:c_17b3700d a skos:Concept;
+  dct:created "2018-11-06T11:56:54.513Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a52ab0b9 .
+:xl_en_a52ab0b9 a skosxl:Label;
+  skosxl:literalForm "United Kingdom"@en .
+:c_04a6db61 a skos:Concept;
+  dct:created "2018-11-06T11:57:17.477Z"^^xsd:dateTime;
+  skos:broader :c_86783a65;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_16a00736 .
+:xl_en_16a00736 a skosxl:Label;
+  skosxl:literalForm "Vatican City"@en .
+:skosCollection_9ed521a7 a skos:Collection;
+  dct:created "2018-11-06T11:58:08.456Z"^^xsd:dateTime;
+  skosxl:prefLabel :xl_en_dbb803ab .
+:xl_en_dbb803ab a skosxl:Label;
+  skosxl:literalForm "Eurozone"@en .
+:skosCollection_d0e639d1 a skos:Collection;
+  dct:created "2018-11-06T11:58:25.338Z"^^xsd:dateTime;
+  skosxl:prefLabel :xl_en_a2760730 .
+:xl_en_a2760730 a skosxl:Label;
+  skosxl:literalForm "European Union"@en .
+:c_da31c080 a skos:Concept;
+  dct:created "2018-11-06T12:00:39.776Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bfaee7fe .
+:xl_en_bfaee7fe a skosxl:Label;
+  skosxl:literalForm "Afghanistan"@en .
+:c_86783a65 a skos:Collection;
+  dct:modified "2018-11-06T12:19:17.623Z"^^xsd:dateTime, "2018-11-06T12:23:15.352Z"^^xsd:dateTime,
+    "2018-11-06T12:23:15.582Z"^^xsd:dateTime, "2018-11-06T12:23:34.111Z"^^xsd:dateTime,
+    "2018-11-06T12:23:34.253Z"^^xsd:dateTime, "2018-11-07T16:55:26.905Z"^^xsd:dateTime,
+    "2018-11-07T16:58:04.530Z"^^xsd:dateTime .
+:c_de557bbc dct:modified "2018-11-07T16:54:37.564Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_4a8baefc dct:modified "2018-11-08T11:08:48.268Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_aaf08433 a skos:Concept;
+  dct:created "2018-11-08T11:09:04.111Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4a827a20 .
+:xl_en_4a827a20 a skosxl:Label;
+  skosxl:literalForm "Bahrain"@en .
+:c_f927fa26 a skos:Concept;
+  dct:created "2018-11-08T11:09:13.563Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_297736a3 .
+:xl_en_297736a3 a skosxl:Label;
+  skosxl:literalForm "Bangladesh"@en .
+:c_5606cbfd a skos:Concept;
+  dct:created "2018-11-08T11:09:22.157Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_91ad980f .
+:xl_en_91ad980f a skosxl:Label;
+  skosxl:literalForm "Bhutan"@en .
+:c_31ea3a72 a skos:Concept;
+  dct:created "2018-11-08T11:09:31.594Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_b66a13f3 .
+:xl_en_b66a13f3 a skosxl:Label;
+  skosxl:literalForm "Brunei"@en .
+:c_d61be7eb a skos:Concept;
+  dct:created "2018-11-08T11:09:41.543Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4dcc38e7 .
+:xl_en_4dcc38e7 a skosxl:Label;
+  skosxl:literalForm "Cambodia"@en .
+:c_3092efcd a skos:Concept;
+  dct:created "2018-11-08T11:09:50.356Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ccb65383 .
+:xl_en_ccb65383 a skosxl:Label;
+  skosxl:literalForm "China"@en .
+:c_d609dfc6 dct:modified "2018-11-08T11:10:13.591Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_9321115e dct:modified "2018-11-08T11:10:39.388Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_98279694 a skos:Concept;
+  dct:created "2018-11-08T11:10:57.400Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8b4e92a5 .
+:xl_en_8b4e92a5 a skosxl:Label;
+  skosxl:literalForm "India"@en .
+:c_e93add72 a skos:Concept;
+  dct:created "2018-11-08T11:11:06.961Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c68d31a5 .
+:xl_en_c68d31a5 a skosxl:Label;
+  skosxl:literalForm "Indonesia"@en .
+:c_41ef2b96 a skos:Concept;
+  dct:created "2018-11-08T11:11:18.872Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_24eef26c .
+:xl_en_24eef26c a skosxl:Label;
+  skosxl:literalForm "Iran"@en .
+:c_b5c617f8 a skos:Concept;
+  dct:created "2018-11-08T11:11:29.074Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_9cd62703 .
+:xl_en_9cd62703 a skosxl:Label;
+  skosxl:literalForm "Iraq"@en .
+:c_b411f94e a skos:Concept;
+  dct:created "2018-11-08T11:11:38.125Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_915f7bfc .
+:xl_en_915f7bfc a skosxl:Label;
+  skosxl:literalForm "Israel"@en .
+:c_e3641b26 a skos:Concept;
+  dct:created "2018-11-08T11:11:50.389Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_445f227e .
+:xl_en_445f227e a skosxl:Label;
+  skosxl:literalForm "Japan"@en .
+:c_1ec39f2a a skos:Concept;
+  dct:created "2018-11-08T11:12:00.756Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a0af96af .
+:xl_en_a0af96af a skosxl:Label;
+  skosxl:literalForm "Jordan"@en .
+:c_a56b6f57 dct:modified "2018-11-08T11:12:25.146Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_0e9dc1bd a skos:Concept;
+  dct:created "2018-11-08T11:12:39.517Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2463a895 .
+:xl_en_2463a895 a skosxl:Label;
+  skosxl:literalForm "Kuwait"@en .
+:c_0475c573 a skos:Concept;
+  dct:created "2018-11-08T11:12:52.565Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_fa09290a .
+:xl_en_fa09290a a skosxl:Label;
+  skosxl:literalForm "Kyrgyzstan"@en .
+:c_74ff6ade a skos:Concept;
+  dct:created "2018-11-08T11:13:00.351Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3341455c .
+:xl_en_3341455c a skosxl:Label;
+  skosxl:literalForm "Laos"@en .
+:c_e485c9ab a skos:Concept;
+  dct:created "2018-11-08T11:13:09.719Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ff1e4399 .
+:xl_en_ff1e4399 a skosxl:Label;
+  skosxl:literalForm "Lebanon"@en .
+:c_43e49458 a skos:Concept;
+  dct:created "2018-11-08T11:13:25.950Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c898dcf4 .
+:xl_en_c898dcf4 a skosxl:Label;
+  skosxl:literalForm "Malaysia"@en .
+:c_889c531e a skos:Concept;
+  dct:created "2018-11-08T11:13:37.910Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e18eca3f .
+:xl_en_e18eca3f a skosxl:Label;
+  skosxl:literalForm "Maldives"@en .
+:c_054bea9f a skos:Concept;
+  dct:created "2018-11-08T11:13:46.473Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_22565072 .
+:xl_en_22565072 a skosxl:Label;
+  skosxl:literalForm "Mongolia"@en .
+:c_aaaf3f41 dct:modified "2018-11-08T13:16:37.867Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_32a16b63 dct:modified "2018-11-08T13:16:59.747Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_ddfd009c dct:modified "2018-11-08T13:17:20.826Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:conceptScheme_46fdd617 dct:modified "2018-11-08T13:20:42.893Z"^^xsd:dateTime;
+  skos:scopeNote """Made from information in https://www.countries-ofthe-world.com , https://www.gov.uk/eu-eea , 
+https://en.wikipedia.org/wiki/Economic_union , https://en.wikipedia.org/wiki/Central_American_Integration_System , 
+https://en.wikipedia.org/wiki/Gulf_Cooperation_Council , https://en.wikipedia.org/wiki/CARICOM_Single_Market_and_Economy"""@en 
+.
+:c_7df24deb dct:modified "2018-11-08T13:16:12.299Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_0de3cbd5 dct:modified "2018-11-08T13:16:24.627Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_3c1d18af dct:modified "2018-11-08T13:15:19.307Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_ce743241 dct:modified "2018-11-08T13:15:37.402Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_146a3961 dct:modified "2018-11-08T13:15:52.739Z"^^xsd:dateTime;
+  skos:broader :c_9c098113 .
+:c_48a9ed85 a skos:Concept;
+  dct:created "2018-11-08T11:15:13.209Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T11:15:32.436Z"^^xsd:dateTime, "2018-11-08T11:16:40.337Z"^^xsd:dateTime;
+  skos:broader :c_38389fed, :c_f7c76f4d;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_1b845fa9 .
+:xl_en_1b845fa9 a skosxl:Label;
+  skosxl:literalForm "North Korea"@en .
+:c_8cecfb7e dct:modified "2018-11-08T11:17:29.275Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_4e4a98a7 a skos:Concept;
+  dct:created "2018-11-08T11:30:55.033Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_b0483729 .
+:xl_en_b0483729 a skosxl:Label;
+  skosxl:literalForm "Oman"@en .
+:c_b4f069c1 a skos:Concept;
+  dct:created "2018-11-08T11:31:06.756Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c3422f39 .
+:xl_en_c3422f39 a skosxl:Label;
+  skosxl:literalForm "Pakistan"@en .
+:c_a0b90632 a skos:Concept;
+  dct:created "2018-11-08T11:31:19.704Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f0eb257b .
+:xl_en_f0eb257b a skosxl:Label;
+  skosxl:literalForm "Palestine"@en .
+:c_e29eca6e a skos:Concept;
+  dct:created "2018-11-08T11:31:29.835Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_67f46d9c .
+:xl_en_67f46d9c a skosxl:Label;
+  skosxl:literalForm "Philippines"@en .
+:c_439038d3 a skos:Concept;
+  dct:created "2018-11-08T11:31:40.087Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_69fb2a55 .
+:xl_en_69fb2a55 a skosxl:Label;
+  skosxl:literalForm "Qatar"@en .
+:c_22d39579 dct:modified "2018-11-08T11:32:08.380Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_5ebe2009 a skos:Concept;
+  dct:created "2018-11-08T11:32:30.080Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_455bf615 .
+:xl_en_455bf615 a skosxl:Label;
+  skosxl:literalForm "Saudi Arabia"@en .
+:c_db243bee a skos:Concept;
+  dct:created "2018-11-08T11:32:41.727Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_85623a88 .
+:xl_en_85623a88 a skosxl:Label;
+  skosxl:literalForm "Singapore"@en .
+:c_f6ee2ffd a skos:Concept;
+  dct:created "2018-11-08T11:32:56.032Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d5e69514 .
+:xl_en_d5e69514 a skosxl:Label;
+  skosxl:literalForm "South Korea"@en .
+:c_248bcc34 a skos:Concept;
+  dct:created "2018-11-08T11:33:47.745Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c6386cf5 .
+:xl_en_c6386cf5 a skosxl:Label;
+  skosxl:literalForm "Sri Lanka"@en .
+:c_8496853c a skos:Concept;
+  dct:created "2018-11-08T11:33:59.343Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c8d51dbb .
+:xl_en_c8d51dbb a skosxl:Label;
+  skosxl:literalForm "Syria"@en .
+:c_cfce7945 a skos:Concept;
+  dct:created "2018-11-08T11:34:07.981Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f97e2b2b .
+:xl_en_f97e2b2b a skosxl:Label;
+  skosxl:literalForm "Taiwan"@en .
+:c_74233209 a skos:Concept;
+  dct:created "2018-11-08T11:34:20.941Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_b9c52196 .
+:xl_en_b9c52196 a skosxl:Label;
+  skosxl:literalForm "Tajikistan"@en .
+:c_98530550 a skos:Concept;
+  dct:created "2018-11-08T11:34:30.582Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_927c0014 .
+:xl_en_927c0014 a skosxl:Label;
+  skosxl:literalForm "Thailand"@en .
+:c_076efe6f a skos:Concept;
+  dct:created "2018-11-08T11:34:45.599Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_80dad860 .
+:xl_en_80dad860 a skosxl:Label;
+  skosxl:literalForm "Timor-Leste"@en .
+:c_802ffb2c dct:modified "2018-11-08T11:35:21.608Z"^^xsd:dateTime;
+  skos:broader :c_38389fed .
+:c_5eef959a a skos:Concept;
+  dct:created "2018-11-08T11:36:10.571Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d7034ac5 .
+:xl_en_d7034ac5 a skosxl:Label;
+  skosxl:literalForm "Turkmenistan"@en .
+:c_941c93d3 a skos:Concept;
+  dct:created "2018-11-08T11:36:28.090Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T11:38:51.534Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "UAE"@en;
+  skosxl:prefLabel :xl_en_7a3a9655 .
+:xl_en_7a3a9655 a skosxl:Label;
+  skosxl:literalForm "United Arab Emirates"@en .
+:c_4ed235fa a skos:Concept;
+  dct:created "2018-11-08T11:39:26.100Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a2eb6c80 .
+:xl_en_a2eb6c80 a skosxl:Label;
+  skosxl:literalForm "Uzbekistan"@en .
+:c_426feb7b a skos:Concept;
+  dct:created "2018-11-08T11:39:36.926Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2105f7b1 .
+:xl_en_2105f7b1 a skosxl:Label;
+  skosxl:literalForm "Vietnam"@en .
+:c_732d4493 a skos:Concept;
+  dct:created "2018-11-08T11:39:46.565Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ec655abe .
+:xl_en_ec655abe a skosxl:Label;
+  skosxl:literalForm "Yemen"@en .
+:c_67c10de0 a skos:Concept;
+  dct:created "2018-11-08T11:40:08.948Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_52ec6362 .
+:xl_en_52ec6362 a skosxl:Label;
+  skosxl:literalForm "Algeria"@en .
+:c_100edd70 a skos:Concept;
+  dct:created "2018-11-08T11:40:25.670Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e2e02be9 .
+:xl_en_e2e02be9 a skosxl:Label;
+  skosxl:literalForm "Angola"@en .
+:c_160e2a53 a skos:Concept;
+  dct:created "2018-11-08T11:40:34.821Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_872c066e .
+:xl_en_872c066e a skosxl:Label;
+  skosxl:literalForm "Benin"@en .
+:c_8fb672d6 a skos:Concept;
+  dct:created "2018-11-08T11:40:45.127Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ffc8e696 .
+:xl_en_ffc8e696 a skosxl:Label;
+  skosxl:literalForm "Botswana"@en .
+:c_b0fbe232 a skos:Concept;
+  dct:created "2018-11-08T11:40:56.187Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e73ec41f .
+:xl_en_e73ec41f a skosxl:Label;
+  skosxl:literalForm "Burkina Faso"@en .
+:c_2862781e a skos:Concept;
+  dct:created "2018-11-08T11:41:05.366Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_57391755 .
+:xl_en_57391755 a skosxl:Label;
+  skosxl:literalForm "Burundi"@en .
+:c_7e2a3b0b a skos:Concept;
+  dct:created "2018-11-08T11:41:15.501Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f2114e3d .
+:xl_en_f2114e3d a skosxl:Label;
+  skosxl:literalForm "Cabo Verde"@en .
+:c_2cd2ee52 a skos:Concept;
+  dct:created "2018-11-08T11:41:24.220Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_641c9994 .
+:xl_en_641c9994 a skosxl:Label;
+  skosxl:literalForm "Cameroon"@en .
+:c_db3ca156 a skos:Concept;
+  dct:created "2018-11-08T11:41:34.982Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T11:42:00.548Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "CAR"@en;
+  skosxl:prefLabel :xl_en_548a43a3 .
+:xl_en_548a43a3 a skosxl:Label;
+  skosxl:literalForm "Central African Republic"@en .
+:c_2207157a a skos:Concept;
+  dct:created "2018-11-08T11:42:19.152Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f73baf61 .
+:xl_en_f73baf61 a skosxl:Label;
+  skosxl:literalForm "Chad"@en .
+:c_9782165f a skos:Concept;
+  dct:created "2018-11-08T11:42:27.667Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_39f292f2 .
+:xl_en_39f292f2 a skosxl:Label;
+  skosxl:literalForm "Comoros"@en .
+:c_707f7938 a skos:Concept;
+  dct:created "2018-11-08T11:42:41.224Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a1f9e571 .
+:xl_en_a1f9e571 a skosxl:Label;
+  skosxl:literalForm "Democratic Republic of the Congo"@en .
+:c_f464b226 a skos:Concept;
+  dct:created "2018-11-08T11:42:53.504Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_26564640 .
+:xl_en_26564640 a skosxl:Label;
+  skosxl:literalForm "Republic of the Congo"@en .
+:c_e2b3b729 a skos:Concept;
+  dct:created "2018-11-08T11:43:04.944Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ebc6bf8c .
+:xl_en_ebc6bf8c a skosxl:Label;
+  skosxl:literalForm "Cote d'Ivoire"@en .
+:c_9b9dc9ad a skos:Concept;
+  dct:created "2018-11-08T11:43:13.876Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8a6f06b8 .
+:xl_en_8a6f06b8 a skosxl:Label;
+  skosxl:literalForm "Djibouti"@en .
+:c_537d0c25 a skos:Concept;
+  dct:created "2018-11-08T11:43:26.672Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_db6d591e .
+:xl_en_db6d591e a skosxl:Label;
+  skosxl:literalForm "Egypt"@en .
+:c_7024c0d9 a skos:Concept;
+  dct:created "2018-11-08T11:43:37.585Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_5a1f9750 .
+:xl_en_5a1f9750 a skosxl:Label;
+  skosxl:literalForm "Equatorial Guinea"@en .
+:c_10c3c215 a skos:Concept;
+  dct:created "2018-11-08T11:43:46.994Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c837d12f .
+:xl_en_c837d12f a skosxl:Label;
+  skosxl:literalForm "Eritrea"@en .
+:c_61cbb752 a skos:Concept;
+  dct:created "2018-11-08T11:44:02.017Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T11:44:20.392Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:altLabel :xl_en_56ad90b0;
+  skosxl:prefLabel :xl_en_9306b0a8 .
+:xl_en_9306b0a8 a skosxl:Label;
+  skosxl:literalForm "Eswatini"@en .
+:xl_en_56ad90b0 a skosxl:Label;
+  skosxl:literalForm "Swaziland"@en .
+:c_26d5a83c a skos:Concept;
+  dct:created "2018-11-08T11:45:00.965Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4c7026d3 .
+:xl_en_4c7026d3 a skosxl:Label;
+  skosxl:literalForm "Ethiopia"@en .
+:c_e69694a7 a skos:Concept;
+  dct:created "2018-11-08T11:45:13.394Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_90785abb .
+:xl_en_90785abb a skosxl:Label;
+  skosxl:literalForm "Gabon"@en .
+:c_4dc9e64f a skos:Concept;
+  dct:created "2018-11-08T11:45:22.224Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d3a9324c .
+:xl_en_d3a9324c a skosxl:Label;
+  skosxl:literalForm "Gambia"@en .
+:c_edfb7c40 a skos:Concept;
+  dct:created "2018-11-08T11:45:32.334Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e29cbc29 .
+:xl_en_e29cbc29 a skosxl:Label;
+  skosxl:literalForm "Ghana"@en .
+:c_84fba357 a skos:Concept;
+  dct:created "2018-11-08T11:45:42.504Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_6085ddc5 .
+:xl_en_6085ddc5 a skosxl:Label;
+  skosxl:literalForm "Guinea"@en .
+:c_01216b6f a skos:Concept;
+  dct:created "2018-11-08T11:45:53.504Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3341cdf7 .
+:xl_en_3341cdf7 a skosxl:Label;
+  skosxl:literalForm "Guinea-Bissau"@en .
+:c_52587f46 a skos:Concept;
+  dct:created "2018-11-08T11:46:02.601Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_5b9ad78c .
+:xl_en_5b9ad78c a skosxl:Label;
+  skosxl:literalForm "Kenya"@en .
+:c_c5b82ce5 a skos:Concept;
+  dct:created "2018-11-08T11:46:10.384Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3642a171 .
+:xl_en_3642a171 a skosxl:Label;
+  skosxl:literalForm "Lesotho"@en .
+:c_821a36cd a skos:Concept;
+  dct:created "2018-11-08T11:46:18.652Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_5b0b027a .
+:xl_en_5b0b027a a skosxl:Label;
+  skosxl:literalForm "Liberia"@en .
+:c_c17a152c a skos:Concept;
+  dct:created "2018-11-08T11:46:26.786Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4975ae02 .
+:xl_en_4975ae02 a skosxl:Label;
+  skosxl:literalForm "Libya"@en .
+:c_571e13d0 a skos:Concept;
+  dct:created "2018-11-08T11:46:39.189Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_78354b62 .
+:xl_en_78354b62 a skosxl:Label;
+  skosxl:literalForm "Madagascar"@en .
+:c_66e7aecd a skos:Concept;
+  dct:created "2018-11-08T11:46:48.306Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_58f723ff .
+:xl_en_58f723ff a skosxl:Label;
+  skosxl:literalForm "Malawi"@en .
+:c_3b0abbe9 a skos:Concept;
+  dct:created "2018-11-08T11:46:56.942Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c4c1f3b1 .
+:xl_en_c4c1f3b1 a skosxl:Label;
+  skosxl:literalForm "Mali"@en .
+:c_1615a3ee a skos:Concept;
+  dct:created "2018-11-08T11:47:05.450Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_80873b59 .
+:xl_en_80873b59 a skosxl:Label;
+  skosxl:literalForm "Mauritania"@en .
+:c_c6f122a1 a skos:Concept;
+  dct:created "2018-11-08T11:47:14.357Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f13d9ef7 .
+:xl_en_f13d9ef7 a skosxl:Label;
+  skosxl:literalForm "Mauritius"@en .
+:c_d7fe8b30 a skos:Concept;
+  dct:created "2018-11-08T11:47:22.865Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e4c16ede .
+:xl_en_e4c16ede a skosxl:Label;
+  skosxl:literalForm "Morocco"@en .
+:c_a623483e a skos:Concept;
+  dct:created "2018-11-08T11:47:31.142Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_91d57731 .
+:xl_en_91d57731 a skosxl:Label;
+  skosxl:literalForm "Mozambique"@en .
+:c_eed72c29 a skos:Concept;
+  dct:created "2018-11-08T11:47:41.062Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_b3048707 .
+:xl_en_b3048707 a skosxl:Label;
+  skosxl:literalForm "Namibia"@en .
+:c_c39c2963 a skos:Concept;
+  dct:created "2018-11-08T11:47:50.109Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bc9e351b .
+:xl_en_bc9e351b a skosxl:Label;
+  skosxl:literalForm "Niger"@en .
+:c_85456df5 a skos:Concept;
+  dct:created "2018-11-08T11:47:59.193Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3503dd99 .
+:xl_en_3503dd99 a skosxl:Label;
+  skosxl:literalForm "Nigeria"@en .
+:c_487e56a5 a skos:Concept;
+  dct:created "2018-11-08T11:48:09.863Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d301fbf9 .
+:xl_en_d301fbf9 a skosxl:Label;
+  skosxl:literalForm "Rwanda"@en .
+:c_e64c37dc a skos:Concept;
+  dct:created "2018-11-08T11:48:22.340Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_34a65e1a .
+:xl_en_34a65e1a a skosxl:Label;
+  skosxl:literalForm "Sao Tome and Principe"@en .
+:c_118f629d a skos:Concept;
+  dct:created "2018-11-08T11:48:33.069Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_40bc38b7 .
+:xl_en_40bc38b7 a skosxl:Label;
+  skosxl:literalForm "Senegal"@en .
+:c_3eeec46f a skos:Concept;
+  dct:created "2018-11-08T11:48:41.372Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_b40736c2 .
+:xl_en_b40736c2 a skosxl:Label;
+  skosxl:literalForm "Seychelles"@en .
+:c_d9f86337 a skos:Concept;
+  dct:created "2018-11-08T11:48:52.027Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_7b1d9065 .
+:xl_en_7b1d9065 a skosxl:Label;
+  skosxl:literalForm "Sierra Leone"@en .
+:c_4fccc89c a skos:Concept;
+  dct:created "2018-11-08T11:49:00.824Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_43104986 .
+:xl_en_43104986 a skosxl:Label;
+  skosxl:literalForm "Somalia"@en .
+:c_9910555c a skos:Concept;
+  dct:created "2018-11-08T11:49:13.144Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a7701a7a .
+:xl_en_a7701a7a a skosxl:Label;
+  skosxl:literalForm "South Africa"@en .
+:c_2a232e2d a skos:Concept;
+  dct:created "2018-11-08T11:49:23.710Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4ec360e0 .
+:xl_en_4ec360e0 a skosxl:Label;
+  skosxl:literalForm "South Sudan"@en .
+:c_1658c2b2 a skos:Concept;
+  dct:created "2018-11-08T11:49:33.690Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_51c8b8b4 .
+:xl_en_51c8b8b4 a skosxl:Label;
+  skosxl:literalForm "Sudan"@en .
+:c_a22f6994 a skos:Concept;
+  dct:created "2018-11-08T11:49:42.982Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_eb5adb35 .
+:xl_en_eb5adb35 a skosxl:Label;
+  skosxl:literalForm "Tanzania"@en .
+:c_aab874d2 a skos:Concept;
+  dct:created "2018-11-08T11:49:51.828Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_adc19121 .
+:xl_en_adc19121 a skosxl:Label;
+  skosxl:literalForm "Togo"@en .
+:c_315977d1 a skos:Concept;
+  dct:created "2018-11-08T11:50:01.424Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8da60a46 .
+:xl_en_8da60a46 a skosxl:Label;
+  skosxl:literalForm "Tunisia"@en .
+:c_8d392b08 a skos:Concept;
+  dct:created "2018-11-08T11:50:11.303Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_fc83be42 .
+:xl_en_fc83be42 a skosxl:Label;
+  skosxl:literalForm "Uganda"@en .
+:c_e95c188e a skos:Concept;
+  dct:created "2018-11-08T11:50:19.984Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bf5ddf64 .
+:xl_en_bf5ddf64 a skosxl:Label;
+  skosxl:literalForm "Zambia"@en .
+:c_c64a2bd4 a skos:Concept;
+  dct:created "2018-11-08T11:50:28.750Z"^^xsd:dateTime;
+  skos:broader :c_77cf1b9c;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_dcfe7ef8 .
+:xl_en_dcfe7ef8 a skosxl:Label;
+  skosxl:literalForm "Zimbabwe"@en .
+:c_0f76dc0b a skos:Concept;
+  dct:created "2018-11-08T11:51:38.125Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_22355951 .
+:xl_en_22355951 a skosxl:Label;
+  skosxl:literalForm "Antigua and Barbuda"@en .
+:c_77bd8b0b a skos:Concept;
+  dct:created "2018-11-08T11:51:49.944Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_9a746a78 .
+:xl_en_9a746a78 a skosxl:Label;
+  skosxl:literalForm "Bahamas"@en .
+:c_eb68857d a skos:Concept;
+  dct:created "2018-11-08T11:51:59.499Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_bf8c08f7 .
+:xl_en_bf8c08f7 a skosxl:Label;
+  skosxl:literalForm "Barbados"@en .
+:c_ddfd009c a skos:Concept;
+  dct:created "2018-11-08T11:52:08.881Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_10f7b0fa .
+:xl_en_10f7b0fa a skosxl:Label;
+  skosxl:literalForm "Belize"@en .
+:c_86734258 a skos:Concept;
+  dct:created "2018-11-08T11:52:17.370Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8287d9da .
+:xl_en_8287d9da a skosxl:Label;
+  skosxl:literalForm "Canada"@en .
+:c_7df24deb a skos:Concept;
+  dct:created "2018-11-08T11:52:28.092Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_35396119 .
+:xl_en_35396119 a skosxl:Label;
+  skosxl:literalForm "Costa Rica"@en .
+:c_eeac449b a skos:Concept;
+  dct:created "2018-11-08T11:52:38.466Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_02047e55 .
+:xl_en_02047e55 a skosxl:Label;
+  skosxl:literalForm "Cuba"@en .
+:c_2208aa62 a skos:Concept;
+  dct:created "2018-11-08T11:52:48.421Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_30f5ff2a .
+:xl_en_30f5ff2a a skosxl:Label;
+  skosxl:literalForm "Dominica"@en .
+:c_32a16b63 a skos:Concept;
+  dct:created "2018-11-08T11:53:15.765Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8b5900aa .
+:xl_en_8b5900aa a skosxl:Label;
+  skosxl:literalForm "Dominican Republic"@en .
+:c_ce743241 a skos:Concept;
+  dct:created "2018-11-08T11:53:34.086Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c3811673 .
+:xl_en_c3811673 a skosxl:Label;
+  skosxl:literalForm "El Salvador"@en .
+:c_cc77043a a skos:Concept;
+  dct:created "2018-11-08T11:53:48.041Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d36dfbbe .
+:xl_en_d36dfbbe a skosxl:Label;
+  skosxl:literalForm "Grenada"@en .
+:c_3c1d18af a skos:Concept;
+  dct:created "2018-11-08T11:54:09.203Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2ebd64d2 .
+:xl_en_2ebd64d2 a skosxl:Label;
+  skosxl:literalForm "Guatemala"@en .
+:c_9faf8a77 a skos:Concept;
+  dct:created "2018-11-08T11:54:17.443Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_6e31510d .
+:xl_en_6e31510d a skosxl:Label;
+  skosxl:literalForm "Haiti"@en .
+:c_146a3961 a skos:Concept;
+  dct:created "2018-11-08T11:54:26.883Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_40a464cd .
+:xl_en_40a464cd a skosxl:Label;
+  skosxl:literalForm "Honduras"@en .
+:c_055697eb a skos:Concept;
+  dct:created "2018-11-08T11:54:36.280Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c700e20c .
+:xl_en_c700e20c a skosxl:Label;
+  skosxl:literalForm "Jamaica"@en .
+:c_aa7b5ece a skos:Concept;
+  dct:created "2018-11-08T11:55:37.460Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_a91dd8b6 .
+:xl_en_a91dd8b6 a skosxl:Label;
+  skosxl:literalForm "Mexico"@en .
+:c_0de3cbd5 a skos:Concept;
+  dct:created "2018-11-08T11:55:49.976Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_481c39e9 .
+:xl_en_481c39e9 a skosxl:Label;
+  skosxl:literalForm "Nicaragua"@en .
+:c_aaaf3f41 a skos:Concept;
+  dct:created "2018-11-08T11:55:58.453Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_144eba37 .
+:xl_en_144eba37 a skosxl:Label;
+  skosxl:literalForm "Panama"@en .
+:c_63c0d452 a skos:Concept;
+  dct:created "2018-11-08T11:56:09.174Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d2f43fc7 .
+:xl_en_d2f43fc7 a skosxl:Label;
+  skosxl:literalForm "Saint Kitts and Nevis"@en .
+:c_fc0d81fb a skos:Concept;
+  dct:created "2018-11-08T11:56:22.414Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4722ed5c .
+:xl_en_4722ed5c a skosxl:Label;
+  skosxl:literalForm "Saint Lucia"@en .
+:c_345f2221 a skos:Concept;
+  dct:created "2018-11-08T11:56:33.933Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_448eb668 .
+:xl_en_448eb668 a skosxl:Label;
+  skosxl:literalForm "Saint Vincent and the Grenadines"@en .
+:c_0548c226 a skos:Concept;
+  dct:created "2018-11-08T11:56:44.870Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_baa69471 .
+:xl_en_baa69471 a skosxl:Label;
+  skosxl:literalForm "Trinidad and Tobago"@en .
+:c_5a2e47ff a skos:Concept;
+  dct:created "2018-11-08T11:56:59.259Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T11:57:26.453Z"^^xsd:dateTime;
+  skos:broader :c_0c9bb2f0;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "USA"@en;
+  skosxl:prefLabel :xl_en_7b8a78a9 .
+:xl_en_7b8a78a9 a skosxl:Label;
+  skosxl:literalForm "United States of America"@en .
+:c_74a39787 a skos:Concept;
+  dct:created "2018-11-08T11:58:42.940Z"^^xsd:dateTime;
+  skos:broader :c_abcc86f7;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ea74c57e .
+:xl_en_ea74c57e a skosxl:Label;
+  skosxl:literalForm "North America Dependent Territories"@en .
+:c_6b76867b a skos:Concept;
+  dct:created "2018-11-08T11:59:29.457Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:03:21.133Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_75355865 .
+:xl_en_75355865 a skosxl:Label;
+  skosxl:literalForm "Anguilla"@en .
+:c_781fcbee a skos:Concept;
+  dct:created "2018-11-08T12:03:48.178Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:04:34.373Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_b9ac4cc5 .
+:xl_en_b9ac4cc5 a skosxl:Label;
+  skosxl:literalForm "Aruba"@en .
+:c_f89eb219 a skos:Concept;
+  dct:created "2018-11-08T12:04:51.894Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:05:24.371Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_7cf7a890 .
+:xl_en_7cf7a890 a skosxl:Label;
+  skosxl:literalForm "Bermuda"@en .
+:c_0dbfab0b a skos:Concept;
+  dct:created "2018-11-08T12:05:41.144Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:06:02.692Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_82cc5571 .
+:xl_en_82cc5571 a skosxl:Label;
+  skosxl:literalForm "Bonaire"@en .
+:c_963797ba a skos:Concept;
+  dct:created "2018-11-08T12:06:18.255Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:06:48.334Z"^^xsd:dateTime, "2018-11-08T12:07:12.013Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "BVI"@en;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_58e3f952 .
+:xl_en_58e3f952 a skosxl:Label;
+  skosxl:literalForm "British Virgin Islands"@en .
+:c_d6bf5149 a skos:Concept;
+  dct:created "2018-11-08T12:07:27.735Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:07:49.694Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_5496d75c .
+:xl_en_5496d75c a skosxl:Label;
+  skosxl:literalForm "Cayman Islands"@en .
+:c_5ef4e531 a skos:Concept;
+  dct:created "2018-11-08T12:08:11.048Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:08:33.623Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_bd7edec5 .
+:xl_en_bd7edec5 a skosxl:Label;
+  skosxl:literalForm "Clipperton Island"@en .
+:c_911f762d a skos:Concept;
+  dct:created "2018-11-08T12:08:50.976Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:09:13.604Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_a3b07afc .
+:xl_en_a3b07afc a skosxl:Label;
+  skosxl:literalForm "Curacao"@en .
+:c_01b531a9 a skos:Concept;
+  dct:created "2018-11-08T12:09:29.336Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:09:51.454Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_532d93bd;
+  skosxl:prefLabel :xl_en_b4bc3e28 .
+:xl_en_b4bc3e28 a skosxl:Label;
+  skosxl:literalForm "Greenland"@en .
+:c_f6006f6f a skos:Concept;
+  dct:created "2018-11-08T12:10:09.416Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:10:28.932Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_4c4238d8 .
+:xl_en_4c4238d8 a skosxl:Label;
+  skosxl:literalForm "Guadeloupe"@en .
+:c_78befc9b a skos:Concept;
+  dct:created "2018-11-08T12:11:18.257Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:11:37.256Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_b31c9a58 .
+:xl_en_b31c9a58 a skosxl:Label;
+  skosxl:literalForm "Martinique"@en .
+:c_e409f07c a skos:Concept;
+  dct:created "2018-11-08T12:11:56.417Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:12:18.893Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_2a68ee35 .
+:xl_en_2a68ee35 a skosxl:Label;
+  skosxl:literalForm "Montserrat"@en .
+:c_f51eca2b a skos:Concept;
+  dct:created "2018-11-08T12:12:37.453Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:13:02.865Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_5a2e47ff;
+  skosxl:prefLabel :xl_en_9875f326 .
+:xl_en_9875f326 a skosxl:Label;
+  skosxl:literalForm "Navassa Island"@en .
+:c_4f8c8978 a skos:Concept;
+  dct:created "2018-11-08T12:13:19.301Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:13:43.094Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_5a2e47ff;
+  skosxl:prefLabel :xl_en_dc50213d .
+:xl_en_dc50213d a skosxl:Label;
+  skosxl:literalForm "Puerto Rico"@en .
+:c_a9f0f23d a skos:Concept;
+  dct:created "2018-11-08T12:14:27.452Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:14:54.657Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_af805f41 .
+:xl_en_af805f41 a skosxl:Label;
+  skosxl:literalForm "Saba"@en .
+:c_97c8f1da a skos:Concept;
+  dct:created "2018-11-08T12:15:43.414Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:16:04.652Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_f82a7db3 .
+:xl_en_f82a7db3 a skosxl:Label;
+  skosxl:literalForm "Saint Barthelemy"@en .
+:c_0c42129c a skos:Concept;
+  dct:created "2018-11-08T12:16:21.057Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:16:42.057Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_e9a3231f .
+:xl_en_e9a3231f a skosxl:Label;
+  skosxl:literalForm "Saint Martin"@en .
+:c_a3adcac2 a skos:Concept;
+  dct:created "2018-11-08T12:16:57.502Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:17:21.053Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_52f7da91 .
+:xl_en_52f7da91 a skosxl:Label;
+  skosxl:literalForm "Saint Pierre and Miquelon"@en .
+:c_17ae9209 a skos:Concept;
+  dct:created "2018-11-08T12:17:38.294Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:18:04.810Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_6513e2ed .
+:xl_en_6513e2ed a skosxl:Label;
+  skosxl:literalForm "Sint Eustatius"@en .
+:c_4e8d0a61 a skos:Concept;
+  dct:created "2018-11-08T12:18:23.014Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:18:47.870Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_6fb5993b;
+  skosxl:prefLabel :xl_en_acd430f1 .
+:xl_en_acd430f1 a skosxl:Label;
+  skosxl:literalForm "Sint Maarten"@en .
+:c_7d0e0cbc a skos:Concept;
+  dct:created "2018-11-08T12:19:10.512Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:19:35.187Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_d591f503 .
+:xl_en_d591f503 a skosxl:Label;
+  skosxl:literalForm "Turks and Caicos Islands"@en .
+:c_68c15726 a skos:Concept;
+  dct:created "2018-11-08T12:19:53.014Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:20:20.971Z"^^xsd:dateTime;
+  skos:broader :c_74a39787;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_5a2e47ff;
+  skosxl:prefLabel :xl_en_e8ecb031 .
+:xl_en_e8ecb031 a skosxl:Label;
+  skosxl:literalForm "US Virgin Islands"@en .
+:c_b0a67571 a skos:Concept;
+  dct:created "2018-11-08T12:20:57.065Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_0e5046ff .
+:xl_en_0e5046ff a skosxl:Label;
+  skosxl:literalForm "Argentina"@en .
+:c_df744b33 a skos:Concept;
+  dct:created "2018-11-08T12:21:11.059Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d54eaacf .
+:xl_en_d54eaacf a skosxl:Label;
+  skosxl:literalForm "Bolivia"@en .
+:c_be792da8 a skos:Concept;
+  dct:created "2018-11-08T12:21:22.378Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ad4950e1 .
+:xl_en_ad4950e1 a skosxl:Label;
+  skosxl:literalForm "Brazil"@en .
+:c_7a09d898 a skos:Concept;
+  dct:created "2018-11-08T12:21:33.173Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_c312ca81 .
+:xl_en_c312ca81 a skosxl:Label;
+  skosxl:literalForm "Chile"@en .
+:c_7c52e33b a skos:Concept;
+  dct:created "2018-11-08T12:21:45.254Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_48e78df7 .
+:xl_en_48e78df7 a skosxl:Label;
+  skosxl:literalForm "Colombia"@en .
+:c_c48d7007 a skos:Concept;
+  dct:created "2018-11-08T12:22:00.098Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_6d8649e5 .
+:xl_en_6d8649e5 a skosxl:Label;
+  skosxl:literalForm "Ecuador"@en .
+:c_ccfc35e7 a skos:Concept;
+  dct:created "2018-11-08T12:22:12.045Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3665fb50 .
+:xl_en_3665fb50 a skosxl:Label;
+  skosxl:literalForm "Guyana"@en .
+:c_2f3a7b5a a skos:Concept;
+  dct:created "2018-11-08T12:22:22.495Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_de5e7e50 .
+:xl_en_de5e7e50 a skosxl:Label;
+  skosxl:literalForm "Paraguay"@en .
+:c_301b3482 a skos:Concept;
+  dct:created "2018-11-08T12:22:32.785Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8ffcb049 .
+:xl_en_8ffcb049 a skosxl:Label;
+  skosxl:literalForm "Peru"@en .
+:c_0451a6b6 a skos:Concept;
+  dct:created "2018-11-08T12:22:44.416Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_16fb638a .
+:xl_en_16fb638a a skosxl:Label;
+  skosxl:literalForm "Suriname"@en .
+:c_94449ee9 a skos:Concept;
+  dct:created "2018-11-08T12:22:55.503Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_63e431da .
+:xl_en_63e431da a skosxl:Label;
+  skosxl:literalForm "Uruguay"@en .
+:c_11d92f8c a skos:Concept;
+  dct:created "2018-11-08T12:23:07.575Z"^^xsd:dateTime;
+  skos:broader :c_1c645055;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3dd0ab73 .
+:xl_en_3dd0ab73 a skosxl:Label;
+  skosxl:literalForm "Venezuela"@en .
+:c_7875e679 a skos:Concept;
+  dct:created "2018-11-08T12:23:29.373Z"^^xsd:dateTime;
+  skos:broader :c_abcc86f7;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_64812f8d .
+:xl_en_64812f8d a skosxl:Label;
+  skosxl:literalForm "South America Dependent Territories"@en .
+:c_09099aef a skos:Concept;
+  dct:created "2018-11-08T12:23:44.927Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:24:07.774Z"^^xsd:dateTime;
+  skos:broader :c_7875e679;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_90469e8c .
+:xl_en_90469e8c a skosxl:Label;
+  skosxl:literalForm "Falkland Islands"@en .
+:c_0515e134 a skos:Concept;
+  dct:created "2018-11-08T12:24:24.893Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:24:46.454Z"^^xsd:dateTime;
+  skos:broader :c_7875e679;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_42b63695;
+  skosxl:prefLabel :xl_en_b020b42d .
+:xl_en_b020b42d a skosxl:Label;
+  skosxl:literalForm "French Guiana"@en .
+:c_7be36a64 a skos:Concept;
+  dct:created "2018-11-08T12:25:33.573Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:25:57.173Z"^^xsd:dateTime;
+  skos:broader :c_7875e679;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:related :c_17b3700d;
+  skosxl:prefLabel :xl_en_3251d3c2 .
+:xl_en_3251d3c2 a skosxl:Label;
+  skosxl:literalForm "South Georgia and the South Sandwich Islands"@en .
+:c_53d0b9e7 a skos:Concept;
+  dct:created "2018-11-08T12:26:44.336Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_0ead6295 .
+:xl_en_0ead6295 a skosxl:Label;
+  skosxl:literalForm "Australia"@en .
+:c_58b7a351 a skos:Concept;
+  dct:created "2018-11-08T12:26:54.295Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_4c565819 .
+:xl_en_4c565819 a skosxl:Label;
+  skosxl:literalForm "Fiji"@en .
+:c_66b5b311 a skos:Concept;
+  dct:created "2018-11-08T12:27:03.456Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_f30ef67d .
+:xl_en_f30ef67d a skosxl:Label;
+  skosxl:literalForm "Kiribati"@en .
+:c_19bf6fa5 a skos:Concept;
+  dct:created "2018-11-08T12:27:17.736Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_824aa116 .
+:xl_en_824aa116 a skosxl:Label;
+  skosxl:literalForm "Marshall Islands"@en .
+:c_b2a65d24 a skos:Concept;
+  dct:created "2018-11-08T12:27:28.062Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_2254b65c .
+:xl_en_2254b65c a skosxl:Label;
+  skosxl:literalForm "Micronesia"@en .
+:c_6482b2cd a skos:Concept;
+  dct:created "2018-11-08T12:27:37.974Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_e677aeff .
+:xl_en_e677aeff a skosxl:Label;
+  skosxl:literalForm "Nauru"@en .
+:c_c86767f4 a skos:Concept;
+  dct:created "2018-11-08T12:27:48.379Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_49220dc7 .
+:xl_en_49220dc7 a skosxl:Label;
+  skosxl:literalForm "New Zealand"@en .
+:c_66f84875 a skos:Concept;
+  dct:created "2018-11-08T12:27:58.097Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_9965917b .
+:xl_en_9965917b a skosxl:Label;
+  skosxl:literalForm "Palau"@en .
+:c_d5ec6495 a skos:Concept;
+  dct:created "2018-11-08T12:28:11.017Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_1de5fe37 .
+:xl_en_1de5fe37 a skosxl:Label;
+  skosxl:literalForm "Papua New Guinea"@en .
+:c_bc02e125 a skos:Concept;
+  dct:created "2018-11-08T12:28:21.495Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_979a8dee .
+:xl_en_979a8dee a skosxl:Label;
+  skosxl:literalForm "Samoa"@en .
+:c_21a0a2c0 a skos:Concept;
+  dct:created "2018-11-08T12:28:41.301Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_68c03aea .
+:xl_en_68c03aea a skosxl:Label;
+  skosxl:literalForm "Solomon Islands"@en .
+:c_2d038183 a skos:Concept;
+  dct:created "2018-11-08T12:28:52.416Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_ff8a1b1f .
+:xl_en_ff8a1b1f a skosxl:Label;
+  skosxl:literalForm "Tonga"@en .
+:c_9de77739 a skos:Concept;
+  dct:created "2018-11-08T12:29:03.708Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_151ae70d .
+:xl_en_151ae70d a skosxl:Label;
+  skosxl:literalForm "Tuvalu"@en .
+:c_adc0b845 a skos:Concept;
+  dct:created "2018-11-08T12:29:15.591Z"^^xsd:dateTime;
+  skos:broader :c_83555fa1;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_95fe9c35 .
+:xl_en_95fe9c35 a skosxl:Label;
+  skosxl:literalForm "Vanuatu"@en .
+:c_f4e912f0 a skos:Concept;
+  dct:created "2018-11-08T12:29:43.389Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_8833857f .
+:xl_en_8833857f a skosxl:Label;
+  skosxl:literalForm "Continents"@en .
+:c_77cf1b9c dct:modified "2018-11-08T12:30:02.145Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_abcc86f7 dct:modified "2018-11-08T12:30:15.278Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_85e8af68 dct:modified "2018-11-08T12:30:28.571Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_38389fed dct:modified "2018-11-08T12:30:39.152Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_86783a65 dct:modified "2018-11-08T12:30:51.773Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_83555fa1 dct:modified "2018-11-08T12:31:03.130Z"^^xsd:dateTime;
+  skos:broader :c_f4e912f0 .
+:c_ccd4a687 a skos:Concept;
+  dct:created "2018-11-08T12:32:06.542Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:topConceptOf :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_13d360e2 .
+:xl_en_13d360e2 a skosxl:Label;
+  skosxl:literalForm "Economic Unions"@en .
+:c_31f8bf4f a skos:Concept;
+  dct:created "2018-11-08T12:32:17.625Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_3011f9a9 .
+:xl_en_3011f9a9 a skosxl:Label;
+  skosxl:literalForm "Mercosur"@en .
+:c_b4795072 a skos:Concept;
+  dct:created "2018-11-08T12:33:46.857Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_d6339d11 .
+:xl_en_d6339d11 a skosxl:Label;
+  skosxl:literalForm "European Union"@en .
+:c_bd07fb13 a skos:Concept;
+  dct:created "2018-11-08T12:34:00.700Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:34:27.094Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "EEA"@en;
+  skosxl:prefLabel :xl_en_a17ae457 .
+:xl_en_a17ae457 a skosxl:Label;
+  skosxl:literalForm "European Economic Area"@en .
+:c_a3970417 dct:modified "2018-11-08T12:35:03.135Z"^^xsd:dateTime, "2018-11-08T12:35:13.332Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_be21d29f dct:modified "2018-11-08T12:35:36.850Z"^^xsd:dateTime, "2018-11-08T12:35:45.492Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_6c1e0675 dct:modified "2018-11-08T12:36:46.501Z"^^xsd:dateTime, "2018-11-08T12:36:55.050Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_7ab2e16e dct:modified "2018-11-08T12:37:11.978Z"^^xsd:dateTime, "2018-11-08T12:37:19.770Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_d609dfc6 dct:modified "2018-11-08T12:37:43.170Z"^^xsd:dateTime, "2018-11-08T12:37:50.502Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_fa33478e dct:modified "2018-11-08T12:38:04.089Z"^^xsd:dateTime, "2018-11-08T12:38:12.219Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_532d93bd dct:modified "2018-11-08T12:39:05.414Z"^^xsd:dateTime, "2018-11-08T12:39:13.212Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_e27cd7ea dct:modified "2018-11-08T12:39:26.650Z"^^xsd:dateTime, "2018-11-08T12:39:36.300Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_ac4dfff3 dct:modified "2018-11-08T12:39:57.054Z"^^xsd:dateTime, "2018-11-08T12:40:04.452Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_42b63695 dct:modified "2018-11-08T12:40:16.932Z"^^xsd:dateTime, "2018-11-08T12:40:24.202Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_97a443af dct:modified "2018-11-08T12:40:37.779Z"^^xsd:dateTime, "2018-11-08T12:40:47.490Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_cd0ee5d0 dct:modified "2018-11-08T12:41:06.732Z"^^xsd:dateTime, "2018-11-08T12:41:12.826Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_aa88a3b2 dct:modified "2018-11-08T12:41:29.964Z"^^xsd:dateTime, "2018-11-08T12:41:36.575Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_aa852b83 dct:modified "2018-11-08T12:41:56.890Z"^^xsd:dateTime;
+  skos:broader :c_bd07fb13 .
+:c_99108114 dct:modified "2018-11-08T12:42:07.652Z"^^xsd:dateTime, "2018-11-08T12:42:14.410Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_b11179d8 dct:modified "2018-11-08T12:42:26.582Z"^^xsd:dateTime, "2018-11-08T12:42:32.131Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_23620b9d dct:modified "2018-11-08T12:42:58.411Z"^^xsd:dateTime, "2018-11-08T12:43:04.919Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_8454624d dct:modified "2018-11-08T12:43:14.892Z"^^xsd:dateTime;
+  skos:broader :c_bd07fb13 .
+:c_94cc8938 dct:modified "2018-11-08T12:43:27.091Z"^^xsd:dateTime, "2018-11-08T12:43:34.691Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_80f9b222 dct:modified "2018-11-08T12:43:49.450Z"^^xsd:dateTime, "2018-11-08T12:43:57.023Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_f6942435 dct:modified "2018-11-08T12:44:17.732Z"^^xsd:dateTime, "2018-11-08T12:44:25.570Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_6fb5993b dct:modified "2018-11-08T12:44:49.214Z"^^xsd:dateTime, "2018-11-08T12:44:57.451Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_5dd4a991 dct:modified "2018-11-08T12:45:11.451Z"^^xsd:dateTime, "2018-11-08T12:45:19.209Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_8b538fce dct:modified "2018-11-08T12:45:35.000Z"^^xsd:dateTime;
+  skos:broader :c_bd07fb13 .
+:c_cebf45a5 dct:modified "2018-11-08T12:45:51.641Z"^^xsd:dateTime, "2018-11-08T12:45:57.532Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_69249479 dct:modified "2018-11-08T12:46:14.921Z"^^xsd:dateTime, "2018-11-08T12:46:21.962Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_02528837 dct:modified "2018-11-08T12:46:42.961Z"^^xsd:dateTime, "2018-11-08T12:46:49.132Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_600ef614 dct:modified "2018-11-08T12:53:11.863Z"^^xsd:dateTime, "2018-11-08T12:53:19.788Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_ff78ca42 dct:modified "2018-11-08T12:53:35.270Z"^^xsd:dateTime, "2018-11-08T12:53:45.507Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_8e499581 dct:modified "2018-11-08T12:54:04.517Z"^^xsd:dateTime, "2018-11-08T12:54:12.507Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_17b3700d dct:modified "2018-11-08T12:54:36.789Z"^^xsd:dateTime, "2018-11-08T12:54:45.194Z"^^xsd:dateTime;
+  skos:broader :c_b4795072, :c_bd07fb13 .
+:c_04a6db61 dct:modified "2018-11-08T12:55:10.838Z"^^xsd:dateTime;
+  skosxl:altLabel :xl_en_13325458 .
+:xl_en_13325458 a skosxl:Label;
+  skosxl:literalForm "Holy See"@en .
+:c_b0a67571 dct:modified "2018-11-08T12:56:15.033Z"^^xsd:dateTime;
+  skos:broader :c_31f8bf4f .
+:c_be792da8 dct:modified "2018-11-08T12:56:27.902Z"^^xsd:dateTime;
+  skos:broader :c_31f8bf4f .
+:c_2f3a7b5a dct:modified "2018-11-08T12:56:39.196Z"^^xsd:dateTime;
+  skos:broader :c_31f8bf4f .
+:c_94449ee9 dct:modified "2018-11-08T12:57:01.351Z"^^xsd:dateTime;
+  skos:broader :c_31f8bf4f .
+:c_11d92f8c dct:modified "2018-11-08T12:57:14.151Z"^^xsd:dateTime;
+  skos:broader :c_31f8bf4f .
+:c_62515bf4 a skos:Concept;
+  dct:created "2018-11-08T12:59:18.811Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T12:59:44.638Z"^^xsd:dateTime, "2018-11-08T13:00:08.339Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "CSME"@en;
+  skosxl:altLabel :xl_en_a320d6db;
+  skosxl:prefLabel :xl_en_c34229ad .
+:xl_en_c34229ad a skosxl:Label;
+  skosxl:literalForm "CARICOM Single Market and Economy"@en .
+:xl_en_a320d6db a skosxl:Label;
+  skosxl:literalForm "Caribbean Single Market and Economy"@en .
+:c_0f76dc0b dct:modified "2018-11-08T13:01:18.574Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_eb68857d dct:modified "2018-11-08T13:01:33.615Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_ddfd009c dct:modified "2018-11-08T13:01:48.794Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_2208aa62 dct:modified "2018-11-08T13:02:01.739Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_cc77043a dct:modified "2018-11-08T13:02:22.694Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_ccfc35e7 dct:modified "2018-11-08T13:03:11.725Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_055697eb dct:modified "2018-11-08T13:03:41.861Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_63c0d452 dct:modified "2018-11-08T13:03:52.611Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_fc0d81fb dct:modified "2018-11-08T13:04:07.579Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_345f2221 dct:modified "2018-11-08T13:04:18.198Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_0548c226 dct:modified "2018-11-08T13:04:37.130Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_0451a6b6 dct:modified "2018-11-08T13:04:50.446Z"^^xsd:dateTime;
+  skos:broader :c_62515bf4 .
+:c_7210843b a skos:Concept;
+  dct:created "2018-11-08T13:05:42.617Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T13:06:27.331Z"^^xsd:dateTime, "2018-11-08T13:06:47.299Z"^^xsd:dateTime,
+    "2018-11-08T13:07:18.044Z"^^xsd:dateTime, "2018-11-08T13:07:41.757Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "GCC"@en;
+  skosxl:altLabel :xl_ar_a2719905, :xl_en_4718c3cd;
+  skosxl:prefLabel :xl_ar_9aed4604, :xl_en_935eda96 .
+:xl_en_935eda96 a skosxl:Label;
+  skosxl:literalForm "Cooperation Council for the Arab States of the Gulf"@en .
+:xl_en_4718c3cd a skosxl:Label;
+  skosxl:literalForm "Gulf Cooperation Council"@en .
+:xl_ar_9aed4604 a skosxl:Label;
+  skosxl:literalForm "مجلس التعاون لدول الخليج العربية"@ar .
+:xl_ar_a2719905 a skosxl:Label;
+  skosxl:literalForm "مجلس التعاون الخليجي"@ar .
+:c_aaf08433 dct:modified "2018-11-08T13:09:26.696Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_0e9dc1bd dct:modified "2018-11-08T13:10:09.504Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_4e4a98a7 dct:modified "2018-11-08T13:10:26.184Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_439038d3 dct:modified "2018-11-08T13:10:55.412Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_5ebe2009 dct:modified "2018-11-08T13:11:08.263Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_941c93d3 dct:modified "2018-11-08T13:11:27.831Z"^^xsd:dateTime;
+  skos:broader :c_7210843b .
+:c_9c098113 a skos:Concept;
+  dct:created "2018-11-08T13:12:25.229Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T13:12:51.968Z"^^xsd:dateTime, "2018-11-08T13:13:18.996Z"^^xsd:dateTime;
+  skos:broader :c_ccd4a687;
+  skos:inScheme :conceptScheme_46fdd617;
+  skos:notation "SICA"@en;
+  skosxl:prefLabel :xl_en_99acdbe7, :xl_es_f4115a34 .
+:xl_en_99acdbe7 a skosxl:Label;
+  skosxl:literalForm "Central American Integration System"@en .
+:xl_es_f4115a34 a skosxl:Label;
+  skosxl:literalForm "Sistema de la Integración Centroamericana"@es .
+:c_0662be07 a skos:Concept;
+  dct:created "2018-11-08T13:37:51.418Z"^^xsd:dateTime;
+  dct:modified "2018-11-08T13:38:16.108Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:altLabel :xl_en_a0e57701;
+  skosxl:prefLabel :xl_en_f65c1686 .
+:xl_en_f65c1686 a skosxl:Label;
+  skosxl:literalForm "Myanmar"@en .
+:xl_en_a0e57701 a skosxl:Label;
+  skosxl:literalForm "Burma"@en .
+:c_04cdd2a1 a skos:Concept;
+  dct:created "2018-11-08T13:40:12.837Z"^^xsd:dateTime;
+  skos:broader :c_38389fed;
+  skos:inScheme :conceptScheme_46fdd617;
+  skosxl:prefLabel :xl_en_667ddf30 .
+:xl_en_667ddf30 a skosxl:Label;
+  skosxl:literalForm "Nepal"@en .

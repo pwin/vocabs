@@ -1,0 +1,647 @@
+@prefix : <http://www.sqa.org.uk/sqa/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ns1: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sqa: <http://data.sqa.org.uk/schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.sqa.org.uk/sqa/> a owl:Ontology .
+
+
+
+:13775 a sqa:Subject;
+  rdfs:label "Work Placement"@en;
+  skos:notation "13775"@en .
+
+:38219 a sqa:Subject;
+  rdfs:label "Modern Languages for Work Purposes"@en;
+  skos:notation "38219"@en .
+
+:45626 a sqa:Subject;
+  rdfs:label "Classical Studies"@en;
+  skos:notation "45626"@en .
+
+:45627 a sqa:Subject;
+  rdfs:label "Geography"@en;
+  skos:notation "45627"@en .
+
+:45628 a sqa:Subject;
+  rdfs:label "History"@en;
+  skos:notation "45628"@en .
+
+:45629 a sqa:Subject;
+  rdfs:label "Modern Studies"@en;
+  skos:notation "45629"@en .
+
+:45630 a sqa:Subject;
+  rdfs:label "People and Society"@en;
+  skos:notation "45630"@en .
+
+:45631 a sqa:Subject;
+  rdfs:label "Religious, Moral and Philosophical Studies"@en;
+  skos:notation "45631"@en .
+
+:45645 a sqa:Subject;
+  rdfs:label "Design and Manufacture"@en;
+  skos:notation "45645"@en .
+
+:45648 a sqa:Subject;
+  rdfs:label "Engineering Science"@en;
+  skos:notation "45648"@en .
+
+:45651 a sqa:Subject;
+  rdfs:label "Graphic Communication"@en;
+  skos:notation "45651"@en .
+
+:45654 a sqa:Subject;
+  rdfs:label "Practical Electronics"@en;
+  skos:notation "45654"@en .
+
+:45657 a sqa:Subject;
+  rdfs:label "Practical Metalworking"@en;
+  skos:notation "45657"@en .
+
+:45660 a sqa:Subject;
+  rdfs:label "Practical Woodworking"@en;
+  skos:notation "45660"@en .
+
+:45663 a sqa:Subject;
+  rdfs:label "Latin"@en;
+  skos:notation "45663"@en .
+
+:45666 a sqa:Subject;
+  rdfs:label "Media"@en;
+  skos:notation "45666"@en .
+
+:45669 a sqa:Subject;
+  rdfs:label "Modern Languages"@en;
+  skos:notation "45669"@en .
+
+:45672 a sqa:Subject;
+  rdfs:label "English"@en;
+  skos:notation "45672"@en .
+
+:45675 a sqa:Subject;
+  rdfs:label "Gàidhlig"@en;
+  skos:notation "45675"@en .
+
+:45678 a sqa:Subject;
+  rdfs:label "ESOL"@en;
+  skos:notation "45678"@en .
+
+:45681 a sqa:Subject;
+  rdfs:label "Hospitality: Practical Cookery"@en;
+  skos:notation "45681"@en .
+
+:45686 a sqa:Subject;
+  rdfs:label "Administration and IT"@en;
+  skos:notation "45686"@en .
+
+:45689 a sqa:Subject;
+  rdfs:label "Accounting"@en;
+  skos:notation "45689"@en .
+
+:45691 a sqa:Subject;
+  rdfs:label "Business"@en;
+  skos:notation "45691"@en .
+
+:45693 a sqa:Subject;
+  rdfs:label "Business Management"@en;
+  skos:notation "45693"@en .
+
+:45695 a sqa:Subject;
+  rdfs:label "Economics"@en;
+  skos:notation "45695"@en .
+
+:45707 a sqa:Subject;
+  rdfs:label "Art and Design"@en;
+  skos:notation "45707"@en .
+
+:45710 a sqa:Subject;
+  rdfs:label "Dance"@en;
+  skos:notation "45710"@en .
+
+:45712 a sqa:Subject;
+  rdfs:label "Drama"@en;
+  skos:notation "45712"@en .
+
+:45715 a sqa:Subject;
+  rdfs:label "Music"@en;
+  skos:notation "45715"@en .
+
+:45718 a sqa:Subject;
+  rdfs:label "Science"@en;
+  skos:notation "45718"@en .
+
+:45720 a sqa:Subject;
+  rdfs:label "Chemistry"@en;
+  skos:notation "45720"@en .
+
+:45723 a sqa:Subject;
+  rdfs:label "Biology"@en;
+  skos:notation "45723"@en .
+
+:45726 a sqa:Subject;
+  rdfs:label "Environmental Science"@en;
+  skos:notation "45726"@en .
+
+:45729 a sqa:Subject;
+  rdfs:label "Physics"@en;
+  skos:notation "45729"@en .
+
+:45732 a sqa:Subject;
+  rdfs:label "Care"@en;
+  skos:notation "45732"@en .
+
+:45738 a sqa:Subject;
+  rdfs:label "Health and Food Technology"@en;
+  skos:notation "45738"@en .
+
+:45741 a sqa:Subject;
+  rdfs:label "Physical Education"@en;
+  skos:notation "45741"@en .
+
+:45744 a sqa:Subject;
+  rdfs:label "Sociology"@en;
+  skos:notation "45744"@en .
+
+:45746 a sqa:Subject;
+  rdfs:label "Psychology"@en;
+  skos:notation "45746"@en .
+
+:45748 a sqa:Subject;
+  rdfs:label "Philosophy"@en;
+  skos:notation "45748"@en .
+
+:45750 a sqa:Subject;
+  rdfs:label "Mathematics"@en;
+  skos:notation "45750"@en .
+
+:45774 a sqa:Subject;
+  rdfs:label "Urdu"@en;
+  skos:notation "45774"@en .
+
+:45891 a sqa:Subject;
+  rdfs:label "German"@en;
+  skos:notation "45891"@en .
+
+:45893 a sqa:Subject;
+  rdfs:label "Spanish"@en;
+  skos:notation "45893"@en .
+
+:45895 a sqa:Subject;
+  rdfs:label "Cantonese"@en;
+  skos:notation "45895"@en .
+
+:45897 a sqa:Subject;
+  rdfs:label "Mandarin"@en;
+  skos:notation "45897"@en .
+
+:45899 a sqa:Subject;
+  rdfs:label "Italian"@en;
+  skos:notation "45899"@en .
+
+:45901 a sqa:Subject;
+  rdfs:label "Gaelic (Learners)"@en;
+  skos:notation "45901"@en .
+
+:45903 a sqa:Subject;
+  rdfs:label "French"@en;
+  skos:notation "45903"@en .
+
+:46445 a sqa:Subject;
+  rdfs:label "Politics"@en;
+  skos:notation "46445"@en .
+
+:46446 a sqa:Subject;
+  rdfs:label "Childcare and Development"@en;
+  skos:notation "46446"@en .
+
+:46447 a sqa:Subject;
+  rdfs:label "Photography"@en;
+  skos:notation "46447"@en .
+
+:46448 a sqa:Subject;
+  rdfs:label "Human Biology"@en;
+  skos:notation "46448"@en .
+
+:46922 a sqa:Subject;
+  rdfs:label "English and Communication"@en;
+  skos:notation "46922"@en .
+
+:46926 a sqa:Subject;
+  rdfs:label "Science in the Environment"@en;
+  skos:notation "46926"@en .
+
+:46929 a sqa:Subject;
+  rdfs:label "Social Subjects"@en;
+  skos:notation "46929"@en .
+
+:46932 a sqa:Subject;
+  rdfs:label "Information and Communications Technology"@en;
+  skos:notation "46932"@en .
+
+:46934 a sqa:Subject;
+  rdfs:label "Practical Craft Skills"@en;
+  skos:notation "46934"@en .
+
+:46936 a sqa:Subject;
+  rdfs:label "Creative Arts"@en;
+  skos:notation "46936"@en .
+
+:46938 a sqa:Subject;
+  rdfs:label "Performance Arts"@en;
+  skos:notation "46938"@en .
+
+:46941 a sqa:Subject;
+  rdfs:label "Food, Health and Wellbeing"@en;
+  skos:notation "46941"@en .
+
+:46943 a sqa:Subject;
+  rdfs:label "Business in Practice"@en;
+  skos:notation "46943"@en .
+
+:46946 a sqa:Subject;
+  rdfs:label "Design and Technology"@en;
+  skos:notation "46946"@en .
+
+:47502 a sqa:Subject;
+  rdfs:label "Literacy and Numeracy"@en;
+  skos:notation "47502"@en .
+
+:48102 a sqa:Subject;
+  rdfs:label "Lifeskills Mathematics"@en;
+  skos:notation "48102"@en .
+
+:48473 a sqa:Subject;
+  rdfs:label "Art and Design (Design)"@en;
+  skos:notation "48473"@en .
+
+:48474 a sqa:Subject;
+  rdfs:label "Art and Design (Expressive)"@en;
+  skos:notation "48474"@en .
+
+:48475 a sqa:Subject;
+  rdfs:label "Mathematics of Mechanics"@en;
+  skos:notation "48475"@en .
+
+:48476 a sqa:Subject;
+  rdfs:label "Statistics"@en;
+  skos:notation "48476"@en .
+
+:48477 a sqa:Subject;
+  rdfs:label "Computing Science"@en;
+  skos:notation "48477"@en .
+
+:56925 a sqa:Subject;
+  rdfs:label "Hospitality: Practical Cake Craft"@en;
+  skos:notation "56925"@en .
+
+:56930 a sqa:Subject;
+  rdfs:label "Fashion and Textile Technology"@en;
+  skos:notation "56930"@en .
+
+:56941 a sqa:Subject;
+  rdfs:label "Music Technology"@en;
+  skos:notation "56941"@en .
+
+:65528 a sqa:Subject;
+  rdfs:label "British Sign Language"@en;
+  skos:notation "65528"@en .
+
+:65697 a sqa:Subject;
+  rdfs:label "National 1 and 2"@en;
+  skos:notation "65697"@en .
+
+:73224 a sqa:Subject;
+  rdfs:label "Statistics Award (SCQF level 6)"@en;
+  skos:notation "73224"@en .
+
+:81277 a sqa:Subject;
+  rdfs:label "Applications of Mathematics"@en;
+  skos:notation "81277"@en .
+
+:subjects a skos:ConceptScheme;
+  skos:prefLabel "SQA Subjects"@en .
+
+:13775 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Work Placement"@en .
+
+:38219 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Modern Languages for Work Purposes"@en .
+
+:45626 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Classical Studies"@en .
+
+:45627 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Geography"@en .
+
+:45628 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "History"@en .
+
+:45629 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Modern Studies"@en .
+
+:45630 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "People and Society"@en .
+
+:45631 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Religious, Moral and Philosophical Studies"@en .
+
+:45645 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Design and Manufacture"@en .
+
+:45648 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Engineering Science"@en .
+
+:45651 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Graphic Communication"@en .
+
+:45654 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Practical Electronics"@en .
+
+:45657 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Practical Metalworking"@en .
+
+:45660 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Practical Woodworking"@en .
+
+:45663 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Latin"@en .
+
+:45666 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Media"@en .
+
+:45669 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Modern Languages"@en .
+
+:45672 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "English"@en .
+
+:45675 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Gàidhlig"@en .
+
+:45678 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "ESOL"@en .
+
+:45681 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Hospitality: Practical Cookery"@en .
+
+:45686 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Administration and IT"@en .
+
+:45689 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Accounting"@en .
+
+:45691 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Business"@en .
+
+:45693 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Business Management"@en .
+
+:45695 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Economics"@en .
+
+:45707 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Art and Design"@en .
+
+:45710 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Dance"@en .
+
+:45712 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Drama"@en .
+
+:45715 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Music"@en .
+
+:45718 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Science"@en .
+
+:45720 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Chemistry"@en .
+
+:45723 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Biology"@en .
+
+:45726 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Environmental Science"@en .
+
+:45729 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Physics"@en .
+
+:45732 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Care"@en .
+
+:45738 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Health and Food Technology"@en .
+
+:45741 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Physical Education"@en .
+
+:45744 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Sociology"@en .
+
+:45746 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Psychology"@en .
+
+:45748 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Philosophy"@en .
+
+:45750 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Mathematics"@en .
+
+:45774 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Urdu"@en .
+
+:45891 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "German"@en .
+
+:45893 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Spanish"@en .
+
+:45895 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Cantonese"@en .
+
+:45897 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Mandarin"@en .
+
+:45899 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Italian"@en .
+
+:45901 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Gaelic (Learners)"@en .
+
+:45903 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "French"@en .
+
+:46445 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Politics"@en .
+
+:46446 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Childcare and Development"@en .
+
+:46447 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Photography"@en .
+
+:46448 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Human Biology"@en .
+
+:46922 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "English and Communication"@en .
+
+:46926 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Science in the Environment"@en .
+
+:46929 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Social Subjects"@en .
+
+:46932 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Information and Communications Technology"@en .
+
+:46934 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Practical Craft Skills"@en .
+
+:46936 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Creative Arts"@en .
+
+:46938 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Performance Arts"@en .
+
+:46941 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Food, Health and Wellbeing"@en .
+
+:46943 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Business in Practice"@en .
+
+:46946 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Design and Technology"@en .
+
+:47502 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Literacy and Numeracy"@en .
+
+:48102 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Lifeskills Mathematics"@en .
+
+:48473 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Art and Design (Design)"@en .
+
+:48474 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Art and Design (Expressive)"@en .
+
+:48475 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Mathematics of Mechanics"@en .
+
+:48476 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Statistics"@en .
+
+:48477 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Computing Science"@en .
+
+:56925 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Hospitality: Practical Cake Craft"@en .
+
+:56930 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Fashion and Textile Technology"@en .
+
+:56941 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Music Technology"@en .
+
+:65528 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "British Sign Language"@en .
+
+:65697 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "National 1 and 2"@en .
+
+:73224 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Statistics Award (SCQF level 6)"@en .
+
+:81277 a skos:Concept;
+  skos:inScheme :subjects;
+  skos:prefLabel "Applications of Mathematics"@en .

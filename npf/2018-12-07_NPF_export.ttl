@@ -1,0 +1,687 @@
+@prefix : <http://npf.gov.scot/terms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://npf.gov.scot/terms> a owl:Ontology .
+
+:conceptScheme_005fb266 a skos:ConceptScheme;
+  dct:created "2018-12-07T11:27:24.332Z"^^xsd:dateTime;
+  skos:prefLabel "Scotland's Economic Framework"@en .
+
+:c_2471bce8 a skos:Concept;
+  dct:created "2018-12-07T11:28:13.319Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Purpose"@en;
+  skos:topConceptOf :conceptScheme_005fb266 .
+
+:c_b84cc1e3 a skos:Concept;
+  dct:created "2018-12-07T11:28:39.238Z"^^xsd:dateTime;
+  skos:broader :c_2471bce8;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Competitiveness"@en .
+
+:c_6b3cc2d0 a skos:Concept;
+  dct:created "2018-12-07T11:28:51.614Z"^^xsd:dateTime;
+  skos:broader :c_2471bce8;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Tackling Inequality"@en .
+
+:c_f644288c a skos:Concept;
+  dct:created "2018-12-07T11:29:42.949Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Priority Areas"@en;
+  skos:topConceptOf :conceptScheme_005fb266 .
+
+:c_f021f3f0 a skos:Concept;
+  dct:created "2018-12-07T11:29:59.356Z"^^xsd:dateTime;
+  skos:broader :c_f644288c;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Investment"@en .
+
+:c_9ee4b1a7 a skos:Concept;
+  dct:created "2018-12-07T11:30:06.463Z"^^xsd:dateTime;
+  skos:broader :c_f644288c;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Innovation"@en .
+
+:c_7698109b a skos:Concept;
+  dct:created "2018-12-07T11:30:35.313Z"^^xsd:dateTime;
+  skos:broader :c_f644288c;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Inclusive Growth"@en .
+
+:c_81fa6953 a skos:Concept;
+  dct:created "2018-12-07T11:30:44.397Z"^^xsd:dateTime;
+  skos:broader :c_f644288c;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Internationalisation"@en .
+
+:c_ad1ae7fb a skos:Concept;
+  dct:created "2018-12-07T11:31:30.985Z"^^xsd:dateTime;
+  skos:broader :c_f021f3f0;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Education, Skills and Health"@en .
+
+:c_f303d7d1 a skos:Concept;
+  dct:created "2018-12-07T11:31:52.692Z"^^xsd:dateTime;
+  skos:broader :c_f021f3f0;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Infrastructure and Digital"@en .
+
+:c_bd1216cd a skos:Concept;
+  dct:created "2018-12-07T11:32:11.644Z"^^xsd:dateTime;
+  skos:broader :c_f021f3f0;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Business Investment"@en .
+
+:c_ac2ec876 a skos:Concept;
+  dct:created "2018-12-07T11:32:50.149Z"^^xsd:dateTime;
+  skos:broader :c_f021f3f0;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Natural Capital, Resource Efficiency and Low Carbon"@en .
+
+:c_cede2f5d a skos:Concept;
+  dct:created "2018-12-07T11:33:16.394Z"^^xsd:dateTime;
+  skos:broader :c_f021f3f0;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Communities, Local Assets and Housing"@en .
+
+:c_7c7c6e68 a skos:Concept;
+  dct:created "2018-12-07T11:33:36.690Z"^^xsd:dateTime;
+  skos:broader :c_81fa6953;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Trade"@en .
+
+:c_9e5ad830 a skos:Concept;
+  dct:created "2018-12-07T11:35:33.018Z"^^xsd:dateTime;
+  skos:broader :c_81fa6953;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Inward Investment"@en .
+
+:c_e6aa566f a skos:Concept;
+  dct:created "2018-12-07T11:35:55.209Z"^^xsd:dateTime;
+  skos:broader :c_81fa6953;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "International Connectivity"@en .
+
+:c_3cd21072 a skos:Concept;
+  dct:created "2018-12-07T11:36:37.218Z"^^xsd:dateTime;
+  skos:broader :c_81fa6953;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Global Outlook, Influence and Networks"@en .
+
+:c_cce4766c a skos:Concept;
+  dct:created "2018-12-07T11:37:13.016Z"^^xsd:dateTime;
+  skos:broader :c_9ee4b1a7;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Business Innovation and Entrepreneurship"@en .
+
+:c_05597616 a skos:Concept;
+  dct:created "2018-12-07T11:37:35.444Z"^^xsd:dateTime;
+  skos:broader :c_9ee4b1a7;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Workplace Innovation and Digital"@en .
+
+:c_a1cee112 a skos:Concept;
+  dct:created "2018-12-07T11:38:05.599Z"^^xsd:dateTime;
+  skos:broader :c_9ee4b1a7;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Commercialisation of Research and Development"@en .
+
+:c_6297e78c a skos:Concept;
+  dct:created "2018-12-07T11:38:26.008Z"^^xsd:dateTime;
+  skos:broader :c_9ee4b1a7;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Public Services"@en .
+
+:c_dd83293a a skos:Concept;
+  dct:created "2018-12-07T11:38:47.548Z"^^xsd:dateTime;
+  skos:broader :c_7698109b;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Fair Work"@en .
+
+:c_593a9f91 a skos:Concept;
+  dct:created "2018-12-07T11:39:07.922Z"^^xsd:dateTime;
+  skos:broader :c_7698109b;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Business Pledge"@en .
+
+:c_aedb5f8d a skos:Concept;
+  dct:created "2018-12-07T11:39:34.709Z"^^xsd:dateTime;
+  skos:broader :c_7698109b;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Promoting Equality and Tackling Inequality"@en .
+
+:c_677ab3fc a skos:Concept;
+  dct:created "2018-12-07T11:40:00.454Z"^^xsd:dateTime;
+  skos:broader :c_7698109b;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Place and Regional Cohesion"@en .
+
+:c_3716a415 a skos:Concept;
+  dct:created "2018-12-07T11:41:02.536Z"^^xsd:dateTime;
+  skos:broader :c_2471bce8;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Purpose Targets"@en .
+
+:c_a81a9add a skos:Concept;
+  dct:created "2018-12-07T11:41:25.944Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Economic Growth"@en .
+
+:c_1ea2b010 a skos:Concept;
+  dct:created "2018-12-07T11:41:42.271Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Productivity"@en .
+
+:c_3e0aa5dc a skos:Concept;
+  dct:created "2018-12-07T11:41:51.863Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Participation"@en .
+
+:c_8f8881e6 a skos:Concept;
+  dct:created "2018-12-07T11:42:02.507Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Population"@en .
+
+:c_a10ace80 a skos:Concept;
+  dct:created "2018-12-07T11:42:21.823Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Solidarity"@en .
+
+:c_c3ed3213 a skos:Concept;
+  dct:created "2018-12-07T11:42:28.822Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Cohesion"@en .
+
+:c_2594ef7d a skos:Concept;
+  dct:created "2018-12-07T11:42:37.772Z"^^xsd:dateTime;
+  skos:broader :c_3716a415;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Sustainability"@en .
+
+:c_67bba1d4 a skos:Concept;
+  dct:created "2018-12-07T11:44:22.606Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "National Indicators"@en;
+  skos:topConceptOf :conceptScheme_005fb266 .
+
+:c_e8e88a8a a skos:Concept;
+  dct:created "2018-12-07T11:44:48.160Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the number of businesses"@en .
+
+:c_39986749 a skos:Concept;
+  dct:created "2018-12-07T11:45:05.351Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase exports"@en .
+
+:c_70949e7c a skos:Concept;
+  dct:created "2018-12-07T11:45:23.072Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve digital infrastructure"@en .
+
+:c_a97f88f1 a skos:Concept;
+  dct:created "2018-12-07T11:45:44.370Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce traffic congestion"@en .
+
+:c_d56dcae0 a skos:Concept;
+  dct:created "2018-12-07T11:46:02.342Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve Scotland's reputation"@en .
+
+:c_d5a5a72f a skos:Concept;
+  dct:created "2018-12-07T11:46:26.537Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase research and development spending"@en .
+
+:c_b3cf3413 a skos:Concept;
+  dct:created "2018-12-07T11:46:45.418Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve knowledge exchange from university research"@en .
+
+:c_301296d1 a skos:Concept;
+  dct:created "2018-12-07T11:47:04.416Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the skill profile of the population"@en .
+
+:c_ec688274 a skos:Concept;
+  dct:created "2018-12-07T11:47:22.933Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce underemployment"@en .
+
+:c_b9214942 a skos:Concept;
+  dct:created "2018-12-07T11:47:40.113Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce the proportion of employees earning less than the Living Wage"@en .
+
+:c_7dec9253 a skos:Concept;
+  dct:created "2018-12-07T11:47:57.981Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce the pay gap"@en .
+
+:c_101fe155 a skos:Concept;
+  dct:created "2018-12-07T11:48:15.552Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of pre-school centres receiving positive inspection reports"@en .
+
+:c_a0040dfa a skos:Concept;
+  dct:created "2018-12-07T11:48:35.052Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of schools receiving positive inspection reports"@en .
+
+:c_c66a7e30 a skos:Concept;
+  dct:created "2018-12-07T11:48:54.355Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve levels of educational attainment"@en .
+
+:c_cbc544ae a skos:Concept;
+  dct:created "2018-12-07T11:49:14.596Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of young people in learning, training or work"@en .
+
+:c_bd91b507 a skos:Concept;
+  dct:created "2018-12-07T11:49:32.747Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of graduates in positive destinations"@en .
+
+:c_8e98bd20 a skos:Concept;
+  dct:created "2018-12-07T11:49:54.874Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve children's services"@en .
+
+:c_50e42dce a skos:Concept;
+  dct:created "2018-12-07T11:50:12.249Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve children's dental health"@en .
+
+:c_c7c31b08 a skos:Concept;
+  dct:created "2018-12-07T11:50:31.469Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of babies with a healthy birth weight"@en .
+
+:c_8d20a8fa a skos:Concept;
+  dct:created "2018-12-07T11:50:57.135Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of healthy weight children"@en .
+
+:c_f42158b1 a skos:Concept;
+  dct:created "2018-12-07T11:51:19.024Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase physical activity"@en .
+
+:c_926b10f9 a skos:Concept;
+  dct:created "2018-12-07T11:51:34.977Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve self-assessed general health"@en .
+
+:c_5e373b85 a skos:Concept;
+  dct:created "2018-12-07T11:51:48.645Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve mental wellbeing"@en .
+
+:c_9eb817f6 a skos:Concept;
+  dct:created "2018-12-07T11:52:09.028Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce premature mortality"@en .
+
+:c_bd71ed92 a skos:Concept;
+  dct:created "2018-12-07T11:52:29.790Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve end of life care"@en .
+
+:c_5ca0143f a skos:Concept;
+  dct:created "2018-12-07T11:53:05.024Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve support for people with care needs"@en .
+
+:c_61644047 a skos:Concept;
+  dct:created "2018-12-07T11:53:25.247Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce emergency admissions to hospital"@en .
+
+:c_eb26f4d9 a skos:Concept;
+  dct:created "2018-12-07T11:53:43.529Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the quality of healthcare experience"@en .
+
+:c_d8080ce6 a skos:Concept;
+  dct:created "2018-12-07T11:54:03.486Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce the percentage of adults who smoke"@en .
+
+:c_085ec1cb a skos:Concept;
+  dct:created "2018-12-07T11:54:20.906Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce alcohol related hospital admissions"@en .
+
+:c_d3862b36 a skos:Concept;
+  dct:created "2018-12-07T11:54:38.810Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce the number of individuals with problem drug use"@en .
+
+:c_5cc57b91 a skos:Concept;
+  dct:created "2018-12-07T11:55:04.296Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve people's perceptions about the crime rate in their area"@en .
+
+:c_372ab64e a skos:Concept;
+  dct:created "2018-12-07T11:55:20.916Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce reconviction rates"@en .
+
+:c_d620560d a skos:Concept;
+  dct:created "2018-12-07T11:55:38.874Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce crime victimisation rates"@en .
+
+:c_921cdecd a skos:Concept;
+  dct:created "2018-12-07T11:55:54.445Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce deaths on Scotland's roads"@en .
+
+:c_49cae2eb a skos:Concept;
+  dct:created "2018-12-07T11:56:12.111Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve people's perceptions of the quality of public services"@en .
+
+:c_8185c423 a skos:Concept;
+  dct:created "2018-12-07T11:56:31.781Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the responsiveness of public services"@en .
+
+:c_9c5ed031 a skos:Concept;
+  dct:created "2018-12-07T11:56:49.854Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce the proportion of individuals living in poverty"@en .
+
+:c_2f58bd5e a skos:Concept;
+  dct:created "2018-12-07T11:57:04.800Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce children's deprivation"@en .
+
+:c_a06c0895 a skos:Concept;
+  dct:created "2018-12-07T11:57:19.603Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve access to suitable housing options for those in housing need"@en .
+
+:c_83dc9549 a skos:Concept;
+  dct:created "2018-12-07T11:57:35.986Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the number of new homes"@en .
+
+:c_00dd7d4a a skos:Concept;
+  dct:created "2018-12-07T11:57:50.112Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Widen use of the Internet"@en .
+
+:c_d5d80d3f a skos:Concept;
+  dct:created "2018-12-07T11:58:06.181Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve people's perceptions of their neighbourhood"@en .
+
+:c_11a3aca7 a skos:Concept;
+  dct:created "2018-12-07T11:58:25.564Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase cultural engagement"@en .
+
+:c_277d8ba9 a skos:Concept;
+  dct:created "2018-12-07T11:58:41.755Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the state of Scotland's historic sites"@en .
+
+:c_ffb2f5ce a skos:Concept;
+  dct:created "2018-12-07T11:58:58.764Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve access to local greenspace"@en .
+
+:c_aeb4040e a skos:Concept;
+  dct:created "2018-12-07T11:59:14.011Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase people's use of Scotland's outdoors"@en .
+
+:c_e02b8da0 a skos:Concept;
+  dct:created "2018-12-07T11:59:32.046Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the condition of protected nature sites"@en .
+
+:c_437a5b6d a skos:Concept;
+  dct:created "2018-12-07T11:59:50.583Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the abundance of terrestrial breeding birds: biodiversity"@en .
+
+:c_ccc25900 a skos:Concept;
+  dct:created "2018-12-07T12:00:06.472Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase natural capital"@en .
+
+:c_c7904cb3 a skos:Concept;
+  dct:created "2018-12-07T12:00:23.824Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Improve the state of Scotland's marine environment"@en .
+
+:c_c8f7f2d9 a skos:Concept;
+  dct:created "2018-12-07T12:00:40.491Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce Scotland's carbon footprint"@en .
+
+:c_8e2c72c4 a skos:Concept;
+  dct:created "2018-12-07T12:00:54.653Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase the proportion of journeys to work made by public or active transport"@en .
+
+:c_e493040e a skos:Concept;
+  dct:created "2018-12-07T12:01:09.723Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Reduce waste generated"@en .
+
+:c_580ec9db a skos:Concept;
+  dct:created "2018-12-07T12:01:26.530Z"^^xsd:dateTime;
+  skos:broader :c_67bba1d4;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Increase renewable electricity production"@en .
+
+:c_1f8d64ca a skos:Concept;
+  dct:created "2018-12-07T12:02:24.031Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Strategic Objectives"@en;
+  skos:topConceptOf :conceptScheme_005fb266 .
+
+:c_b7c72277 a skos:Concept;
+  dct:created "2018-12-07T12:02:46.259Z"^^xsd:dateTime;
+  skos:broader :c_1f8d64ca;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Wealthier and Fairer"@en .
+
+:c_579fa07b a skos:Concept;
+  dct:created "2018-12-07T12:02:59.102Z"^^xsd:dateTime;
+  skos:broader :c_1f8d64ca;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Smarter"@en .
+
+:c_254ca695 a skos:Concept;
+  dct:created "2018-12-07T12:03:13.952Z"^^xsd:dateTime;
+  skos:broader :c_1f8d64ca;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Healthier"@en .
+
+:c_7a36b629 a skos:Concept;
+  dct:created "2018-12-07T12:03:29.323Z"^^xsd:dateTime;
+  skos:broader :c_1f8d64ca;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Safer and Stronger"@en .
+
+:c_d5e0141d a skos:Concept;
+  dct:created "2018-12-07T12:03:43.645Z"^^xsd:dateTime;
+  skos:broader :c_1f8d64ca;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Greener"@en .
+
+:c_6601fd2d a skos:Concept;
+  dct:created "2018-12-07T12:04:15.225Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "National Outcomes"@en;
+  skos:topConceptOf :conceptScheme_005fb266 .
+
+:c_76e380b2 a skos:Concept;
+  dct:created "2018-12-07T12:04:34.535Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel " We live in a Scotland that is the most attractive place for doing business in Europe."@en .
+
+:c_608a0068 a skos:Concept;
+  dct:created "2018-12-07T12:04:53.342Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We realise our full economic potential with more and better employment opportunities for our people."@en .
+
+:c_4e39d599 a skos:Concept;
+  dct:created "2018-12-07T12:05:08.426Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We are better educated, more skilled and more successful, renowned for our research and innovation."@en .
+
+:c_6b33fbb9 a skos:Concept;
+  dct:created "2018-12-07T12:05:51.448Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Our young people are successful learners, confident individuals, effective contributors and responsible citizens."@en .
+
+:c_47e9a15f a skos:Concept;
+  dct:created "2018-12-07T12:06:10.141Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Our children have the best start in life and are ready to succeed."@en .
+
+:c_8cd4225a a skos:Concept;
+  dct:created "2018-12-07T12:06:25.748Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We live longer, healthier lives."@en .
+
+:c_999cd386 a skos:Concept;
+  dct:created "2018-12-07T12:06:47.072Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We have tackled the significant inequalities in Scottish society."@en .
+
+:c_7512c3af a skos:Concept;
+  dct:created "2018-12-07T12:07:02.575Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We have improved the life chances for children, young people and families at risk."@en .
+
+:c_f00d95d4 a skos:Concept;
+  dct:created "2018-12-07T12:07:17.733Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We live our lives safe from crime, disorder and danger."@en .
+
+:c_0399f609 a skos:Concept;
+  dct:created "2018-12-07T12:07:36.128Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We live in well-designed, sustainable places where we are able to access the amenities and services we need."@en .
+
+:c_4ace96d4 a skos:Concept;
+  dct:created "2018-12-07T12:08:09.840Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We have strong, resilient and supportive communities where people take responsibility for their own actions and how they affect others."@en .
+
+:c_fdaa7cd3 a skos:Concept;
+  dct:created "2018-12-07T12:08:28.223Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We value and enjoy our built and natural environment and protect it and enhance it for future generations."@en .
+
+:c_03069dba a skos:Concept;
+  dct:created "2018-12-07T12:08:47.195Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We take pride in a strong, fair and inclusive national identity."@en .
+
+:c_13a4d7de a skos:Concept;
+  dct:created "2018-12-07T12:09:04.706Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "We reduce the local and global environmental impact of our consumption and production."@en .
+
+:c_7e9744ea a skos:Concept;
+  dct:created "2018-12-07T12:09:19.742Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Our people are able to maintain their independence as they get older and are able to access appropriate support when they need it."@en .
+
+:c_9118df96 a skos:Concept;
+  dct:created "2018-12-07T12:09:37.911Z"^^xsd:dateTime;
+  skos:broader :c_6601fd2d;
+  skos:inScheme :conceptScheme_005fb266;
+  skos:prefLabel "Our public services are high quality, continually improving, efficient and responsive to local people's needs."@en .

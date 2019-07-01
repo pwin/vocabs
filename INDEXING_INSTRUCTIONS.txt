@@ -1,0 +1,6 @@
+peter@scw-03dd77:~/vocabs/statistics.gov.scot$ sudo /etc/init.d/fuseki stop
+ * Stopping Fuseki:                                                                                                                               [ OK ]
+peter@scw-03dd77:~/vocabs/statistics.gov.scot$ sudo java -cp /opt/apache-jena-fuseki-2.4.0/fuseki-server.jar jena.textindexer --desc=/etc/fuseki/configuration/skosmos.ttl
+INFO  2104 (701 per second) properties indexed
+peter@scw-03dd77:~/vocabs/statistics.gov.scot$ sudo /etc/init.d/fuseki start
+
