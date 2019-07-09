@@ -5,13 +5,94 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @base <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
 
 <http://entities.gov.scot/def/gov/cpov-ap-scot/> rdf:type owl:Ontology ;
                                                   owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
                                                   owl:imports m8g:cpov ;
-                                                  rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en .
+                                                  rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en 
+                                    owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/> ;
+                                    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                    dct:creator <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244>
+                                    dct:description "This is the ontology of the Scottish application profile for Organizations (Public and Private). It allows one to model the main information on organizations (public or private), including the organization of the offices and their head of units. It is in draft form."@en ;
+                                    dct:issued "2019-07-09"^^xsd:date ;
+                                    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+                                    dct:modified "2019-04-29"^^xsd:date ;
+                                    dct:publisher <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+                                    dct:rightsHolder <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+                                    dct:title "Organization (public and private) ontology - Scottish application profile"@en ;
+                                    rdfs:comment "This is the ontology of the Scottish application profile for Organizations (Public and Private)"@en ;
+                                    rdfs:isDefinedBy <http://entities.gov.scot/def/gov/cpov-ap-scot/> ;
+                                    rdfs:label "Scottish Organization (Public or Private) ontology"@en  ;
+                                    owl:versionInfo "Version 1 - Modified 9 July 2019 - An initial draft."@en  ;
+                                    .
 
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+                                    
+                                    
 #################################################################
 #    Classes
 #################################################################
