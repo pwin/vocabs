@@ -27,7 +27,7 @@
   dct:status <http://purl.org/adms/status/Completed> .
 
 #-------------------------------------->
-#----- Public Organisation Class ------>
+#----- Public Orgnaisation Class ------>
 #-------------------------------------->
   
 #-- Class definition -->
@@ -220,7 +220,7 @@
 
 <http://schema.org/ContactPoint> a rdfs:Class ;
   rdfs:label "Contact Point"@en ;
-  vann:usageNote "A class representing a point of contact for the organization. The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en .
+  vann:usageNote "A class representing a point of contact for the organization. The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org’s ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en .
 
 #-- Properties definition -->
 
@@ -248,4 +248,4 @@
 
 <http://schema.org/OpeningHoursSpecification> a rdfs:Class ;
   rdfs:label "opening hours specification"@en ;
-  vann:usageNote "The Core Public Organization Vocabulary makes full use of schema.org's openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en .
+  vann:usageNote "The Core Public Organization Vocabulary makes full use of schema.org’s openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en .
