@@ -1,5 +1,4 @@
 @prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
-@prefix cpovscot: <http://entities.gov.scot/def/gov/cpov-scot/> .
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -187,12 +186,7 @@ org:unitOf rdf:type owl:ObjectProperty ;
            vann:usageNote "Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent organization with hasUnit and to the parent with unitOf. An Organizational Unit is a sub class of Organization but conceptually does not exist in its own right. This is in contrast to a sub organization that, although part of the larger organization, may be legally distinct or otherwise enjoy a degree of autonomy."@en ;
            rdfs:label "unit of"@en .
 
-###  http://entities.gov.scot/def/gov/cpov-scot/ 
-cpovscot:hasFunction rdf:type owl:ObjectProperty ;
-           vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
-           rdfs:label "has function"@en .
-           
-           
+
 #################################################################
 #    Data properties
 #################################################################
