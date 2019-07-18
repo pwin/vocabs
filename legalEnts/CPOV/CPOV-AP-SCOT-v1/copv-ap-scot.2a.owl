@@ -102,6 +102,11 @@ cv:hasFormalFramework rdf:type owl:ObjectProperty ;
                       rdfs:label "has formal framework"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6
+:OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 rdf:type owl:ObjectProperty ;
+                                                        rdfs:label "has jurisdiction"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLObjectProperty_4aea24aa_3cd4_4264_a6c8_3d813dc3ade7
 :OWLObjectProperty_4aea24aa_3cd4_4264_a6c8_3d813dc3ade7 rdf:type owl:ObjectProperty ;
                                                         rdfs:label "has legal status"@en .
@@ -367,10 +372,30 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Corporation"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_af26a368_7b07_4862_a961_537769d52463
+:OWLClass_af26a368_7b07_4862_a961_537769d52463 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
+                                                                 owl:allValuesFrom :OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
+                                                               ] ;
+                                               rdfs:label "Local NHS Board"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc
 :OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc rdf:type owl:Class ;
                                                rdfs:subClassOf org:Organization ;
                                                rdfs:label "PrivateOrganisation"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799
+:OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
+                                                                 owl:allValuesFrom :OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
+                                                               ] ;
+                                               rdfs:label "National NHS Board"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
@@ -451,7 +476,7 @@ id:OWLNamedIndividual_030b2724_75bd_496f_bfad_30ec8428dd37 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256
 id:OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Highland"@en .
 
 
@@ -512,7 +537,7 @@ id:OWLNamedIndividual_0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506
 id:OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506 rdf:type owl:NamedIndividual ,
-                                                                    :HealthBody ;
+                                                                    :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 ;
                                                            rdfs:label "NHS 24"@en .
 
 
@@ -536,7 +561,7 @@ id:OWLNamedIndividual_1474808a_0f21_451b_a4bc_e807f140b630 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932
 id:OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932 rdf:type owl:NamedIndividual ,
-                                                                    :HealthBody ;
+                                                                    :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 ;
                                                            rdfs:label "NHS Health Scotland Board"@en .
 
 
@@ -566,7 +591,7 @@ id:OWLNamedIndividual_1715ee19_648c_4e5c_b1b6_9566a42f5c28 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5
 id:OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Ayrshire & Arran"@en .
 
 
@@ -646,13 +671,13 @@ id:OWLNamedIndividual_2e1fd01b_d4b0_4705_aab4_6c94448afe3f rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463
 id:OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Western Isles"@en .
 
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee
 id:OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Shetland"@en .
 
 
@@ -778,7 +803,7 @@ id:OWLNamedIndividual_48732be4_ef17_498d_9e7f_22b786daa818 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21
 id:OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Fife"@en .
 
 
@@ -796,7 +821,7 @@ id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa
 id:OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Greater Glasgow and Clyde"@en .
 
 
@@ -844,13 +869,13 @@ id:OWLNamedIndividual_56e7a6ba_b148_465d_88f5_1c563f8372d6 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36
 id:OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Lothian"@en .
 
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77
 id:OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Borders"@en .
 
 
@@ -947,7 +972,7 @@ id:OWLNamedIndividual_701cd39f_68df_477e_98f7_b14fcae99698 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f
 id:OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Lanarkshire"@en .
 
 
@@ -977,7 +1002,7 @@ id:OWLNamedIndividual_751a451c_d653_49b7_9334_e44b585f720a rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e
 id:OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Tayside"@en .
 
 
@@ -1098,7 +1123,7 @@ id:OWLNamedIndividual_93ceb4a4_d7dc_489d_8250_a72e4821bb92 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb
 id:OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Grampian"@en .
 
 
@@ -1176,7 +1201,7 @@ id:OWLNamedIndividual_a042e3b7_cd0b_43d4_93ff_be93f50efbe2 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f
 id:OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Forth Valley"@en .
 
 
@@ -1230,7 +1255,7 @@ id:OWLNamedIndividual_ad6ac135_5913_4952_b95d_42973eac5c8f rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4
 id:OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Dumfries & Galloway"@en .
 
 
@@ -1332,7 +1357,7 @@ id:OWLNamedIndividual_c94ed99a_d8b6_4819_99d4_29c971badd64 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6
 id:OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6 rdf:type owl:NamedIndividual ,
-                                                                    :HealthBody ;
+                                                                    :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 ;
                                                            rdfs:label "NHS Education for Scotland"@en .
 
 
@@ -1423,7 +1448,7 @@ id:OWLNamedIndividual_e260c061_06ea_42ed_bdfb_34f84bb743f8 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0
 id:OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0 rdf:type owl:NamedIndividual ,
-                                                                    :HealthBody ;
+                                                                    :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 ;
                                                            rdfs:label "NHS National Services Scotland"@en .
 
 
@@ -1543,7 +1568,7 @@ id:OWLNamedIndividual_fedc1ef3_6266_4b25_b220_fdd91f0e2f32 rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5
 id:OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
-                                                                    :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
+                                                                    :OWLClass_af26a368_7b07_4862_a961_537769d52463 ;
                                                            rdfs:label "NHS Orkney"@en .
 
 
@@ -1563,8 +1588,8 @@ schema:email rdfs:label "has email"@en ;
              vann:usageNote "A property through which an e-mail address for the Public Organisation, or a representative of it, can be contacted."@en .
 
 
-schema:hoursAvailable rdfs:label "availability restriction"@en ;
-                      vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en .
+schema:hoursAvailable vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en ;
+                      rdfs:label "availability restriction"@en .
 
 
 schema:logo vann:usageNote "A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value."@en ;
