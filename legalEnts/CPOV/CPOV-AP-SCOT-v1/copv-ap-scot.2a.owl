@@ -17,25 +17,25 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix regorg: <http://www.w3.org/ns/regorg#> .
 @prefix schema: <http://schema.org/> .
-@base <http://www.w3.org/ns/locn> .
+@base <http://entities.gov.scot/def/gov/cpov-ap-scot> .
 
-<http://www.w3.org/ns/locn> rdf:type owl:Ontology ;
-                             owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
-                             owl:imports <http://www.w3.org/ns/locn> ;
-                             dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                             dct:creator id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
-                             dct:description "This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form."@en ;
-                             dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
-                             dct:modified "2019-04-29"^^xsd:date ;
-                             dct:publisher id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
-                             dct:rightsHolder id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
-                             dct:title "Organization (public) ontology - Scottish application profile"@en ;
-                             vann:preferredNamespacePrefix "cpovapscot" ;
-                             rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en ,
-                                          "This is the ontology of the Scottish application profile of Organisations (Public)"@en ;
-                             rdfs:isDefinedBy : ;
-                             rdfs:label "Scottish Organization (Public) ontology"@en ;
-                             owl:versionInfo "Version 1 - Modified 11 July 2019 - An initial draft."@en .
+<http://entities.gov.scot/def/gov/cpov-ap-scot> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
+                                                 owl:imports <http://www.w3.org/ns/locn> ;
+                                                 dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                                 dct:creator id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                 dct:description "This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form."@en ;
+                                                 dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+                                                 dct:modified "2019-04-29"^^xsd:date ;
+                                                 dct:publisher id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                 dct:rightsHolder id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                 dct:title "Organization (public) ontology - Scottish application profile"@en ;
+                                                 vann:preferredNamespacePrefix "cpovapscot" ;
+                                                 rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en ,
+                                                              "This is the ontology of the Scottish application profile of Organisations (Public)"@en ;
+                                                 rdfs:isDefinedBy : ;
+                                                 rdfs:label "Scottish Organization (Public) ontology"@en ;
+                                                 owl:versionInfo "Version 1 - Modified 11 July 2019 - An initial draft."@en .
 
 #################################################################
 #    Annotation properties
@@ -102,6 +102,17 @@ cv:hasFormalFramework rdf:type owl:ObjectProperty ;
                       rdfs:label "has formal framework"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLObjectProperty_4aea24aa_3cd4_4264_a6c8_3d813dc3ade7
+:OWLObjectProperty_4aea24aa_3cd4_4264_a6c8_3d813dc3ade7 rdf:type owl:ObjectProperty ;
+                                                        rdfs:label "has legal status"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/address
+:address rdf:type owl:ObjectProperty ;
+         vann:usageNote "A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used."@en ;
+         rdfs:label "address"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-scot/hasFunction
 <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> rdf:type owl:ObjectProperty ;
                                                          vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
@@ -125,12 +136,6 @@ cv:hasFormalFramework rdf:type owl:ObjectProperty ;
 <http://www.w3.org/1999/xhtml/vocab#prev> rdf:type owl:ObjectProperty ;
                                           vann:usageNote "In some cases, it is necessary to be able to create an ordered sequence of organizations that precede and succeed each other. To support this, the CPOV includes the well-known relationships of previous and next to allow such sequences to be captured and computed."@en ;
                                           rdfs:label "prev"@en .
-
-
-###  http://www.w3.org/ns/locn#address
-:address rdf:type owl:ObjectProperty ;
-         vann:usageNote "A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used."@en ;
-         rdfs:label "address"@en .
 
 
 ###  http://www.w3.org/ns/org#changedBy
@@ -220,6 +225,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                       rdfs:subClassOf org:Organization ;
                       rdfs:comment "The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships."@en ;
                       rdfs:label "PublicOrganisation"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/Address
+:Address rdf:type owl:Class ;
+         vann:usageNote "The Address class is defined in the Location Core Vocabulary . Its properties are closely bound to the INSPIRE data model for addresses. In particular, it separates out building names and numbers from the name of the thoroughfare. This is in contrast to VCard which conflates them into 'street address.' The Location Core Vocabulary does, however, borrow the fullAddress property from VCard as a means of providing the full text of the address as a literal."@en ;
+         rdfs:label "Address"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB
@@ -322,6 +333,17 @@ cv:PublicOrganisation rdf:type owl:Class ;
                     rdfs:label "Non-Ministerial Department"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7
+:OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7 rdf:type owl:Class ;
+                                               rdfs:label "Jurisdiction"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
+:OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7 ;
+                                               rdfs:label "NationalJurisdiction"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a
 :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a rdf:type owl:Class ;
                                                rdfs:subClassOf :LocalGov ;
@@ -334,6 +356,11 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "NHSBoard"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_959b4809_6436_4883_82cb_76480279edb4
+:OWLClass_959b4809_6436_4883_82cb_76480279edb4 rdf:type owl:Class ;
+                                               rdfs:label "LegalStatus"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
 :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc rdf:type owl:Class ;
                                                rdfs:subClassOf org:Organization ;
@@ -344,6 +371,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
 :OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc rdf:type owl:Class ;
                                                rdfs:subClassOf org:Organization ;
                                                rdfs:label "PrivateOrganisation"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
+:OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7 ;
+                                               rdfs:label "LocalJurisdiction"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody
@@ -386,34 +419,6 @@ schema:ContactPoint rdf:type owl:Class ;
 schema:OpeningHoursSpecification rdf:type owl:Class ;
                                  vann:usageNote "The Core Public Organization Vocabulary makes full use of schema.org's openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en ;
                                  rdfs:label "opening hours specification"@en .
-
-
-###  http://www.w3.org/ns/locn#Address
-:Address rdf:type owl:Class ;
-         vann:usageNote "The Address class is defined in the Location Core Vocabulary . Its properties are closely bound to the INSPIRE data model for addresses. In particular, it separates out building names and numbers from the name of the thoroughfare. This is in contrast to VCard which conflates them into 'street address.' The Location Core Vocabulary does, however, borrow the fullAddress property from VCard as a means of providing the full text of the address as a literal."@en ;
-         rdfs:label "Address"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7
-:OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7 rdf:type owl:Class ;
-                                                                          rdfs:label "Jurisdiction"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
-:OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7> ;
-                                                                          rdfs:label "NationalJurisdiction"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_959b4809_6436_4883_82cb_76480279edb4
-<http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_959b4809_6436_4883_82cb_76480279edb4> rdf:type owl:Class ;
-                                                                          rdfs:label "LegalStatus"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
-<http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7> ;
-                                                                          rdfs:label "LocalJurisdiction"@en .
 
 
 ###  http://www.w3.org/ns/org#ChangeEvent
