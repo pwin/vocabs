@@ -1,4 +1,3 @@
-
 @prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
