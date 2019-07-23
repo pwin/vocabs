@@ -1,5 +1,4 @@
 @prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
-@prefix cpovscot: <http://entities.gov.scot/def/gov/cpov-scot/> .
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -101,6 +100,12 @@ cv:hasFormalFramework rdf:type owl:ObjectProperty ;
                       rdfs:label "has formal framework"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-scot/hasFunction
+<http://entities.gov.scot/def/gov/cpov-scot/hasFunction> rdf:type owl:ObjectProperty ;
+                                                         vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
+                                                         rdfs:label "has function"@en .
+
+
 ###  http://purl.org/vocab/cpsv#implements
 <http://purl.org/vocab/cpsv#implements> rdf:type owl:ObjectProperty ;
                                         vann:usageNote "****Needs to be documented"@en ,
@@ -187,12 +192,7 @@ org:unitOf rdf:type owl:ObjectProperty ;
            vann:usageNote "Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent organization with hasUnit and to the parent with unitOf. An Organizational Unit is a sub class of Organization but conceptually does not exist in its own right. This is in contrast to a sub organization that, although part of the larger organization, may be legally distinct or otherwise enjoy a degree of autonomy."@en ;
            rdfs:label "unit of"@en .
 
-###  http://entities.gov.scot/def/gov/cpov-scot/ 
-cpovscot:hasFunction rdf:type owl:ObjectProperty ;
-           vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
-           rdfs:label "has function"@en .
-           
-           
+
 #################################################################
 #    Data properties
 #################################################################
@@ -235,8 +235,17 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB
 :CentralGovPB rdf:type owl:Class ;
-              rdfs:subClassOf :PublicCorp ;
-              owl:disjointWith :LocalGovPB ;
+              owl:equivalentClass [ owl:intersectionOf ( :CentralGovt
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                           owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf org:Organization ;
+              owl:disjointWith :GovernmentBody ,
+                               :LocalGovPB ;
               rdfs:label "Central Government Public Corporation"@en .
 
 
@@ -279,6 +288,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority
 :IntegrationAuthority rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :LocalGov
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                                   owl:someValuesFrom :HealthBody
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
                       rdfs:subClassOf :LocalGov ;
                       rdfs:label "Integration Authority"@en .
 
@@ -291,7 +308,15 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPB
 :LocalGovPB rdf:type owl:Class ;
-            rdfs:subClassOf :PublicCorp ;
+            owl:equivalentClass [ owl:intersectionOf ( :LocalGov
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                         owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf org:Organization ;
             rdfs:label "Local Government Public Corporation"@en .
 
 
@@ -347,12 +372,6 @@ cv:PublicOrganisation rdf:type owl:Class ;
 :ParlCommOrOmbuds rdf:type owl:Class ;
                   rdfs:subClassOf :ArmsLengthBody ;
                   rdfs:label "Parliamentary Commissioner or Ombudsman"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/PublicCorp
-:PublicCorp rdf:type owl:Class ;
-            rdfs:subClassOf cv:PublicOrganisation ;
-            rdfs:label "Public Corporation"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal
@@ -1571,23 +1590,6 @@ foaf:homepage vann:usageNote "A property to link an organization to its website 
   owl:members ( cv:PublicOrganisation
                 :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
                 :OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CentralGovt
-                :LocalGov
-                :ParlBody
-                :PublicCorp
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CentralGovt
-                :LocalGov
-                :PublicCorp
               )
 ] .
 
