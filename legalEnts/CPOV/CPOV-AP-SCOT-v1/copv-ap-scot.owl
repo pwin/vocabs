@@ -1,4 +1,5 @@
 @prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
+@prefix id: <http://entities.gov.scot/id/gov/cpov-ap-scot/> .
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -22,16 +23,16 @@
                                                   owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
                                                   owl:imports <http://www.w3.org/ns/locn> ;
                                                   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                                  dct:creator :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                  dct:creator id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
                                                   dct:description "This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form."@en ;
                                                   dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
                                                   dct:modified "2019-04-29"^^xsd:date ;
-                                                  dct:publisher :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
-                                                  dct:rightsHolder :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                  dct:publisher id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                                  dct:rightsHolder id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
                                                   dct:title "Organization (public) ontology - Scottish application profile"@en ;
                                                   vann:preferredNamespacePrefix "cpovapscot" ;
                                                   rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en ,
-                                                               "This is the ontology of the Scottish application profile for Organisations (Public)"@en ;
+                                                               "This is the ontology of the Scottish application profile of Organisations (Public)"@en ;
                                                   rdfs:isDefinedBy <http://entities.gov.scot/def/gov/cpov-ap-scot/> ;
                                                   rdfs:label "Scottish Organization (Public) ontology"@en ;
                                                   owl:versionInfo "Version 1 - Modified 11 July 2019 - An initial draft."@en .
@@ -409,1112 +410,1112 @@ org:Organization rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_018bf462_54d0_4041_8967_61cb918d2b0e
-:OWLNamedIndividual_018bf462_54d0_4041_8967_61cb918d2b0e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_018bf462_54d0_4041_8967_61cb918d2b0e
+id:OWLNamedIndividual_018bf462_54d0_4041_8967_61cb918d2b0e rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Transport Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_030b2724_75bd_496f_bfad_30ec8428dd37
-:OWLNamedIndividual_030b2724_75bd_496f_bfad_30ec8428dd37 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_030b2724_75bd_496f_bfad_30ec8428dd37
+id:OWLNamedIndividual_030b2724_75bd_496f_bfad_30ec8428dd37 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Court of Lord Lyon"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256
-:OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256
+id:OWLNamedIndividual_039df974_29d7_460e_8a19_3d7d6091b256 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Highland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_05e705e9_6bb7_4b48_9cf3_6c0551cc4f00
-:OWLNamedIndividual_05e705e9_6bb7_4b48_9cf3_6c0551cc4f00 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_05e705e9_6bb7_4b48_9cf3_6c0551cc4f00
+id:OWLNamedIndividual_05e705e9_6bb7_4b48_9cf3_6c0551cc4f00 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Stirling Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_075b9514_ca2b_416b_8eaf_6dc63089f85f
-:OWLNamedIndividual_075b9514_ca2b_416b_8eaf_6dc63089f85f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_075b9514_ca2b_416b_8eaf_6dc63089f85f
+id:OWLNamedIndividual_075b9514_ca2b_416b_8eaf_6dc63089f85f rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Revenue Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_076a09c1_d312_4c90_a4a7_96090510217d
-:OWLNamedIndividual_076a09c1_d312_4c90_a4a7_96090510217d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_076a09c1_d312_4c90_a4a7_96090510217d
+id:OWLNamedIndividual_076a09c1_d312_4c90_a4a7_96090510217d rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "West Lothian Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_079ab57e_1b0c_4bd5_a411_730bc2667bc6
-:OWLNamedIndividual_079ab57e_1b0c_4bd5_a411_730bc2667bc6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_079ab57e_1b0c_4bd5_a411_730bc2667bc6
+id:OWLNamedIndividual_079ab57e_1b0c_4bd5_a411_730bc2667bc6 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "Swestrans" ;
                                                          rdfs:label "South-West of Scotland Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_08a6d334_7f3e_4123_b1a1_07cf7218b325
-:OWLNamedIndividual_08a6d334_7f3e_4123_b1a1_07cf7218b325 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_08a6d334_7f3e_4123_b1a1_07cf7218b325
+id:OWLNamedIndividual_08a6d334_7f3e_4123_b1a1_07cf7218b325 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Scottish Police Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_0a4093e3_3923_475d_a3f8_7003693262a6
-:OWLNamedIndividual_0a4093e3_3923_475d_a3f8_7003693262a6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_0a4093e3_3923_475d_a3f8_7003693262a6
+id:OWLNamedIndividual_0a4093e3_3923_475d_a3f8_7003693262a6 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Scottish Prison Service"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_0b93343a_ea5c_437b_af4e_e7e7019f547e
-:OWLNamedIndividual_0b93343a_ea5c_437b_af4e_e7e7019f547e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_0b93343a_ea5c_437b_af4e_e7e7019f547e
+id:OWLNamedIndividual_0b93343a_ea5c_437b_af4e_e7e7019f547e rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Skills Development Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_0c396404_0a18_4a71_a519_d4f43aeada0a
-:OWLNamedIndividual_0c396404_0a18_4a71_a519_d4f43aeada0a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_0c396404_0a18_4a71_a519_d4f43aeada0a
+id:OWLNamedIndividual_0c396404_0a18_4a71_a519_d4f43aeada0a rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Highland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5
-:OWLNamedIndividual_0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5
+id:OWLNamedIndividual_0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "HM Inspector of Constabulary in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506
-:OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506
+id:OWLNamedIndividual_10bd68bf_2769_45bc_9c4d_0bf0041f2506 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "NHS 24"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_11ba0cd8_4999_46e5_86d7_3118e5313e3c
-:OWLNamedIndividual_11ba0cd8_4999_46e5_86d7_3118e5313e3c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_11ba0cd8_4999_46e5_86d7_3118e5313e3c
+id:OWLNamedIndividual_11ba0cd8_4999_46e5_86d7_3118e5313e3c rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Dundee City"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1260ef94_caee_467d_9ab9_60a3672f2cca
-:OWLNamedIndividual_1260ef94_caee_467d_9ab9_60a3672f2cca rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1260ef94_caee_467d_9ab9_60a3672f2cca
+id:OWLNamedIndividual_1260ef94_caee_467d_9ab9_60a3672f2cca rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Angus Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1474808a_0f21_451b_a4bc_e807f140b630
-:OWLNamedIndividual_1474808a_0f21_451b_a4bc_e807f140b630 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1474808a_0f21_451b_a4bc_e807f140b630
+id:OWLNamedIndividual_1474808a_0f21_451b_a4bc_e807f140b630 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "East Ayrshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932
-:OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932
+id:OWLNamedIndividual_147fb4c3_9cd9_481a_9fb0_a968b6ab7932 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "NHS Health Scotland Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_14858b1e_c3c8_49af_b7ef_e8056d2d9087
-:OWLNamedIndividual_14858b1e_c3c8_49af_b7ef_e8056d2d9087 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_14858b1e_c3c8_49af_b7ef_e8056d2d9087
+id:OWLNamedIndividual_14858b1e_c3c8_49af_b7ef_e8056d2d9087 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Scottish Borders"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_14cf495d_d2b8_4678_8495_0f9eebadd56d
-:OWLNamedIndividual_14cf495d_d2b8_4678_8495_0f9eebadd56d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_14cf495d_d2b8_4678_8495_0f9eebadd56d
+id:OWLNamedIndividual_14cf495d_d2b8_4678_8495_0f9eebadd56d rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Western Isles"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_16c389a0_0fbc_4f3c_92cc_97f7166610a9
-:OWLNamedIndividual_16c389a0_0fbc_4f3c_92cc_97f7166610a9 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_16c389a0_0fbc_4f3c_92cc_97f7166610a9
+id:OWLNamedIndividual_16c389a0_0fbc_4f3c_92cc_97f7166610a9 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "East Renfrewshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1715ee19_648c_4e5c_b1b6_9566a42f5c28
-:OWLNamedIndividual_1715ee19_648c_4e5c_b1b6_9566a42f5c28 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1715ee19_648c_4e5c_b1b6_9566a42f5c28
+id:OWLNamedIndividual_1715ee19_648c_4e5c_b1b6_9566a42f5c28 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Royal Botanic Garden, Edinburgh"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5
-:OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5
+id:OWLNamedIndividual_1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Ayrshire & Arran"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1a84d596_69f3_458e_acf9_85949433c3ff
-:OWLNamedIndividual_1a84d596_69f3_458e_acf9_85949433c3ff rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1a84d596_69f3_458e_acf9_85949433c3ff
+id:OWLNamedIndividual_1a84d596_69f3_458e_acf9_85949433c3ff rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Crofting Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_1bc10c00_406e_4772_91d3_762a81517727
-:OWLNamedIndividual_1bc10c00_406e_4772_91d3_762a81517727 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_1bc10c00_406e_4772_91d3_762a81517727
+id:OWLNamedIndividual_1bc10c00_406e_4772_91d3_762a81517727 rdf:type owl:NamedIndividual ,
                                                                   :CentralGovPB ;
                                                          rdfs:label "Caledonian Maritime Assets Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_21bfd213_571b_4cdb_b553_de45f8a8c44d
-:OWLNamedIndividual_21bfd213_571b_4cdb_b553_de45f8a8c44d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_21bfd213_571b_4cdb_b553_de45f8a8c44d
+id:OWLNamedIndividual_21bfd213_571b_4cdb_b553_de45f8a8c44d rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "West Dunbartonshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_223b638b_25f8_419a_938d_4a140f881d6e
-:OWLNamedIndividual_223b638b_25f8_419a_938d_4a140f881d6e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_223b638b_25f8_419a_938d_4a140f881d6e
+id:OWLNamedIndividual_223b638b_25f8_419a_938d_4a140f881d6e rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "East Ayrshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_23b8038f_a69c_48ad_887a_f5e516352914
-:OWLNamedIndividual_23b8038f_a69c_48ad_887a_f5e516352914 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_23b8038f_a69c_48ad_887a_f5e516352914
+id:OWLNamedIndividual_23b8038f_a69c_48ad_887a_f5e516352914 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Drinking Water Quality Regulator"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_26e2a333_8222_45b8_81ce_c12a9664671b
-:OWLNamedIndividual_26e2a333_8222_45b8_81ce_c12a9664671b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_26e2a333_8222_45b8_81ce_c12a9664671b
+id:OWLNamedIndividual_26e2a333_8222_45b8_81ce_c12a9664671b rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Agricultural Wages Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_27fe5857_744e_42b5_a49c_e0a63b31b178
-:OWLNamedIndividual_27fe5857_744e_42b5_a49c_e0a63b31b178 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_27fe5857_744e_42b5_a49c_e0a63b31b178
+id:OWLNamedIndividual_27fe5857_744e_42b5_a49c_e0a63b31b178 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "VisitScotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2854032a_26e3_454e_9972_a6687e8af4e5
-:OWLNamedIndividual_2854032a_26e3_454e_9972_a6687e8af4e5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2854032a_26e3_454e_9972_a6687e8af4e5
+id:OWLNamedIndividual_2854032a_26e3_454e_9972_a6687e8af4e5 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Loch Lomond and The Trossachs National Park Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_299e8b90_74d8_4e66_b32b_76fc0d13e95c
-:OWLNamedIndividual_299e8b90_74d8_4e66_b32b_76fc0d13e95c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_299e8b90_74d8_4e66_b32b_76fc0d13e95c
+id:OWLNamedIndividual_299e8b90_74d8_4e66_b32b_76fc0d13e95c rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Inverclyde Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2c771911_f5aa_423d_8e78_cbb48d448c28
-:OWLNamedIndividual_2c771911_f5aa_423d_8e78_cbb48d448c28 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2c771911_f5aa_423d_8e78_cbb48d448c28
+id:OWLNamedIndividual_2c771911_f5aa_423d_8e78_cbb48d448c28 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Creative Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2d56418e_fd28_4e3b_b02c_a6c430cdd66b
-:OWLNamedIndividual_2d56418e_fd28_4e3b_b02c_a6c430cdd66b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2d56418e_fd28_4e3b_b02c_a6c430cdd66b
+id:OWLNamedIndividual_2d56418e_fd28_4e3b_b02c_a6c430cdd66b rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "NESTRANS" ;
                                                          rdfs:label "North-East of Scotland Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2e1fd01b_d4b0_4705_aab4_6c94448afe3f
-:OWLNamedIndividual_2e1fd01b_d4b0_4705_aab4_6c94448afe3f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2e1fd01b_d4b0_4705_aab4_6c94448afe3f
+id:OWLNamedIndividual_2e1fd01b_d4b0_4705_aab4_6c94448afe3f rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "TACTRAN" ;
                                                          rdfs:label "Tayside and Central Scotland Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463
-:OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463
+id:OWLNamedIndividual_2e550934_4e21_4c2f_9940_e38fa328a463 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Western Isles"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee
-:OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee
+id:OWLNamedIndividual_2f6b185e_266c_4548_b9d1_2f83266ef0ee rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Shetland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_302b271a_c993_46ce_a0b4_4012b7ecee6e
-:OWLNamedIndividual_302b271a_c993_46ce_a0b4_4012b7ecee6e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_302b271a_c993_46ce_a0b4_4012b7ecee6e
+id:OWLNamedIndividual_302b271a_c993_46ce_a0b4_4012b7ecee6e rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Water Industry Commission for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_32c1ae99_f104_48a5_b2b0_9b21d233542d
-:OWLNamedIndividual_32c1ae99_f104_48a5_b2b0_9b21d233542d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_32c1ae99_f104_48a5_b2b0_9b21d233542d
+id:OWLNamedIndividual_32c1ae99_f104_48a5_b2b0_9b21d233542d rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Scottish Housing Regulator"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_365df7dc_48f0_4c18_a4ad_f7178fd63aef
-:OWLNamedIndividual_365df7dc_48f0_4c18_a4ad_f7178fd63aef rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_365df7dc_48f0_4c18_a4ad_f7178fd63aef
+id:OWLNamedIndividual_365df7dc_48f0_4c18_a4ad_f7178fd63aef rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Falkirk Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_36bd641c_f069_4f3e_b916_3ebfa193149f
-:OWLNamedIndividual_36bd641c_f069_4f3e_b916_3ebfa193149f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_36bd641c_f069_4f3e_b916_3ebfa193149f
+id:OWLNamedIndividual_36bd641c_f069_4f3e_b916_3ebfa193149f rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Glasgow City Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_370050e0_9d69_4d09_b305_aee95201fce9
-:OWLNamedIndividual_370050e0_9d69_4d09_b305_aee95201fce9 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_370050e0_9d69_4d09_b305_aee95201fce9
+id:OWLNamedIndividual_370050e0_9d69_4d09_b305_aee95201fce9 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Private Rented Housing Panel"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_375c5472_4c42_4526_9cc8_f40b5738bb5d
-:OWLNamedIndividual_375c5472_4c42_4526_9cc8_f40b5738bb5d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_375c5472_4c42_4526_9cc8_f40b5738bb5d
+id:OWLNamedIndividual_375c5472_4c42_4526_9cc8_f40b5738bb5d rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Moray Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_37b59908_15a9_4bbc_9040_f1220880ad18
-:OWLNamedIndividual_37b59908_15a9_4bbc_9040_f1220880ad18 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_37b59908_15a9_4bbc_9040_f1220880ad18
+id:OWLNamedIndividual_37b59908_15a9_4bbc_9040_f1220880ad18 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Funding Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_37bd03c5_6032_483c_96da_16ab6076b1bc
-:OWLNamedIndividual_37bd03c5_6032_483c_96da_16ab6076b1bc rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_37bd03c5_6032_483c_96da_16ab6076b1bc
+id:OWLNamedIndividual_37bd03c5_6032_483c_96da_16ab6076b1bc rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "The Highland Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_37d27d5a_a522_44d9_af79_0a14c02f09b8
-:OWLNamedIndividual_37d27d5a_a522_44d9_af79_0a14c02f09b8 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_37d27d5a_a522_44d9_af79_0a14c02f09b8
+id:OWLNamedIndividual_37d27d5a_a522_44d9_af79_0a14c02f09b8 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Scottish Advisory Committee on Distinction Awards"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_3909e22f_f8ca_4215_97c5_19e302caa718
-:OWLNamedIndividual_3909e22f_f8ca_4215_97c5_19e302caa718 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_3909e22f_f8ca_4215_97c5_19e302caa718
+id:OWLNamedIndividual_3909e22f_f8ca_4215_97c5_19e302caa718 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Upper Tax Tribunal for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_391bb193_0f4d_489b_8f91_29c336a1e2d4
-:OWLNamedIndividual_391bb193_0f4d_489b_8f91_29c336a1e2d4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_391bb193_0f4d_489b_8f91_29c336a1e2d4
+id:OWLNamedIndividual_391bb193_0f4d_489b_8f91_29c336a1e2d4 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Police Investigations and Review Commissioner"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_39d392dd_5aa3_4824_87ed_28ac59c8aac3
-:OWLNamedIndividual_39d392dd_5aa3_4824_87ed_28ac59c8aac3 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_39d392dd_5aa3_4824_87ed_28ac59c8aac3
+id:OWLNamedIndividual_39d392dd_5aa3_4824_87ed_28ac59c8aac3 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Aberdeen City"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2
-:OWLNamedIndividual_3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2
+id:OWLNamedIndividual_3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Children's Reporter Administration"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_3bb0a8aa_c4ed_4e52_9384_fbe4c4a3d2df
-:OWLNamedIndividual_3bb0a8aa_c4ed_4e52_9384_fbe4c4a3d2df rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_3bb0a8aa_c4ed_4e52_9384_fbe4c4a3d2df
+id:OWLNamedIndividual_3bb0a8aa_c4ed_4e52_9384_fbe4c4a3d2df rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Renfrewshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_3c7cd4e9_2312_48c9_90c9_bdc69209a02b
-:OWLNamedIndividual_3c7cd4e9_2312_48c9_90c9_bdc69209a02b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_3c7cd4e9_2312_48c9_90c9_bdc69209a02b
+id:OWLNamedIndividual_3c7cd4e9_2312_48c9_90c9_bdc69209a02b rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Community Justice Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_3e20c75b_dc59_4db7_9e2d_447ddc79ea4f
-:OWLNamedIndividual_3e20c75b_dc59_4db7_9e2d_447ddc79ea4f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_3e20c75b_dc59_4db7_9e2d_447ddc79ea4f
+id:OWLNamedIndividual_3e20c75b_dc59_4db7_9e2d_447ddc79ea4f rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Audit Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_40c4c7b2_8ac1_4f22_8816_ef92965b2676
-:OWLNamedIndividual_40c4c7b2_8ac1_4f22_8816_ef92965b2676 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_40c4c7b2_8ac1_4f22_8816_ef92965b2676
+id:OWLNamedIndividual_40c4c7b2_8ac1_4f22_8816_ef92965b2676 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          rdfs:label "Strathclyde Partnership for Transport"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a
-:OWLNamedIndividual_42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a
+id:OWLNamedIndividual_42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "sportscotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_46bec378_ddb1_4a78_b0bb_206809674ec9
-:OWLNamedIndividual_46bec378_ddb1_4a78_b0bb_206809674ec9 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_46bec378_ddb1_4a78_b0bb_206809674ec9
+id:OWLNamedIndividual_46bec378_ddb1_4a78_b0bb_206809674ec9 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Quality Meat Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_48732be4_ef17_498d_9e7f_22b786daa818
-:OWLNamedIndividual_48732be4_ef17_498d_9e7f_22b786daa818 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_48732be4_ef17_498d_9e7f_22b786daa818
+id:OWLNamedIndividual_48732be4_ef17_498d_9e7f_22b786daa818 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Inverclyde"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21
-:OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21
+id:OWLNamedIndividual_49bd8e4f_7a00_4d20_a903_fcec5598fe21 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Fife"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4c968f5c_64dc_461d_95b1_bbc5d2a8e073
-:OWLNamedIndividual_4c968f5c_64dc_461d_95b1_bbc5d2a8e073 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_4c968f5c_64dc_461d_95b1_bbc5d2a8e073
+id:OWLNamedIndividual_4c968f5c_64dc_461d_95b1_bbc5d2a8e073 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "South Lanarkshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244
-:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244
+id:OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 rdf:type owl:NamedIndividual ,
                                                                   :GovernmentBody ;
                                                          rdfs:label "The Scottish Government"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa
-:OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa
+id:OWLNamedIndividual_4ceb6522_d4de_44e3_94b3_2171a145b5fa rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Greater Glasgow and Clyde"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4d42286f_6802_4b34_b357_43b1be2b2814
-:OWLNamedIndividual_4d42286f_6802_4b34_b357_43b1be2b2814 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_4d42286f_6802_4b34_b357_43b1be2b2814
+id:OWLNamedIndividual_4d42286f_6802_4b34_b357_43b1be2b2814 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Futures Trust"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_51c5b32a_cff2_43d4_a892_85e7bd1a81d0
-:OWLNamedIndividual_51c5b32a_cff2_43d4_a892_85e7bd1a81d0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_51c5b32a_cff2_43d4_a892_85e7bd1a81d0
+id:OWLNamedIndividual_51c5b32a_cff2_43d4_a892_85e7bd1a81d0 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "North Lanarkshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5
-:OWLNamedIndividual_534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5
+id:OWLNamedIndividual_534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Midlothian Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_53c2995f_1d1e_456b_9b13_21b89e6a6443
-:OWLNamedIndividual_53c2995f_1d1e_456b_9b13_21b89e6a6443 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_53c2995f_1d1e_456b_9b13_21b89e6a6443
+id:OWLNamedIndividual_53c2995f_1d1e_456b_9b13_21b89e6a6443 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "National Galleries of Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_54bb0fea_5ae0_483c_b261_47024d6150a2
-:OWLNamedIndividual_54bb0fea_5ae0_483c_b261_47024d6150a2 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_54bb0fea_5ae0_483c_b261_47024d6150a2
+id:OWLNamedIndividual_54bb0fea_5ae0_483c_b261_47024d6150a2 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Historic Environment Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_56bc7885_c092_46ca_b4e3_cd3b6da10e81
-:OWLNamedIndividual_56bc7885_c092_46ca_b4e3_cd3b6da10e81 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_56bc7885_c092_46ca_b4e3_cd3b6da10e81
+id:OWLNamedIndividual_56bc7885_c092_46ca_b4e3_cd3b6da10e81 rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Food Standards Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_56e7a6ba_b148_465d_88f5_1c563f8372d6
-:OWLNamedIndividual_56e7a6ba_b148_465d_88f5_1c563f8372d6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_56e7a6ba_b148_465d_88f5_1c563f8372d6
+id:OWLNamedIndividual_56e7a6ba_b148_465d_88f5_1c563f8372d6 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Aberdeen City Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36
-:OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36
+id:OWLNamedIndividual_58bbffec_cabc_410b_ab2c_bfe7efffdd36 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Lothian"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77
-:OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77
+id:OWLNamedIndividual_58da35bb_0ca5_445c_9218_7ab1028f0d77 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Borders"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_5aed306d_1a71_4ef5_a394_48760f5b3fe3
-:OWLNamedIndividual_5aed306d_1a71_4ef5_a394_48760f5b3fe3 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_5aed306d_1a71_4ef5_a394_48760f5b3fe3
+id:OWLNamedIndividual_5aed306d_1a71_4ef5_a394_48760f5b3fe3 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Renfewshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c
-:OWLNamedIndividual_5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c
+id:OWLNamedIndividual_5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Perth and Kinross Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_5da964fa_cd9c_483f_a8ea_b6712b41267d
-:OWLNamedIndividual_5da964fa_cd9c_483f_a8ea_b6712b41267d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_5da964fa_cd9c_483f_a8ea_b6712b41267d
+id:OWLNamedIndividual_5da964fa_cd9c_483f_a8ea_b6712b41267d rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Social Services Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_6084acb9_d246_4814_8711_0b8d50963589
-:OWLNamedIndividual_6084acb9_d246_4814_8711_0b8d50963589 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_6084acb9_d246_4814_8711_0b8d50963589
+id:OWLNamedIndividual_6084acb9_d246_4814_8711_0b8d50963589 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "Scottish Ambulance Service Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_614945b1_4185_4068_bc0c_b8774d96801b
-:OWLNamedIndividual_614945b1_4185_4068_bc0c_b8774d96801b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_614945b1_4185_4068_bc0c_b8774d96801b
+id:OWLNamedIndividual_614945b1_4185_4068_bc0c_b8774d96801b rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "The City of Edinburgh Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_61ae4b29_7230_42dd_90c2_dcdebd750c1c
-:OWLNamedIndividual_61ae4b29_7230_42dd_90c2_dcdebd750c1c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_61ae4b29_7230_42dd_90c2_dcdebd750c1c
+id:OWLNamedIndividual_61ae4b29_7230_42dd_90c2_dcdebd750c1c rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "SESTRAN" ;
                                                          rdfs:label "South-East of Scotland Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_62229ac3_977c_4d68_bd6d_1a38bd29f337
-:OWLNamedIndividual_62229ac3_977c_4d68_bd6d_1a38bd29f337 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_62229ac3_977c_4d68_bd6d_1a38bd29f337
+id:OWLNamedIndividual_62229ac3_977c_4d68_bd6d_1a38bd29f337 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Aberdeenshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_62a8b7a7_cf73_438d_9dc6_5822c72b4aa5
-:OWLNamedIndividual_62a8b7a7_cf73_438d_9dc6_5822c72b4aa5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_62a8b7a7_cf73_438d_9dc6_5822c72b4aa5
+id:OWLNamedIndividual_62a8b7a7_cf73_438d_9dc6_5822c72b4aa5 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "North Lanarkshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_65a24ace_e92c_484b_b65b_5e5bb1c95578
-:OWLNamedIndividual_65a24ace_e92c_484b_b65b_5e5bb1c95578 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_65a24ace_e92c_484b_b65b_5e5bb1c95578
+id:OWLNamedIndividual_65a24ace_e92c_484b_b65b_5e5bb1c95578 rdf:type owl:NamedIndividual ,
                                                                   :CentralGovPB ;
                                                          rdfs:label "Scottish Canals"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_65aca9c3_ba5e_4287_910e_5329662b109a
-:OWLNamedIndividual_65aca9c3_ba5e_4287_910e_5329662b109a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_65aca9c3_ba5e_4287_910e_5329662b109a
+id:OWLNamedIndividual_65aca9c3_ba5e_4287_910e_5329662b109a rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Dumfries and Galloway Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_679fbc0e_ed35_4f66_bf82_1db425bc2743
-:OWLNamedIndividual_679fbc0e_ed35_4f66_bf82_1db425bc2743 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_679fbc0e_ed35_4f66_bf82_1db425bc2743
+id:OWLNamedIndividual_679fbc0e_ed35_4f66_bf82_1db425bc2743 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Accountant in Bankruptcy"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_693fe766_8cf6_437f_8006_82e60b01e47b
-:OWLNamedIndividual_693fe766_8cf6_437f_8006_82e60b01e47b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_693fe766_8cf6_437f_8006_82e60b01e47b
+id:OWLNamedIndividual_693fe766_8cf6_437f_8006_82e60b01e47b rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Dumfries and Galloway"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_69780da0_3c40_465d_9e52_9a361a8eb8db
-:OWLNamedIndividual_69780da0_3c40_465d_9e52_9a361a8eb8db rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_69780da0_3c40_465d_9e52_9a361a8eb8db
+id:OWLNamedIndividual_69780da0_3c40_465d_9e52_9a361a8eb8db rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Perth & Kinross"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_69b84217_4c76_4734_a71c_bb808f112287
-:OWLNamedIndividual_69b84217_4c76_4734_a71c_bb808f112287 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_69b84217_4c76_4734_a71c_bb808f112287
+id:OWLNamedIndividual_69b84217_4c76_4734_a71c_bb808f112287 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Natural Heritage"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_701cd39f_68df_477e_98f7_b14fcae99698
-:OWLNamedIndividual_701cd39f_68df_477e_98f7_b14fcae99698 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_701cd39f_68df_477e_98f7_b14fcae99698
+id:OWLNamedIndividual_701cd39f_68df_477e_98f7_b14fcae99698 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "North Ayrshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f
-:OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f
+id:OWLNamedIndividual_70cf8856_14ad_41ea_9acd_23489651c73f rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Lanarkshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_70d8bcde_8984_4eae_bd0b_66cf0705016b
-:OWLNamedIndividual_70d8bcde_8984_4eae_bd0b_66cf0705016b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_70d8bcde_8984_4eae_bd0b_66cf0705016b
+id:OWLNamedIndividual_70d8bcde_8984_4eae_bd0b_66cf0705016b rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Scottish Fiscal Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_7432721f_6acb_4dea_8ad5_8cfeebf5ec88
-:OWLNamedIndividual_7432721f_6acb_4dea_8ad5_8cfeebf5ec88 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_7432721f_6acb_4dea_8ad5_8cfeebf5ec88
+id:OWLNamedIndividual_7432721f_6acb_4dea_8ad5_8cfeebf5ec88 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "National Museums of Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_74bf730b_f92f_4b09_baea_0a9fde6950bd
-:OWLNamedIndividual_74bf730b_f92f_4b09_baea_0a9fde6950bd rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_74bf730b_f92f_4b09_baea_0a9fde6950bd
+id:OWLNamedIndividual_74bf730b_f92f_4b09_baea_0a9fde6950bd rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Highlands and Islands Enterprise"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_751a451c_d653_49b7_9334_e44b585f720a
-:OWLNamedIndividual_751a451c_d653_49b7_9334_e44b585f720a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_751a451c_d653_49b7_9334_e44b585f720a
+id:OWLNamedIndividual_751a451c_d653_49b7_9334_e44b585f720a rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "HM Fire Service Inspectorate in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e
-:OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e
+id:OWLNamedIndividual_7617423d_7d4f_4a6c_a364_7ba034e2a85e rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Tayside"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_7a1c7819_978a_4910_9ded_9780a191c6b2
-:OWLNamedIndividual_7a1c7819_978a_4910_9ded_9780a191c6b2 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_7a1c7819_978a_4910_9ded_9780a191c6b2
+id:OWLNamedIndividual_7a1c7819_978a_4910_9ded_9780a191c6b2 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Enterprise"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_7a42e27b_a86f_413a_8273_70401202c357
-:OWLNamedIndividual_7a42e27b_a86f_413a_8273_70401202c357 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_7a42e27b_a86f_413a_8273_70401202c357
+id:OWLNamedIndividual_7a42e27b_a86f_413a_8273_70401202c357 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Lands Tribunal for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8014c296_9e59_4e4b_b88e_b63174550d7b
-:OWLNamedIndividual_8014c296_9e59_4e4b_b88e_b63174550d7b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8014c296_9e59_4e4b_b88e_b63174550d7b
+id:OWLNamedIndividual_8014c296_9e59_4e4b_b88e_b63174550d7b rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Scottish Law Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8089cafe_1747_41f9_ab2c_536f68e1e729
-:OWLNamedIndividual_8089cafe_1747_41f9_ab2c_536f68e1e729 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8089cafe_1747_41f9_ab2c_536f68e1e729
+id:OWLNamedIndividual_8089cafe_1747_41f9_ab2c_536f68e1e729 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Shetland Islands Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8160d157_2bb3_4090_8407_5689c5c16eed
-:OWLNamedIndividual_8160d157_2bb3_4090_8407_5689c5c16eed rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8160d157_2bb3_4090_8407_5689c5c16eed
+id:OWLNamedIndividual_8160d157_2bb3_4090_8407_5689c5c16eed rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Moray"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8275676d_4fbe_408e_9a80_1eb76b62abd6
-:OWLNamedIndividual_8275676d_4fbe_408e_9a80_1eb76b62abd6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8275676d_4fbe_408e_9a80_1eb76b62abd6
+id:OWLNamedIndividual_8275676d_4fbe_408e_9a80_1eb76b62abd6 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Clackmannanshire and Stirling"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8295b3ce_8133_462f_afd6_7d0b5a134687
-:OWLNamedIndividual_8295b3ce_8133_462f_afd6_7d0b5a134687 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8295b3ce_8133_462f_afd6_7d0b5a134687
+id:OWLNamedIndividual_8295b3ce_8133_462f_afd6_7d0b5a134687 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Mental Health Tribunal for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_83636d62_1059_4650_b22b_6ee0f33c1dfb
-:OWLNamedIndividual_83636d62_1059_4650_b22b_6ee0f33c1dfb rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_83636d62_1059_4650_b22b_6ee0f33c1dfb
+id:OWLNamedIndividual_83636d62_1059_4650_b22b_6ee0f33c1dfb rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Criminal Cases Review Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_84119e24_8f28_46ed_9e3b_6852553d2097
-:OWLNamedIndividual_84119e24_8f28_46ed_9e3b_6852553d2097 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_84119e24_8f28_46ed_9e3b_6852553d2097
+id:OWLNamedIndividual_84119e24_8f28_46ed_9e3b_6852553d2097 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Scottish Fire and Rescue Service"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_84a2fafa_7256_48c7_942a_6e80d9e75800
-:OWLNamedIndividual_84a2fafa_7256_48c7_942a_6e80d9e75800 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_84a2fafa_7256_48c7_942a_6e80d9e75800
+id:OWLNamedIndividual_84a2fafa_7256_48c7_942a_6e80d9e75800 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "HITRANS" ;
                                                          rdfs:label "Highlands and Islands Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_853b2293_043c_4493_a7c7_147540eb2216
-:OWLNamedIndividual_853b2293_043c_4493_a7c7_147540eb2216 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_853b2293_043c_4493_a7c7_147540eb2216
+id:OWLNamedIndividual_853b2293_043c_4493_a7c7_147540eb2216 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Argyll and Bute"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8957aff9_0cda_4dc9_baa7_fb8e9d17a251
-:OWLNamedIndividual_8957aff9_0cda_4dc9_baa7_fb8e9d17a251 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8957aff9_0cda_4dc9_baa7_fb8e9d17a251
+id:OWLNamedIndividual_8957aff9_0cda_4dc9_baa7_fb8e9d17a251 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Fife"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8bbbe5e3_c87a_41e4_9c32_022bdeda36f6
-:OWLNamedIndividual_8bbbe5e3_c87a_41e4_9c32_022bdeda36f6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8bbbe5e3_c87a_41e4_9c32_022bdeda36f6
+id:OWLNamedIndividual_8bbbe5e3_c87a_41e4_9c32_022bdeda36f6 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Mobility and Access Committee for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_8f62e289_f31a_40af_a730_30d5decd77e0
-:OWLNamedIndividual_8f62e289_f31a_40af_a730_30d5decd77e0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_8f62e289_f31a_40af_a730_30d5decd77e0
+id:OWLNamedIndividual_8f62e289_f31a_40af_a730_30d5decd77e0 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "National Library of Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_904596e2_c73d_4acc_9970_57c5c666855c
-:OWLNamedIndividual_904596e2_c73d_4acc_9970_57c5c666855c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_904596e2_c73d_4acc_9970_57c5c666855c
+id:OWLNamedIndividual_904596e2_c73d_4acc_9970_57c5c666855c rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Comhairle nan Eilean Siar"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_90b4305a_7cdb_444d_9e3a_0729b0c2c76a
-:OWLNamedIndividual_90b4305a_7cdb_444d_9e3a_0729b0c2c76a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_90b4305a_7cdb_444d_9e3a_0729b0c2c76a
+id:OWLNamedIndividual_90b4305a_7cdb_444d_9e3a_0729b0c2c76a rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Clackmannanshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_929a9546_ba45_41e5_b2dc_c16c833af8da
-:OWLNamedIndividual_929a9546_ba45_41e5_b2dc_c16c833af8da rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_929a9546_ba45_41e5_b2dc_c16c833af8da
+id:OWLNamedIndividual_929a9546_ba45_41e5_b2dc_c16c833af8da rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "HM Chief Inspector of Prosecution in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_92dbd8e1_9e59_448a_8e91_2d681dbc2901
-:OWLNamedIndividual_92dbd8e1_9e59_448a_8e91_2d681dbc2901 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_92dbd8e1_9e59_448a_8e91_2d681dbc2901
+id:OWLNamedIndividual_92dbd8e1_9e59_448a_8e91_2d681dbc2901 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "North Ayrshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_93ceb4a4_d7dc_489d_8250_a72e4821bb92
-:OWLNamedIndividual_93ceb4a4_d7dc_489d_8250_a72e4821bb92 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_93ceb4a4_d7dc_489d_8250_a72e4821bb92
+id:OWLNamedIndividual_93ceb4a4_d7dc_489d_8250_a72e4821bb92 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Children's Hearings Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb
-:OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb
+id:OWLNamedIndividual_98e30113_87fb_4f13_8a2e_909adf97d6eb rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Grampian"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_990515cd_1df2_4fcd_94e9_b990d8a4e040
-:OWLNamedIndividual_990515cd_1df2_4fcd_94e9_b990d8a4e040 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_990515cd_1df2_4fcd_94e9_b990d8a4e040
+id:OWLNamedIndividual_990515cd_1df2_4fcd_94e9_b990d8a4e040 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Disclosure Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9b1bf79a_294e_42da_be7e_b5832b31f886
-:OWLNamedIndividual_9b1bf79a_294e_42da_be7e_b5832b31f886 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9b1bf79a_294e_42da_be7e_b5832b31f886
+id:OWLNamedIndividual_9b1bf79a_294e_42da_be7e_b5832b31f886 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Scottish Charity Appeals Panel"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9b9cae69_78c1_4c2a_9b56_b1d2b2ecc9a8
-:OWLNamedIndividual_9b9cae69_78c1_4c2a_9b56_b1d2b2ecc9a8 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9b9cae69_78c1_4c2a_9b56_b1d2b2ecc9a8
+id:OWLNamedIndividual_9b9cae69_78c1_4c2a_9b56_b1d2b2ecc9a8 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Scottish Local Authorities Remuneration Committee"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9c11079f_c965_4b9e_83e8_a30614bbe848
-:OWLNamedIndividual_9c11079f_c965_4b9e_83e8_a30614bbe848 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9c11079f_c965_4b9e_83e8_a30614bbe848
+id:OWLNamedIndividual_9c11079f_c965_4b9e_83e8_a30614bbe848 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Land Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9c6c4715_6844_48db_83a5_81bd4fed702e
-:OWLNamedIndividual_9c6c4715_6844_48db_83a5_81bd4fed702e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9c6c4715_6844_48db_83a5_81bd4fed702e
+id:OWLNamedIndividual_9c6c4715_6844_48db_83a5_81bd4fed702e rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Glasgow City"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9cdb3a89_3cc2_472a_981e_32169a515b98
-:OWLNamedIndividual_9cdb3a89_3cc2_472a_981e_32169a515b98 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9cdb3a89_3cc2_472a_981e_32169a515b98
+id:OWLNamedIndividual_9cdb3a89_3cc2_472a_981e_32169a515b98 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "East Lothian Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9d5a88fb_2fd3_40d4_a2ae_0590442db22b
-:OWLNamedIndividual_9d5a88fb_2fd3_40d4_a2ae_0590442db22b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9d5a88fb_2fd3_40d4_a2ae_0590442db22b
+id:OWLNamedIndividual_9d5a88fb_2fd3_40d4_a2ae_0590442db22b rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Student Awards Agency for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9e683573_5024_4e41_8279_c601c7dab654
-:OWLNamedIndividual_9e683573_5024_4e41_8279_c601c7dab654 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9e683573_5024_4e41_8279_c601c7dab654
+id:OWLNamedIndividual_9e683573_5024_4e41_8279_c601c7dab654 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "State Hospital Board for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6
-:OWLNamedIndividual_9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6
+id:OWLNamedIndividual_9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Parole Board for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9ef9f538_bf27_4cf5_a850_9165efdb531d
-:OWLNamedIndividual_9ef9f538_bf27_4cf5_a850_9165efdb531d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9ef9f538_bf27_4cf5_a850_9165efdb531d
+id:OWLNamedIndividual_9ef9f538_bf27_4cf5_a850_9165efdb531d rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Highlands and Islands Airports Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9ffc6ae5_06a9_4dd4_b358_b0cf4dfb5f48
-:OWLNamedIndividual_9ffc6ae5_06a9_4dd4_b358_b0cf4dfb5f48 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_9ffc6ae5_06a9_4dd4_b358_b0cf4dfb5f48
+id:OWLNamedIndividual_9ffc6ae5_06a9_4dd4_b358_b0cf4dfb5f48 rdf:type owl:NamedIndividual ,
                                                                   :ParlBody ;
                                                          rdfs:label "The Scottish Parliament"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a042e3b7_cd0b_43d4_93ff_be93f50efbe2
-:OWLNamedIndividual_a042e3b7_cd0b_43d4_93ff_be93f50efbe2 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a042e3b7_cd0b_43d4_93ff_be93f50efbe2
+id:OWLNamedIndividual_a042e3b7_cd0b_43d4_93ff_be93f50efbe2 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Scottish Borders Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f
-:OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f
+id:OWLNamedIndividual_a0a1d863_7b36_4a22_9d49_be2a544e422f rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Forth Valley"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a3515fbb_0d0a_4ffe_85ed_f587ae3662a5
-:OWLNamedIndividual_a3515fbb_0d0a_4ffe_85ed_f587ae3662a5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a3515fbb_0d0a_4ffe_85ed_f587ae3662a5
+id:OWLNamedIndividual_a3515fbb_0d0a_4ffe_85ed_f587ae3662a5 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "West Dunbartonshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a594c663_ca47_46f8_87bc_d8e06afd5123
-:OWLNamedIndividual_a594c663_ca47_46f8_87bc_d8e06afd5123 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a594c663_ca47_46f8_87bc_d8e06afd5123
+id:OWLNamedIndividual_a594c663_ca47_46f8_87bc_d8e06afd5123 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Orkney"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a7de36de_65e1_4e64_8e22_4c5bd695e6ec
-:OWLNamedIndividual_a7de36de_65e1_4e64_8e22_4c5bd695e6ec rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a7de36de_65e1_4e64_8e22_4c5bd695e6ec
+id:OWLNamedIndividual_a7de36de_65e1_4e64_8e22_4c5bd695e6ec rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Risk Management Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a81fb394_6a71_4bae_8d8e_d21d8ee01105
-:OWLNamedIndividual_a81fb394_6a71_4bae_8d8e_d21d8ee01105 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a81fb394_6a71_4bae_8d8e_d21d8ee01105
+id:OWLNamedIndividual_a81fb394_6a71_4bae_8d8e_d21d8ee01105 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "National Waiting Times Centre Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a8ec77d4_5cc5_4a45_a4e6_20369639cec0
-:OWLNamedIndividual_a8ec77d4_5cc5_4a45_a4e6_20369639cec0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a8ec77d4_5cc5_4a45_a4e6_20369639cec0
+id:OWLNamedIndividual_a8ec77d4_5cc5_4a45_a4e6_20369639cec0 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Office of the Queens Printer for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a914a2cc_9b63_485c_9e58_5e41a3695001
-:OWLNamedIndividual_a914a2cc_9b63_485c_9e58_5e41a3695001 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_a914a2cc_9b63_485c_9e58_5e41a3695001
+id:OWLNamedIndividual_a914a2cc_9b63_485c_9e58_5e41a3695001 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "South Ayrshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_ac966320_9a71_444a_8e81_fb1414ab4aa4
-:OWLNamedIndividual_ac966320_9a71_444a_8e81_fb1414ab4aa4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ac966320_9a71_444a_8e81_fb1414ab4aa4
+id:OWLNamedIndividual_ac966320_9a71_444a_8e81_fb1414ab4aa4 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Care Inspectorate"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_ad6ac135_5913_4952_b95d_42973eac5c8f
-:OWLNamedIndividual_ad6ac135_5913_4952_b95d_42973eac5c8f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ad6ac135_5913_4952_b95d_42973eac5c8f
+id:OWLNamedIndividual_ad6ac135_5913_4952_b95d_42973eac5c8f rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Independent Living Fund Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4
-:OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4
+id:OWLNamedIndividual_af741459_81d5_40a0_b7a5_21e85a84fea4 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Dumfries & Galloway"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b068a5b9_fc78_429c_bc55_255f96356f7b
-:OWLNamedIndividual_b068a5b9_fc78_429c_bc55_255f96356f7b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b068a5b9_fc78_429c_bc55_255f96356f7b
+id:OWLNamedIndividual_b068a5b9_fc78_429c_bc55_255f96356f7b rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Scottish Courts and Tribunals Service"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b09d57a7_4ee7_488d_a2ca_822ba54f77d0
-:OWLNamedIndividual_b09d57a7_4ee7_488d_a2ca_822ba54f77d0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b09d57a7_4ee7_488d_a2ca_822ba54f77d0
+id:OWLNamedIndividual_b09d57a7_4ee7_488d_a2ca_822ba54f77d0 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Legal Complaints Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b37dcb15_2c24_4e91_8b42_76c0d8462708
-:OWLNamedIndividual_b37dcb15_2c24_4e91_8b42_76c0d8462708 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b37dcb15_2c24_4e91_8b42_76c0d8462708
+id:OWLNamedIndividual_b37dcb15_2c24_4e91_8b42_76c0d8462708 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Scottish Road Works Commissioner"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b3b5c867_8d5b_485a_a7c9_ea719cebcbfc
-:OWLNamedIndividual_b3b5c867_8d5b_485a_a7c9_ea719cebcbfc rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b3b5c867_8d5b_485a_a7c9_ea719cebcbfc
+id:OWLNamedIndividual_b3b5c867_8d5b_485a_a7c9_ea719cebcbfc rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "East Lothian"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b43e21ff_0db7_46be_ad19_da987141f59f
-:OWLNamedIndividual_b43e21ff_0db7_46be_ad19_da987141f59f rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b43e21ff_0db7_46be_ad19_da987141f59f
+id:OWLNamedIndividual_b43e21ff_0db7_46be_ad19_da987141f59f rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Office of the Scottish Charity Regulator"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b6ae570a_405f_407d_b557_f9c728869203
-:OWLNamedIndividual_b6ae570a_405f_407d_b557_f9c728869203 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b6ae570a_405f_407d_b557_f9c728869203
+id:OWLNamedIndividual_b6ae570a_405f_407d_b557_f9c728869203 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "South Lanarkshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b78c74ac_70bd_4836_830b_66d5b184b05e
-:OWLNamedIndividual_b78c74ac_70bd_4836_830b_66d5b184b05e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b78c74ac_70bd_4836_830b_66d5b184b05e
+id:OWLNamedIndividual_b78c74ac_70bd_4836_830b_66d5b184b05e rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Dundee City Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b7eba161_3413_4117_8914_b212ae756607
-:OWLNamedIndividual_b7eba161_3413_4117_8914_b212ae756607 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b7eba161_3413_4117_8914_b212ae756607
+id:OWLNamedIndividual_b7eba161_3413_4117_8914_b212ae756607 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Additional Support Needs Tribunals for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b7f131b3_6c4a_464e_97dc_de8853a6875c
-:OWLNamedIndividual_b7f131b3_6c4a_464e_97dc_de8853a6875c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_b7f131b3_6c4a_464e_97dc_de8853a6875c
+id:OWLNamedIndividual_b7f131b3_6c4a_464e_97dc_de8853a6875c rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Aberdeenshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_bfce3435_ecc4_46d3_957d_d07f9161872c
-:OWLNamedIndividual_bfce3435_ecc4_46d3_957d_d07f9161872c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_bfce3435_ecc4_46d3_957d_d07f9161872c
+id:OWLNamedIndividual_bfce3435_ecc4_46d3_957d_d07f9161872c rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "West Lothian"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c047d935_88af_4fa3_872c_f8ad4645febd
-:OWLNamedIndividual_c047d935_88af_4fa3_872c_f8ad4645febd rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c047d935_88af_4fa3_872c_f8ad4645febd
+id:OWLNamedIndividual_c047d935_88af_4fa3_872c_f8ad4645febd rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Architecture and Design Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c1d46efd_a5ae_4206_90d3_660970e14a96
-:OWLNamedIndividual_c1d46efd_a5ae_4206_90d3_660970e14a96 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c1d46efd_a5ae_4206_90d3_660970e14a96
+id:OWLNamedIndividual_c1d46efd_a5ae_4206_90d3_660970e14a96 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Homeowner Housing Panel"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c8a13eb9_f5ac_48b6_9616_311c6a1f8e49
-:OWLNamedIndividual_c8a13eb9_f5ac_48b6_9616_311c6a1f8e49 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c8a13eb9_f5ac_48b6_9616_311c6a1f8e49
+id:OWLNamedIndividual_c8a13eb9_f5ac_48b6_9616_311c6a1f8e49 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Midlothian"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c8e71c45_f8f5_42f4_9f96_da7e07d6bb92
-:OWLNamedIndividual_c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c8e71c45_f8f5_42f4_9f96_da7e07d6bb92
+id:OWLNamedIndividual_c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "David MacBrayne Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c93c39bb_ff1f_4d31_84e6_7b0cb03d9b8a
-:OWLNamedIndividual_c93c39bb_ff1f_4d31_84e6_7b0cb03d9b8a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c93c39bb_ff1f_4d31_84e6_7b0cb03d9b8a
+id:OWLNamedIndividual_c93c39bb_ff1f_4d31_84e6_7b0cb03d9b8a rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "South Ayrshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_c94ed99a_d8b6_4819_99d4_29c971badd64
-:OWLNamedIndividual_c94ed99a_d8b6_4819_99d4_29c971badd64 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_c94ed99a_d8b6_4819_99d4_29c971badd64
+id:OWLNamedIndividual_c94ed99a_d8b6_4819_99d4_29c971badd64 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "HM Chief Inspector of Prisons in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6
-:OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6
+id:OWLNamedIndividual_ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "NHS Education for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_cc4ae308_2620_4bed_8cbe_6e1c5ae6230c
-:OWLNamedIndividual_cc4ae308_2620_4bed_8cbe_6e1c5ae6230c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_cc4ae308_2620_4bed_8cbe_6e1c5ae6230c
+id:OWLNamedIndividual_cc4ae308_2620_4bed_8cbe_6e1c5ae6230c rdf:type owl:NamedIndividual ,
                                                                   :CentralGovPB ;
                                                          rdfs:label "Glasgow Prestwick Airport"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a
-:OWLNamedIndividual_cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a
+id:OWLNamedIndividual_cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "East Dunbartonshire Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_ce211f96_d1ec_43b2_8019_fd6317f8c913
-:OWLNamedIndividual_ce211f96_d1ec_43b2_8019_fd6317f8c913 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ce211f96_d1ec_43b2_8019_fd6317f8c913
+id:OWLNamedIndividual_ce211f96_d1ec_43b2_8019_fd6317f8c913 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "Mental Welfare Commission for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d286ad7d_dc8a_4c05_a7ed_99de63a7c484
-:OWLNamedIndividual_d286ad7d_dc8a_4c05_a7ed_99de63a7c484 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_d286ad7d_dc8a_4c05_a7ed_99de63a7c484
+id:OWLNamedIndividual_d286ad7d_dc8a_4c05_a7ed_99de63a7c484 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Judicial Appointments Board for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d3a602f9_695e_414a_8cd4_5ced038979f4
-:OWLNamedIndividual_d3a602f9_695e_414a_8cd4_5ced038979f4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_d3a602f9_695e_414a_8cd4_5ced038979f4
+id:OWLNamedIndividual_d3a602f9_695e_414a_8cd4_5ced038979f4 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_29b6dfa5_d5d5_4d3c_9107_f9bcb029e30a ;
                                                          skos:notation "ZetTrans" ;
                                                          rdfs:label "Shetland Transport Partnership"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d671fe7b_ce83_4d03_a584_8f725f0cc991
-:OWLNamedIndividual_d671fe7b_ce83_4d03_a584_8f725f0cc991 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_d671fe7b_ce83_4d03_a584_8f725f0cc991
+id:OWLNamedIndividual_d671fe7b_ce83_4d03_a584_8f725f0cc991 rdf:type owl:NamedIndividual ,
                                                                   :CentralGovPB ;
                                                          rdfs:label "Scottish Water"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d7358b11_5aad_42d3_b701_6d253f0de945
-:OWLNamedIndividual_d7358b11_5aad_42d3_b701_6d253f0de945 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_d7358b11_5aad_42d3_b701_6d253f0de945
+id:OWLNamedIndividual_d7358b11_5aad_42d3_b701_6d253f0de945 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "Healthcare Improvement Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_da503c70_2fe0_44dc_821b_3d1a0eac71d0
-:OWLNamedIndividual_da503c70_2fe0_44dc_821b_3d1a0eac71d0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_da503c70_2fe0_44dc_821b_3d1a0eac71d0
+id:OWLNamedIndividual_da503c70_2fe0_44dc_821b_3d1a0eac71d0 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Scottish Public Pensions Agency"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dac6beff_2ca7_4c71_ba93_b68db4d1ef80
-:OWLNamedIndividual_dac6beff_2ca7_4c71_ba93_b68db4d1ef80 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_dac6beff_2ca7_4c71_ba93_b68db4d1ef80
+id:OWLNamedIndividual_dac6beff_2ca7_4c71_ba93_b68db4d1ef80 rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "Registers of Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dbe465de_9b84_414c_b5c0_c7bbf067749b
-:OWLNamedIndividual_dbe465de_9b84_414c_b5c0_c7bbf067749b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_dbe465de_9b84_414c_b5c0_c7bbf067749b
+id:OWLNamedIndividual_dbe465de_9b84_414c_b5c0_c7bbf067749b rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Bòrd na Gàidhlig"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dbe8ac32_1a87_4d67_be93_34657c9f3e9d
-:OWLNamedIndividual_dbe8ac32_1a87_4d67_be93_34657c9f3e9d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_dbe8ac32_1a87_4d67_be93_34657c9f3e9d
+id:OWLNamedIndividual_dbe8ac32_1a87_4d67_be93_34657c9f3e9d rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Convener of School Closure Review Panels"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18
-:OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18
+id:OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18 rdf:type owl:NamedIndividual ,
                                                                   :CentralGovPB ;
                                                          rdfs:label "The Crown Estate Scotland - Interim Management"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_df5cb8bd_03f8_4fca_84a5_f666a6853f8e
-:OWLNamedIndividual_df5cb8bd_03f8_4fca_84a5_f666a6853f8e rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_df5cb8bd_03f8_4fca_84a5_f666a6853f8e
+id:OWLNamedIndividual_df5cb8bd_03f8_4fca_84a5_f666a6853f8e rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Orkney Islands Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_e260c061_06ea_42ed_bdfb_34f84bb743f8
-:OWLNamedIndividual_e260c061_06ea_42ed_bdfb_34f84bb743f8 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e260c061_06ea_42ed_bdfb_34f84bb743f8
+id:OWLNamedIndividual_e260c061_06ea_42ed_bdfb_34f84bb743f8 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Education Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0
-:OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0
+id:OWLNamedIndividual_e2cad0d8_d1c0_407d_82af_e9e0414048e0 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "NHS National Services Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_e6ed7c37_0103_4b49_b5f5_7bb7ac41b2a6
-:OWLNamedIndividual_e6ed7c37_0103_4b49_b5f5_7bb7ac41b2a6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e6ed7c37_0103_4b49_b5f5_7bb7ac41b2a6
+id:OWLNamedIndividual_e6ed7c37_0103_4b49_b5f5_7bb7ac41b2a6 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Scottish Commission for Social Security"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_e702314e_b191_4ccb_bab5_05653cb7059c
-:OWLNamedIndividual_e702314e_b191_4ccb_bab5_05653cb7059c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e702314e_b191_4ccb_bab5_05653cb7059c
+id:OWLNamedIndividual_e702314e_b191_4ccb_bab5_05653cb7059c rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Legal Aid Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_e91456dc_9c49_4f34_b04f_e93ea4e69a69
-:OWLNamedIndividual_e91456dc_9c49_4f34_b04f_e93ea4e69a69 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_e91456dc_9c49_4f34_b04f_e93ea4e69a69
+id:OWLNamedIndividual_e91456dc_9c49_4f34_b04f_e93ea4e69a69 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Accounts Commission for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_eaf6eec5_a6cc_45af_a187_65e823b00201
-:OWLNamedIndividual_eaf6eec5_a6cc_45af_a187_65e823b00201 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_eaf6eec5_a6cc_45af_a187_65e823b00201
+id:OWLNamedIndividual_eaf6eec5_a6cc_45af_a187_65e823b00201 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Fife Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f1606511_2eff_4b98_8644_61eae10f9ce5
-:OWLNamedIndividual_f1606511_2eff_4b98_8644_61eae10f9ce5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f1606511_2eff_4b98_8644_61eae10f9ce5
+id:OWLNamedIndividual_f1606511_2eff_4b98_8644_61eae10f9ce5 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "East Dunbartonshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f1df7cdb_98ee_4c79_86db_f607b79522ba
-:OWLNamedIndividual_f1df7cdb_98ee_4c79_86db_f607b79522ba rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f1df7cdb_98ee_4c79_86db_f607b79522ba
+id:OWLNamedIndividual_f1df7cdb_98ee_4c79_86db_f607b79522ba rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Angus"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f2131593_fe29_405a_9f4a_ab6d07eda2dd
-:OWLNamedIndividual_f2131593_fe29_405a_9f4a_ab6d07eda2dd rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f2131593_fe29_405a_9f4a_ab6d07eda2dd
+id:OWLNamedIndividual_f2131593_fe29_405a_9f4a_ab6d07eda2dd rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "First-tier Tax Tribunal for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f25de991_8209_4032_9a5d_806801e0a9c2
-:OWLNamedIndividual_f25de991_8209_4032_9a5d_806801e0a9c2 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f25de991_8209_4032_9a5d_806801e0a9c2
+id:OWLNamedIndividual_f25de991_8209_4032_9a5d_806801e0a9c2 rdf:type owl:NamedIndividual ,
                                                                   :OtherSigBody ;
                                                          rdfs:label "Justices of the Peace Advisory Committees"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f3c1202a_3681_44fd_abdd_442572b61648
-:OWLNamedIndividual_f3c1202a_3681_44fd_abdd_442572b61648 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f3c1202a_3681_44fd_abdd_442572b61648
+id:OWLNamedIndividual_f3c1202a_3681_44fd_abdd_442572b61648 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Environment Protection Agency"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f3f7a101_e4ae_451b_830a_8677051cea1d
-:OWLNamedIndividual_f3f7a101_e4ae_451b_830a_8677051cea1d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f3f7a101_e4ae_451b_830a_8677051cea1d
+id:OWLNamedIndividual_f3f7a101_e4ae_451b_830a_8677051cea1d rdf:type owl:NamedIndividual ,
                                                                   :NonMinisterialDept ;
                                                          rdfs:label "National Records of Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f5a68029_c14c_451d_8d3c_5dbb9da370e7
-:OWLNamedIndividual_f5a68029_c14c_451d_8d3c_5dbb9da370e7 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f5a68029_c14c_451d_8d3c_5dbb9da370e7
+id:OWLNamedIndividual_f5a68029_c14c_451d_8d3c_5dbb9da370e7 rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "East Renfrewshire"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f8bbd825_ec19_49ef_a0cf_692ea5d43e8b
-:OWLNamedIndividual_f8bbd825_ec19_49ef_a0cf_692ea5d43e8b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f8bbd825_ec19_49ef_a0cf_692ea5d43e8b
+id:OWLNamedIndividual_f8bbd825_ec19_49ef_a0cf_692ea5d43e8b rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Falkirk"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f9104e48_5007_499d_81ad_4b0306a6aff4
-:OWLNamedIndividual_f9104e48_5007_499d_81ad_4b0306a6aff4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_f9104e48_5007_499d_81ad_4b0306a6aff4
+id:OWLNamedIndividual_f9104e48_5007_499d_81ad_4b0306a6aff4 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveAgency ;
                                                          rdfs:label "Social Security Scotland Agency"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fa773131_4d22_496d_97a7_7b5cf45a185c
-:OWLNamedIndividual_fa773131_4d22_496d_97a7_7b5cf45a185c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fa773131_4d22_496d_97a7_7b5cf45a185c
+id:OWLNamedIndividual_fa773131_4d22_496d_97a7_7b5cf45a185c rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Shetland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fbe94b56_afdc_4642_a989_6f6c19a6bace
-:OWLNamedIndividual_fbe94b56_afdc_4642_a989_6f6c19a6bace rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fbe94b56_afdc_4642_a989_6f6c19a6bace
+id:OWLNamedIndividual_fbe94b56_afdc_4642_a989_6f6c19a6bace rdf:type owl:NamedIndividual ,
                                                                   :IntegrationAuthority ;
                                                          rdfs:label "Edinburgh City"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fccd4a49_cefb_44be_9e78_ec562c8a6296
-:OWLNamedIndividual_fccd4a49_cefb_44be_9e78_ec562c8a6296 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fccd4a49_cefb_44be_9e78_ec562c8a6296
+id:OWLNamedIndividual_fccd4a49_cefb_44be_9e78_ec562c8a6296 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Scottish Qualifications Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fd822d09_fbb0_43b9_9bdc_a1652eff07f6
-:OWLNamedIndividual_fd822d09_fbb0_43b9_9bdc_a1652eff07f6 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fd822d09_fbb0_43b9_9bdc_a1652eff07f6
+id:OWLNamedIndividual_fd822d09_fbb0_43b9_9bdc_a1652eff07f6 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Local Government Boundary Commission for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fd902804_9a40_452a_ad54_212014a3de39
-:OWLNamedIndividual_fd902804_9a40_452a_ad54_212014a3de39 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fd902804_9a40_452a_ad54_212014a3de39
+id:OWLNamedIndividual_fd902804_9a40_452a_ad54_212014a3de39 rdf:type owl:NamedIndividual ,
                                                                   :Council ;
                                                          rdfs:label "Argyll and Bute Council"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_fedc1ef3_6266_4b25_b220_fdd91f0e2f32
-:OWLNamedIndividual_fedc1ef3_6266_4b25_b220_fdd91f0e2f32 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_fedc1ef3_6266_4b25_b220_fdd91f0e2f32
+id:OWLNamedIndividual_fedc1ef3_6266_4b25_b220_fdd91f0e2f32 rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Cairngorms National Park Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5
-:OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5
+id:OWLNamedIndividual_ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                   :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ;
                                                          rdfs:label "NHS Orkney"@en .
 
