@@ -235,15 +235,11 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB
 :CentralGovPB rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( :CentralGovt
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                                           owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf org:Organization ;
+              rdfs:subClassOf :CentralGovt ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                              ] ;
               owl:disjointWith :GovernmentBody ,
                                :LocalGovPB ;
               rdfs:label "Central Government Public Corporation"@en .
@@ -288,15 +284,11 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority
 :IntegrationAuthority rdf:type owl:Class ;
-                      owl:equivalentClass [ owl:intersectionOf ( :LocalGov
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                                                   owl:someValuesFrom :HealthBody
-                                                                 ]
-                                                               ) ;
-                                            rdf:type owl:Class
-                                          ] ;
-                      rdfs:subClassOf :LocalGov ;
+                      rdfs:subClassOf :LocalGov ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                        owl:someValuesFrom :HealthBody
+                                      ] ;
                       rdfs:label "Integration Authority"@en .
 
 
@@ -308,15 +300,11 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPB
 :LocalGovPB rdf:type owl:Class ;
-            owl:equivalentClass [ owl:intersectionOf ( :LocalGov
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                                         owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-            rdfs:subClassOf org:Organization ;
+            rdfs:subClassOf :LocalGov ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                              owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                            ] ;
             rdfs:label "Local Government Public Corporation"@en .
 
 
@@ -1546,8 +1534,8 @@ schema:email rdfs:label "has email"@en ;
              vann:usageNote "A property through which an e-mail address for the Public Organisation, or a representative of it, can be contacted."@en .
 
 
-schema:hoursAvailable rdfs:label "availability restriction"@en ;
-                      vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en .
+schema:hoursAvailable vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en ;
+                      rdfs:label "availability restriction"@en .
 
 
 schema:logo rdfs:label "logo"@en ;
