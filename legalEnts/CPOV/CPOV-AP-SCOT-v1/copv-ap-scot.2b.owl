@@ -356,6 +356,24 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Regional Transport Partnership"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_2c73639e_cc84_4672_864f_55658272f8c1
+:OWLClass_2c73639e_cc84_4672_864f_55658272f8c1 rdf:type owl:Class ;
+                                               rdfs:subClassOf :LocalGov ;
+                                               rdfs:label "Local Harbour Trust"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_3f88aadc_0124_4598_9d0f_6e05a738f849
+:OWLClass_3f88aadc_0124_4598_9d0f_6e05a738f849 rdf:type owl:Class ;
+                                               rdfs:subClassOf :LocalGov ;
+                                               rdfs:label "Community Council"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_49495dde_8e9d_4727_adc6_8f83f85c90dd
+:OWLClass_49495dde_8e9d_4727_adc6_8f83f85c90dd rdf:type owl:Class ;
+                                               rdfs:subClassOf cv:PublicOrganisation ;
+                                               rdfs:label "Parliamentary Commissioner"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81
 :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 rdf:type owl:Class ;
                                                rdfs:subClassOf :HealthBody ;
@@ -389,6 +407,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "PrivateOrganisation"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_e52b0e7f_a8cb_42b5_a020_45ef099c6b06
+:OWLClass_e52b0e7f_a8cb_42b5_a020_45ef099c6b06 rdf:type owl:Class ;
+                                               rdfs:subClassOf cv:PublicOrganisation ;
+                                               rdfs:label "Crown Estate"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799
 :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 rdf:type owl:Class ;
                                                rdfs:subClassOf :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ,
@@ -397,6 +421,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                                  owl:allValuesFrom :OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
                                                                ] ;
                                                rdfs:label "Special NHS Board"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9
+:OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 rdf:type owl:Class ;
+                                               rdfs:subClassOf cv:PublicOrganisation ;
+                                               rdfs:label "Court"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
