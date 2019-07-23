@@ -6,5 +6,5 @@ Things to take into account:
 
 * Italian work - https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/COV 
 
-[Visualisation of copv-ap-scot.1a.owl](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/pwin/vocabs/master/legalEnts/CPOV/CPOV-AP-SCOT-v1/copv-ap-scot.1a.owl)
+[Visualisation of copv-ap-scot.owl](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/pwin/vocabs/master/legalEnts/CPOV/CPOV-AP-SCOT-v1/copv-ap-scot.owl)
 
