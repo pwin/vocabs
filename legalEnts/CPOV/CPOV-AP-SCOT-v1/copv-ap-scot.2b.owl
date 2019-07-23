@@ -228,6 +228,7 @@ cv:FoundationEvent rdf:type owl:Class ;
 ###  http://data.europa.eu/m8g/PublicOrganisation
 cv:PublicOrganisation rdf:type owl:Class ;
                       rdfs:subClassOf org:Organization ;
+                      owl:disjointWith :OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc ;
                       rdfs:comment "The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships."@en ;
                       rdfs:label "PublicOrganisation"@en .
 
@@ -273,7 +274,7 @@ cv:PublicOrganisation rdf:type owl:Class ;
 :Council rdf:type owl:Class ;
          rdfs:subClassOf :LocalGov ;
          owl:disjointWith :IntegrationAuthority ;
-         rdfs:label "Council"@en .
+         rdfs:label "Unitary Authority"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency
@@ -1616,8 +1617,8 @@ schema:hoursAvailable vann:usageNote "The availabilityRestriction property links
                       rdfs:label "availability restriction"@en .
 
 
-schema:logo vann:usageNote "A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value."@en ;
-            rdfs:label "logo"@en .
+schema:logo rdfs:label "logo"@en ;
+            vann:usageNote "A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value."@en .
 
 
 schema:openingHours vann:usageNote "The value of this property is structured text that gives the hours at which the contact point is normally available. Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00."@en ;
@@ -1653,9 +1654,9 @@ foaf:homepage vann:usageNote "A property to link an organization to its website 
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cv:PublicOrganisation
-                :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
-                :OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc
+  owl:members ( :CentralGovt
+                :LocalGov
+                :ParlBody
               )
 ] .
 
