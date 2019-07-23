@@ -1,12 +1,9 @@
 @prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix m8g: <http://data.europa.eu/m8g/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -14,31 +11,44 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix regorg: <http://www.w3.org/ns/regorg#> .
+@prefix schema: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
 
-<http://entities.gov.scot/def/gov/cpov-ap-scot/> rdf:type owl:Ontology ;
-                                                  owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
-                                                  owl:imports m8g:cpov ;
-                                                  rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en 
-                                    owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/> ;
-                                    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                    dct:creator <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244>
-                                    dct:description "This is the ontology of the Scottish application profile for Organizations (Public and Private). It allows one to model the main information on organizations (public or private), including the organization of the offices and their head of units. It is in draft form."@en ;
-                                    dct:issued "2019-07-09"^^xsd:date ;
-                                    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
-                                    dct:modified "2019-04-29"^^xsd:date ;
-                                    dct:publisher <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
-                                    dct:rightsHolder <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
-                                    dct:title "Organization (public and private) ontology - Scottish application profile"@en ;
-                                    rdfs:comment "This is the ontology of the Scottish application profile for Organizations (Public and Private)"@en ;
-                                    rdfs:isDefinedBy <http://entities.gov.scot/def/gov/cpov-ap-scot/> ;
-                                    rdfs:label "Scottish Organization (Public or Private) ontology"@en  ;
-                                    owl:versionInfo "Version 1 - Modified 9 July 2019 - An initial draft."@en  ;
-                                    .
+: rdf:type owl:Ontology ;
+                                  owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
+                                  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                  dct:creator :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                  dct:description "This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form."@en ;
+                                  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+                                  dct:modified "2019-04-29"^^xsd:date ;
+                                  dct:publisher :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                  dct:rightsHolder :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
+                                  dct:title "Organization (public) ontology - Scottish application profile"@en ;
+                                  rdfs:comment "Scottish application profile for EC Core Public Organisation Vocabulary"@en ,
+                                               "This is the ontology of the Scottish application profile for Organisations (Public)"@en ;
+                                  rdfs:isDefinedBy : ;
+                                  rdfs:label "Scottish Organization (Public) ontology"@en ;
+                                  owl:versionInfo "Version 1 - Modified 9 July 2019 - An initial draft."@en ;
+                                  vann:preferredNamespacePrefix "cpovapscot" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/dcmitype/StillImage
+<http://purl.org/dc/dcmitype/StillImage> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+dct:accrualPeriodicity rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/description
 dct:description rdf:type owl:AnnotationProperty .
@@ -48,16 +58,48 @@ dct:description rdf:type owl:AnnotationProperty .
 dct:format rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/hasVersion
+dct:hasVersion rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/identifier
 dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+dct:language rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
 dct:license rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+dct:rightsHolder rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/type
+dct:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
@@ -72,12 +114,24 @@ vcard:fn rdf:type owl:AnnotationProperty .
 vcard:hasEmail rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/adms#status
+<http://www.w3.org/ns/adms#status> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#accessURL
 dcat:accessURL rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/dcat#contactPoint
+dcat:contactPoint rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#downloadURL
 dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
@@ -88,14 +142,165 @@ prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
 prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/Image
+foaf:Image rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:AnnotationProperty .
 
-                                    
-                                    
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/logo
+schema:logo rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/org#changedBy
+org:changedBy rdf:type owl:ObjectProperty  .
+
+###  http://www.w3.org/ns/org#orginalOrganization
+org:originalOrganization rdf:type owl:ObjectProperty .
+
+###  http://www.w3.org/ns/org#reportsTo
+org:reportsTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/org#resultedFrom
+org:resultedFrom rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/org#resultingOrganization
+org:resultingOrganization rdf:type owl:ObjectProperty .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:ObjectProperty ;
+  rdfs:label "preferred label"@en ;
+  vann:usageNote "As defined in the ORG Ontology, a preferred label is used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property."@en .
+
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:ObjectProperty ;
+  rdfs:label "alternative label"@en ;
+  vann:usageNote "In line with ORG and SKOS itself, an organization may have any number of alternative or informal names, irrespective of language."@en .
+
+<http://www.w3.org/ns/org#identifier> rdf:type owl:ObjectProperty ;
+  rdfs:label "identifier"@en ;
+  vann:usageNote "Many organizations are referred to by an acronym or some other identifier. For example, among the EU institutions, the ECB is the identifier for the European Central Bank, OLAF for the European Anti-Fraud Office, and so on. These are formally recognised by the European Commission which provides a list of such acronyms . Analogous lists should be used in other contexts."@en .
+
+<http://purl.org/dc/terms/description> rdf:type owl:ObjectProperty ;
+  rdfs:label "description"@en ;
+  vann:usageNote "This property provides a textual description of the organization."@en .
+  
+<http://purl.org/dc/terms/spatial>rdf:type owl:ObjectProperty ;
+  rdfs:label "spatial"@en ;
+  vann:usageNote "This property links an organization to the administrative region(s) that it covers. The value of the properly should be the URI of the region as defined in an authoritative list of regions. In Europe, this is likely to be the Administrative Territorial Units  Named Authority List maintained by the Publications Office's Metadata Registry. The ATU list does not include a geometry. That is, the territory is only identified by its name not its spatial coordinates. This is likely to be the case for similar lists. If geometries are available for the Public Organization's territory, they can be linked from the territorial unit using the Location Core Vocabulary's locn:geometry property."@en .
+  
+<http://www.w3.org/ns/org#purpose> rdf:type owl:ObjectProperty ;
+  rdfs:label "purpose"@en ;
+  vann:usageNote "This property links an organization to its function(s) which are expressed as a SKOS Concept Scheme. The ORG ontology suggests that this property can also be thought of as meaning 'remit' or 'responsibility.' Ideally this will link to a COFOG code but where this isn't possible or appropriate, other controlled vocabularies may be used."@en ;
+  rdfs:domain m8g:PublicOrganisation .
+  
+<http://www.w3.org/ns/org#classification> rdf:type owl:ObjectProperty ;
+  rdfs:label "classification"@en ;
+  vann:usageNote "This property links an organization to a SKOS Concept that provides a classification. As an example, the Publications Office of the European Union provides a Named Authority list of Organization Types  which is appropriate for European institutions. Other classification schemes should be used at other levels of public organization."@en .
+  
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:ObjectProperty ;
+  rdfs:label "homepage"@en ;
+  vann:usageNote "A property to link an organization to its website homepage. The value of this property is a URL irrespective of the serialisation of the data."@en .
+  
+<http://www.w3.org/ns/org#hasSubOrganization> rdf:type owl:ObjectProperty ;
+  rdfs:label "has SubOrganization"@en ;
+  vann:usageNote "Public Organizations are often large and complex and may be a collection of smaller organizations, each of which has a specific identity that may be legally defined. The hasSubOrganization and subOrganizationOf properties express the relationships between organizations in a hierarchical structure. In contrast, hasUnit and unitOf are used to link to operational departments within an organization that may not generally exist in their own right. In the RDF release of the CPOV, hasSubOrganization is bound to org:hasSubOrganization and subOrganizationOf is bound to org:subOrganizationOf."@en .
+  
+<http://www.w3.org/ns/org#subOrganizationOf> rdf:type owl:ObjectProperty ;
+  rdfs:label "SubOrganization of"@en ;
+  vann:usageNote "Public Organizations are often large and complex and may be a collection of smaller organizations, each of which has a specific identity that may be legally defined. The hasSubOrganization and subOrganizationOf properties express the relationships between organizations in a hierarchical structure. In contrast, hasUnit and unitOf are used to link to operational departments within an organization that may not generally exist in their own right."@en .
+  
+<http://www.w3.org/ns/org#hasUnit> rdf:type owl:ObjectProperty ;
+  rdfs:label "has unit"@en ;
+  vann:usageNote "Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent organization with hasUnit and to the parent with unitOf. An Organizational Unit is a sub class of Organization but conceptually does not exist in its own right. This is in contrast to a sub organization that, although part of the larger organization, may be legally distinct or otherwise enjoy a degree of autonomy."@en .
+
+<http://www.w3.org/ns/org#unitOf> rdf:type owl:ObjectProperty ;
+  rdfs:label "unit of"@en ;
+  vann:usageNote "Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent organization with hasUnit and to the parent with unitOf. An Organizational Unit is a sub class of Organization but conceptually does not exist in its own right. This is in contrast to a sub organization that, although part of the larger organization, may be legally distinct or otherwise enjoy a degree of autonomy."@en .
+  
+<http://www.w3.org/ns/org#memberOf> rdf:type owl:ObjectProperty ;
+  rdfs:label "member of"@en ;
+  vann:usageNote "One organization may be a member of another without being a sub organization, i.e. they are independent entities. These properties allow such relationships to be captured. The memberOf and hasMember properties are very simple and don't support statements describing the nature of the membership. The W3C Organization Ontology provides both this simple method and a more sophisticated model  that does make it possible to, for example, provide information about the period of time in which one organization was a member of another, the level of membership etc. That more sophisticated model should be used where necessary and may be used in addition to the simple memberOf/hasMember properties."@en .
+  
+<http://www.w3.org/ns/org#hasMember> rdf:type owl:ObjectProperty ;
+  rdfs:label "has member"@en ;
+  vann:usageNote "One organization may be a member of another without being a sub organization, i.e. they are independent entities. These properties allow such relationships to be captured. The memberOf and hasMember properties are very simple and don't support statements describing the nature of the membership. The W3C Organization Ontology provides both this simple method and a more sophisticated model  that does make it possible to, for example, provide information about the period of time in which one organization was a member of another, the level of membership etc. That more sophisticated model should be used where necessary and may be used in addition to the simple memberOf/hasMember properties."@en .
+  
+<http://schema.org/contactPoint> rdf:type owl:ObjectProperty ;
+  rdfs:label "contact point"@en ;
+  vann:usageNote "The contact point property links to a Contact Point that provides contact information, in particular a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."@en .
+  
+<http://www.w3.org/ns/locn#address> rdf:type owl:ObjectProperty ;
+  rdfs:label "address"@en ;
+  vann:usageNote "A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used."@en .
+  
+<http://www.w3.org/1999/xhtml/vocab#prev> rdf:type owl:ObjectProperty ;
+  rdfs:label "prev"@en ;
+  vann:usageNote "In some cases, it is necessary to be able to create an ordered sequence of organizations that precede and succeed each other. To support this, the CPOV includes the well-known relationships of previous and next to allow such sequences to be captured and computed."@en .
+ 
+<http://www.w3.org/1999/xhtml/vocab#next> rdf:type owl:ObjectProperty;
+  rdfs:label "prev"@en ;
+  vann:usageNote "In some cases, it is necessary to be able to create an ordered sequence of organizations that precede and succeed each other. To support this, the CPOV includes the well-known relationships of previous and next to allow such sequences to be captured and computed."@en .
+
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:DatatypeProperty .
+
+
+
+
 #################################################################
 #    Classes
 #################################################################
+
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#ChangeEvent
+org:ChangeEvent rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+org:Organization rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#OrganizationalUnit
+org:OrganizationalUnit rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/regorg#RegisteredOrganization
+regorg:RegisteredOrganization rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class .
+
+
 
 ###  http://data.europa.eu/m8g/FoundationEvent
 m8g:FoundationEvent rdf:type owl:Class ;
@@ -248,6 +453,10 @@ m8g:PublicOrganisation rdf:type owl:Class ;
 <http://schema.org/OpeningHoursSpecification> rdf:type owl:Class ;
                                               <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary makes full use of schema.org’s openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en ;
                                               rdfs:label "opening hours specification"@en .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+dcat:Dataset rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/locn#Address
@@ -1361,4 +1570,4 @@ m8g:PublicOrganisation rdf:type owl:Class ;
 ] .
 
 
-###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
