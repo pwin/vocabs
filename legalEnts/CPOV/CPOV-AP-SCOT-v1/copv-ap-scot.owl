@@ -20,6 +20,7 @@
 
 <http://entities.gov.scot/def/gov/cpov-ap-scot/> rdf:type owl:Ontology ;
                                                   owl:versionIRI <http://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
+                                                  owl:imports <http://www.w3.org/ns/locn> ;
                                                   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                   dct:creator :OWLNamedIndividual_4cc96a2c_e780_47c9_ac0c_633e285a1244 ;
                                                   dct:description "This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form."@en ;
