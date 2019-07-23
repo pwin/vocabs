@@ -344,6 +344,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Jurisdiction"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_02edb293_58c9_40f6_a404_bd6fbbff0052
+:OWLClass_02edb293_58c9_40f6_a404_bd6fbbff0052 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 ;
+                                               rdfs:label "Sheriff Court"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
 :OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab rdf:type owl:Class ;
                                                rdfs:subClassOf :OWLClass_020685c0_11f6_4e4f_bc0b_0a5646b005e7 ;
@@ -362,6 +368,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Local Harbour Trust"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_38932f93_9b68_4075_9bef_0c30cf831d20
+:OWLClass_38932f93_9b68_4075_9bef_0c30cf831d20 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 ;
+                                               rdfs:label "Sheriff Appeal Court"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_3f88aadc_0124_4598_9d0f_6e05a738f849
 :OWLClass_3f88aadc_0124_4598_9d0f_6e05a738f849 rdf:type owl:Class ;
                                                rdfs:subClassOf :LocalGov ;
@@ -374,10 +386,22 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Parliamentary Commissioner"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_6113e301_e98c_4c73_a9c5_25b5451735fb
+:OWLClass_6113e301_e98c_4c73_a9c5_25b5451735fb rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 ;
+                                               rdfs:label "High Court"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81
 :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 rdf:type owl:Class ;
                                                rdfs:subClassOf :HealthBody ;
                                                rdfs:label "NHSBoard"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_92e4bb72_6db7_4e20_891a_515630909c86
+:OWLClass_92e4bb72_6db7_4e20_891a_515630909c86 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 ;
+                                               rdfs:label "Supreme Court"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_959b4809_6436_4883_82cb_76480279edb4
@@ -399,6 +423,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                                  owl:allValuesFrom :OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
                                                                ] ;
                                                rdfs:label "Territorial NHS Board"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_c4b8d6e1_5531_4fb1_a5f7_da2fd4b56282
+:OWLClass_c4b8d6e1_5531_4fb1_a5f7_da2fd4b56282 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9 ;
+                                               rdfs:label "JP Court"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_c82d1926_8fa2_4ed3_b028_9ad0603004cc
@@ -1686,6 +1716,17 @@ foaf:homepage vann:usageNote "A property to link an organization to its website 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :CentralGovt
                 :LocalGov
+                :OWLClass_49495dde_8e9d_4727_adc6_8f83f85c90dd
+                :OWLClass_e52b0e7f_a8cb_42b5_a020_45ef099c6b06
+                :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9
+                :ParlBody
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CentralGovt
+                :LocalGov
                 :ParlBody
               )
 ] .
@@ -1699,6 +1740,16 @@ foaf:homepage vann:usageNote "A property to link an organization to its website 
                 :OtherSigBody
                 :ParlCommOrOmbuds
                 :Tribunal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :OWLClass_02edb293_58c9_40f6_a404_bd6fbbff0052
+                :OWLClass_38932f93_9b68_4075_9bef_0c30cf831d20
+                :OWLClass_6113e301_e98c_4c73_a9c5_25b5451735fb
+                :OWLClass_92e4bb72_6db7_4e20_891a_515630909c86
+                :OWLClass_c4b8d6e1_5531_4fb1_a5f7_da2fd4b56282
               )
 ] .
 
