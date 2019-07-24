@@ -1515,7 +1515,7 @@ id:OWLNamedIndividual_dbe8ac32_1a87_4d67_be93_34657c9f3e9d rdf:type owl:NamedInd
 
 ###  http://entities.gov.scot/id/gov/cpov-ap-scot/OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18
 id:OWLNamedIndividual_dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18 rdf:type owl:NamedIndividual ,
-                                                                    :CentralGovPB ;
+                                                                    :OWLClass_e52b0e7f_a8cb_42b5_a020_45ef099c6b06 ;
                                                            rdfs:label "The Crown Estate Scotland - Interim Management"@en .
 
 
@@ -1673,12 +1673,12 @@ schema:email rdfs:label "has email"@en ;
              vann:usageNote "A property through which an e-mail address for the Public Organisation, or a representative of it, can be contacted."@en .
 
 
-schema:hoursAvailable vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en ;
-                      rdfs:label "availability restriction"@en .
+schema:hoursAvailable rdfs:label "availability restriction"@en ;
+                      vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en .
 
 
-schema:logo rdfs:label "logo"@en ;
-            vann:usageNote "A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value."@en .
+schema:logo vann:usageNote "A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value."@en ;
+            rdfs:label "logo"@en .
 
 
 schema:openingHours vann:usageNote "The value of this property is structured text that gives the hours at which the contact point is normally available. Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00."@en ;
