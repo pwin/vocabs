@@ -241,8 +241,11 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB
 :AdvisoryNDPB rdf:type owl:Class ;
-              rdfs:subClassOf :NDPB ;
-              owl:disjointWith :ExecutiveNDPB ;
+              rdfs:subClassOf :NDPB ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                owl:someValuesFrom :OWLClass_4d61cd11_e099_4287_97db_ad0d215cd03e
+                              ] ;
               rdfs:label "Advisory Non-Departmental Public Body"@en .
 
 
@@ -279,13 +282,21 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency
 :ExecutiveAgency rdf:type owl:Class ;
-                 rdfs:subClassOf :ArmsLengthBody ;
+                 rdfs:subClassOf :ArmsLengthBody ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                   owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
+                                 ] ;
                  rdfs:label "Executive Agency"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB
 :ExecutiveNDPB rdf:type owl:Class ;
-               rdfs:subClassOf :NDPB ;
+               rdfs:subClassOf :NDPB ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                 owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
+                               ] ;
                rdfs:label "Executive Non-Departmental Public Body"@en .
 
 
@@ -380,10 +391,21 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                rdfs:label "Community Council"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_46ecfa2a_d2f7_426a_ad6e_251d26dd5df2
+:OWLClass_46ecfa2a_d2f7_426a_ad6e_251d26dd5df2 rdf:type owl:Class ;
+                                               rdfs:label "Function"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_49495dde_8e9d_4727_adc6_8f83f85c90dd
 :OWLClass_49495dde_8e9d_4727_adc6_8f83f85c90dd rdf:type owl:Class ;
                                                rdfs:subClassOf cv:PublicOrganisation ;
                                                rdfs:label "Parliamentary Commissioner"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_4d61cd11_e099_4287_97db_ad0d215cd03e
+:OWLClass_4d61cd11_e099_4287_97db_ad0d215cd03e rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_46ecfa2a_d2f7_426a_ad6e_251d26dd5df2 ;
+                                               rdfs:label "Advisory"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_6113e301_e98c_4c73_a9c5_25b5451735fb
@@ -407,6 +429,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_959b4809_6436_4883_82cb_76480279edb4
 :OWLClass_959b4809_6436_4883_82cb_76480279edb4 rdf:type owl:Class ;
                                                rdfs:label "LegalStatus"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
+:OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_46ecfa2a_d2f7_426a_ad6e_251d26dd5df2 ;
+                                               rdfs:label "Executive"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
@@ -1720,26 +1748,6 @@ foaf:homepage vann:usageNote "A property to link an organization to its website 
                 :OWLClass_e52b0e7f_a8cb_42b5_a020_45ef099c6b06
                 :OWLClass_fe94eb74_bf9c_4dd7_8830_55b15f176bd9
                 :ParlBody
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CentralGovt
-                :LocalGov
-                :ParlBody
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ExecutiveAgency
-                :HealthBody
-                :NDPB
-                :NonMinisterialDept
-                :OtherSigBody
-                :ParlCommOrOmbuds
-                :Tribunal
               )
 ] .
 
