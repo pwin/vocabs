@@ -241,11 +241,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB
 :AdvisoryNDPB rdf:type owl:Class ;
-              rdfs:subClassOf :NDPB ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                owl:someValuesFrom :OWLClass_4d61cd11_e099_4287_97db_ad0d215cd03e
-                              ] ;
+              owl:equivalentClass [ owl:intersectionOf ( :NDPB
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                           owl:someValuesFrom :OWLClass_4d61cd11_e099_4287_97db_ad0d215cd03e
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
               rdfs:label "Advisory Non-Departmental Public Body"@en .
 
 
@@ -257,11 +260,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB
 :CentralGovPB rdf:type owl:Class ;
-              rdfs:subClassOf :CentralGovt ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
-                              ] ;
+              owl:equivalentClass [ owl:intersectionOf ( :CentralGovt
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                           owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
               owl:disjointWith :GovernmentBody ,
                                :LocalGovPB ;
               rdfs:label "Central Government Public Corporation"@en .
@@ -282,21 +288,27 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency
 :ExecutiveAgency rdf:type owl:Class ;
-                 rdfs:subClassOf :ArmsLengthBody ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                   owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
-                                 ] ;
+                 owl:equivalentClass [ owl:intersectionOf ( :ArmsLengthBody
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                              owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
                  rdfs:label "Executive Agency"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB
 :ExecutiveNDPB rdf:type owl:Class ;
-               rdfs:subClassOf :NDPB ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                 owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
-                               ] ;
+               owl:equivalentClass [ owl:intersectionOf ( :NDPB
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                            owl:someValuesFrom :OWLClass_9f604bcb_bfeb_484e_9934_a133c6516be3
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
                rdfs:label "Executive Non-Departmental Public Body"@en .
 
 
@@ -314,11 +326,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority
 :IntegrationAuthority rdf:type owl:Class ;
-                      rdfs:subClassOf :LocalGov ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                                        owl:someValuesFrom :HealthBody
-                                      ] ;
+                      owl:equivalentClass [ owl:intersectionOf ( :LocalGov
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                                   owl:someValuesFrom :HealthBody
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
                       rdfs:label "Integration Authority"@en .
 
 
@@ -330,11 +345,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPB
 :LocalGovPB rdf:type owl:Class ;
-            rdfs:subClassOf :LocalGov ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
-                              owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
-                            ] ;
+            owl:equivalentClass [ owl:intersectionOf ( :LocalGov
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://entities.gov.scot/def/gov/cpov-scot/hasFunction> ;
+                                                         owl:someValuesFrom :OWLClass_a6611bdb_47ed_44b8_87a0_0f4a5e3dd8fc
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
             rdfs:label "Local Government Public Corporation"@en .
 
 
@@ -445,11 +463,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_af26a368_7b07_4862_a961_537769d52463
 :OWLClass_af26a368_7b07_4862_a961_537769d52463 rdf:type owl:Class ;
-                                               rdfs:subClassOf :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
-                                                                 owl:allValuesFrom :OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
-                                                               ] ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
+                                                                                            owl:allValuesFrom :OWLClass_fef3236c_d7f8_4c6f_9a45_3aeedb0b77a0
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
                                                rdfs:label "Territorial NHS Board"@en .
 
 
@@ -473,11 +494,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799
 :OWLClass_f13a2a06_9172_4e47_92cd_95befb4de799 rdf:type owl:Class ;
-                                               rdfs:subClassOf :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81 ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
-                                                                 owl:allValuesFrom :OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
-                                                               ] ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_82caa07b_538e_4f58_9c9e_c38ccabc4c81
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLObjectProperty_16f4d45e_b606_4e8a_b4d1_152c1c7614a6 ;
+                                                                                            owl:allValuesFrom :OWLClass_28c37236_271a_4aea_86a9_b2fc947274ab
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
                                                rdfs:label "Special NHS Board"@en .
 
 
