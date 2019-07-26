@@ -1,0 +1,2401 @@
+@prefix : <http://entities.gov.scot/kos/gov/puborg/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix id: <http://entities.gov.scot/id/gov/puborg/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+foaf:focus a owl:ObjectProperty ;
+    dct:created "2019-07-26T16:13:16.204000+00:00"^^xsd:dateTime .
+
+<http://entities.gov.scot/id/gov/puborg/3e20c75b_dc59_4db7_9e2d_447ddc79ea4f> a owl:Thing ;
+    dct:created "2019-07-26T16:53:58.545000+00:00"^^xsd:dateTime .
+
+:c_0075d3cf a skos:Concept ;
+    dct:created "2019-02-14T14:09:33.760000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:11.324000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bebed75d ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Canals"@en ;
+    skosxl:prefLabel :xl_en_04559117 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/65a24ace_e92c_484b_b65b_5e5bb1c95578> .
+
+:c_0293f3a7 a skos:Concept ;
+    dct:created "2019-02-14T15:50:43.474000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:19:38.677000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Western Isles"@en ;
+    skosxl:prefLabel :xl_en_3f05785e ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/2e550934_4e21_4c2f_9940_e38fa328a463> .
+
+:c_031bb26c a skos:Concept ;
+    dct:created "2019-02-14T14:17:06.155000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:41.176000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Highlands and Islands Airports Ltd"@en ;
+    skosxl:prefLabel :xl_en_73d53f8d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d> .
+
+:c_03f1e418 a skos:Concept ;
+    dct:modified "2019-07-05T10:09:39.048000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Dumbarton and Clydebank."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "West Dunbartonshire Council"@en .
+
+:c_061b75fa a skos:Concept ;
+    dct:created "2019-02-14T15:49:27.888000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:28.910000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Greater Glasgow and Clyde"@en ;
+    skosxl:prefLabel :xl_en_4b114738 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/4ceb6522_d4de_44e3_94b3_2171a145b5fa> .
+
+:c_06aa3e1e a skos:Concept ;
+    dct:created "2019-02-14T14:30:53.738000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:21:50.160000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Advisory Committee on Distinction Awards"@en ;
+    skosxl:prefLabel :xl_en_fc26e33d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/37d27d5a_a522_44d9_af79_0a14c02f09b8> .
+
+:c_0adbc2dc a skos:Concept ;
+    dct:created "2019-02-14T14:17:15.943000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:48.378000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Highlands and Islands Enterprise"@en ;
+    skosxl:prefLabel :xl_en_7604f097 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/74bf730b_f92f_4b09_baea_0a9fde6950bd> .
+
+:c_0bd24004 a skos:Concept ;
+    dct:created "2019-07-05T11:45:21.079000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Aberdeen City"@en ;
+    skosxl:prefLabel :xl_en_59e59a5c ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/39d392dd_5aa3_4824_87ed_28ac59c8aac3> .
+
+:c_0bddbbcd a skos:Concept ;
+    dct:created "2019-02-14T14:36:19.995000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:18.672000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Charity Appeals Panel"@en ;
+    skosxl:prefLabel :xl_en_6f224542 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9b1bf79a_294e_42da_be7e_b5832b31f886> .
+
+:c_0cde13e7 a skos:Concept ;
+    dct:created "2019-02-14T14:20:38.394000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:37.132000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Legal Complaints Commission"@en ;
+    skosxl:prefLabel :xl_en_b8bfc88e ;
+    foaf:focus id:b09d57a7_4ee7_488d_a2ca_822ba54f77d0 .
+
+:c_0d3d47a7 a skos:Concept ;
+    dct:created "2019-02-14T14:16:38.547000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:20.301000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Creative Scotland"@en ;
+    skosxl:prefLabel :xl_en_3db09d93 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/2c771911_f5aa_423d_8e78_cbb48d448c28> .
+
+:c_0f9bed68 a skos:Concept ;
+    dct:created "2019-02-14T15:45:11.055000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:30:53.325000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Healthcare Improvement Scotland"@en ;
+    skosxl:prefLabel :xl_en_23fb58fe ;
+    foaf:focus <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_99d316c3_493e_430f_9fbb_b515e3fe87ec> .
+
+:c_0f9e5646 a skos:Concept ;
+    dct:created "2019-02-14T16:02:30.056000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:09:52.533000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Audit Scotland"@en ;
+    skosxl:prefLabel :xl_en_089d4053 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/3e20c75b_dc59_4db7_9e2d_447ddc79ea4f> .
+
+:c_137d9457 a skos:Concept ;
+    dct:created "2019-02-14T14:18:24.030000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:09.605000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Police Investigations and Review Commissioner"@en ;
+    skosxl:prefLabel :xl_en_991b55d6 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/391bb193_0f4d_489b_8f91_29c336a1e2d4> .
+
+:c_13a9497f a skos:Concept ;
+    dct:created "2019-02-14T15:47:57.317000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:17:42.821000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Borders"@en ;
+    skosxl:prefLabel :xl_en_806d5f05 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/58da35bb_0ca5_445c_9218_7ab1028f0d77> .
+
+:c_1650c2e2 a skos:Concept ;
+    dct:created "2019-02-14T14:11:45.573000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:09:11.437000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Accounts Commission for Scotland"@en ;
+    skosxl:prefLabel :xl_en_6a457e03 ;
+    foaf:focus id:e91456dc_9c49_4f34_b04f_e93ea4e69a69 .
+
+:c_1841d5a7 a skos:Concept ;
+    dct:created "2019-02-14T14:16:29.147000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:12:32.614000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Community Justice Scotland"@en ;
+    skosxl:prefLabel :xl_en_674c3018 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/3c7cd4e9_2312_48c9_90c9_bdc69209a02b> .
+
+:c_18fd4040 a skos:Concept ;
+    dct:created "2019-02-14T16:04:02.461000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:20.928000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "HM Fire Service Inspectorate in Scotland"@en ;
+    skosxl:prefLabel :xl_en_fdcbc442 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/751a451c_d653_49b7_9334_e44b585f720a> .
+
+:c_19ccaea5 a skos:Concept ;
+    dct:modified "2019-07-05T10:10:59.901000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "East Renfrewshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Renfrewshire Council"@en .
+
+:c_1b06f47f a skos:Concept ;
+    dct:created "2019-02-14T15:45:43.455000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:31:53.730000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Education for Scotland"@en ;
+    skosxl:prefLabel :xl_en_366c41ac ;
+    foaf:focus id:ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6 .
+
+:c_1f2d6709 a skos:Concept ;
+    dct:created "2019-02-14T14:09:24.988000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:27.463000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bebed75d ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Glasgow Prestwick Airport"@en ;
+    skosxl:prefLabel :xl_en_aa311d62 ;
+    foaf:focus id:cc4ae308_2620_4bed_8cbe_6e1c5ae6230c .
+
+:c_1fff6e4e a skos:Concept ;
+    dct:created "2019-02-14T16:00:02.101000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:19.517000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Public Services Ombudsman"@en ;
+    skosxl:prefLabel :xl_en_2de42fda .
+
+:c_21f94c1f a skos:Concept ;
+    dct:modified "2019-07-05T10:11:26.500000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Argyll and Bute."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Argyll and Bute Council"@en,
+        "Comhairle Earra-ghÃ idheal agus BhÃ²id"@gd .
+
+:c_222d3e5c a skos:Concept ;
+    dct:created "2019-07-05T11:43:12.476000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Inverclyde"@en ;
+    skosxl:prefLabel :xl_en_081bf712 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/48732be4_ef17_498d_9e7f_22b786daa818> .
+
+:c_22b1ae5f a skos:Concept ;
+    dct:created "2019-02-14T15:49:09.587000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:20.796000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Grampian"@en ;
+    skosxl:prefLabel :xl_en_4b032767 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/98e30113_87fb_4f13_8a2e_909adf97d6eb> .
+
+:c_242cbae2 a skos:Concept ;
+    dct:created "2019-07-05T11:43:38.014000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "North Lanarkshire"@en ;
+    skosxl:prefLabel :xl_en_429cadad ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/62a8b7a7_cf73_438d_9dc6_5822c72b4aa5> .
+
+:c_291334e6 a skos:Concept ;
+    dct:created "2019-02-14T14:35:52.643000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:16.183000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Private Rented Housing Panel"@en ;
+    skosxl:prefLabel :xl_en_a12c39da ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/370050e0_9d69_4d09_b305_aee95201fce9> .
+
+:c_2917ca40 a skos:Concept ;
+    dct:created "2019-02-14T14:01:48.250000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:00.449000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Education Scotland"@en ;
+    skosxl:prefLabel :xl_en_33549425 ;
+    foaf:focus id:e260c061_06ea_42ed_bdfb_34f84bb743f8 .
+
+:c_29879078 a skos:Concept ;
+    dct:created "2019-02-14T16:03:50.281000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:14.791000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "HM Chief Inspector of Prosecution in Scotland"@en ;
+    skosxl:prefLabel :xl_en_4da0b9cc ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/929a9546_ba45_41e5_b2dc_c16c833af8da> .
+
+:c_2d29bf55 a skos:Concept ;
+    dct:created "2019-02-14T15:48:09.979000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:17:50.642000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Dumfries & Galloway"@en ;
+    skosxl:prefLabel :xl_en_93e698cf ;
+    foaf:focus id:af741459_81d5_40a0_b7a5_21e85a84fea4 .
+
+:c_2e9998ef a skos:Concept ;
+    dct:created "2019-02-14T16:02:50.750000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:10.731000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Court of Lord Lyon"@en ;
+    skosxl:prefLabel :xl_en_55dd6f23 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/030b2724_75bd_496f_bfad_30ec8428dd37> .
+
+:c_2fbcfd34 a skos:Concept ;
+    dct:created "2019-02-14T14:30:16.344000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:49.482000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Judicial Appointments Board for Scotland"@en ;
+    skosxl:prefLabel :xl_en_ca2d22e6 ;
+    foaf:focus id:d286ad7d_dc8a_4c05_a7ed_99de63a7c484 .
+
+:c_3039a9e8 a skos:Concept ;
+    dct:created "2019-02-14T15:46:10.939000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:32:53.225000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "National Waiting Times Centre Board"@en ;
+    skosxl:prefLabel :xl_en_2fede9aa ;
+    foaf:focus id:a81fb394_6a71_4bae_8d8e_d21d8ee01105 .
+
+:c_317ee471 a skos:Concept ;
+    dct:modified "2019-07-05T10:11:51.176000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "City of Edinburgh."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "The City of Edinburgh Council"@en .
+
+:c_33a1d1b6 a skos:Concept ;
+    dct:created "2019-02-14T14:06:10.326000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:40.666000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Courts and Tribunals Service"@en ;
+    skosxl:prefLabel :xl_en_3bd0dff2 ;
+    foaf:focus id:b068a5b9_fc78_429c_bc55_255f96356f7b .
+
+:c_33da098b a skos:Concept ;
+    dct:created "2019-02-14T14:21:32.209000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:54.291000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "VisitScotland"@en ;
+    skosxl:prefLabel :xl_en_66cde071 .
+
+:c_343950e8 a skos:Concept ;
+    dct:created "2019-07-05T11:42:34.635000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Renfrewshire"@en ;
+    skosxl:prefLabel :xl_en_8b334856 ;
+    foaf:focus id:f5a68029_c14c_451d_8d3c_5dbb9da370e7 .
+
+:c_36d63a05 a skos:Concept ;
+    dct:created "2019-02-14T14:36:35.973000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:46.518000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Upper Tax Tribunal for Scotland"@en ;
+    skosxl:prefLabel :xl_en_561bebe9 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/3909e22f_f8ca_4215_97c5_19e302caa718> .
+
+:c_37d158f9 a skos:Concept ;
+    dct:created "2019-02-14T15:50:12.443000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:19:16.869000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Orkney"@en ;
+    skosxl:prefLabel :xl_en_5536c720 ;
+    foaf:focus id:ffa00757_d039_4be2_91a6_58643a639ab5 .
+
+:c_37ea0131 a skos:Concept ;
+    dct:created "2019-02-14T14:34:46.949000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:16:23.211000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Mental Health Tribunal for Scotland"@en ;
+    skosxl:prefLabel :xl_en_a172a4d7 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8295b3ce_8133_462f_afd6_7d0b5a134687> .
+
+:c_38076b13 a skos:Concept ;
+    dct:modified "2019-07-05T10:12:12.585000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "North Ayrshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "North Ayrshire Council"@en,
+        "Comhairle Siorrachd Ã€ir a Tuath"@gd .
+
+:c_3820ab70 a skos:Concept ;
+    dct:created "2019-02-14T15:45:23.384000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:33:49.524000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Mental Welfare Commission for Scotland"@en ;
+    skosxl:prefLabel :xl_en_95ba05df ;
+    foaf:focus id:ce211f96_d1ec_43b2_8019_fd6317f8c913 .
+
+:c_3b37560f a skos:Concept ;
+    dct:created "2019-02-14T15:59:42.729000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:53.903000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Human Rights Commission"@en ;
+    skosxl:prefLabel :xl_en_717dbcff ;
+    foaf:focus <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3> .
+
+:c_3bbc9a76 a skos:Concept ;
+    dct:modified "2019-07-05T10:12:38.588000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Dumfries and Galloway."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Dumfries and Galloway Council"@en .
+
+:c_3bd3750c a skos:Concept ;
+    dct:created "2019-02-14T14:19:40.604000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:57.777000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Enterprise"@en ;
+    skosxl:prefLabel :xl_en_8089dbf9 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/7a1c7819_978a_4910_9ded_9780a191c6b2> .
+
+:c_3cdefd20 a skos:Concept ;
+    dct:created "2019-07-05T11:42:48.584000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Falkirk"@en ;
+    skosxl:prefLabel :xl_en_9ea70733 ;
+    foaf:focus id:f8bbd825_ec19_49ef_a0cf_692ea5d43e8b .
+
+:c_3d00bf93 a skos:Concept ;
+    dct:created "2019-02-14T14:01:39.140000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:42.690000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Disclosure Scotland"@en ;
+    skosxl:prefLabel :xl_en_bd2ffcb4 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/990515cd_1df2_4fcd_94e9_b990d8a4e040> .
+
+:c_3d11a58a a skos:Concept ;
+    dct:created "2019-02-14T14:17:25.245000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:55.551000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Historic Environment Scotland"@en ;
+    skosxl:prefLabel :xl_en_fd640010 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/54bb0fea_5ae0_483c_b261_47024d6150a2> .
+
+:c_3d161d50 a skos:Concept ;
+    dct:created "2019-02-14T14:09:16.398000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:10:31.529000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bebed75d ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Caledonian Maritime Assets Ltd"@en ;
+    skosxl:prefLabel :xl_en_3922d3e5 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/1bc10c00_406e_4772_91d3_762a81517727> .
+
+:c_3ecc1588 a skos:Concept ;
+    dct:created "2019-02-14T14:05:42.709000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:19:56.911000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Office of the Scottish Charity Regulator"@en ;
+    skosxl:prefLabel :xl_en_bd17fae5 ;
+    foaf:focus id:b43e21ff_0db7_46be_ad19_da987141f59f .
+
+:c_3ed24c76 a skos:Concept ;
+    dct:modified "2019-07-05T10:12:57.257000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "East Ayrshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Ayrshire Council"@en,
+        "Comhairle Siorrachd Ã€ir an Ear"@gd .
+
+:c_3f6a83d7 a skos:Concept ;
+    dct:created "2019-02-14T14:19:00.890000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:21:57.491000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Agricultural Wages Board"@en ;
+    skosxl:prefLabel :xl_en_4341710c ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/26e2a333_8222_45b8_81ce_c12a9664671b> .
+
+:c_3fac3e26 a skos:Concept ;
+    dct:created "2019-02-14T14:05:24.246000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:20.568000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Food Standards Scotland"@en ;
+    skosxl:prefLabel :xl_en_29276aac ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/56bc7885_c092_46ca_b4e3_cd3b6da10e81> .
+
+:c_41498b27 a skos:Concept ;
+    dct:modified "2019-07-05T10:13:17.573000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Fife."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Fife Council"@en .
+
+:c_4255a622 a skos:Concept ;
+    dct:created "2019-02-14T14:21:05.124000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:37.579000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Social Services Council"@en ;
+    skosxl:prefLabel :xl_en_20433c95 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/5da964fa_cd9c_483f_a8ea_b6712b41267d> .
+
+:c_431ab3e4 a skos:Concept ;
+    dct:created "2019-07-05T11:41:31.708000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Clackmannanshire and Stirling"@en ;
+    skosxl:prefLabel :xl_en_7ffbae73 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8275676d_4fbe_408e_9a80_1eb76b62abd6> .
+
+:c_456a24a7 a skos:Concept ;
+    dct:created "2019-02-14T14:18:52.076000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:55.758000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Royal Botanic Garden, Edinburgh"@en ;
+    skosxl:prefLabel :xl_en_8cacf908 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/1715ee19_648c_4e5c_b1b6_9566a42f5c28> .
+
+:c_45ab8cd2 a skos:Concept ;
+    dct:created "2019-02-14T14:35:13.904000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:03.101000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Parole Board for Scotland"@en ;
+    skosxl:prefLabel :xl_en_7eb184a9 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6> .
+
+:c_4887f124 a skos:Concept ;
+    dct:created "2019-07-05T11:44:05.181000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Renfrewshire"@en ;
+    skosxl:prefLabel :xl_en_4bc19b40 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/3bb0a8aa_c4ed_4e52_9384_fbe4c4a3d2df> .
+
+:c_49f7d0a0 a skos:Concept ;
+    dct:created "2019-02-14T14:06:19.142000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:25.935000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Fiscal Commission"@en ;
+    skosxl:prefLabel :xl_en_eff26088 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/70d8bcde_8984_4eae_bd0b_66cf0705016b> .
+
+:c_4a68dd09 a skos:Concept ;
+    dct:created "2019-07-05T11:40:56.532000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Aberdeenshire"@en ;
+    skosxl:prefLabel :xl_en_46941324 ;
+    foaf:focus id:b7f131b3_6c4a_464e_97dc_de8853a6875c .
+
+:c_4aed4d74 a skos:Concept ;
+    dct:created "2019-02-14T15:46:19.416000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:34:44.075000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Ambulance Service Board"@en ;
+    skosxl:prefLabel :xl_en_4e866af5 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/6084acb9_d246_4814_8711_0b8d50963589> .
+
+:c_4b9c9792 a skos:Concept ;
+    dct:created "2019-02-14T14:20:20.269000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:09.349000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Land Commission"@en ;
+    skosxl:prefLabel :xl_en_56a1cd0d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9c11079f_c965_4b9e_83e8_a30614bbe848> .
+
+:c_4dfe91bd a skos:Concept ;
+    dct:created "2019-02-14T14:34:06.366000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:09:27.792000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Additional Support Needs Tribunals for Scotland"@en ;
+    skosxl:prefLabel :xl_en_2b9e35ec ;
+    foaf:focus id:b7eba161_3413_4117_8914_b212ae756607 .
+
+:c_4e49f240 a skos:Concept ;
+    dct:created "2019-02-14T14:34:17.932000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:14:11.251000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "First-tier Tax Tribunal for Scotland"@en ;
+    skosxl:prefLabel :xl_en_a5f79610 ;
+    foaf:focus id:f2131593_fe29_405a_9f4a_ab6d07eda2dd .
+
+:c_540122cd a skos:Concept ;
+    dct:created "2019-02-14T14:05:51.759000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:30.324000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Registers of Scotland"@en ;
+    skosxl:prefLabel :xl_en_8c094651 ;
+    foaf:focus id:dac6beff_2ca7_4c71_ba93_b68db4d1ef80 .
+
+:c_54270920 a skos:Concept ;
+    dct:created "2019-02-14T15:45:52.940000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:35:49.515000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Health Scotland Board"@en ;
+    skosxl:prefLabel :xl_en_c4c13b9f .
+
+:c_560fbdd6 a skos:Concept ;
+    dct:created "2019-02-14T14:16:46.526000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:27.446000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Crofting Commission"@en ;
+    skosxl:prefLabel :xl_en_798bef1f ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/1a84d596_69f3_458e_acf9_85949433c3ff> .
+
+:c_5708e9d3 a skos:Concept ;
+    dct:created "2019-02-14T16:03:38.813000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:08.496000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "HM Chief Inspector of Prisons in Scotland"@en ;
+    skosxl:prefLabel :xl_en_a8acd8da ;
+    foaf:focus id:c94ed99a_d8b6_4819_99d4_29c971badd64 .
+
+:c_58ac9b3a a skos:Concept ;
+    dct:created "2019-07-05T11:44:12.038000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Borders"@en ;
+    skosxl:prefLabel :xl_en_67db34a1 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/14858b1e_c3c8_49af_b7ef_e8056d2d9087> .
+
+:c_5b85491b a skos:Concept ;
+    dct:created "2019-02-14T16:04:50.868000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:56.361000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Police Authority"@en ;
+    skosxl:prefLabel :xl_en_2b2fa95a ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/08a6d334_7f3e_4123_b1a1_07cf7218b325> .
+
+:c_5d679309 a skos:Concept ;
+    dct:created "2019-02-14T14:34:30.176000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:08:40.838000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Lands Tribunal for Scotland"@en ;
+    skosxl:prefLabel :xl_en_3324be78 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/7a42e27b_a86f_413a_8273_70401202c357> .
+
+:c_5e5a195e a skos:Concept ;
+    dct:created "2019-07-05T11:41:53.782000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Dundee City"@en ;
+    skosxl:prefLabel :xl_en_bc891e29 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/11ba0cd8_4999_46e5_86d7_3118e5313e3c> .
+
+:c_5f39f3de a skos:Concept ;
+    dct:created "2019-02-14T14:36:07.536000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:34.576000+00:00"^^xsd:dateTime ;
+    skos:broader :c_2aecd818 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Homeowner Housing Panel"@en ;
+    skosxl:prefLabel :xl_en_9586ba2a ;
+    foaf:focus id:c1d46efd_a5ae_4206_90d3_660970e14a96 .
+
+:c_60bacf7f a skos:Concept ;
+    dct:created "2019-02-14T14:02:05.893000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:10.415000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Public Pensions Agency"@en ;
+    skosxl:prefLabel :xl_en_3057d308 ;
+    foaf:focus id:da503c70_2fe0_44dc_821b_3d1a0eac71d0 .
+
+:c_611f6f23 a skos:Concept ;
+    dct:created "2019-02-14T14:05:33.780000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:17:09.047000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "National Records of Scotland"@en ;
+    skosxl:prefLabel :xl_en_19b10f7c ;
+    foaf:focus id:f3f7a101_e4ae_451b_830a_8677051cea1d .
+
+:c_64d224eb a skos:Concept ;
+    dct:created "2019-07-05T11:42:17.347000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Dunbartonshire"@en ;
+    skosxl:prefLabel :xl_en_70d31b5c ;
+    foaf:focus id:f1606511_2eff_4b98_8644_61eae10f9ce5 .
+
+:c_64fb2542 a skos:Concept ;
+    dct:created "2019-02-14T14:18:13.972000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:17:00.909000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "National Museums of Scotland"@en ;
+    skosxl:prefLabel :xl_en_23da27d0 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/7432721f_6acb_4dea_8ad5_8cfeebf5ec88> .
+
+:c_65adaa5b a skos:Concept ;
+    dct:created "2019-02-14T15:49:50.120000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:52.813000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Lanarkshire"@en ;
+    skosxl:prefLabel :xl_en_5b97cd9d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/70cf8856_14ad_41ea_9acd_23489651c73f> .
+
+:c_6856cd2b a skos:Concept ;
+    dct:created "2019-02-14T14:30:41.225000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:16:38.187000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Mobility and Access Committee for Scotland"@en ;
+    skosxl:prefLabel :xl_en_b0a900c7 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8bbbe5e3_c87a_41e4_9c32_022bdeda36f6> .
+
+:c_68af19b1 a skos:Concept ;
+    dct:created "2019-07-05T11:42:24.906000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Lothian"@en ;
+    skosxl:prefLabel :xl_en_45da7fdb ;
+    foaf:focus id:b3b5c867_8d5b_485a_a7c9_ea719cebcbfc .
+
+:c_69009fa2 a skos:Concept ;
+    dct:created "2019-07-05T11:43:24.069000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Moray"@en ;
+    skosxl:prefLabel :xl_en_c5f3592b ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8160d157_2bb3_4090_8407_5689c5c16eed> .
+
+:c_6967b9b2 a skos:Concept ;
+    dct:modified "2019-07-05T10:13:42.086000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "East Lothian."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Lothian Council"@en .
+
+:c_6b46300b a skos:Concept ;
+    dct:created "2019-07-05T11:43:17.368000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Midlothian"@en ;
+    skosxl:prefLabel :xl_en_78fbf89f ;
+    foaf:focus id:c8a13eb9_f5ac_48b6_9616_311c6a1f8e49 .
+
+:c_6c371008 a skos:Concept ;
+    dct:created "2019-07-05T10:04:25.038000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Justices of the Peace Advisory Committees"@en ;
+    skosxl:prefLabel :xl_en_5baaba2a ;
+    foaf:focus id:f25de991_8209_4032_9a5d_806801e0a9c2 .
+
+:c_6c7f0412 a skos:Concept ;
+    dct:modified "2019-07-05T10:14:02.438000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "City of Glasgow."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Glasgow City Council"@en .
+
+:c_6d196d9f a skos:Concept ;
+    dct:created "2019-02-14T14:30:28.730000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:57.741000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Local Government Boundary Commission for Scotland"@en ;
+    skosxl:prefLabel :xl_en_2d21d201 ;
+    foaf:focus id:fd822d09_fbb0_43b9_9bdc_a1652eff07f6 .
+
+:c_6d361993 a skos:Concept ;
+    dct:modified "2019-07-05T10:14:20.962000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "City of Aberdeen."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Aberdeen City Council"@en .
+
+:c_74a7eb05 a skos:Concept ;
+    dct:created "2019-02-14T14:20:46.480000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:49.282000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Natural Heritage"@en ;
+    skosxl:prefLabel :xl_en_7a5bfd00 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/69b84217_4c76_4734_a71c_bb808f112287> .
+
+:c_760c5421 a skos:Concept ;
+    dct:created "2019-07-05T11:43:05.270000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Highland"@en ;
+    skosxl:prefLabel :xl_en_9039a83e ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/0c396404_0a18_4a71_a519_d4f43aeada0a> .
+
+:c_762e32ec a skos:Concept ;
+    dct:created "2019-02-14T15:49:38.667000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:45.642000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Highland"@en ;
+    skosxl:prefLabel :xl_en_781383a0 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/039df974_29d7_460e_8a19_3d7d6091b256> .
+
+:c_7791bfcb a skos:Concept ;
+    dct:modified "2019-07-05T10:14:44.625000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Renfrewshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Renfewshire Council"@en .
+
+:c_790a58f5 a skos:Concept ;
+    dct:created "2019-02-14T16:05:01.797000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:31.016000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Road Works Commissioner"@en ;
+    skosxl:prefLabel :xl_en_85979704 ;
+    foaf:focus id:b37dcb15_2c24_4e91_8b42_76c0d8462708 .
+
+:c_792cb00a a skos:Concept ;
+    dct:created "2019-02-14T14:17:35.492000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:42.269000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Independent Living Fund Scotland"@en ;
+    skosxl:prefLabel :xl_en_2a42053a ;
+    foaf:focus id:ad6ac135_5913_4952_b95d_42973eac5c8f .
+
+:c_7986207e a skos:Concept ;
+    dct:created "2019-02-14T14:16:55.994000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:35.400000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "David MacBrayne Ltd"@en ;
+    skosxl:prefLabel :xl_en_1534e932 ;
+    foaf:focus id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 .
+
+:c_79d49c9f a skos:Concept ;
+    dct:created "2019-07-05T11:45:07.222000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "West Lothian"@en ;
+    skosxl:prefLabel :xl_en_42e23229 ;
+    foaf:focus id:bfce3435_ecc4_46d3_957d_d07f9161872c .
+
+:c_7b69176d a skos:Concept ;
+    dct:modified "2019-07-05T10:15:05.997000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Perthshire and Kinross."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Perth and Kinross Council"@en .
+
+:c_7c17964e a skos:Concept ;
+    dct:created "2019-02-14T15:47:43.794000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:17:36.476000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Ayrshire & Arran"@en ;
+    skosxl:prefLabel :xl_en_c7ca0ea4 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/1766a2a7_a963_4e42_a1d0_6f3c1a5cdcc5> .
+
+:c_7f3c929a a skos:Concept ;
+    dct:created "2019-02-14T14:06:01.141000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:41.665000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Revenue Scotland"@en ;
+    skosxl:prefLabel :xl_en_4c3891c5 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/075b9514_ca2b_416b_8eaf_6dc63089f85f> .
+
+:c_89dff931 a skos:Concept ;
+    dct:created "2019-02-14T14:17:45.122000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:16:13.307000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Loch Lomond and The Trossachs National Park Authority"@en ;
+    skosxl:prefLabel :xl_en_2a323d2d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/2854032a_26e3_454e_9972_a6687e8af4e5> .
+
+:c_89fe89d6 a skos:Concept ;
+    dct:created "2019-07-05T11:41:45.223000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Dumfries and Galloway"@en ;
+    skosxl:prefLabel :xl_en_195e8924 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/693fe766_8cf6_437f_8006_82e60b01e47b> .
+
+:c_8c166b3b a skos:Concept ;
+    dct:created "2019-02-14T14:31:29.671000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:33.029000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Commission for Social Security"@en ;
+    skosxl:prefLabel :xl_en_749e1112 ;
+    foaf:focus id:e6ed7c37_0103_4b49_b5f5_7bb7ac41b2a6 .
+
+:c_8cd73505 a skos:Concept ;
+    dct:created "2019-02-14T14:21:22.630000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:07.776000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "sportscotland"@en ;
+    skosxl:prefLabel :xl_en_a42641e9 .
+
+:c_8d6f9ee1 a skos:Concept ;
+    dct:modified "2019-07-05T10:15:27.797000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "South Ayrshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "South Ayrshire Council"@en .
+
+:c_8f677fb8 a skos:Concept ;
+    dct:created "2019-02-14T14:06:28.845000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:47.328000+00:00"^^xsd:dateTime ;
+    skos:broader :c_74152387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Housing Regulator"@en ;
+    skosxl:prefLabel :xl_en_4076cd70 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/32c1ae99_f104_48a5_b2b0_9b21d233542d> .
+
+:c_908543db a skos:Concept ;
+    dct:created "2019-02-14T14:09:56.792000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:32.644000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bebed75d ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "The Crown Estate Scotland - Interim Management"@en ;
+    skosxl:prefLabel :xl_en_c3989c92 ;
+    foaf:focus id:dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18 .
+
+:c_916ae6dc a skos:Concept ;
+    dct:created "2019-02-14T14:16:19.394000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:12:13.288000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Children's Hearings Scotland"@en ;
+    skosxl:prefLabel :xl_en_18e5ffbd ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/93ceb4a4_d7dc_489d_8250_a72e4821bb92> .
+
+:c_92beb0f8 a skos:Concept ;
+    dct:created "2019-02-14T14:21:14.200000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:51.077000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Skills Development Scotland"@en ;
+    skosxl:prefLabel :xl_en_ae2a02b6 .
+
+:c_934a109c a skos:Concept ;
+    dct:created "2019-02-14T15:45:33.503000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:36:57.120000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS 24"@en ;
+    skosxl:prefLabel :xl_en_a05874a1 .
+
+:c_95f24be4 a skos:Concept ;
+    dct:created "2019-02-14T16:03:00.654000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:13:52.853000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Drinking Water Quality Regulator"@en ;
+    skosxl:prefLabel :xl_en_5d3f699f ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/23b8038f_a69c_48ad_887a_f5e516352914> .
+
+:c_a182f234 a skos:Concept ;
+    dct:created "2019-02-14T14:18:02.692000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:16:52.681000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "National Library of Scotland"@en ;
+    skosxl:prefLabel :xl_en_37cf26e4 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8f62e289_f31a_40af_a730_30d5decd77e0> .
+
+:c_a5bb556a a skos:Concept ;
+    dct:created "2019-02-14T16:00:12.082000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:13.189000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Standards Commission for Scotland"@en ;
+    skosxl:prefLabel :xl_en_2d1e883e ;
+    foaf:focus <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d712f5e1_ae82_4320_9819_53e59695d59e> .
+
+:c_a8708997 a skos:Concept ;
+    dct:created "2019-02-14T14:12:33.972000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:10:04.579000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "BÃ²rd na GÃ idhlig"@en ;
+    skosxl:prefLabel :xl_en_0d0b2491 ;
+    foaf:focus id:dbe465de_9b84_414c_b5c0_c7bbf067749b .
+
+:c_ab46fa58 a skos:Concept ;
+    dct:created "2019-02-14T14:21:41.877000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:27:02.219000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Water Industry Commission for Scotland"@en ;
+    skosxl:prefLabel :xl_en_b1d9e097 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/302b271a_c993_46ce_a0b4_4012b7ecee6e> .
+
+:c_acb25521 a skos:Concept ;
+    dct:created "2019-02-14T14:01:56.726000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:03.082000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Prison Service"@en ;
+    skosxl:prefLabel :xl_en_2ff6ecd4 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/0a4093e3_3923_475d_a3f8_7003693262a6> .
+
+:c_ad07a046 a skos:Concept ;
+    dct:created "2019-02-14T15:46:02.135000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:37:58.090000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS National Services Scotland"@en ;
+    skosxl:prefLabel :xl_en_08225670 ;
+    foaf:focus id:e2cad0d8_d1c0_407d_82af_e9e0414048e0 .
+
+:c_af4beb26 a skos:Concept ;
+    dct:modified "2019-07-05T10:15:55.633000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Midlothian."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Midlothian Council"@en .
+
+:c_b11f19c1 a skos:Concept ;
+    dct:created "2019-07-05T11:43:30.550000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "North Ayrshire"@en ;
+    skosxl:prefLabel :xl_en_57bd1a7c ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/701cd39f_68df_477e_98f7_b14fcae99698> .
+
+:c_b16e8339 a skos:Concept ;
+    dct:created "2019-02-14T16:04:30.887000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:45:02.216000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Office of the Queens Printer for Scotland"@en ;
+    skosxl:prefLabel :xl_en_8f74bca3 ;
+    foaf:focus id:a8ec77d4_5cc5_4a45_a4e6_20369639cec0 .
+
+:c_b1e42cf3 a skos:Concept ;
+    dct:created "2019-02-14T14:19:50.829000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:12.047000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Environment Protection Agency"@en ;
+    skosxl:prefLabel :xl_en_bc360f29 ;
+    foaf:focus id:f3c1202a_3681_44fd_abdd_442572b61648 .
+
+:c_b40d841a a skos:Concept ;
+    dct:created "2019-02-14T14:20:00.826000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:32.470000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Funding Council"@en ;
+    skosxl:prefLabel :xl_en_0c93e87b .
+
+:c_b7b09f9d a skos:Concept ;
+    dct:modified "2019-07-05T10:16:17.138000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "South Lanarkshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "South Lanarkshire Council"@en .
+
+:c_b85f39c3 a skos:Concept ;
+    dct:created "2019-02-14T13:59:34.528000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:08:58.004000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Accountant in Bankruptcy"@en ;
+    skosxl:prefLabel :xl_en_b95f5004 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/679fbc0e_ed35_4f66_bf82_1db425bc2743> .
+
+:c_b87c1df0 a skos:Concept ;
+    dct:created "2019-02-14T14:18:42.617000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:48.517000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Risk Management Authority"@en ;
+    skosxl:prefLabel :xl_en_42b88076 ;
+    foaf:focus id:a7de36de_65e1_4e64_8e22_4c5bd695e6ec .
+
+:c_b8b887ef a skos:Concept ;
+    dct:created "2019-02-14T14:20:11.849000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:40.046000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Futures Trust"@en ;
+    skosxl:prefLabel :xl_en_faa10dd7 .
+
+:c_bb2bd83d a skos:Concept ;
+    dct:modified "2019-07-05T10:16:38.225000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "East Dunbartonshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Dunbartonshire Council"@en .
+
+:c_bcf1bf32 a skos:Concept ;
+    dct:created "2019-02-14T16:04:41.526000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:23:19.270000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Fire and Rescue Service"@en ;
+    skosxl:prefLabel :xl_en_8ce95eef ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/84119e24_8f28_46ed_9e3b_6852553d2097> .
+
+:c_bdf482cd a skos:Concept ;
+    dct:created "2019-02-14T15:50:33.685000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:19:30.858000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Tayside"@en ;
+    skosxl:prefLabel :xl_en_62e2d65b ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/7617423d_7d4f_4a6c_a364_7ba034e2a85e> .
+
+:c_c0cd283c a skos:Concept ;
+    dct:modified "2019-07-05T10:17:08.230000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Stirling."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Stirling Council"@en .
+
+:c_c51527a6 a skos:Concept ;
+    dct:created "2019-02-14T14:31:18.862000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:43.151000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Local Authorities Remuneration Committee"@en ;
+    skosxl:prefLabel :xl_en_13c840da ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9b9cae69_78c1_4c2a_9b56_b1d2b2ecc9a8> .
+
+:c_c589fbf7 a skos:Concept ;
+    dct:created "2019-02-14T15:46:29.418000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:45:59.530000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "State Hospital Board for Scotland"@en ;
+    skosxl:prefLabel :xl_en_93996c9b .
+
+:c_c65b00cc a skos:Concept ;
+    dct:created "2019-07-05T11:42:41.611000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Edinburgh City"@en ;
+    skosxl:prefLabel :xl_en_c43eb4f7 ;
+    foaf:focus id:fbe94b56_afdc_4642_a989_6f6c19a6bace .
+
+:c_c6e2580d a skos:Concept ;
+    dct:created "2019-07-05T11:41:16.938000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Argyll and Bute"@en ;
+    skosxl:prefLabel :xl_en_d0285352 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/853b2293_043c_4493_a7c7_147540eb2216> .
+
+:c_c75874d4 a skos:Concept ;
+    dct:created "2019-02-14T14:16:08.837000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:10:43.660000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Care Inspectorate"@en ;
+    skosxl:prefLabel :xl_en_3bd5dcf6 ;
+    foaf:focus id:ac966320_9a71_444a_8e81_fb1414ab4aa4 .
+
+:c_c80ae69f a skos:Concept ;
+    dct:created "2019-02-14T14:18:32.548000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:20:23.688000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Quality Meat Scotland"@en ;
+    skosxl:prefLabel :xl_en_76984d88 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/46bec378_ddb1_4a78_b0bb_206809674ec9> .
+
+:c_c86409bd a skos:Concept ;
+    dct:created "2019-02-14T14:19:21.182000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:26.039000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Children's Reporter Administration"@en ;
+    skosxl:prefLabel :xl_en_bbc18269 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2> .
+
+:c_c900d7d7 a skos:Concept ;
+    dct:created "2019-02-14T16:03:30.374000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:15:28.059000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "HM Inspector of Constabulary in Scotland"@en ;
+    skosxl:prefLabel :xl_en_3d2e4582 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5> .
+
+:c_c9945b0d a skos:Concept ;
+    dct:created "2019-02-14T15:50:01.392000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:58.909000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Lothian"@en ;
+    skosxl:prefLabel :xl_en_efae0d6d ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/58bbffec_cabc_410b_ab2c_bfe7efffdd36> .
+
+:c_c9b52442 a skos:Concept ;
+    dct:created "2019-02-14T14:15:59.044000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:10:14.558000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Cairngorms National Park Authority"@en ;
+    skosxl:prefLabel :xl_en_aebfc48c ;
+    foaf:focus id:fedc1ef3_6266_4b25_b220_fdd91f0e2f32 .
+
+:c_c9cea231 a skos:Concept ;
+    dct:created "2019-07-05T11:43:57.733000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Perth & Kinross"@en ;
+    skosxl:prefLabel :xl_en_cab532af ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/69780da0_3c40_465d_9e52_9a361a8eb8db> .
+
+:c_cb76eaee a skos:Concept ;
+    dct:created "2019-07-05T11:44:34.982000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "South Lanarkshire"@en ;
+    skosxl:prefLabel :xl_en_7625db82 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/4c968f5c_64dc_461d_95b1_bbc5d2a8e073> .
+
+:c_cb8d6c73 a skos:Concept ;
+    dct:created "2019-02-14T14:02:26.773000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:25.771000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Student Awards Agency for Scotland"@en ;
+    skosxl:prefLabel :xl_en_a698de0b ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9d5a88fb_2fd3_40d4_a2ae_0590442db22b> .
+
+:c_cd28f43f a skos:Concept ;
+    dct:created "2019-07-05T11:42:03.806000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "East Ayrshire"@en ;
+    skosxl:prefLabel :xl_en_239ab6d9 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/223b638b_25f8_419a_938d_4a140f881d6e> .
+
+:c_ce32ecce a skos:Concept ;
+    dct:modified "2019-07-05T10:17:34.601000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Inverclyde."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Inverclyde Council"@en .
+
+:c_cfcfd695 a skos:Concept ;
+    dct:created "2019-02-14T14:20:28.862000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:30.879000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Legal Aid Board"@en ;
+    skosxl:prefLabel :xl_en_e7f3ceb7 ;
+    foaf:focus id:e702314e_b191_4ccb_bab5_05653cb7059c .
+
+:c_d047c60a a skos:Concept ;
+    dct:created "2019-02-14T14:17:54.101000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:16:44.799000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "National Galleries of Scotland"@en ;
+    skosxl:prefLabel :xl_en_7220c297 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/53c2995f_1d1e_456b_9b13_21b89e6a6443> .
+
+:c_d202863c a skos:Concept ;
+    dct:modified "2019-07-05T10:17:58.033000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Falkirk."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Falkirk Council"@en .
+
+:c_d294b8df a skos:Concept ;
+    dct:created "2019-02-14T14:20:56.026000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:24.867000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Qualifications Authority"@en ;
+    skosxl:prefLabel :xl_en_1f8da550 ;
+    foaf:focus id:fccd4a49_cefb_44be_9e78_ec562c8a6296 .
+
+:c_d3e141f1 a skos:Concept ;
+    dct:created "2019-02-14T15:59:31.603000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:12:24.241000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Commissioner for Ethical Standards in Public Life in Scotland"@en ;
+    skosxl:prefLabel :xl_en_c09b6ca9 ;
+    foaf:focus <http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_06c72973_1d22_4fff_87ee_f5930ad71494> .
+
+:c_d4c9b546 a skos:Concept ;
+    dct:modified "2019-07-05T10:18:25.123000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Western Isles."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Comhairle nan Eilean Siar"@en,
+        "Comhairle nan Eilean Siar"@gd .
+
+:c_d5aaab7d a skos:Concept ;
+    dct:modified "2019-07-05T10:18:52.950000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Shetland Islands."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Shetland Islands Council"@en .
+
+:c_d7ce6cce a skos:Concept ;
+    dct:created "2019-07-05T11:43:48.486000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Orkney"@en ;
+    skosxl:prefLabel :xl_en_01c60217 ;
+    foaf:focus id:a594c663_ca47_46f8_87bc_d8e06afd5123 .
+
+:c_d864f66b a skos:Concept ;
+    dct:modified "2019-07-05T10:19:20.819000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Highland."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "The Highland Council"@en,
+        "Comhairle na GÃ idhealtachd"@gd .
+
+:c_d9c99ec7 a skos:Concept ;
+    dct:modified "2019-07-05T10:19:44.871000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Moray."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Moray Council"@en .
+
+:c_d9cbe4c9 a skos:Concept ;
+    dct:created "2019-07-05T11:41:05.594000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Angus"@en ;
+    skosxl:prefLabel :xl_en_ddaba8c1 ;
+    foaf:focus id:f1df7cdb_98ee_4c79_86db_f607b79522ba .
+
+:c_d9dc2848 a skos:Concept ;
+    dct:created "2019-02-14T15:50:23.097000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:19:23.912000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Shetland"@en ;
+    skosxl:prefLabel :xl_en_e7599b20 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/2f6b185e_266c_4548_b9d1_2f83266ef0ee> .
+
+:c_dacf35c0 a skos:Concept ;
+    dct:created "2019-02-14T14:31:07.088000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:17.257000+00:00"^^xsd:dateTime ;
+    skos:broader :c_6661baaf ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Law Commission"@en ;
+    skosxl:prefLabel :xl_en_91bca2ff ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8014c296_9e59_4e4b_b88e_b63174550d7b> .
+
+:c_db85df57 a skos:Concept ;
+    dct:created "2019-02-14T15:48:36.052000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:13.495000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Forth Valley"@en ;
+    skosxl:prefLabel :xl_en_95356c9a ;
+    foaf:focus id:a0a1d863_7b36_4a22_9d49_be2a544e422f .
+
+:c_dd95c9b8 a skos:Concept ;
+    dct:created "2019-02-14T14:09:43.587000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:44.686000+00:00"^^xsd:dateTime ;
+    skos:broader :c_bebed75d ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Water"@en ;
+    skosxl:prefLabel :xl_en_d3af548d ;
+    foaf:focus id:d671fe7b_ce83_4d03_a584_8f725f0cc991 .
+
+:c_e02a8da9 a skos:Concept ;
+    dct:created "2019-07-05T11:44:27.252000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "South Ayrshire"@en ;
+    skosxl:prefLabel :xl_en_a1cda6aa ;
+    foaf:focus id:c93c39bb_ff1f_4d31_84e6_7b0cb03d9b8a .
+
+:c_e19e67cd a skos:Concept ;
+    dct:modified "2019-07-05T12:52:56.839000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Clackmannan."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Clackmannanshire Council"@en,
+        "Comhairle Siorrachd Chlach Mhanann"@gd .
+
+:c_e2bfec8a a skos:Concept ;
+    dct:created "2019-07-05T11:42:52.258000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Fife"@en ;
+    skosxl:prefLabel :xl_en_cd664f4e ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/8957aff9_0cda_4dc9_baa7_fb8e9d17a251> .
+
+:c_e4290147 a skos:Concept ;
+    dct:created "2019-02-14T14:02:37.195000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:26:39.235000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Transport Scotland"@en ;
+    skosxl:prefLabel :xl_en_fb865b47 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/018bf462_54d0_4041_8967_61cb918d2b0e> .
+
+:c_e68d2e9d a skos:Concept ;
+    dct:created "2019-02-14T14:02:18.579000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:25:58.225000+00:00"^^xsd:dateTime ;
+    skos:broader :c_31a243cc ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Social Security Scotland Agency"@en ;
+    skosxl:prefLabel :xl_en_e2425d2b ;
+    foaf:focus id:f9104e48_5007_499d_81ad_4b0306a6aff4 .
+
+:c_ecea9286 a skos:Concept ;
+    dct:created "2019-07-05T11:42:58.555000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Glasgow City"@en ;
+    skosxl:prefLabel :xl_en_c45af895 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/9c6c4715_6844_48db_83a5_81bd4fed702e> .
+
+:c_ed9014c3 a skos:Concept ;
+    dct:created "2019-02-14T14:11:56.276000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:09:42.006000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Architecture and Design Scotland"@en ;
+    skosxl:prefLabel :xl_en_95ec2b0a ;
+    foaf:focus id:c047d935_88af_4fa3_872c_f8ad4645febd .
+
+:c_edecbd26 a skos:Concept ;
+    dct:created "2019-02-14T15:59:52.232000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:24:01.581000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Information Commissioner"@en ;
+    skosxl:prefLabel :xl_en_1b9bab2f .
+
+:c_ef894971 a skos:Concept ;
+    dct:created "2019-02-14T14:19:30.999000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:22:51.097000+00:00"^^xsd:dateTime ;
+    skos:broader :c_113e30a0 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Criminal Cases Review Commission"@en ;
+    skosxl:prefLabel :xl_en_338e8be9 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/83636d62_1059_4650_b22b_6ee0f33c1dfb> .
+
+:c_effe1146 a skos:Concept ;
+    dct:modified "2019-07-05T10:20:32.057000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Orkney Islands."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Orkney Islands Council"@en .
+
+:c_f0a901b7 a skos:Concept ;
+    dct:modified "2019-07-05T10:20:54.025000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "West Lothian."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "West Lothian Council"@en .
+
+:c_f0e4718c a skos:Concept ;
+    dct:modified "2019-07-05T10:21:19.656000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "North Lanarkshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "North Lanarkshire Council"@en .
+
+:c_f2996761 a skos:Concept ;
+    dct:created "2019-02-14T15:48:23.038000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:18:05.846000+00:00"^^xsd:dateTime ;
+    skos:broader :c_532f36f5 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "NHS Fife"@en ;
+    skosxl:prefLabel :xl_en_27aeacab ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/49bd8e4f_7a00_4d20_a903_fcec5598fe21> .
+
+:c_f7495af7 a skos:Concept ;
+    dct:created "2019-07-05T11:44:52.846000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Western Isles"@en ;
+    skosxl:prefLabel :xl_en_80ed44f6 ;
+    foaf:focus <http://entities.gov.scot/id/gov/puborg/14cf495d_d2b8_4678_8495_0f9eebadd56d> .
+
+:c_f8165cca a skos:Concept ;
+    dct:created "2019-02-14T15:59:21.716000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:11:01.020000+00:00"^^xsd:dateTime ;
+    skos:broader :c_cc1dae65 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Children & Young Peoples Commissioner Scotland"@en ;
+    skosxl:prefLabel :xl_en_1fecd817 .
+
+:c_f8ac1dd2 a skos:Concept ;
+    dct:created "2019-02-14T16:02:41.739000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:12:43.470000+00:00"^^xsd:dateTime ;
+    skos:broader :c_129a026c ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Convener of School Closure Review Panels"@en ;
+    skosxl:prefLabel :xl_en_e5ef5c49 ;
+    foaf:focus id:dbe8ac32_1a87_4d67_be93_34657c9f3e9d .
+
+:c_fa2b23e0 a skos:Concept ;
+    dct:modified "2019-07-05T10:21:44.633000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Angus."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Angus Council"@en .
+
+:c_fa89c70f a skos:Concept ;
+    dct:modified "2019-07-05T10:22:08.196000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "City of Dundee."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Dundee City Council"@en .
+
+:c_fad65f53 a skos:Concept ;
+    dct:modified "2019-07-05T10:22:32.132000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "The Borders."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Scottish Borders Council"@en .
+
+:c_fd8d866a a skos:Concept ;
+    dct:modified "2019-07-05T10:22:53.009000+00:00"^^xsd:dateTime ;
+    skos:broader :c_e1cd0153 ;
+    skos:hiddenLabel "Aberdeenshire."@en ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Aberdeenshire Council"@en .
+
+:c_fe84677e a skos:Concept ;
+    dct:created "2019-07-05T11:44:18.810000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "Shetland"@en ;
+    skosxl:prefLabel :xl_en_91dc633d ;
+    foaf:focus id:fa773131_4d22_496d_97a7_7b5cf45a185c .
+
+:c_fece96a6 a skos:Concept ;
+    dct:created "2019-07-05T11:44:46.205000+00:00"^^xsd:dateTime ;
+    skos:broader :c_590852e3 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:prefLabel "West Dunbartonshire"@en ;
+    skosxl:prefLabel :xl_en_9bdd755f ;
+    foaf:focus id:a3515fbb_0d0a_4ffe_85ed_f587ae3662a5 .
+
+:xl_en_01c60217 a skosxl:Label ;
+    dct:created "2019-07-05T11:43:48.486000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Orkney"@en .
+
+:xl_en_04559117 a skosxl:Label ;
+    skosxl:literalForm "Scottish Canals"@en .
+
+:xl_en_081bf712 a skosxl:Label ;
+    dct:created "2019-07-05T11:43:12.476000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Inverclyde"@en .
+
+:xl_en_08225670 a skosxl:Label ;
+    skosxl:literalForm "NHS National Services Scotland"@en .
+
+:xl_en_089d4053 a skosxl:Label ;
+    skosxl:literalForm "Audit Scotland"@en .
+
+:xl_en_0c93e87b a skosxl:Label ;
+    skosxl:literalForm "Scottish Funding Council"@en .
+
+:xl_en_0d0b2491 a skosxl:Label ;
+    skosxl:literalForm "BÃ²rd na GÃ idhlig"@en .
+
+:xl_en_13c840da a skosxl:Label ;
+    skosxl:literalForm "Scottish Local Authorities Remuneration Committee"@en .
+
+:xl_en_1534e932 a skosxl:Label ;
+    skosxl:literalForm "David MacBrayne Ltd"@en .
+
+:xl_en_18e5ffbd a skosxl:Label ;
+    skosxl:literalForm "Children's Hearings Scotland"@en .
+
+:xl_en_195e8924 a skosxl:Label ;
+    dct:created "2019-07-05T11:41:45.223000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Dumfries and Galloway"@en .
+
+:xl_en_19b10f7c a skosxl:Label ;
+    skosxl:literalForm "National Records of Scotland"@en .
+
+:xl_en_1b9bab2f a skosxl:Label ;
+    skosxl:literalForm "Scottish Information Commissioner"@en .
+
+:xl_en_1f8da550 a skosxl:Label ;
+    skosxl:literalForm "Scottish Qualifications Authority"@en .
+
+:xl_en_1fecd817 a skosxl:Label ;
+    skosxl:literalForm "Children & Young Peoples Commissioner Scotland"@en .
+
+:xl_en_20433c95 a skosxl:Label ;
+    skosxl:literalForm "Scottish Social Services Council"@en .
+
+:xl_en_239ab6d9 a skosxl:Label ;
+    dct:created "2019-07-05T11:42:03.806000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "East Ayrshire"@en .
+
+:xl_en_23da27d0 a skosxl:Label ;
+    skosxl:literalForm "National Museums of Scotland"@en .
+
+:xl_en_23fb58fe a skosxl:Label ;
+    skosxl:literalForm "Healthcare Improvement Scotland"@en .
+
+:xl_en_27aeacab a skosxl:Label ;
+    skosxl:literalForm "NHS Fife"@en .
+
+:xl_en_29276aac a skosxl:Label ;
+    skosxl:literalForm "Food Standards Scotland"@en .
+
+:xl_en_2a323d2d a skosxl:Label ;
+    skosxl:literalForm "Loch Lomond and The Trossachs National Park Authority"@en .
+
+:xl_en_2a42053a a skosxl:Label ;
+    skosxl:literalForm "Independent Living Fund Scotland"@en .
+
+:xl_en_2b2fa95a a skosxl:Label ;
+    skosxl:literalForm "Scottish Police Authority"@en .
+
+:xl_en_2b9e35ec a skosxl:Label ;
+    skosxl:literalForm "Additional Support Needs Tribunals for Scotland"@en .
+
+:xl_en_2d1e883e a skosxl:Label ;
+    skosxl:literalForm "Standards Commission for Scotland"@en .
+
+:xl_en_2d21d201 a skosxl:Label ;
+    skosxl:literalForm "Local Government Boundary Commission for Scotland"@en .
+
+:xl_en_2de42fda a skosxl:Label ;
+    skosxl:literalForm "Scottish Public Services Ombudsman"@en .
+
+:xl_en_2fede9aa a skosxl:Label ;
+    skosxl:literalForm "National Waiting Times Centre Board"@en .
+
+:xl_en_2ff6ecd4 a skosxl:Label ;
+    skosxl:literalForm "Scottish Prison Service"@en .
+
+:xl_en_3057d308 a skosxl:Label ;
+    skosxl:literalForm "Scottish Public Pensions Agency"@en .
+
+:xl_en_3324be78 a skosxl:Label ;
+    skosxl:literalForm "Lands Tribunal for Scotland"@en .
+
+:xl_en_33549425 a skosxl:Label ;
+    skosxl:literalForm "Education Scotland"@en .
+
+:xl_en_338e8be9 a skosxl:Label ;
+    skosxl:literalForm "Scottish Criminal Cases Review Commission"@en .
+
+:xl_en_366c41ac a skosxl:Label ;
+    skosxl:literalForm "NHS Education for Scotland"@en .
+
+:xl_en_37cf26e4 a skosxl:Label ;
+    skosxl:literalForm "National Library of Scotland"@en .
+
+:xl_en_3922d3e5 a skosxl:Label ;
+    skosxl:literalForm "Caledonian Maritime Assets Ltd"@en .
+
+:xl_en_3bd0dff2 a skosxl:Label ;
+    skosxl:literalForm "Scottish Courts and Tribunals Service"@en .
+
+:xl_en_3bd5dcf6 a skosxl:Label ;
+    skosxl:literalForm "Care Inspectorate"@en .
+
+:xl_en_3d2e4582 a skosxl:Label ;
+    skosxl:literalForm "HM Inspector of Constabulary in Scotland"@en .
+
+:xl_en_3db09d93 a skosxl:Label ;
+    skosxl:literalForm "Creative Scotland"@en .
+
+:xl_en_3f05785e a skosxl:Label ;
+    skosxl:literalForm "NHS Western Isles"@en .
+
+:xl_en_4076cd70 a skosxl:Label ;
+    skosxl:literalForm "Scottish Housing Regulator"@en .
+
+:xl_en_429cadad a skosxl:Label ;
+    dct:created "2019-07-05T11:43:38.014000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "North Lanarkshire"@en .
+
+:xl_en_42b88076 a skosxl:Label ;
+    skosxl:literalForm "Risk Management Authority"@en .
+
+:xl_en_42e23229 a skosxl:Label ;
+    dct:created "2019-07-05T11:45:07.222000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "West Lothian"@en .
+
+:xl_en_4341710c a skosxl:Label ;
+    skosxl:literalForm "Scottish Agricultural Wages Board"@en .
+
+:xl_en_445fe31f a skosxl:Label ;
+    dct:created "2019-07-05T09:57:39.945000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Health Bodies"@en .
+
+:xl_en_45da7fdb a skosxl:Label ;
+    dct:created "2019-07-05T11:42:24.906000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "East Lothian"@en .
+
+:xl_en_46941324 a skosxl:Label ;
+    dct:created "2019-07-05T11:40:56.532000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Aberdeenshire"@en .
+
+:xl_en_4b032767 a skosxl:Label ;
+    skosxl:literalForm "NHS Grampian"@en .
+
+:xl_en_4b114738 a skosxl:Label ;
+    skosxl:literalForm "NHS Greater Glasgow and Clyde"@en .
+
+:xl_en_4bc19b40 a skosxl:Label ;
+    dct:created "2019-07-05T11:44:05.181000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Renfrewshire"@en .
+
+:xl_en_4c3891c5 a skosxl:Label ;
+    skosxl:literalForm "Revenue Scotland"@en .
+
+:xl_en_4da0b9cc a skosxl:Label ;
+    skosxl:literalForm "HM Chief Inspector of Prosecution in Scotland"@en .
+
+:xl_en_4e866af5 a skosxl:Label ;
+    skosxl:literalForm "Scottish Ambulance Service Board"@en .
+
+:xl_en_5536c720 a skosxl:Label ;
+    skosxl:literalForm "NHS Orkney"@en .
+
+:xl_en_55dd6f23 a skosxl:Label ;
+    skosxl:literalForm "Court of Lord Lyon"@en .
+
+:xl_en_561bebe9 a skosxl:Label ;
+    skosxl:literalForm "Upper Tax Tribunal for Scotland"@en .
+
+:xl_en_56a1cd0d a skosxl:Label ;
+    skosxl:literalForm "Scottish Land Commission"@en .
+
+:xl_en_57bd1a7c a skosxl:Label ;
+    dct:created "2019-07-05T11:43:30.550000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "North Ayrshire"@en .
+
+:xl_en_59e59a5c a skosxl:Label ;
+    dct:created "2019-07-05T11:45:21.079000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Aberdeen City"@en .
+
+:xl_en_5b97cd9d a skosxl:Label ;
+    skosxl:literalForm "NHS Lanarkshire"@en .
+
+:xl_en_5baaba2a a skosxl:Label ;
+    dct:created "2019-07-05T10:04:25.038000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Justices of the Peace Advisory Committees"@en .
+
+:xl_en_5d3f699f a skosxl:Label ;
+    skosxl:literalForm "Drinking Water Quality Regulator"@en .
+
+:xl_en_62e2d65b a skosxl:Label ;
+    skosxl:literalForm "NHS Tayside"@en .
+
+:xl_en_66cde071 a skosxl:Label ;
+    skosxl:literalForm "VisitScotland"@en .
+
+:xl_en_674c3018 a skosxl:Label ;
+    skosxl:literalForm "Community Justice Scotland"@en .
+
+:xl_en_67db34a1 a skosxl:Label ;
+    dct:created "2019-07-05T11:44:12.038000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Scottish Borders"@en .
+
+:xl_en_6a457e03 a skosxl:Label ;
+    skosxl:literalForm "Accounts Commission for Scotland"@en .
+
+:xl_en_6f224542 a skosxl:Label ;
+    skosxl:literalForm "Scottish Charity Appeals Panel"@en .
+
+:xl_en_70d31b5c a skosxl:Label ;
+    dct:created "2019-07-05T11:42:17.347000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "East Dunbartonshire"@en .
+
+:xl_en_717dbcff a skosxl:Label ;
+    skosxl:literalForm "Scottish Human Rights Commission"@en .
+
+:xl_en_71dd4eae a skosxl:Label ;
+    dct:created "2019-07-05T09:55:34.144000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Central Government Entities"@en .
+
+:xl_en_7220c297 a skosxl:Label ;
+    skosxl:literalForm "National Galleries of Scotland"@en .
+
+:xl_en_73d53f8d a skosxl:Label ;
+    skosxl:literalForm "Highlands and Islands Airports Ltd"@en .
+
+:xl_en_749e1112 a skosxl:Label ;
+    skosxl:literalForm "Scottish Commission for Social Security"@en .
+
+:xl_en_7604f097 a skosxl:Label ;
+    skosxl:literalForm "Highlands and Islands Enterprise"@en .
+
+:xl_en_7625db82 a skosxl:Label ;
+    dct:created "2019-07-05T11:44:34.982000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "South Lanarkshire"@en .
+
+:xl_en_76984d88 a skosxl:Label ;
+    skosxl:literalForm "Quality Meat Scotland"@en .
+
+:xl_en_781383a0 a skosxl:Label ;
+    skosxl:literalForm "NHS Highland"@en .
+
+:xl_en_78fbf89f a skosxl:Label ;
+    dct:created "2019-07-05T11:43:17.368000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Midlothian"@en .
+
+:xl_en_798bef1f a skosxl:Label ;
+    skosxl:literalForm "Crofting Commission"@en .
+
+:xl_en_7a5bfd00 a skosxl:Label ;
+    skosxl:literalForm "Scottish Natural Heritage"@en .
+
+:xl_en_7eb184a9 a skosxl:Label ;
+    skosxl:literalForm "Parole Board for Scotland"@en .
+
+:xl_en_7ffbae73 a skosxl:Label ;
+    dct:created "2019-07-05T11:41:31.708000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Clackmannanshire and Stirling"@en .
+
+:xl_en_806d5f05 a skosxl:Label ;
+    skosxl:literalForm "NHS Borders"@en .
+
+:xl_en_8089dbf9 a skosxl:Label ;
+    skosxl:literalForm "Scottish Enterprise"@en .
+
+:xl_en_80ed44f6 a skosxl:Label ;
+    dct:created "2019-07-05T11:44:52.846000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Western Isles"@en .
+
+:xl_en_85979704 a skosxl:Label ;
+    skosxl:literalForm "Scottish Road Works Commissioner"@en .
+
+:xl_en_8b334856 a skosxl:Label ;
+    dct:created "2019-07-05T11:42:34.635000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "East Renfrewshire"@en .
+
+:xl_en_8c094651 a skosxl:Label ;
+    skosxl:literalForm "Registers of Scotland"@en .
+
+:xl_en_8cacf908 a skosxl:Label ;
+    skosxl:literalForm "Royal Botanic Garden, Edinburgh"@en .
+
+:xl_en_8ce95eef a skosxl:Label ;
+    skosxl:literalForm "Scottish Fire and Rescue Service"@en .
+
+:xl_en_8e6d1f55 a skosxl:Label ;
+    dct:created "2019-07-05T09:56:43.339000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Advisory NDPBs"@en .
+
+:xl_en_8f74bca3 a skosxl:Label ;
+    skosxl:literalForm "Office of the Queens Printer for Scotland"@en .
+
+:xl_en_9039a83e a skosxl:Label ;
+    dct:created "2019-07-05T11:43:05.270000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Highland"@en .
+
+:xl_en_91bca2ff a skosxl:Label ;
+    skosxl:literalForm "Scottish Law Commission"@en .
+
+:xl_en_91dc633d a skosxl:Label ;
+    dct:created "2019-07-05T11:44:18.810000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Shetland"@en .
+
+:xl_en_93996c9b a skosxl:Label ;
+    skosxl:literalForm "State Hospital Board for Scotland"@en .
+
+:xl_en_93e698cf a skosxl:Label ;
+    skosxl:literalForm "NHS Dumfries & Galloway"@en .
+
+:xl_en_95356c9a a skosxl:Label ;
+    skosxl:literalForm "NHS Forth Valley"@en .
+
+:xl_en_9586ba2a a skosxl:Label ;
+    skosxl:literalForm "Homeowner Housing Panel"@en .
+
+:xl_en_95ba05df a skosxl:Label ;
+    skosxl:literalForm "Mental Welfare Commission for Scotland"@en .
+
+:xl_en_95ec2b0a a skosxl:Label ;
+    skosxl:literalForm "Architecture and Design Scotland"@en .
+
+:xl_en_991b55d6 a skosxl:Label ;
+    skosxl:literalForm "Police Investigations and Review Commissioner"@en .
+
+:xl_en_9bdd755f a skosxl:Label ;
+    dct:created "2019-07-05T11:44:46.205000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "West Dunbartonshire"@en .
+
+:xl_en_9d3deaa2 a skosxl:Label ;
+    dct:modified "2019-07-05T09:54:46.111000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Scottish Central And Local Legal Entities"@en .
+
+:xl_en_9ea70733 a skosxl:Label ;
+    dct:created "2019-07-05T11:42:48.584000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Falkirk"@en .
+
+:xl_en_a05874a1 a skosxl:Label ;
+    skosxl:literalForm "NHS 24"@en .
+
+:xl_en_a07ae4b6 a skosxl:Label ;
+    dct:created "2019-07-05T09:57:03.982000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Executive Agencies"@en .
+
+:xl_en_a12c39da a skosxl:Label ;
+    skosxl:literalForm "Private Rented Housing Panel"@en .
+
+:xl_en_a172a4d7 a skosxl:Label ;
+    skosxl:literalForm "Mental Health Tribunal for Scotland"@en .
+
+:xl_en_a1cda6aa a skosxl:Label ;
+    dct:created "2019-07-05T11:44:27.252000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "South Ayrshire"@en .
+
+:xl_en_a410c35f a skosxl:Label ;
+    dct:created "2019-07-05T10:03:59.557000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Other Significant Bodies"@en .
+
+:xl_en_a42641e9 a skosxl:Label ;
+    skosxl:literalForm "sportscotland"@en .
+
+:xl_en_a5f79610 a skosxl:Label ;
+    skosxl:literalForm "First-tier Tax Tribunal for Scotland"@en .
+
+:xl_en_a698de0b a skosxl:Label ;
+    skosxl:literalForm "Student Awards Agency for Scotland"@en .
+
+:xl_en_a8acd8da a skosxl:Label ;
+    skosxl:literalForm "HM Chief Inspector of Prisons in Scotland"@en .
+
+:xl_en_aa311d62 a skosxl:Label ;
+    skosxl:literalForm "Glasgow Prestwick Airport"@en .
+
+:xl_en_ae2a02b6 a skosxl:Label ;
+    skosxl:literalForm "Skills Development Scotland"@en .
+
+:xl_en_aeaac332 a skosxl:Label ;
+    dct:created "2019-07-05T09:57:22.144000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Executive NDPBs"@en .
+
+:xl_en_aebfc48c a skosxl:Label ;
+    skosxl:literalForm "Cairngorms National Park Authority"@en .
+
+:xl_en_b0a900c7 a skosxl:Label ;
+    skosxl:literalForm "Mobility and Access Committee for Scotland"@en .
+
+:xl_en_b1d9e097 a skosxl:Label ;
+    skosxl:literalForm "Water Industry Commission for Scotland"@en .
+
+:xl_en_b8bfc88e a skosxl:Label ;
+    skosxl:literalForm "Scottish Legal Complaints Commission"@en .
+
+:xl_en_b90f281b a skosxl:Label ;
+    dct:created "2019-07-05T10:06:39.332000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Integration Authorities"@en .
+
+:xl_en_b95f5004 a skosxl:Label ;
+    skosxl:literalForm "Accountant in Bankruptcy"@en .
+
+:xl_en_bbc18269 a skosxl:Label ;
+    skosxl:literalForm "Scottish Children's Reporter Administration"@en .
+
+:xl_en_bc360f29 a skosxl:Label ;
+    skosxl:literalForm "Scottish Environment Protection Agency"@en .
+
+:xl_en_bc891e29 a skosxl:Label ;
+    dct:created "2019-07-05T11:41:53.782000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Dundee City"@en .
+
+:xl_en_bd17fae5 a skosxl:Label ;
+    skosxl:literalForm "Office of the Scottish Charity Regulator"@en .
+
+:xl_en_bd2ffcb4 a skosxl:Label ;
+    skosxl:literalForm "Disclosure Scotland"@en .
+
+:xl_en_beb2b9c4 a skosxl:Label ;
+    dct:created "2019-07-05T10:03:27.940000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Tribunals"@en .
+
+:xl_en_c09b6ca9 a skosxl:Label ;
+    skosxl:literalForm "Commissioner for Ethical Standards in Public Life in Scotland"@en .
+
+:xl_en_c0bf300e a skosxl:Label ;
+    dct:created "2019-07-05T09:57:57.673000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Non-Ministerial Departments"@en .
+
+:xl_en_c3989c92 a skosxl:Label ;
+    skosxl:literalForm "The Crown Estate Scotland - Interim Management"@en .
+
+:xl_en_c43eb4f7 a skosxl:Label ;
+    dct:created "2019-07-05T11:42:41.611000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Edinburgh City"@en .
+
+:xl_en_c45af895 a skosxl:Label ;
+    dct:created "2019-07-05T11:42:58.555000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Glasgow City"@en .
+
+:xl_en_c4c13b9f a skosxl:Label ;
+    skosxl:literalForm "NHS Health Scotland Board"@en .
+
+:xl_en_c5f3592b a skosxl:Label ;
+    dct:created "2019-07-05T11:43:24.069000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Moray"@en .
+
+:xl_en_c7ca0ea4 a skosxl:Label ;
+    skosxl:literalForm "NHS Ayrshire & Arran"@en .
+
+:xl_en_ca2d22e6 a skosxl:Label ;
+    skosxl:literalForm "Judicial Appointments Board for Scotland"@en .
+
+:xl_en_cab532af a skosxl:Label ;
+    dct:created "2019-07-05T11:43:57.733000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Perth & Kinross"@en .
+
+:xl_en_cd664f4e a skosxl:Label ;
+    dct:created "2019-07-05T11:42:52.258000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Fife"@en .
+
+:xl_en_d0285352 a skosxl:Label ;
+    dct:created "2019-07-05T11:41:16.938000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Argyll and Bute"@en .
+
+:xl_en_d1063dc9 a skosxl:Label ;
+    dct:created "2019-07-05T10:06:24.770000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Councils"@en .
+
+:xl_en_d3af548d a skosxl:Label ;
+    skosxl:literalForm "Scottish Water"@en .
+
+:xl_en_d5098963 a skosxl:Label ;
+    dct:created "2019-07-05T09:56:09.289000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Public Bodies"@en .
+
+:xl_en_d57277ce a skosxl:Label ;
+    dct:created "2019-07-05T10:06:15.259000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Local Government Entities"@en .
+
+:xl_en_d591fc35 a skosxl:Label ;
+    dct:created "2019-07-05T10:01:30.182000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Parliamentary Commissioners and Ombudsmen"@en .
+
+:xl_en_dda8618c a skosxl:Label ;
+    dct:created "2019-07-05T10:03:10.740000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Public Corporations"@en .
+
+:xl_en_ddaba8c1 a skosxl:Label ;
+    dct:created "2019-07-05T11:41:05.594000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "Angus"@en .
+
+:xl_en_e2425d2b a skosxl:Label ;
+    skosxl:literalForm "Social Security Scotland Agency"@en .
+
+:xl_en_e5ef5c49 a skosxl:Label ;
+    skosxl:literalForm "Convener of School Closure Review Panels"@en .
+
+:xl_en_e7599b20 a skosxl:Label ;
+    skosxl:literalForm "NHS Shetland"@en .
+
+:xl_en_e7f3ceb7 a skosxl:Label ;
+    skosxl:literalForm "Scottish Legal Aid Board"@en .
+
+:xl_en_efae0d6d a skosxl:Label ;
+    skosxl:literalForm "NHS Lothian"@en .
+
+:xl_en_eff26088 a skosxl:Label ;
+    skosxl:literalForm "Scottish Fiscal Commission"@en .
+
+:xl_en_faa10dd7 a skosxl:Label ;
+    skosxl:literalForm "Scottish Futures Trust"@en .
+
+:xl_en_fb865b47 a skosxl:Label ;
+    skosxl:literalForm "Transport Scotland"@en .
+
+:xl_en_fc26e33d a skosxl:Label ;
+    skosxl:literalForm "Scottish Advisory Committee on Distinction Awards"@en .
+
+:xl_en_fd119a6b a skosxl:Label ;
+    dct:created "2019-07-05T10:34:50.373000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "NHS Boards"@en .
+
+:xl_en_fd640010 a skosxl:Label ;
+    skosxl:literalForm "Historic Environment Scotland"@en .
+
+:xl_en_fdcbc442 a skosxl:Label ;
+    skosxl:literalForm "HM Fire Service Inspectorate in Scotland"@en .
+
+:c_0d744784 a skos:Concept ;
+    dct:created "2019-07-05T09:55:34.144000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_129a026c,
+        :c_3e45b387 ;
+    skos:prefLabel "Central Government Entities"@en ;
+    skos:topConceptOf :conceptScheme_ecdfbcda ;
+    skosxl:prefLabel :xl_en_71dd4eae .
+
+:c_72f77676 a skos:Concept ;
+    dct:created "2019-07-05T10:06:15.259000+00:00"^^xsd:dateTime ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_590852e3,
+        :c_e1cd0153 ;
+    skos:prefLabel "Local Government Entities"@en ;
+    skos:topConceptOf :conceptScheme_ecdfbcda ;
+    skosxl:prefLabel :xl_en_d57277ce .
+
+:c_bebed75d a skos:Concept ;
+    dct:created "2019-07-05T10:03:10.740000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0075d3cf,
+        :c_1f2d6709,
+        :c_3d161d50,
+        :c_908543db,
+        :c_dd95c9b8 ;
+    skos:prefLabel "Public Corporations"@en ;
+    skosxl:prefLabel :xl_en_dda8618c .
+
+:c_cc1dae65 a skos:Concept ;
+    dct:created "2019-07-05T10:01:30.182000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_1fff6e4e,
+        :c_3b37560f,
+        :c_a5bb556a,
+        :c_d3e141f1,
+        :c_edecbd26,
+        :c_f8165cca ;
+    skos:prefLabel "Parliamentary Commissioners and Ombudsmen"@en ;
+    skosxl:prefLabel :xl_en_d591fc35 .
+
+:c_6661baaf a skos:Concept ;
+    dct:created "2019-07-05T09:56:43.339000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_06aa3e1e,
+        :c_2fbcfd34,
+        :c_6856cd2b,
+        :c_6d196d9f,
+        :c_8c166b3b,
+        :c_c51527a6,
+        :c_dacf35c0 ;
+    skos:prefLabel "Advisory NDPBs"@en ;
+    skosxl:prefLabel :xl_en_8e6d1f55 .
+
+:c_31a243cc a skos:Concept ;
+    dct:created "2019-07-05T09:57:03.982000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_2917ca40,
+        :c_3d00bf93,
+        :c_60bacf7f,
+        :c_acb25521,
+        :c_b85f39c3,
+        :c_cb8d6c73,
+        :c_e4290147,
+        :c_e68d2e9d ;
+    skos:prefLabel "Executive Agencies"@en ;
+    skosxl:prefLabel :xl_en_a07ae4b6 .
+
+:c_3e45b387 a skos:Concept ;
+    dct:created "2019-07-05T09:56:09.289000+00:00"^^xsd:dateTime ;
+    skos:broader :c_0d744784 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_113e30a0,
+        :c_2aecd818,
+        :c_31a243cc,
+        :c_6661baaf,
+        :c_74152387,
+        :c_75858877,
+        :c_bebed75d,
+        :c_cc1dae65 ;
+    skos:prefLabel "Public Bodies"@en ;
+    skosxl:prefLabel :xl_en_d5098963 .
+
+:c_74152387 a skos:Concept ;
+    dct:created "2019-07-05T09:57:57.673000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_33a1d1b6,
+        :c_3ecc1588,
+        :c_3fac3e26,
+        :c_49f7d0a0,
+        :c_540122cd,
+        :c_611f6f23,
+        :c_7f3c929a,
+        :c_8f677fb8 ;
+    skos:prefLabel "Non-Ministerial Departments"@en ;
+    skosxl:prefLabel :xl_en_c0bf300e .
+
+:c_2aecd818 a skos:Concept ;
+    dct:created "2019-07-05T10:03:27.940000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0bddbbcd,
+        :c_291334e6,
+        :c_36d63a05,
+        :c_37ea0131,
+        :c_45ab8cd2,
+        :c_4dfe91bd,
+        :c_4e49f240,
+        :c_5d679309,
+        :c_5f39f3de ;
+    skos:prefLabel "Tribunals"@en ;
+    skosxl:prefLabel :xl_en_beb2b9c4 .
+
+:c_75858877 a skos:Concept ;
+    dct:created "2019-07-05T09:57:39.945000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0f9bed68,
+        :c_1b06f47f,
+        :c_3039a9e8,
+        :c_3820ab70,
+        :c_4aed4d74,
+        :c_532f36f5,
+        :c_54270920,
+        :c_934a109c,
+        :c_ad07a046,
+        :c_c589fbf7 ;
+    skos:prefLabel "Health Bodies"@en ;
+    skosxl:prefLabel :xl_en_445fe31f .
+
+:c_129a026c a skos:Concept ;
+    dct:created "2019-07-05T10:03:59.557000+00:00"^^xsd:dateTime ;
+    skos:broader :c_0d744784 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0f9e5646,
+        :c_18fd4040,
+        :c_29879078,
+        :c_2e9998ef,
+        :c_5708e9d3,
+        :c_5b85491b,
+        :c_6c371008,
+        :c_790a58f5,
+        :c_95f24be4,
+        :c_b16e8339,
+        :c_bcf1bf32,
+        :c_c900d7d7,
+        :c_f8ac1dd2 ;
+    skos:prefLabel "Other Significant Bodies"@en ;
+    skosxl:prefLabel :xl_en_a410c35f .
+
+:c_532f36f5 a skos:Concept ;
+    dct:created "2019-07-05T10:34:50.373000+00:00"^^xsd:dateTime ;
+    skos:broader :c_75858877 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0293f3a7,
+        :c_061b75fa,
+        :c_13a9497f,
+        :c_22b1ae5f,
+        :c_2d29bf55,
+        :c_37d158f9,
+        :c_65adaa5b,
+        :c_762e32ec,
+        :c_7c17964e,
+        :c_bdf482cd,
+        :c_c9945b0d,
+        :c_d9dc2848,
+        :c_db85df57,
+        :c_f2996761 ;
+    skos:prefLabel "NHS Boards"@en ;
+    skosxl:prefLabel :xl_en_fd119a6b .
+
+:c_590852e3 a skos:Concept ;
+    dct:created "2019-07-05T10:06:39.332000+00:00"^^xsd:dateTime ;
+    skos:broader :c_72f77676 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_0bd24004,
+        :c_222d3e5c,
+        :c_242cbae2,
+        :c_343950e8,
+        :c_3cdefd20,
+        :c_431ab3e4,
+        :c_4887f124,
+        :c_4a68dd09,
+        :c_58ac9b3a,
+        :c_5e5a195e,
+        :c_64d224eb,
+        :c_68af19b1,
+        :c_69009fa2,
+        :c_6b46300b,
+        :c_760c5421,
+        :c_79d49c9f,
+        :c_89fe89d6,
+        :c_b11f19c1,
+        :c_c65b00cc,
+        :c_c6e2580d,
+        :c_c9cea231,
+        :c_cb76eaee,
+        :c_cd28f43f,
+        :c_d7ce6cce,
+        :c_d9cbe4c9,
+        :c_e02a8da9,
+        :c_e2bfec8a,
+        :c_ecea9286,
+        :c_f7495af7,
+        :c_fe84677e,
+        :c_fece96a6 ;
+    skos:prefLabel "Integration Authorities"@en ;
+    skosxl:prefLabel :xl_en_b90f281b .
+
+:c_e1cd0153 a skos:Concept ;
+    dct:created "2019-07-05T10:06:24.770000+00:00"^^xsd:dateTime ;
+    skos:broader :c_72f77676 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_03f1e418,
+        :c_19ccaea5,
+        :c_21f94c1f,
+        :c_317ee471,
+        :c_38076b13,
+        :c_3bbc9a76,
+        :c_3ed24c76,
+        :c_41498b27,
+        :c_6967b9b2,
+        :c_6c7f0412,
+        :c_6d361993,
+        :c_7791bfcb,
+        :c_7b69176d,
+        :c_8d6f9ee1,
+        :c_af4beb26,
+        :c_b7b09f9d,
+        :c_bb2bd83d,
+        :c_c0cd283c,
+        :c_ce32ecce,
+        :c_d202863c,
+        :c_d4c9b546,
+        :c_d5aaab7d,
+        :c_d864f66b,
+        :c_d9c99ec7,
+        :c_e19e67cd,
+        :c_effe1146,
+        :c_f0a901b7,
+        :c_f0e4718c,
+        :c_fa2b23e0,
+        :c_fa89c70f,
+        :c_fad65f53,
+        :c_fd8d866a ;
+    skos:prefLabel "Councils"@en ;
+    skosxl:prefLabel :xl_en_d1063dc9 .
+
+:c_113e30a0 a skos:Concept ;
+    dct:created "2019-07-05T09:57:22.144000+00:00"^^xsd:dateTime ;
+    skos:broader :c_3e45b387 ;
+    skos:inScheme :conceptScheme_ecdfbcda ;
+    skos:narrower :c_031bb26c,
+        :c_0adbc2dc,
+        :c_0cde13e7,
+        :c_0d3d47a7,
+        :c_137d9457,
+        :c_1650c2e2,
+        :c_1841d5a7,
+        :c_33da098b,
+        :c_3bd3750c,
+        :c_3d11a58a,
+        :c_3f6a83d7,
+        :c_4255a622,
+        :c_456a24a7,
+        :c_4b9c9792,
+        :c_560fbdd6,
+        :c_64fb2542,
+        :c_74a7eb05,
+        :c_792cb00a,
+        :c_7986207e,
+        :c_89dff931,
+        :c_8cd73505,
+        :c_916ae6dc,
+        :c_92beb0f8,
+        :c_a182f234,
+        :c_a8708997,
+        :c_ab46fa58,
+        :c_b1e42cf3,
+        :c_b40d841a,
+        :c_b87c1df0,
+        :c_b8b887ef,
+        :c_c75874d4,
+        :c_c80ae69f,
+        :c_c86409bd,
+        :c_c9b52442,
+        :c_cfcfd695,
+        :c_d047c60a,
+        :c_d294b8df,
+        :c_ed9014c3,
+        :c_ef894971 ;
+    skos:prefLabel "Executive NDPBs"@en ;
+    skosxl:prefLabel :xl_en_aeaac332 .
+
+:conceptScheme_ecdfbcda a skos:ConceptScheme ;
+    dct:created "2019-02-14T13:58:07.391000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-07-05T12:55:20.313000+00:00"^^xsd:dateTime ;
+    skos:hasTopConcept :c_0d744784,
+        :c_72f77676 ;
+    skos:prefLabel "Scottish Central And Local Legal Entities"@en ;
+    skos:scopeNote "A collection of local and national public bodies or similar legal entities in Scotland"@en ;
+    skosxl:prefLabel :xl_en_9d3deaa2 .
+
