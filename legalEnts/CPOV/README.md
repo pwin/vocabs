@@ -8,3 +8,35 @@ Things to take into account:
 
 [Visualisation of copv-ap-scot.owl](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/pwin/vocabs/master/legalEnts/CPOV/CPOV-AP-SCOT-v1/copv-ap-scot.owl)
 
+
+
+Resources;
+
+http://ukgovld.github.io/ukgovldwg/recommendations/uri-patterns.htm
+https://philarcher.org/diary/2013/uripersistence/
+https://innovation.thomsonreuters.com/content/dam/openweb/documents/pdf/corporate/Reports/creating-value-with-identifiers-in-an-open-data-world.pdf
+
+https://github.com/weso/landportalDoc/wiki/URI-Scheme
+
+{protocol}://{base uri}/{type}/{sector}/{domain}/{id of resource}
+
+type: cat; def; kos; res; doc; api; web, id
+
+cat = catalogue (e.g. DCAT catalogue)
+def = schemas - e.g. OWL or RDFS
+kos = concept scheme e.g. SKOS or SKOS/XL
+id =  resource - e.g. real world object
+doc = document (including web page)
+api = entry point to an API
+web = website home page
+
+
+Sector: could represent the org or the community
+
+Domain:  the 
+
+gov  - Scottish Government etc
+gen  - general
+fss  - Food Standards Scotland
+sqa  - SQA
+shr = Scottish Housing Regulator
