@@ -231,7 +231,7 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody
 :ArmsLengthBody rdf:type owl:Class ;
-                rdfs:subClassOf :GovernmentBody ;
+                rdfs:subClassOf :CentralGovernmentOrganisation ;
                 rdfs:label "Arms Length Body"@en .
 
 
@@ -245,8 +245,6 @@ cv:PublicOrganisation rdf:type owl:Class ;
                                                        ) ;
                                     rdf:type owl:Class
                                   ] ;
-              owl:disjointWith :GovernmentBody ,
-                               :LocalGovPB ;
               rdfs:label "Central Government Public Corporation"@en .
 
 
@@ -340,12 +338,6 @@ cv:PublicOrganisation rdf:type owl:Class ;
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/Function
 :Function rdf:type owl:Class ;
           rdfs:label "Function"@en .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/GovernmentBody
-:GovernmentBody rdf:type owl:Class ;
-                rdfs:subClassOf :CentralGovernmentOrganisation ;
-                rdfs:label "Government Body"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody
@@ -1526,14 +1518,7 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 
 ###  http://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244
 <http://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> rdf:type owl:NamedIndividual ,
-                                                                                       [ owl:intersectionOf ( :GovernmentBody
-                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                owl:onProperty :hasFunction ;
-                                                                                                                owl:someValuesFrom :DevolvedAdministration
-                                                                                                              ]
-                                                                                                            ) ;
-                                                                                         rdf:type owl:Class
-                                                                                       ] ;
+                                                                                       :DevolvedAdministration ;
                                                                               rdfs:label "The Scottish Government"@en .
 
 
