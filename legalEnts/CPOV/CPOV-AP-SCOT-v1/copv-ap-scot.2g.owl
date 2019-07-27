@@ -235,6 +235,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                 rdfs:label "Arms Length Body"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank
+:CentralBank rdf:type owl:Class ;
+             rdfs:subClassOf cv:PublicOrganisation ;
+             rdfs:label "Central Bank"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB
 :CentralGovPB rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( :CentralGovernmentOrganisation
@@ -515,6 +521,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                               rdfs:label "Regional Transport Partnership"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator
+:Regulator rdf:type owl:Class ;
+           rdfs:subClassOf cv:PublicOrganisation ;
+           rdfs:label "Regulator"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt
 :SheriffAppealCourt rdf:type owl:Class ;
                     rdfs:subClassOf :Court ;
@@ -573,7 +585,7 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator
 :UtilityRegulator rdf:type owl:Class ;
-                  rdfs:subClassOf cv:PublicOrganisation ;
+                  rdfs:subClassOf :Regulator ;
                   rdfs:label "Utility Regulator"@en .
 
 
