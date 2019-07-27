@@ -12,11 +12,11 @@ Things to take into account:
 
 Resources;
 
-http://ukgovld.github.io/ukgovldwg/recommendations/uri-patterns.htm
-https://philarcher.org/diary/2013/uripersistence/
-https://innovation.thomsonreuters.com/content/dam/openweb/documents/pdf/corporate/Reports/creating-value-with-identifiers-in-an-open-data-world.pdf
+* http://ukgovld.github.io/ukgovldwg/recommendations/uri-patterns.htm
+* https://philarcher.org/diary/2013/uripersistence/
+* https://innovation.thomsonreuters.com/content/dam/openweb/documents/pdf/corporate/Reports/creating-value-with-identifiers-in-an-open-data-world.pdf
 
-https://github.com/weso/landportalDoc/wiki/URI-Scheme
+* https://github.com/weso/landportalDoc/wiki/URI-Scheme
 
 
 ## URI Patterns 
