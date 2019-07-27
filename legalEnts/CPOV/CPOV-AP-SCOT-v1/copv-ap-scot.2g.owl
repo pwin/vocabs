@@ -287,7 +287,7 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration
 :DevolvedAdministration rdf:type owl:Class ;
-                        rdfs:subClassOf cv:PublicOrganisation ;
+                        rdfs:subClassOf :CentralGovernmentOrganisation ;
                         rdfs:label "Devolved Administration"@en .
 
 
