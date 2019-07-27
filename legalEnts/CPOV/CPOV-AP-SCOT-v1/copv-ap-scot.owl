@@ -260,6 +260,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                   rdfs:label "Community Council"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB
+:ConservationBoardAONB rdf:type owl:Class ;
+                       rdfs:subClassOf cv:PublicOrganisation ;
+                       rdfs:label "Conservation Board for Area of Outstanding Natural Beauty"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/Council
 :Council rdf:type owl:Class ;
          rdfs:subClassOf :LocalGovernmentOrganisation ;
@@ -437,6 +443,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
                       rdfs:label "National Jurisdiction"@en .
 
 
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority
+:NationalParkAuthority rdf:type owl:Class ;
+                       rdfs:subClassOf cv:PublicOrganisation ;
+                       rdfs:label "National Park Authority"@en .
+
+
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity
 :NonClassifiedEntity rdf:type owl:Class ;
                      rdfs:subClassOf cv:PublicOrganisation ;
@@ -489,6 +501,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
 :ParliamentaryCommissioner rdf:type owl:Class ;
                            rdfs:subClassOf cv:PublicOrganisation ;
                            rdfs:label "Parliamentary Commissioner"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority
+:PublicBroadcastingAuthority rdf:type owl:Class ;
+                             rdfs:subClassOf cv:PublicOrganisation ;
+                             rdfs:label "Public Broadcasting Authority"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership
@@ -551,6 +569,12 @@ cv:PublicOrganisation rdf:type owl:Class ;
 :Tribunal rdf:type owl:Class ;
           rdfs:subClassOf :ArmsLengthBody ;
           rdfs:label "Tribunal"@en .
+
+
+###  http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator
+:UtilityRegulator rdf:type owl:Class ;
+                  rdfs:subClassOf cv:PublicOrganisation ;
+                  rdfs:label "Utility Regulator"@en .
 
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup
