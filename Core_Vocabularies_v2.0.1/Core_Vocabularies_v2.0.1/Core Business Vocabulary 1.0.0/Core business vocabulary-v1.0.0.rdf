@@ -143,7 +143,7 @@
   <rdf:Description rdf:about="&adms;Identifier">
     <rdfs:label xml:lang="en">Identifier</rdfs:label>
     <rdfs:comment xml:lang="en">The ADMS class of Identifier fully represents the Business Core Vocabulary term of the same name</rdfs:comment>
-    <vann:usageNote xml:lang="en" rdf:parseType="Literal"><p>The Identifier class represents any identifier issued by any authority, whether a 
+    <vann:usageNote xml:lang="en" rdf:parseType="Literal"><p><p>The Identifier class represents any identifier issued by any authority, whether a 
     government agency or not. It captures the identifier itself and details of the issuing authority, 
     the date on which the identifier was issued and so on.</p>
     <p>This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of 
@@ -154,21 +154,21 @@
     <li>use <a href="&dcterms;type">dcterms:type</a> to provide an identifier for the type of identifier issued;</li>
     <li>use <a href="&dcterms;created">dcterms:created</a> to provide the date on which the identifier was issued.</li>
     <li>use <a href="#schemeagency">adms:schemeAgency</a> to provide the name of the agency that created the identifier (as an rdfs:Literal).</li>
-    <li>use <a href="&dcterms;creator">dcterms:creator</a> to link to a URI of an Agent class describing the issuing Agency;</li></ul></vann:usageNote>
+    <li>use <a href="&dcterms;creator">dcterms:creator</a> to link to a URI of an Agent class describing the issuing Agency;</li></ul></p></vann:usageNote>
     <rdfs:isDefinedBy rdf:resource="&legal;"/>
     <dcterms:identifier>adms:Identifier</dcterms:identifier>
   </rdf:Description>
 
   <rdf:Description rdf:about="&skos;Concept"> 
     <rdfs:label xml:lang="en">Code</rdfs:label>
-    <rdfs:comment rdf:parseType="Literal"><p>The Conceptual Model includes a 'Code' datatype that 
+    <rdfs:comment rdf:parseType="Literal"><p><p>The Conceptual Model includes a 'Code' datatype that 
       is used by several classes. This is expressed using the <a href="&skosDoc;">SKOS vocabulary</a> with
       a particular 'code' usually being a skos:Concept that is part of a scheme. 
       The intention is that the skos:Concept class be used as follows;</p><ul>
       <li>for the content property, use skos:notation</li>
       <li>the 'list' property will be taken care of by means of the skos:inScheme property;</li>
       <li>the list agency property is likely to be applied to the scheme as a whole for which dcterms:creator is appropriate;</li>
-      <li>the list version property can be fulfilled using schema:version (see <a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a>)</li></ul>
+      <li>the list version property can be fulfilled using schema:version (see <a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a>)</li></ul></p>
     </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="&skosDoc;" />
     <dcterms:identifier>skos:Concept</dcterms:identifier>
@@ -196,9 +196,9 @@
 
   <rdf:Property rdf:about="&legal;companyType">
     <rdfs:label xml:lang="en">company type</rdfs:label>
-    <rdfs:comment xml:lang="en" rdf:parseType="Literal">This property records the type of company. Familiar types are SA, PLC, LLC, GmbH etc. Each 
+    <rdfs:comment xml:lang="en" rdf:parseType="Literal"><p>This property records the type of company. Familiar types are SA, PLC, LLC, GmbH etc. Each 
     jurisdiction will have a limited set of recognised company types and these should be used in a consistent manner
-    using a skos:Concept as described in the <a href="#skos:Concept">Code</a> Class.</rdfs:comment>
+    using a skos:Concept as described in the <a href="#skos:Concept">Code</a> Class.</p></rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="&legal;"/>
     <rdfs:range rdf:resource="&skos;Concept"/>
     <rdfs:subPropertyOf rdf:resource="&org;classification" />
@@ -220,11 +220,11 @@
 
   <rdf:Property rdf:about="&legal;companyActivity">
     <rdfs:label xml:lang="en">company activity</rdfs:label>
-    <rdfs:comment xml:lang="en" rdf:parseType="Literal">The activity of a company should be recorded using a controlled vocabulary expressed
+    <rdfs:comment xml:lang="en" rdf:parseType="Literal"><p>The activity of a company should be recorded using a controlled vocabulary expressed
     as a SKOS concept scheme (see <a href="#skos:Concept">Code</a>. Several such 
     vocabularies exist, many of which map to the UN's ISIC codes. Where a particular controlled vocabulary is in use 
     within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred 
-    choice for European interoperability is NACE.</rdfs:comment>
+    choice for European interoperability is NACE.</p></rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="&legal;"/>
     <rdfs:subPropertyOf rdf:resource="&org;classification" />
     <dcterms:identifier>legal:companyActivity</dcterms:identifier>
