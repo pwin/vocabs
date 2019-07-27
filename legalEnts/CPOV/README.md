@@ -18,25 +18,34 @@ https://innovation.thomsonreuters.com/content/dam/openweb/documents/pdf/corporat
 
 https://github.com/weso/landportalDoc/wiki/URI-Scheme
 
+
+## URI Patterns 
+
 {protocol}://{base uri}/{type}/{sector}/{domain}/{id of resource}
 
-type: cat; def; kos; res; doc; api; web, id
+#### type: cat; def; kos; res; doc; api; web, id
 
-cat = catalogue (e.g. DCAT catalogue)
-def = schemas - e.g. OWL or RDFS
-kos = concept scheme e.g. SKOS or SKOS/XL
-id =  resource - e.g. real world object
-doc = document (including web page)
-api = entry point to an API
-web = website home page
+| type | description |
+| :---- | :---- |
+| cat | catalogue (e.g. DCAT catalogue) |
+| def | schemas - e.g. OWL or RDFS |
+|kos | concept scheme e.g. SKOS or SKOS/XL|
+|id |  resource - e.g. real world object|
+|doc | document (including web page)|
+|api | entry point to an API|
+|web | website home page|
 
 
-Sector: could represent the org or the community
+#### Sector: could represent the org or the community
 
-Domain:  the 
+| Domain | info | 
+| :--- | :--- |
+| gov  | Scottish Government etc |
+| gen  | general |
+| fss  | Food Standards Scotland |
+| sqa  | SQA |
+| shr | Scottish Housing Regulator |
 
-gov  - Scottish Government etc
-gen  - general
-fss  - Food Standards Scotland
-sqa  - SQA
-shr = Scottish Housing Regulator
+
+
+
