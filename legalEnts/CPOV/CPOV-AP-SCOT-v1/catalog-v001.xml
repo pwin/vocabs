@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <!-- uri id="Imports Wizard Entry" name="http://www.w3.org/ns/legal#" uri="http://www.w3.org/ns/legal#"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/regorg" uri="https://www.w3.org/ns/regorg"/>
-    <uri id="Imports Wizard Entry" name="http://data.europa.eu/m8g/cpov" uri="file:/C:/Users/Pedro/Documents/vocabs/Core_Vocabularies_v2.0.1/Core_Vocabularies_v2.0.1/Core%20Public%20Organisation%20Vocabulary%201.0.0/Core%20Public%20Organisation%20Vocabulary_v1.0.0.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/legal#" uri="file:/C:/Users/Pedro/Documents/vocabs/Core_Vocabularies_v2.0.1/Core_Vocabularies_v2.0.1/Core%20Business%20Vocabulary%201.0.0/Core%20business%20vocabulary-v1.0.0.rdf"/>
-    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/locn" uri="https://w3.org/ns/locn"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/locn" uri="https://w3.org/ns/locn"/ -->
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
