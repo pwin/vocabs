@@ -746,348 +746,411 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://data.europa.eu/w21/49169dd2-da9d-4c81-94b5-bba4604ded0a
-<http://data.europa.eu/w21/49169dd2-da9d-4c81-94b5-bba4604ded0a> rdf:type owl:NamedIndividual ,
-                                                                          dcat:Dataset ;
-                                                                 <http://joinup.eu/language> "en"@en ;
-                                                                 <http://joinup.eu/search> "a:4:{s:6:\"fields\";a:3:{s:23:\"solution_content_bundle\";a:2:{s:6:\"weight\";i:0;s:6:\"region\";s:3:\"top\";}s:22:\"solution_policy_domain\";a:2:{s:6:\"weight\";i:1;s:6:\"region\";s:13:\"inline_facets\";}s:25:\"solution_spatial_coverage\";a:2:{s:6:\"weight\";i:2;s:6:\"region\";s:13:\"inline_facets\";}}s:7:\"enabled\";i:1;s:13:\"query_presets\";s:0:\"\";s:5:\"limit\";i:12;}"^^xsd:string ;
-                                                                 <http://joinup.eu/site-featured> "false"^^xsd:boolean ;
-                                                                 <http://joinup.eu/site-pinned> "false"^^xsd:boolean ;
-                                                                 <http://joinup.eu/is/workflow_status> "validated"^^xsd:string ;
-                                                                 <http://joinup.eu/language/default> "1" ;
-                                                                 <http://joinup.eu/language/translation_author> "0"@en ;
-                                                                 <http://joinup.eu/language/translation_source> "und"@en ;
-                                                                 <http://joinup.eu/language/translation_status> "1"@en ;
-                                                                 <http://joinup.eu/owner/uid> 6364 ;
-                                                                 <http://joinup.eu/solution/elibrary_creation> 0 ;
-                                                                 <http://joinup.eu/solution/moderation> "false"^^xsd:boolean ;
-                                                                 <http://joinup.eu/solution/related_by_type> "true"^^xsd:boolean ;
-                                                                 <http://joinup.eu/solution/webdav_creation> "true"^^xsd:boolean ;
-                                                                 <http://joinup.eu/voc/policy-domain> <http://joinup.eu/ontology/policy-domain#ict-standardisation> ;
-                                                                 <http://purl.org/dc/dcmitype/StillImage> "17505"^^xsd:string ;
-                                                                 dct:description """<p>The e-Government Core Vocabularies are simplified, re-usable and extensible data models that capture the fundamental characteristics of a data entity in a context-neutral fashion.</p>
 
-<p>&nbsp;</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/322eb58a-08d9-4721-b179-7b62b097304d\" href=\"/solution/core-person-vocabulary\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"32bc4040-736e-4b02-b3f1-8df7fc5066d7\" src=\"/sites/default/files/inline-images/PERSON.png\" /></a></td>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/8d58d3f4-5013-4aa3-8c39-4f0059460da7\" href=\"/solution/registered-organization-vocabulary\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"f66fc299-082f-44b5-a2f5-0ee119d4f5a9\" src=\"/sites/default/files/inline-images/BUSINESS.png\" /></a></td>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/34f5f51c-3dfb-494d-a75d-ecbdefb9a37e\" href=\"/solution/core-location-vocabulary\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"ed53cd9f-fd88-4667-bdf5-44609e1f71e6\" src=\"/sites/default/files/inline-images/LOCATION.png\" /></a></td>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/f55bb8ef-bf11-4357-b9df-5ec1af842a1f\" href=\"/solution/core-criterion-and-core-evidence-vocabulary\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"057d0a0e-ba67-43a6-9251-bf107f301d37\" src=\"/sites/default/files/inline-images/CRITERION.png\" /></a></td>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/26fe5e8d-9b68-45a3-93c7-93b6bb72c53a\" href=\"/solution/core-public-service\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"2216330b-15a3-436e-98f5-af04a70e79a4\" src=\"/sites/default/files/inline-images/PUBLIC SERVICE.png\" /></a></td>
-      <td><a data-entity-type=\"rdf_entity\" data-entity-uuid=\"http://data.europa.eu/w21/73920f8b-6c65-4c82-be8c-23a6d2cc4d58\" href=\"/solution/core-public-organisation-vocabulary\"><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"8b77e774-ee9b-40e7-9085-192a0e4f09d7\" src=\"/sites/default/files/inline-images/PUBLIC ORGANISATION.png\" /></a></td>
-    </tr>
-    <tr>
-      <td>The Core Person Vocabulary captures the <strong>fundamental characteristics of a person</strong>, e.g. the name, the gender, the date of birth, etc.<br />
-      &nbsp;</td>
-      <td>The Core Business Vocabulary captures the <strong>fundamental characteristics of a legal entity</strong>, e.g. the legal name, the activity, address, legal identifier, company type, and its activities.</td>
-      <td>The Core Location Vocabulary captures the <strong>fundamental characteristics of a location</strong>, represented as an address, a geographic name, or geometry. This vocabulary is aligned with the<a href=\"https://inspire.ec.europa.eu/data-specifications/2892\"> INSPIRE</a> data specifications.</td>
-      <td>The Core Evidence and Criterion Vocabulary describes the <strong>principles and the means that a private entity must fulfil in order to become eligible or to be qualified to perform public services</strong>. A Criterion is a rule or principle that is used to judge, evaluate or test something.&nbsp;An Evidence is the means by which a Criterion may be proven.</td>
-      <td>The Core Public Service Vocabulary captures the <strong>fundamental characteristics of a service offered by public administration</strong>. Such characteristics include the title, description, inputs, outputs, providers, locations, etc. of the public service.</td>
-      <td>The Core Public Organisation Vocabulary <strong>describes public organisations with links to descriptions of public services, members of staff or other resources such as relevant legislation, policies and jurisdictional coverage</strong> in the European Union.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>&nbsp;</h3>
-
-<h3><strong>1. What are the benefits of using the e-Government Core Vocabularies? </strong></h3>
-
-<p>One of the main benefits of the e-Government Core Vocabularies is that they provide a concrete starting point for promoting semantic interoperability among European public administrations.Public administrations can use and extend them in the following contexts:</p>
-
-<ul>
-  <li><strong>Information exchange</strong> between systems: the e-Government Core Vocabularies can become the basis of a context-specific data model used to exchange data among existing information systems.</li>
-  <li><strong>Data integration</strong>: the e-Government Core Vocabularies can integrate data that comes from disparate data sources.</li>
-  <li><strong>Data publishing</strong>: the e-Government Core Vocabularies can be the foundation of a common export format for data in base registries like cadastres, business registers and service portals.</li>
-  <li><strong>Development of new systems</strong>: the e-Government Core Vocabularies can be the default starting point for designing the conceptual and logical data models in newly developed information systems.</li>
-</ul>
-
-<h3><strong>2. Who developed the solution?</strong></h3>
-
-<p>ISA² has developed the e-Government Core Vocabularies for public administrations in an open process with the active involvement of the SEMIC action stakeholders including:</p>
-
-<ul>
-  <li>The&nbsp;e-Government Core Vocabularies Working Group;</li>
-  <li>the Directorate-General for Informatics:&nbsp;<a href=\"http://ec.europa.eu/dgs/informatics/index_en.htm\">DG DIGIT</a> - in particular the SEMIC action of the ISA² programme; and</li>
-  <li>the&nbsp;<a href=\"http://publications.europa.eu/index_en.htm\">Publications Office of the EU</a>.</li>
-</ul>
-
-<h3><strong>3. How are the e-Government Core Vocabularies maintained?</strong></h3>
-
-<p>The e-Government Core Vocabularies are maintained based on the <a href=\"https://joinup.ec.europa.eu/document/process-and-methodology-developing-core-vocabularies\">Process and Methodology for Developing Core Vocabularies</a>.</p>
-
-<p>All changes in the specification are discussed with the e-Government Core Vocabularies Working Group to make sure that changes do not negatively impact the operation of implementations and the interoperability across the network and are publicly communicated.</p>
-
-<h3><strong>4. e-Government Core Vocabularies key milestones</strong></h3>
-
-<ul>
-  <li>From <strong>February 2016 until December 2016</strong> the Core Criterion and Core Evidence Vocabulary was developed by the Working Group</li>
-  <li>From <strong>December 2012 until March 2013</strong> the Core Public Service vocabulary was created by a multi-disciplinary Working Group.</li>
-  <li>On <strong>23 May 2012</strong> the Coordination Group of the Interoperability Solutions for European Public Administrations (ISA) Programme has endorsed the Core Business, Core Location and Core Person Vocabulary.</li>
-  <li>On <strong>17 February 2012</strong> a final draft of the e-Government Core Vocabularies entered a month-long public review period.</li>
-  <li>From <strong>November 2011 until May 2012</strong> the Core Business, Core Person, and Core Location Vocabularies were created by a multi-disciplinary Working Group with 69 experts from 22 countries, 18 EU and 4 non-EU countries, following an open and inclusive process of consensus building.</li>
-</ul>
-
-<h3><strong>5. e-Government Core Vocabularies at one glance</strong></h3>
-
-<p><a href=\"https://ec.europa.eu/isa2/sites/isa/files/docs/publications/2017_core_vocabularies_leaflet_lr_v11.pdf\">Core Vocabularies leaflet</a></p>
-
-<p><a href=\"https://ec.europa.eu/isa2/sites/isa/files/corevocabularies-poster.pdf\">Core Vocabularies poster</a></p>
-
-<h3><strong>6. Get started</strong></h3>
-
-<p>Download the <a href=\"https://joinup.ec.europa.eu/solution/e-government-core-vocabularies/releases\">Core Vocabularies latest and previous releases.</a></p>
-
-<p>Discover the <a href=\"https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/ISA%20Hanbook%20for%20using%20Core%20Vocabularies.pdf\">Handbook on Core Vocabularies</a>.</p>
-
-<p>Get acquainted with the <a href=\"https://joinup.ec.europa.eu/document/process-and-methodology-developing-core-vocabularies\">Process and Methodology for Developing Core Vocabularies</a>.</p>
-
-<h3><strong>7. Get involved!</strong></h3>
-
-<p>Do you want to participate in the work of our Core Vocabularies Working Group? Share your comments and change requests via:&nbsp;</p>
-
-<ul>
-  <li><a href=\"https://github.com/SEMICeu/Core-Person-Vocabulary\">GitHub Core Person Vocabulary repository</a></li>
-  <li><a href=\"https://github.com/SEMICeu/Core-Business-Vocabulary\">GitHub Core Business Vocabulary repository</a></li>
-  <li><a href=\"https://github.com/SEMICeu/Core-Location-Vocabulary\">GitHub Core Location Vocabulary repository</a></li>
-  <li><a href=\"https://github.com/SEMICeu/CPOV\">GitHub Core Public Organisation Vocabulary repository</a></li>
-  <li><a href=\"https://github.com/SEMICeu/CCCEV\">GitHub Core Criterion and Core Evidence Vocabulary repository</a></li>
-</ul>
-
-<h3><strong>8. e-Government Core Vocabularies users</strong></h3>
-
-<p>Core Vocabularies have been successfully implemented by:</p>
-
-<ul>
-  <li>The European Commission - <a href=\"http://ec.europa.eu/dgs/informatics/index_en.htm\">DG DIGIT</a> and <a href=\"http://ec.europa.eu/justice/index_en.htm\">DJ JUST</a> - uses Core Business Vocabulary in the EU <a href=\"https://joinup.ec.europa.eu/sites/default/files/eu_core_vocabularies_in_action_using_core_business_vocabulary_in_the_eu_.pdf\">Business Registers Interconnection System (BRIS)</a> (last update in May 2015).</li>
-  <li>The Estonian <a href=\"https://www.inforegister.ee/\">Inforegister.ee</a> in its <a href=\"https://www.w3.org/TR/vocab-regorg/\">Register App Engine Graph</a> project.</li>
-  <li>The <a href=\"https://www.mkm.ee/en\">Estonian Ministry of Economic Affairs and Communication</a>, in <a href=\"https://www.mkm.ee/sites/default/files/study_-_integrated_portfolio_management_of_public_services_-_brief_summary.pdf\">the integrated portfolio management of public services</a> (last update in March 2014).</li>
-  <li>The Spanish <a href=\"http://www.eugo.es/\">Point of Single Contact for business</a>.</li>
-  <li>The <a href=\"http://www.agid.gov.it/\">Italian Digital Agency (AGID)</a> with <a href=\"http://spcdata.digitpa.gov.it/dataLotto1.html\">SPCData</a>.</li>
-  <li>The <a href=\"http://www.agid.gov.it/\">Italian Digital Agency (AGID)</a> with <a href=\"http://www.dati.gov.it/consultazione/CPSV-AP_IT\">CPSV-AP_IT</a>.</li>
-</ul>
-
-<h3><strong>9. Any questions?&nbsp;</strong></h3>
-
-<p>Contact the&nbsp;<a href=\"mailto:contact@semic.eu\">SEMIC team</a>.</p>
-
-<h3><strong>10. About SEMIC</strong></h3>
-
-<p>Visit the SEMIC collection on&nbsp;<a href=\"https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/about\" target=\"_blank\">Joinup</a>&nbsp;or check out our&nbsp;<a href=\"https://ec.europa.eu/isa2/actions/improving-semantic-interoperability-european-egovernment-systems_en\">SEMIC page</a>&nbsp;on the ISA²&nbsp;website.</p>
-"""@en ;
-                                                                 dct:hasVersion <http://data.europa.eu/w21/e013e885-9a0f-41eb-bc75-a075c791c1a9> ,
-                                                                                <http://data.europa.eu/w21/10754c4a-e6c2-4d42-8504-377d38246459> ,
-                                                                                <http://data.europa.eu/w21/50db2241-751d-432c-a4ec-d2144f593224> ,
-                                                                                <http://data.europa.eu/w21/68bcbb91-8df7-4aa0-9ec3-1b29f4f12a6c> ;
-                                                                 dct:issued "2014-09-03T10:25:50+02:00"^^xsd:dateTime ;
-                                                                 dct:modified "2019-05-27T14:52:11+02:00"^^xsd:dateTime ;
-                                                                 dct:publisher <http://data.europa.eu/w21/b1ffa7dc-07b7-4f85-9c3c-8850087b506c> ;
-                                                                 dct:title "e-Government Core Vocabularies "@en ;
-                                                                 dct:type <http://data.europa.eu/dr8/SemanticInteroperabilitySpecification> ;
-                                                                 <http://www.w3.org/ns/adms#status> <http://purl.org/adms/status/UnderDevelopment> ;
-                                                                 dcat:contactPoint <http://data.europa.eu/w21/fc7ac8d0-b843-49fe-bcd1-7beb1825ce68> ;
-                                                                 dcat:keyword "EC" ,
-                                                                              "European Commission" ,
-                                                                              "core vocabularies" ;
-                                                                 foaf:Image "504215"^^xsd:string .
-
-
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_06c72973_1d22_4fff_87ee_f5930ad71494
-:OWLNamedIndividual_06c72973_1d22_4fff_87ee_f5930ad71494 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/06c72973_1d22_4fff_87ee_f5930ad71494
+id:06c72973_1d22_4fff_87ee_f5930ad71494 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Commissioner for Ethical Standards in Public Life in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_07cbd81d_c4f5_4a1b_8097_89fe8178bca7
-:OWLNamedIndividual_07cbd81d_c4f5_4a1b_8097_89fe8178bca7 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/07cbd81d_c4f5_4a1b_8097_89fe8178bca7
+id:07cbd81d_c4f5_4a1b_8097_89fe8178bca7 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Prestwick Aviation Holdings Limited"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_08a62407_306f_4add_b004_51fca19a7486
-:OWLNamedIndividual_08a62407_306f_4add_b004_51fca19a7486 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/08a62407_306f_4add_b004_51fca19a7486
+id:08a62407_306f_4add_b004_51fca19a7486 rdf:type owl:NamedIndividual ,
                                                                   :SpecialNHSBoard ;
                                                          rdfs:label "State Hospitals Board for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4
-:OWLNamedIndividual_0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4
+id:0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4 rdf:type owl:NamedIndividual ,
                                                                   :AdvisoryNDPB ;
                                                          rdfs:label "Post Qualification Education Board for Health Science Pharmacists in Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_2d2921c2_69ba_4ec5_af3d_452697dd89b4
-:OWLNamedIndividual_2d2921c2_69ba_4ec5_af3d_452697dd89b4 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/0d00eb12_4c67_4ad8_a596_4216faa7aa48
+id:0d00eb12_4c67_4ad8_a596_4216faa7aa48 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "St Margaret‘s Hope Pier (Sth Ronaldsay)"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/1a580f88_ffa9_4258_b09b_d7b2eb24dba0
+id:1a580f88_ffa9_4258_b09b_d7b2eb24dba0 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "St Abbs Harbour (Coldingham Shore)"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/1dbf1754_184e_4f84_8078_701b1f42e61f
+id:1dbf1754_184e_4f84_8078_701b1f42e61f rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Tarbert (Loch Fyne) Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/285a232d_6aea_44f0_a3a3_9a779b99c19f
+id:285a232d_6aea_44f0_a3a3_9a779b99c19f rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Collieston Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/2d2921c2_69ba_4ec5_af3d_452697dd89b4
+id:2d2921c2_69ba_4ec5_af3d_452697dd89b4 rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
                                                          rdfs:label "Cowal Ferries Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_30a429db_ea3b_412d_ba0d_d060d9462e45
-:OWLNamedIndividual_30a429db_ea3b_412d_ba0d_d060d9462e45 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/2efa3045_2773_4f3f_9a78_64789c31b8ce
+id:2efa3045_2773_4f3f_9a78_64789c31b8ce rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Wick Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/30a429db_ea3b_412d_ba0d_d060d9462e45
+id:30a429db_ea3b_412d_ba0d_d060d9462e45 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scotland's Commissioner for Children and Young People"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_36461122_5c1e_4830_9da1_42941dc09d6a
-:OWLNamedIndividual_36461122_5c1e_4830_9da1_42941dc09d6a rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/36461122_5c1e_4830_9da1_42941dc09d6a
+id:36461122_5c1e_4830_9da1_42941dc09d6a rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Moredun Research Institute"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_39a7db13_42f0_4941_be3f_cea9465ac6d7
-:OWLNamedIndividual_39a7db13_42f0_4941_be3f_cea9465ac6d7 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/39a7db13_42f0_4941_be3f_cea9465ac6d7
+id:39a7db13_42f0_4941_be3f_cea9465ac6d7 rdf:type owl:NamedIndividual ,
                                                                   :SpecialNHSBoard ;
                                                          rdfs:label "The Golden Jubilee National Hospital"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4021a775_c22b_4ab3_b7d2_ef0caea455e5
-:OWLNamedIndividual_4021a775_c22b_4ab3_b7d2_ef0caea455e5 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/3a7af8e0_d527_433c_9e0e_ee50059b0457
+id:3a7af8e0_d527_433c_9e0e_ee50059b0457 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Stornoway Port"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/4021a775_c22b_4ab3_b7d2_ef0caea455e5
+id:4021a775_c22b_4ab3_b7d2_ef0caea455e5 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scottish Studentship Selection Committee"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_4316fcaf_18a3_4708_9668_d72dbe4b90d8
-:OWLNamedIndividual_4316fcaf_18a3_4708_9668_d72dbe4b90d8 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/40fb1f18_7f5c_4828_9542_377b6489f43c
+id:40fb1f18_7f5c_4828_9542_377b6489f43c rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Brownies Taing (Lerwick)"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/4316fcaf_18a3_4708_9668_d72dbe4b90d8
+id:4316fcaf_18a3_4708_9668_d72dbe4b90d8 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Central Advisory Committee on Justices of the Peace (Scotland)"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_43f5070e_cf24_4577_89dc_b21cf2ce5b22
-:OWLNamedIndividual_43f5070e_cf24_4577_89dc_b21cf2ce5b22 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/43f5070e_cf24_4577_89dc_b21cf2ce5b22
+id:43f5070e_cf24_4577_89dc_b21cf2ce5b22 rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
                                                          rdfs:label "David MacBrayne HR (UK) Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_45669049_b124_4c88_b765_abbcd535164c
-:OWLNamedIndividual_45669049_b124_4c88_b765_abbcd535164c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/45669049_b124_4c88_b765_abbcd535164c
+id:45669049_b124_4c88_b765_abbcd535164c rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          rdfs:label "TS Prestwick Holdco Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_530a74a8_4465_4b3b_8a46_3e591effcf41
-:OWLNamedIndividual_530a74a8_4465_4b3b_8a46_3e591effcf41 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/4fb51bb8_b7c8_4963_8d10_c1e968092f2f
+id:4fb51bb8_b7c8_4963_8d10_c1e968092f2f rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Peterhead Port"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/50d31ce4_1b07_42ad_9531_61ee35b30d7b
+id:50d31ce4_1b07_42ad_9531_61ee35b30d7b rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Burnmouth Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/530a74a8_4465_4b3b_8a46_3e591effcf41
+id:530a74a8_4465_4b3b_8a46_3e591effcf41 rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          rdfs:label "Glasgow 2014 Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_54ef0c17_a26e_4da2_a01d_f3389ef1d5bd
-:OWLNamedIndividual_54ef0c17_a26e_4da2_a01d_f3389ef1d5bd rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/537663e3_9971_4d3e_b09b_8b8a05221a3a
+id:537663e3_9971_4d3e_b09b_8b8a05221a3a rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Pennan Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/54ef0c17_a26e_4da2_a01d_f3389ef1d5bd
+id:54ef0c17_a26e_4da2_a01d_f3389ef1d5bd rdf:type owl:NamedIndividual ,
                                                                   :SpecialNHSBoard ;
                                                          rdfs:label "NHS Board Endowment Funds (Scotland)"@en ;
                                                          skos:altLabel "Scottish NHS Charities"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_57a8edbc_8216_4496_9127_dc7dbf4aa7e8
-:OWLNamedIndividual_57a8edbc_8216_4496_9127_dc7dbf4aa7e8 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/57a8edbc_8216_4496_9127_dc7dbf4aa7e8
+id:57a8edbc_8216_4496_9127_dc7dbf4aa7e8 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Police Service of Scotland"@en ;
                                                          skos:altLabel "Police Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_5d8d48e6_aafe_42cc_bb14_daf64e78c00f
-:OWLNamedIndividual_5d8d48e6_aafe_42cc_bb14_daf64e78c00f rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/5d8d48e6_aafe_42cc_bb14_daf64e78c00f
+id:5d8d48e6_aafe_42cc_bb14_daf64e78c00f rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Gaelic Television Committee"@en ,
                                                                     "Seirbheis nam Meadhanan Gàidhlig (MG Alba)"@gd .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_5ed6256e_9558_46bf_bda4_4109f6d6f695
-:OWLNamedIndividual_5ed6256e_9558_46bf_bda4_4109f6d6f695 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/5ed6256e_9558_46bf_bda4_4109f6d6f695
+id:5ed6256e_9558_46bf_bda4_4109f6d6f695 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Forth Estuary Transport Authority"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_66bfe6f1_19c2_4d4b_aec6_383b89deca5b
-:OWLNamedIndividual_66bfe6f1_19c2_4d4b_aec6_383b89deca5b rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/66bfe6f1_19c2_4d4b_aec6_383b89deca5b
+id:66bfe6f1_19c2_4d4b_aec6_383b89deca5b rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Aberdeen Western Peripheral Route (AWPR) Special Purpose Vehicles (SPVs)"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_6cb35dd9_3e43_4fb8_a659_61909f816ecd
-:OWLNamedIndividual_6cb35dd9_3e43_4fb8_a659_61909f816ecd rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/6cb35dd9_3e43_4fb8_a659_61909f816ecd
+id:6cb35dd9_3e43_4fb8_a659_61909f816ecd rdf:type owl:NamedIndividual ,
                                                                   :SpecialNHSBoard ;
                                                          rdfs:label "Scottish Ambulance Service"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_6e007bdd_9e90_4276_9fb8_f048da176039
-:OWLNamedIndividual_6e007bdd_9e90_4276_9fb8_f048da176039 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/6e007bdd_9e90_4276_9fb8_f048da176039
+id:6e007bdd_9e90_4276_9fb8_f048da176039 rdf:type owl:NamedIndividual ,
                                                                   :Tribunal ;
                                                          rdfs:label "Rent Assessment Panel for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_71520dbe_46e7_43e6_91bb_280858be428b
-:OWLNamedIndividual_71520dbe_46e7_43e6_91bb_280858be428b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/71520dbe_46e7_43e6_91bb_280858be428b
+id:71520dbe_46e7_43e6_91bb_280858be428b rdf:type owl:NamedIndividual ,
                                                                   :ParlBody ;
                                                          rdfs:label "Scottish Parliamentary Corporate Body"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_7620f2dd_f232_493b_9743_c173e4adbe75
-:OWLNamedIndividual_7620f2dd_f232_493b_9743_c173e4adbe75 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/71a3383f_377c_4b74_b099_286c5db0bbfe
+id:71a3383f_377c_4b74_b099_286c5db0bbfe rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Cruden Bay Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/7620f2dd_f232_493b_9743_c173e4adbe75
+id:7620f2dd_f232_493b_9743_c173e4adbe75 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scottish Agricultural College"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_800fde6d_83a2_4507_8723_6375288ef94c
-:OWLNamedIndividual_800fde6d_83a2_4507_8723_6375288ef94c rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/800fde6d_83a2_4507_8723_6375288ef94c
+id:800fde6d_83a2_4507_8723_6375288ef94c rdf:type owl:NamedIndividual ,
                                                                   :ExecutiveNDPB ;
                                                          rdfs:label "Rowett Research Institute"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_99d316c3_493e_430f_9fbb_b515e3fe87ec
-:OWLNamedIndividual_99d316c3_493e_430f_9fbb_b515e3fe87ec rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/8d90e2fa_8de8_4e5d_85da_6384823f8d19
+id:8d90e2fa_8de8_4e5d_85da_6384823f8d19 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Fraserburgh Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/99d316c3_493e_430f_9fbb_b515e3fe87ec
+id:99d316c3_493e_430f_9fbb_b515e3fe87ec rdf:type owl:NamedIndividual ,
                                                                   :SpecialNHSBoard ;
                                                          rdfs:label "Healthcare Improvement Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_9fb1fb52_57ea_459f_90c6_a8440df46d7b
-:OWLNamedIndividual_9fb1fb52_57ea_459f_90c6_a8440df46d7b rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/9d248799_2588_4740_9095_7502f466884b
+id:9d248799_2588_4740_9095_7502f466884b rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Gardenstown Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/9d94d32a_df97_4e64_a6d4_bbe1f4942125
+id:9d94d32a_df97_4e64_a6d4_bbe1f4942125 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Scrabster Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/9fb1fb52_57ea_459f_90c6_a8440df46d7b
+id:9fb1fb52_57ea_459f_90c6_a8440df46d7b rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
                                                          rdfs:label "Argyll Ferries Ltd"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a00d15bf_818c_4965_bc34_12302a194a72
-:OWLNamedIndividual_a00d15bf_818c_4965_bc34_12302a194a72 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/a00d15bf_818c_4965_bc34_12302a194a72
+id:a00d15bf_818c_4965_bc34_12302a194a72 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scottish Consolidated Fund"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_a1fb0229_8955_409e_9cb9_1538c3fccfc7
-:OWLNamedIndividual_a1fb0229_8955_409e_9cb9_1538c3fccfc7 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/a0cd94c2_2275_4763_be5a_d079315227cd
+id:a0cd94c2_2275_4763_be5a_d079315227cd rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "North Berwick Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a1fb0229_8955_409e_9cb9_1538c3fccfc7
+id:a1fb0229_8955_409e_9cb9_1538c3fccfc7 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scottish Joint Industry Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b0f567a5_c5a0_42c1_9ccd_0814df7affeb
-:OWLNamedIndividual_b0f567a5_c5a0_42c1_9ccd_0814df7affeb rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/a5f61920_b25a_4893_97b8_ae6fb8a113b1
+id:a5f61920_b25a_4893_97b8_ae6fb8a113b1 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Cromarty Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a636cb82_e42c_4a4b_b15f_f22dc77c1877
+id:a636cb82_e42c_4a4b_b15f_f22dc77c1877 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Aberdeen Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a98302bf_51dd_4b65_b103_f3cdb88d50b2
+id:a98302bf_51dd_4b65_b103_f3cdb88d50b2 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Auchmithie Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ab385972_ab63_4444_9a93_80043ae126df
+id:ab385972_ab63_4444_9a93_80043ae126df rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "St Andrews Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/b0f567a5_c5a0_42c1_9ccd_0814df7affeb
+id:b0f567a5_c5a0_42c1_9ccd_0814df7affeb rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Tay Road Bridge Joint Board"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_b4299591_2c49_4cc6_821a_db7574331708
-:OWLNamedIndividual_b4299591_2c49_4cc6_821a_db7574331708 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/b37873f6_2f34_41e7_8c85_56e7143cc734
+id:b37873f6_2f34_41e7_8c85_56e7143cc734 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "River Nith Navigation"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/b4299591_2c49_4cc6_821a_db7574331708
+id:b4299591_2c49_4cc6_821a_db7574331708 rdf:type owl:NamedIndividual ,
                                                                   :HealthBody ;
                                                          rdfs:label "Scottish Council for Post-Graduate Medical Education and Dental Education"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_babb765b_fe3b_4d8d_86a6_5729ffa407cb
-:OWLNamedIndividual_babb765b_fe3b_4d8d_86a6_5729ffa407cb rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/b66fbf4c_f0d6_4b32_abd6_1e7579fc6744
+id:b66fbf4c_f0d6_4b32_abd6_1e7579fc6744 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Whitehills Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/babb765b_fe3b_4d8d_86a6_5729ffa407cb
+id:babb765b_fe3b_4d8d_86a6_5729ffa407cb rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Social Care and Social Work Improvement Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_cb0ef81c_815e_4351_8696_a8ea67c94254
-:OWLNamedIndividual_cb0ef81c_815e_4351_8696_a8ea67c94254 rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/c29a268a_1076_4bd5_836f_2b61e01a4c03
+id:c29a268a_1076_4bd5_836f_2b61e01a4c03 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Eyemouth Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/c5ed269a_6edd_40e7_81ed_9c2c0ac6d902
+id:c5ed269a_6edd_40e7_81ed_9c2c0ac6d902 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Mallaig Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/cb0ef81c_815e_4351_8696_a8ea67c94254
+id:cb0ef81c_815e_4351_8696_a8ea67c94254 rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          org:subOrganizationOf <http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d> ;
                                                          rdfs:label "Airport Management Services Limited (s H&IE)"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_d712f5e1_ae82_4320_9819_53e59695d59e
-:OWLNamedIndividual_d712f5e1_ae82_4320_9819_53e59695d59e rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/cffb4775_8b08_473a_a07a_feb929424c67
+id:cffb4775_8b08_473a_a07a_feb929424c67 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Dunbar Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/d712f5e1_ae82_4320_9819_53e59695d59e
+id:d712f5e1_ae82_4320_9819_53e59695d59e rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Standards Commission for Scotland"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3
-:OWLNamedIndividual_dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3 rdf:type owl:NamedIndividual ;
+###  http://entities.gov.scot/id/gov/puborg/d8301d48_3b9f_42ca_94ea_ef9300f9f6eb
+id:d8301d48_3b9f_42ca_94ea_ef9300f9f6eb rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Avoch Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3
+id:dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3 rdf:type owl:NamedIndividual ;
                                                          rdfs:label "Scottish Human Rights Commission"@en .
 
 
-###  http://entities.gov.scot/def/gov/cpov-ap-scot/OWLNamedIndividual_f7937f9c_90e3_4063_85b3_f36d4398391d
-:OWLNamedIndividual_f7937f9c_90e3_4063_85b3_f36d4398391d rdf:type owl:NamedIndividual ,
+###  http://entities.gov.scot/id/gov/puborg/e2c95208_575e_4793_85e0_5907f7afae5c
+id:e2c95208_575e_4793_85e0_5907f7afae5c rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Rosehearty Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/e91c3f4c_1093_4a08_84a0_de760266e45e
+id:e91c3f4c_1093_4a08_84a0_de760266e45e rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Urr Navigation"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/e9d3286c_0c44_4a52_9cfb_1569dddb1c3f
+id:e9d3286c_0c44_4a52_9cfb_1569dddb1c3f rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Cromarty Firth"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ea45a966_9daa_479d_bd1f_2139f58ea731
+id:ea45a966_9daa_479d_bd1f_2139f58ea731 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Ullapool Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/edbf2355_5ff8_49b0_8fc2_36a17afc9f4b
+id:edbf2355_5ff8_49b0_8fc2_36a17afc9f4b rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Port Seton Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f
+id:ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Lerwick Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f5fad756_de94_4113_9aa0_d928d190e2c9
+id:f5fad756_de94_4113_9aa0_d928d190e2c9 rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Inverness Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f7937f9c_90e3_4063_85b3_f36d4398391d
+id:f7937f9c_90e3_4063_85b3_f36d4398391d rdf:type owl:NamedIndividual ,
                                                                   regorg:RegisteredOrganization ;
                                                          org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
                                                          rdfs:label "Northlink Ferries Ltd"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f846cf22_301a_426e_885c_06c4484344ae
+id:f846cf22_301a_426e_885c_06c4484344ae rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Montrose Port"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f89b9bd1_527e_48f4_b04a_a2e1ae24dbca
+id:f89b9bd1_527e_48f4_b04a_a2e1ae24dbca rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Skerray Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/fd6564c4_6e62_49f9_a53f_90e893de80bd
+id:fd6564c4_6e62_49f9_a53f_90e893de80bd rdf:type owl:NamedIndividual ,
+                                                                  :LocalHarbourTrust ;
+                                                         rdfs:label "Annan Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/a042e3b7_cd0b_43d4_93ff_be93f50efbe2
