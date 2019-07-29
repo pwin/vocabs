@@ -505,7 +505,14 @@ cv:PublicOrganisation rdf:type owl:Class ;
 
 ###  http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust
 :LocalHarbourTrust rdf:type owl:Class ;
-                   rdfs:subClassOf :LocalGovernmentOrganisation ;
+                   owl:equivalentClass [ owl:intersectionOf ( org:Organization
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasJurisdiction ;
+                                                                owl:someValuesFrom :LocalJurisdiction
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
                    rdfs:label "Local Harbour Trust"@en .
 
 
@@ -746,411 +753,9 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-
-###  http://entities.gov.scot/id/gov/puborg/06c72973_1d22_4fff_87ee_f5930ad71494
-id:06c72973_1d22_4fff_87ee_f5930ad71494 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Commissioner for Ethical Standards in Public Life in Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/07cbd81d_c4f5_4a1b_8097_89fe8178bca7
-id:07cbd81d_c4f5_4a1b_8097_89fe8178bca7 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Prestwick Aviation Holdings Limited"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/08a62407_306f_4add_b004_51fca19a7486
-id:08a62407_306f_4add_b004_51fca19a7486 rdf:type owl:NamedIndividual ,
-                                                                  :SpecialNHSBoard ;
-                                                         rdfs:label "State Hospitals Board for Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4
-id:0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4 rdf:type owl:NamedIndividual ,
-                                                                  :AdvisoryNDPB ;
-                                                         rdfs:label "Post Qualification Education Board for Health Science Pharmacists in Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/0d00eb12_4c67_4ad8_a596_4216faa7aa48
-id:0d00eb12_4c67_4ad8_a596_4216faa7aa48 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "St Margaret‘s Hope Pier (Sth Ronaldsay)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/1a580f88_ffa9_4258_b09b_d7b2eb24dba0
-id:1a580f88_ffa9_4258_b09b_d7b2eb24dba0 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "St Abbs Harbour (Coldingham Shore)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/1dbf1754_184e_4f84_8078_701b1f42e61f
-id:1dbf1754_184e_4f84_8078_701b1f42e61f rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Tarbert (Loch Fyne) Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/285a232d_6aea_44f0_a3a3_9a779b99c19f
-id:285a232d_6aea_44f0_a3a3_9a779b99c19f rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Collieston Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/2d2921c2_69ba_4ec5_af3d_452697dd89b4
-id:2d2921c2_69ba_4ec5_af3d_452697dd89b4 rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
-                                                         rdfs:label "Cowal Ferries Ltd"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/2efa3045_2773_4f3f_9a78_64789c31b8ce
-id:2efa3045_2773_4f3f_9a78_64789c31b8ce rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Wick Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/30a429db_ea3b_412d_ba0d_d060d9462e45
-id:30a429db_ea3b_412d_ba0d_d060d9462e45 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scotland's Commissioner for Children and Young People"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/36461122_5c1e_4830_9da1_42941dc09d6a
-id:36461122_5c1e_4830_9da1_42941dc09d6a rdf:type owl:NamedIndividual ,
-                                                                  :ExecutiveNDPB ;
-                                                         rdfs:label "Moredun Research Institute"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/39a7db13_42f0_4941_be3f_cea9465ac6d7
-id:39a7db13_42f0_4941_be3f_cea9465ac6d7 rdf:type owl:NamedIndividual ,
-                                                                  :SpecialNHSBoard ;
-                                                         rdfs:label "The Golden Jubilee National Hospital"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/3a7af8e0_d527_433c_9e0e_ee50059b0457
-id:3a7af8e0_d527_433c_9e0e_ee50059b0457 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Stornoway Port"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/4021a775_c22b_4ab3_b7d2_ef0caea455e5
-id:4021a775_c22b_4ab3_b7d2_ef0caea455e5 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scottish Studentship Selection Committee"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/40fb1f18_7f5c_4828_9542_377b6489f43c
-id:40fb1f18_7f5c_4828_9542_377b6489f43c rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Brownies Taing (Lerwick)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/4316fcaf_18a3_4708_9668_d72dbe4b90d8
-id:4316fcaf_18a3_4708_9668_d72dbe4b90d8 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Central Advisory Committee on Justices of the Peace (Scotland)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/43f5070e_cf24_4577_89dc_b21cf2ce5b22
-id:43f5070e_cf24_4577_89dc_b21cf2ce5b22 rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
-                                                         rdfs:label "David MacBrayne HR (UK) Ltd"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/45669049_b124_4c88_b765_abbcd535164c
-id:45669049_b124_4c88_b765_abbcd535164c rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         rdfs:label "TS Prestwick Holdco Ltd"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/4fb51bb8_b7c8_4963_8d10_c1e968092f2f
-id:4fb51bb8_b7c8_4963_8d10_c1e968092f2f rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Peterhead Port"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/50d31ce4_1b07_42ad_9531_61ee35b30d7b
-id:50d31ce4_1b07_42ad_9531_61ee35b30d7b rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Burnmouth Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/530a74a8_4465_4b3b_8a46_3e591effcf41
-id:530a74a8_4465_4b3b_8a46_3e591effcf41 rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         rdfs:label "Glasgow 2014 Ltd"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/537663e3_9971_4d3e_b09b_8b8a05221a3a
-id:537663e3_9971_4d3e_b09b_8b8a05221a3a rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Pennan Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/54ef0c17_a26e_4da2_a01d_f3389ef1d5bd
-id:54ef0c17_a26e_4da2_a01d_f3389ef1d5bd rdf:type owl:NamedIndividual ,
-                                                                  :SpecialNHSBoard ;
-                                                         rdfs:label "NHS Board Endowment Funds (Scotland)"@en ;
-                                                         skos:altLabel "Scottish NHS Charities"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/57a8edbc_8216_4496_9127_dc7dbf4aa7e8
-id:57a8edbc_8216_4496_9127_dc7dbf4aa7e8 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Police Service of Scotland"@en ;
-                                                         skos:altLabel "Police Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/5d8d48e6_aafe_42cc_bb14_daf64e78c00f
-id:5d8d48e6_aafe_42cc_bb14_daf64e78c00f rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Gaelic Television Committee"@en ,
-                                                                    "Seirbheis nam Meadhanan Gàidhlig (MG Alba)"@gd .
-
-
-###  http://entities.gov.scot/id/gov/puborg/5ed6256e_9558_46bf_bda4_4109f6d6f695
-id:5ed6256e_9558_46bf_bda4_4109f6d6f695 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Forth Estuary Transport Authority"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/66bfe6f1_19c2_4d4b_aec6_383b89deca5b
-id:66bfe6f1_19c2_4d4b_aec6_383b89deca5b rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Aberdeen Western Peripheral Route (AWPR) Special Purpose Vehicles (SPVs)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/6cb35dd9_3e43_4fb8_a659_61909f816ecd
-id:6cb35dd9_3e43_4fb8_a659_61909f816ecd rdf:type owl:NamedIndividual ,
-                                                                  :SpecialNHSBoard ;
-                                                         rdfs:label "Scottish Ambulance Service"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/6e007bdd_9e90_4276_9fb8_f048da176039
-id:6e007bdd_9e90_4276_9fb8_f048da176039 rdf:type owl:NamedIndividual ,
-                                                                  :Tribunal ;
-                                                         rdfs:label "Rent Assessment Panel for Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/71520dbe_46e7_43e6_91bb_280858be428b
-id:71520dbe_46e7_43e6_91bb_280858be428b rdf:type owl:NamedIndividual ,
-                                                                  :ParlBody ;
-                                                         rdfs:label "Scottish Parliamentary Corporate Body"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/71a3383f_377c_4b74_b099_286c5db0bbfe
-id:71a3383f_377c_4b74_b099_286c5db0bbfe rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Cruden Bay Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/7620f2dd_f232_493b_9743_c173e4adbe75
-id:7620f2dd_f232_493b_9743_c173e4adbe75 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scottish Agricultural College"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/800fde6d_83a2_4507_8723_6375288ef94c
-id:800fde6d_83a2_4507_8723_6375288ef94c rdf:type owl:NamedIndividual ,
-                                                                  :ExecutiveNDPB ;
-                                                         rdfs:label "Rowett Research Institute"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/8d90e2fa_8de8_4e5d_85da_6384823f8d19
-id:8d90e2fa_8de8_4e5d_85da_6384823f8d19 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Fraserburgh Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/99d316c3_493e_430f_9fbb_b515e3fe87ec
-id:99d316c3_493e_430f_9fbb_b515e3fe87ec rdf:type owl:NamedIndividual ,
-                                                                  :SpecialNHSBoard ;
-                                                         rdfs:label "Healthcare Improvement Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/9d248799_2588_4740_9095_7502f466884b
-id:9d248799_2588_4740_9095_7502f466884b rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Gardenstown Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/9d94d32a_df97_4e64_a6d4_bbe1f4942125
-id:9d94d32a_df97_4e64_a6d4_bbe1f4942125 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Scrabster Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/9fb1fb52_57ea_459f_90c6_a8440df46d7b
-id:9fb1fb52_57ea_459f_90c6_a8440df46d7b rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
-                                                         rdfs:label "Argyll Ferries Ltd"@en .
-
-
 ###  http://entities.gov.scot/id/gov/puborg/a00d15bf_818c_4965_bc34_12302a194a72
 id:a00d15bf_818c_4965_bc34_12302a194a72 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scottish Consolidated Fund"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/a0cd94c2_2275_4763_be5a_d079315227cd
-id:a0cd94c2_2275_4763_be5a_d079315227cd rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "North Berwick Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/a1fb0229_8955_409e_9cb9_1538c3fccfc7
-id:a1fb0229_8955_409e_9cb9_1538c3fccfc7 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scottish Joint Industry Board"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/a5f61920_b25a_4893_97b8_ae6fb8a113b1
-id:a5f61920_b25a_4893_97b8_ae6fb8a113b1 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Cromarty Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/a636cb82_e42c_4a4b_b15f_f22dc77c1877
-id:a636cb82_e42c_4a4b_b15f_f22dc77c1877 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Aberdeen Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/a98302bf_51dd_4b65_b103_f3cdb88d50b2
-id:a98302bf_51dd_4b65_b103_f3cdb88d50b2 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Auchmithie Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/ab385972_ab63_4444_9a93_80043ae126df
-id:ab385972_ab63_4444_9a93_80043ae126df rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "St Andrews Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/b0f567a5_c5a0_42c1_9ccd_0814df7affeb
-id:b0f567a5_c5a0_42c1_9ccd_0814df7affeb rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Tay Road Bridge Joint Board"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/b37873f6_2f34_41e7_8c85_56e7143cc734
-id:b37873f6_2f34_41e7_8c85_56e7143cc734 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "River Nith Navigation"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/b4299591_2c49_4cc6_821a_db7574331708
-id:b4299591_2c49_4cc6_821a_db7574331708 rdf:type owl:NamedIndividual ,
-                                                                  :HealthBody ;
-                                                         rdfs:label "Scottish Council for Post-Graduate Medical Education and Dental Education"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/b66fbf4c_f0d6_4b32_abd6_1e7579fc6744
-id:b66fbf4c_f0d6_4b32_abd6_1e7579fc6744 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Whitehills Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/babb765b_fe3b_4d8d_86a6_5729ffa407cb
-id:babb765b_fe3b_4d8d_86a6_5729ffa407cb rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Social Care and Social Work Improvement Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/c29a268a_1076_4bd5_836f_2b61e01a4c03
-id:c29a268a_1076_4bd5_836f_2b61e01a4c03 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Eyemouth Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/c5ed269a_6edd_40e7_81ed_9c2c0ac6d902
-id:c5ed269a_6edd_40e7_81ed_9c2c0ac6d902 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Mallaig Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/cb0ef81c_815e_4351_8696_a8ea67c94254
-id:cb0ef81c_815e_4351_8696_a8ea67c94254 rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         org:subOrganizationOf <http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d> ;
-                                                         rdfs:label "Airport Management Services Limited (s H&IE)"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/cffb4775_8b08_473a_a07a_feb929424c67
-id:cffb4775_8b08_473a_a07a_feb929424c67 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Dunbar Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/d712f5e1_ae82_4320_9819_53e59695d59e
-id:d712f5e1_ae82_4320_9819_53e59695d59e rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Standards Commission for Scotland"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/d8301d48_3b9f_42ca_94ea_ef9300f9f6eb
-id:d8301d48_3b9f_42ca_94ea_ef9300f9f6eb rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Avoch Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3
-id:dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3 rdf:type owl:NamedIndividual ;
-                                                         rdfs:label "Scottish Human Rights Commission"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/e2c95208_575e_4793_85e0_5907f7afae5c
-id:e2c95208_575e_4793_85e0_5907f7afae5c rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Rosehearty Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/e91c3f4c_1093_4a08_84a0_de760266e45e
-id:e91c3f4c_1093_4a08_84a0_de760266e45e rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Urr Navigation"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/e9d3286c_0c44_4a52_9cfb_1569dddb1c3f
-id:e9d3286c_0c44_4a52_9cfb_1569dddb1c3f rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Cromarty Firth"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/ea45a966_9daa_479d_bd1f_2139f58ea731
-id:ea45a966_9daa_479d_bd1f_2139f58ea731 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Ullapool Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/edbf2355_5ff8_49b0_8fc2_36a17afc9f4b
-id:edbf2355_5ff8_49b0_8fc2_36a17afc9f4b rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Port Seton Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f
-id:ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Lerwick Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/f5fad756_de94_4113_9aa0_d928d190e2c9
-id:f5fad756_de94_4113_9aa0_d928d190e2c9 rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Inverness Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/f7937f9c_90e3_4063_85b3_f36d4398391d
-id:f7937f9c_90e3_4063_85b3_f36d4398391d rdf:type owl:NamedIndividual ,
-                                                                  regorg:RegisteredOrganization ;
-                                                         org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
-                                                         rdfs:label "Northlink Ferries Ltd"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/f846cf22_301a_426e_885c_06c4484344ae
-id:f846cf22_301a_426e_885c_06c4484344ae rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Montrose Port"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/f89b9bd1_527e_48f4_b04a_a2e1ae24dbca
-id:f89b9bd1_527e_48f4_b04a_a2e1ae24dbca rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Skerray Harbour"@en .
-
-
-###  http://entities.gov.scot/id/gov/puborg/fd6564c4_6e62_49f9_a53f_90e893de80bd
-id:fd6564c4_6e62_49f9_a53f_90e893de80bd rdf:type owl:NamedIndividual ,
-                                                                  :LocalHarbourTrust ;
-                                                         rdfs:label "Annan Harbour"@en .
+                                        rdfs:label "Scottish Consolidated Fund"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/a042e3b7_cd0b_43d4_93ff_be93f50efbe2
@@ -1165,6 +770,17 @@ id:a0a1d863_7b36_4a22_9d49_be2a544e422f rdf:type owl:NamedIndividual ,
                                         rdfs:label "NHS Forth Valley"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/a0cd94c2_2275_4763_be5a_d079315227cd
+id:a0cd94c2_2275_4763_be5a_d079315227cd rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "North Berwick Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a1fb0229_8955_409e_9cb9_1538c3fccfc7
+id:a1fb0229_8955_409e_9cb9_1538c3fccfc7 rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Scottish Joint Industry Board"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/a3515fbb_0d0a_4ffe_85ed_f587ae3662a5
 id:a3515fbb_0d0a_4ffe_85ed_f587ae3662a5 rdf:type owl:NamedIndividual ,
                                                  :IntegrationAuthority ;
@@ -1175,6 +791,18 @@ id:a3515fbb_0d0a_4ffe_85ed_f587ae3662a5 rdf:type owl:NamedIndividual ,
 id:a594c663_ca47_46f8_87bc_d8e06afd5123 rdf:type owl:NamedIndividual ,
                                                  :IntegrationAuthority ;
                                         rdfs:label "Orkney"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a5f61920_b25a_4893_97b8_ae6fb8a113b1
+id:a5f61920_b25a_4893_97b8_ae6fb8a113b1 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Cromarty Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a636cb82_e42c_4a4b_b15f_f22dc77c1877
+id:a636cb82_e42c_4a4b_b15f_f22dc77c1877 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Aberdeen Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/a7de36de_65e1_4e64_8e22_4c5bd695e6ec
@@ -1199,6 +827,18 @@ id:a8ec77d4_5cc5_4a45_a4e6_20369639cec0 rdf:type owl:NamedIndividual ,
 id:a914a2cc_9b63_485c_9e58_5e41a3695001 rdf:type owl:NamedIndividual ,
                                                  :Council ;
                                         rdfs:label "South Ayrshire Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/a98302bf_51dd_4b65_b103_f3cdb88d50b2
+id:a98302bf_51dd_4b65_b103_f3cdb88d50b2 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Auchmithie Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ab385972_ab63_4444_9a93_80043ae126df
+id:ab385972_ab63_4444_9a93_80043ae126df rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "St Andrews Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/ac966320_9a71_444a_8e81_fb1414ab4aa4
@@ -1231,6 +871,17 @@ id:b09d57a7_4ee7_488d_a2ca_822ba54f77d0 rdf:type owl:NamedIndividual ,
                                         rdfs:label "Scottish Legal Complaints Commission"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/b0f567a5_c5a0_42c1_9ccd_0814df7affeb
+id:b0f567a5_c5a0_42c1_9ccd_0814df7affeb rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Tay Road Bridge Joint Board"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/b37873f6_2f34_41e7_8c85_56e7143cc734
+id:b37873f6_2f34_41e7_8c85_56e7143cc734 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "River Nith Navigation"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/b37dcb15_2c24_4e91_8b42_76c0d8462708
 id:b37dcb15_2c24_4e91_8b42_76c0d8462708 rdf:type owl:NamedIndividual ,
                                                  :OtherSigBody ;
@@ -1243,10 +894,22 @@ id:b3b5c867_8d5b_485a_a7c9_ea719cebcbfc rdf:type owl:NamedIndividual ,
                                         rdfs:label "East Lothian"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/b4299591_2c49_4cc6_821a_db7574331708
+id:b4299591_2c49_4cc6_821a_db7574331708 rdf:type owl:NamedIndividual ,
+                                                 :HealthBody ;
+                                        rdfs:label "Scottish Council for Post-Graduate Medical Education and Dental Education"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/b43e21ff_0db7_46be_ad19_da987141f59f
 id:b43e21ff_0db7_46be_ad19_da987141f59f rdf:type owl:NamedIndividual ,
                                                  :NonMinisterialDept ;
                                         rdfs:label "Office of the Scottish Charity Regulator"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/b66fbf4c_f0d6_4b32_abd6_1e7579fc6744
+id:b66fbf4c_f0d6_4b32_abd6_1e7579fc6744 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Whitehills Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/b6ae570a_405f_407d_b557_f9c728869203
@@ -1273,6 +936,11 @@ id:b7f131b3_6c4a_464e_97dc_de8853a6875c rdf:type owl:NamedIndividual ,
                                         rdfs:label "Aberdeenshire"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/babb765b_fe3b_4d8d_86a6_5729ffa407cb
+id:babb765b_fe3b_4d8d_86a6_5729ffa407cb rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Social Care and Social Work Improvement Scotland"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/bfce3435_ecc4_46d3_957d_d07f9161872c
 id:bfce3435_ecc4_46d3_957d_d07f9161872c rdf:type owl:NamedIndividual ,
                                                  :IntegrationAuthority ;
@@ -1289,6 +957,18 @@ id:c047d935_88af_4fa3_872c_f8ad4645febd rdf:type owl:NamedIndividual ,
 id:c1d46efd_a5ae_4206_90d3_660970e14a96 rdf:type owl:NamedIndividual ,
                                                  :Tribunal ;
                                         rdfs:label "Homeowner Housing Panel"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/c29a268a_1076_4bd5_836f_2b61e01a4c03
+id:c29a268a_1076_4bd5_836f_2b61e01a4c03 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Eyemouth Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/c5ed269a_6edd_40e7_81ed_9c2c0ac6d902
+id:c5ed269a_6edd_40e7_81ed_9c2c0ac6d902 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Mallaig Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/c8a13eb9_f5ac_48b6_9616_311c6a1f8e49
@@ -1325,6 +1005,13 @@ id:ca2e75bb_61e5_4d02_b997_ddfd31aa8ab6 rdf:type owl:NamedIndividual ,
                                         rdfs:label "NHS Education for Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/cb0ef81c_815e_4351_8696_a8ea67c94254
+id:cb0ef81c_815e_4351_8696_a8ea67c94254 rdf:type owl:NamedIndividual ,
+                                                 regorg:RegisteredOrganization ;
+                                        org:subOrganizationOf <http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d> ;
+                                        rdfs:label "Airport Management Services Limited (s H&IE)"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/cc4ae308_2620_4bed_8cbe_6e1c5ae6230c
 id:cc4ae308_2620_4bed_8cbe_6e1c5ae6230c rdf:type owl:NamedIndividual ,
                                                  :CentralGovPB ;
@@ -1341,6 +1028,12 @@ id:cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a rdf:type owl:NamedIndividual ,
 id:ce211f96_d1ec_43b2_8019_fd6317f8c913 rdf:type owl:NamedIndividual ,
                                                  :HealthBody ;
                                         rdfs:label "Mental Welfare Commission for Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/cffb4775_8b08_473a_a07a_feb929424c67
+id:cffb4775_8b08_473a_a07a_feb929424c67 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Dunbar Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/d286ad7d_dc8a_4c05_a7ed_99de63a7c484
@@ -1360,6 +1053,17 @@ id:d3a602f9_695e_414a_8cd4_5ced038979f4 rdf:type owl:NamedIndividual ,
 id:d671fe7b_ce83_4d03_a584_8f725f0cc991 rdf:type owl:NamedIndividual ,
                                                  :CentralGovPB ;
                                         rdfs:label "Scottish Water"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/d712f5e1_ae82_4320_9819_53e59695d59e
+id:d712f5e1_ae82_4320_9819_53e59695d59e rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Standards Commission for Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/d8301d48_3b9f_42ca_94ea_ef9300f9f6eb
+id:d8301d48_3b9f_42ca_94ea_ef9300f9f6eb rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Avoch Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/da503c70_2fe0_44dc_821b_3d1a0eac71d0
@@ -1393,6 +1097,11 @@ id:dc2747f7_7cc2_42d1_bd8b_b387eeb3ab18 rdf:type owl:NamedIndividual ,
                                         rdfs:label "The Crown Estate Scotland - Interim Management"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3
+id:dc4f30fb_eca2_4b98_9fab_3d086a8d0bc3 rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Scottish Human Rights Commission"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/df5cb8bd_03f8_4fca_84a5_f666a6853f8e
 id:df5cb8bd_03f8_4fca_84a5_f666a6853f8e rdf:type owl:NamedIndividual ,
                                                  :Council ;
@@ -1403,6 +1112,12 @@ id:df5cb8bd_03f8_4fca_84a5_f666a6853f8e rdf:type owl:NamedIndividual ,
 id:e260c061_06ea_42ed_bdfb_34f84bb743f8 rdf:type owl:NamedIndividual ,
                                                  :ExecutiveAgency ;
                                         rdfs:label "Education Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/e2c95208_575e_4793_85e0_5907f7afae5c
+id:e2c95208_575e_4793_85e0_5907f7afae5c rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Rosehearty Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/e2cad0d8_d1c0_407d_82af_e9e0414048e0
@@ -1429,10 +1144,40 @@ id:e91456dc_9c49_4f34_b04f_e93ea4e69a69 rdf:type owl:NamedIndividual ,
                                         rdfs:label "Accounts Commission for Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/e91c3f4c_1093_4a08_84a0_de760266e45e
+id:e91c3f4c_1093_4a08_84a0_de760266e45e rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Urr Navigation"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/e9d3286c_0c44_4a52_9cfb_1569dddb1c3f
+id:e9d3286c_0c44_4a52_9cfb_1569dddb1c3f rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Cromarty Firth"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ea45a966_9daa_479d_bd1f_2139f58ea731
+id:ea45a966_9daa_479d_bd1f_2139f58ea731 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Ullapool Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/eaf6eec5_a6cc_45af_a187_65e823b00201
 id:eaf6eec5_a6cc_45af_a187_65e823b00201 rdf:type owl:NamedIndividual ,
                                                  :Council ;
                                         rdfs:label "Fife Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/edbf2355_5ff8_49b0_8fc2_36a17afc9f4b
+id:edbf2355_5ff8_49b0_8fc2_36a17afc9f4b rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Port Seton Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f
+id:ee1a5bb7_ddd8_4e0c_8445_1bab65966f0f rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Lerwick Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/f1606511_2eff_4b98_8644_61eae10f9ce5
@@ -1477,6 +1222,31 @@ id:f5a68029_c14c_451d_8d3c_5dbb9da370e7 rdf:type owl:NamedIndividual ,
                                         rdfs:label "East Renfrewshire"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/f5fad756_de94_4113_9aa0_d928d190e2c9
+id:f5fad756_de94_4113_9aa0_d928d190e2c9 rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Inverness Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f7937f9c_90e3_4063_85b3_f36d4398391d
+id:f7937f9c_90e3_4063_85b3_f36d4398391d rdf:type owl:NamedIndividual ,
+                                                 regorg:RegisteredOrganization ;
+                                        org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
+                                        rdfs:label "Northlink Ferries Ltd"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f846cf22_301a_426e_885c_06c4484344ae
+id:f846cf22_301a_426e_885c_06c4484344ae rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Montrose Port"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/f89b9bd1_527e_48f4_b04a_a2e1ae24dbca
+id:f89b9bd1_527e_48f4_b04a_a2e1ae24dbca rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Skerray Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/f8bbd825_ec19_49ef_a0cf_692ea5d43e8b
 id:f8bbd825_ec19_49ef_a0cf_692ea5d43e8b rdf:type owl:NamedIndividual ,
                                                  :IntegrationAuthority ;
@@ -1505,6 +1275,12 @@ id:fbe94b56_afdc_4642_a989_6f6c19a6bace rdf:type owl:NamedIndividual ,
 id:fccd4a49_cefb_44be_9e78_ec562c8a6296 rdf:type owl:NamedIndividual ,
                                                  :ExecutiveNDPB ;
                                         rdfs:label "Scottish Qualifications Authority"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/fd6564c4_6e62_49f9_a53f_90e893de80bd
+id:fd6564c4_6e62_49f9_a53f_90e893de80bd rdf:type owl:NamedIndividual ,
+                                                 :LocalHarbourTrust ;
+                                        rdfs:label "Annan Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/fd822d09_fbb0_43b9_9bdc_a1652eff07f6
@@ -1537,6 +1313,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Scottish Prison Service"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4
+<http://entities.gov.scot/id/gov/puborg/0ab6f5ba_0b95_42a8_897b_a5e8a10ef0d4> rdf:type owl:NamedIndividual ,
+                                                                                       :AdvisoryNDPB ;
+                                                                              rdfs:label "Post Qualification Education Board for Health Science Pharmacists in Scotland"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/0b93343a_ea5c_437b_af4e_e7e7019f547e
 <http://entities.gov.scot/id/gov/puborg/0b93343a_ea5c_437b_af4e_e7e7019f547e> rdf:type owl:NamedIndividual ,
                                                                                        [ owl:intersectionOf ( :ExecutiveNDPB
@@ -1558,6 +1340,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/0c3f3d4e_d684_4b7e_9ecf_cc633c94e7b5> rdf:type owl:NamedIndividual ,
                                                                                        :OtherSigBody ;
                                                                               rdfs:label "HM Inspector of Constabulary in Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/0d00eb12_4c67_4ad8_a596_4216faa7aa48
+<http://entities.gov.scot/id/gov/puborg/0d00eb12_4c67_4ad8_a596_4216faa7aa48> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "St Margaret‘s Hope Pier (Sth Ronaldsay)"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/018bf462_54d0_4041_8967_61cb918d2b0e
@@ -1584,6 +1372,16 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Stirling Council"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/06c72973_1d22_4fff_87ee_f5930ad71494
+<http://entities.gov.scot/id/gov/puborg/06c72973_1d22_4fff_87ee_f5930ad71494> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Commissioner for Ethical Standards in Public Life in Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/07cbd81d_c4f5_4a1b_8097_89fe8178bca7
+<http://entities.gov.scot/id/gov/puborg/07cbd81d_c4f5_4a1b_8097_89fe8178bca7> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Prestwick Aviation Holdings Limited"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/075b9514_ca2b_416b_8eaf_6dc63089f85f
 <http://entities.gov.scot/id/gov/puborg/075b9514_ca2b_416b_8eaf_6dc63089f85f> rdf:type owl:NamedIndividual ,
                                                                                        :NonMinisterialDept ;
@@ -1603,10 +1401,22 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "South-West of Scotland Transport Partnership"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/08a62407_306f_4add_b004_51fca19a7486
+<http://entities.gov.scot/id/gov/puborg/08a62407_306f_4add_b004_51fca19a7486> rdf:type owl:NamedIndividual ,
+                                                                                       :SpecialNHSBoard ;
+                                                                              rdfs:label "State Hospitals Board for Scotland"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/08a6d334_7f3e_4123_b1a1_07cf7218b325
 <http://entities.gov.scot/id/gov/puborg/08a6d334_7f3e_4123_b1a1_07cf7218b325> rdf:type owl:NamedIndividual ,
                                                                                        :OtherSigBody ;
                                                                               rdfs:label "Scottish Police Authority"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/1a580f88_ffa9_4258_b09b_d7b2eb24dba0
+<http://entities.gov.scot/id/gov/puborg/1a580f88_ffa9_4258_b09b_d7b2eb24dba0> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "St Abbs Harbour (Coldingham Shore)"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/1a84d596_69f3_458e_acf9_85949433c3ff
@@ -1623,6 +1433,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                                          rdf:type owl:Class
                                                                                        ] ;
                                                                               rdfs:label "Caledonian Maritime Assets Ltd"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/1dbf1754_184e_4f84_8078_701b1f42e61f
+<http://entities.gov.scot/id/gov/puborg/1dbf1754_184e_4f84_8078_701b1f42e61f> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Tarbert (Loch Fyne) Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/10bd68bf_2769_45bc_9c4d_0bf0041f2506
@@ -1691,6 +1507,13 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Creative Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/2d2921c2_69ba_4ec5_af3d_452697dd89b4
+<http://entities.gov.scot/id/gov/puborg/2d2921c2_69ba_4ec5_af3d_452697dd89b4> rdf:type owl:NamedIndividual ,
+                                                                                       regorg:RegisteredOrganization ;
+                                                                              org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
+                                                                              rdfs:label "Cowal Ferries Ltd"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/2d56418e_fd28_4e3b_b02c_a6c430cdd66b
 <http://entities.gov.scot/id/gov/puborg/2d56418e_fd28_4e3b_b02c_a6c430cdd66b> rdf:type owl:NamedIndividual ,
                                                                                        :RegionalTransportPartnership ;
@@ -1709,6 +1532,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/2e550934_4e21_4c2f_9940_e38fa328a463> rdf:type owl:NamedIndividual ,
                                                                                        :TerritorialNHSBoard ;
                                                                               rdfs:label "NHS Western Isles"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/2efa3045_2773_4f3f_9a78_64789c31b8ce
+<http://entities.gov.scot/id/gov/puborg/2efa3045_2773_4f3f_9a78_64789c31b8ce> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Wick Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/2f6b185e_266c_4548_b9d1_2f83266ef0ee
@@ -1747,6 +1576,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Visit Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/285a232d_6aea_44f0_a3a3_9a779b99c19f
+<http://entities.gov.scot/id/gov/puborg/285a232d_6aea_44f0_a3a3_9a779b99c19f> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Collieston Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/2854032a_26e3_454e_9972_a6687e8af4e5
 <http://entities.gov.scot/id/gov/puborg/2854032a_26e3_454e_9972_a6687e8af4e5> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
@@ -1757,6 +1592,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/299e8b90_74d8_4e66_b32b_76fc0d13e95c> rdf:type owl:NamedIndividual ,
                                                                                        :Council ;
                                                                               rdfs:label "Inverclyde Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/3a7af8e0_d527_433c_9e0e_ee50059b0457
+<http://entities.gov.scot/id/gov/puborg/3a7af8e0_d527_433c_9e0e_ee50059b0457> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Stornoway Port"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/3afe04a0_9e3e_4d3a_b68d_a95e1a9b55e2
@@ -1783,6 +1624,11 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Audit Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/30a429db_ea3b_412d_ba0d_d060d9462e45
+<http://entities.gov.scot/id/gov/puborg/30a429db_ea3b_412d_ba0d_d060d9462e45> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Scotland's Commissioner for Children and Young People"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/302b271a_c993_46ce_a0b4_4012b7ecee6e
 <http://entities.gov.scot/id/gov/puborg/302b271a_c993_46ce_a0b4_4012b7ecee6e> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
@@ -1799,6 +1645,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/36bd641c_f069_4f3e_b916_3ebfa193149f> rdf:type owl:NamedIndividual ,
                                                                                        :Council ;
                                                                               rdfs:label "Glasgow City Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/36461122_5c1e_4830_9da1_42941dc09d6a
+<http://entities.gov.scot/id/gov/puborg/36461122_5c1e_4830_9da1_42941dc09d6a> rdf:type owl:NamedIndividual ,
+                                                                                       :ExecutiveNDPB ;
+                                                                              rdfs:label "Moredun Research Institute"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/365df7dc_48f0_4c18_a4ad_f7178fd63aef
@@ -1836,6 +1688,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/375c5472_4c42_4526_9cc8_f40b5738bb5d> rdf:type owl:NamedIndividual ,
                                                                                        :Council ;
                                                                               rdfs:label "Moray Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/39a7db13_42f0_4941_be3f_cea9465ac6d7
+<http://entities.gov.scot/id/gov/puborg/39a7db13_42f0_4941_be3f_cea9465ac6d7> rdf:type owl:NamedIndividual ,
+                                                                                       :SpecialNHSBoard ;
+                                                                              rdfs:label "The Golden Jubilee National Hospital"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/39d392dd_5aa3_4824_87ed_28ac59c8aac3
@@ -1884,16 +1742,51 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Scottish Futures Trust Ltd"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/4fb51bb8_b7c8_4963_8d10_c1e968092f2f
+<http://entities.gov.scot/id/gov/puborg/4fb51bb8_b7c8_4963_8d10_c1e968092f2f> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Peterhead Port"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/40c4c7b2_8ac1_4f22_8816_ef92965b2676
 <http://entities.gov.scot/id/gov/puborg/40c4c7b2_8ac1_4f22_8816_ef92965b2676> rdf:type owl:NamedIndividual ,
                                                                                        :RegionalTransportPartnership ;
                                                                               rdfs:label "Strathclyde Partnership for Transport"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/40fb1f18_7f5c_4828_9542_377b6489f43c
+<http://entities.gov.scot/id/gov/puborg/40fb1f18_7f5c_4828_9542_377b6489f43c> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Brownies Taing (Lerwick)"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/4021a775_c22b_4ab3_b7d2_ef0caea455e5
+<http://entities.gov.scot/id/gov/puborg/4021a775_c22b_4ab3_b7d2_ef0caea455e5> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Scottish Studentship Selection Committee"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a
 <http://entities.gov.scot/id/gov/puborg/42acd0f8_1bb5_4cf0_8e37_34fc5dec6b8a> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
                                                                               rdfs:label "Sportscotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/43f5070e_cf24_4577_89dc_b21cf2ce5b22
+<http://entities.gov.scot/id/gov/puborg/43f5070e_cf24_4577_89dc_b21cf2ce5b22> rdf:type owl:NamedIndividual ,
+                                                                                       regorg:RegisteredOrganization ;
+                                                                              org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
+                                                                              rdfs:label "David MacBrayne HR (UK) Ltd"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/4316fcaf_18a3_4708_9668_d72dbe4b90d8
+<http://entities.gov.scot/id/gov/puborg/4316fcaf_18a3_4708_9668_d72dbe4b90d8> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Central Advisory Committee on Justices of the Peace (Scotland)"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/45669049_b124_4c88_b765_abbcd535164c
+<http://entities.gov.scot/id/gov/puborg/45669049_b124_4c88_b765_abbcd535164c> rdf:type owl:NamedIndividual ,
+                                                                                       regorg:RegisteredOrganization ;
+                                                                              rdfs:label "TS Prestwick Holdco Ltd"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/46bec378_ddb1_4a78_b0bb_206809674ec9
@@ -1926,10 +1819,27 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Perth and Kinross Council"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/5d8d48e6_aafe_42cc_bb14_daf64e78c00f
+<http://entities.gov.scot/id/gov/puborg/5d8d48e6_aafe_42cc_bb14_daf64e78c00f> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Gaelic Television Committee"@en ,
+                                                                                         "Seirbheis nam Meadhanan Gàidhlig (MG Alba)"@gd .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/5da964fa_cd9c_483f_a8ea_b6712b41267d
 <http://entities.gov.scot/id/gov/puborg/5da964fa_cd9c_483f_a8ea_b6712b41267d> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
                                                                               rdfs:label "Scottish Social Services Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/5ed6256e_9558_46bf_bda4_4109f6d6f695
+<http://entities.gov.scot/id/gov/puborg/5ed6256e_9558_46bf_bda4_4109f6d6f695> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Forth Estuary Transport Authority"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/50d31ce4_1b07_42ad_9531_61ee35b30d7b
+<http://entities.gov.scot/id/gov/puborg/50d31ce4_1b07_42ad_9531_61ee35b30d7b> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Burnmouth Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/51c5b32a_cff2_43d4_a892_85e7bd1a81d0
@@ -1944,16 +1854,35 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "National Galleries of Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/530a74a8_4465_4b3b_8a46_3e591effcf41
+<http://entities.gov.scot/id/gov/puborg/530a74a8_4465_4b3b_8a46_3e591effcf41> rdf:type owl:NamedIndividual ,
+                                                                                       regorg:RegisteredOrganization ;
+                                                                              rdfs:label "Glasgow 2014 Ltd"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5
 <http://entities.gov.scot/id/gov/puborg/534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5> rdf:type owl:NamedIndividual ,
                                                                                        :Council ;
                                                                               rdfs:label "Midlothian Council"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/537663e3_9971_4d3e_b09b_8b8a05221a3a
+<http://entities.gov.scot/id/gov/puborg/537663e3_9971_4d3e_b09b_8b8a05221a3a> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Pennan Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/54bb0fea_5ae0_483c_b261_47024d6150a2
 <http://entities.gov.scot/id/gov/puborg/54bb0fea_5ae0_483c_b261_47024d6150a2> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
                                                                               rdfs:label "Historic Environment Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/54ef0c17_a26e_4da2_a01d_f3389ef1d5bd
+<http://entities.gov.scot/id/gov/puborg/54ef0c17_a26e_4da2_a01d_f3389ef1d5bd> rdf:type owl:NamedIndividual ,
+                                                                                       :SpecialNHSBoard ;
+                                                                              rdfs:label "NHS Board Endowment Funds (Scotland)"@en ;
+                                                                              skos:altLabel "Scottish NHS Charities"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/56bc7885_c092_46ca_b4e3_cd3b6da10e81
@@ -1968,6 +1897,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "Aberdeen City Council"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/57a8edbc_8216_4496_9127_dc7dbf4aa7e8
+<http://entities.gov.scot/id/gov/puborg/57a8edbc_8216_4496_9127_dc7dbf4aa7e8> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Police Service of Scotland"@en ;
+                                                                              skos:altLabel "Police Scotland"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/58bbffec_cabc_410b_ab2c_bfe7efffdd36
 <http://entities.gov.scot/id/gov/puborg/58bbffec_cabc_410b_ab2c_bfe7efffdd36> rdf:type owl:NamedIndividual ,
                                                                                        :TerritorialNHSBoard ;
@@ -1978,6 +1913,18 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/58da35bb_0ca5_445c_9218_7ab1028f0d77> rdf:type owl:NamedIndividual ,
                                                                                        :TerritorialNHSBoard ;
                                                                               rdfs:label "NHS Borders"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/6cb35dd9_3e43_4fb8_a659_61909f816ecd
+<http://entities.gov.scot/id/gov/puborg/6cb35dd9_3e43_4fb8_a659_61909f816ecd> rdf:type owl:NamedIndividual ,
+                                                                                       :SpecialNHSBoard ;
+                                                                              rdfs:label "Scottish Ambulance Service"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/6e007bdd_9e90_4276_9fb8_f048da176039
+<http://entities.gov.scot/id/gov/puborg/6e007bdd_9e90_4276_9fb8_f048da176039> rdf:type owl:NamedIndividual ,
+                                                                                       :Tribunal ;
+                                                                              rdfs:label "Rent Assessment Panel for Scotland"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/6084acb9_d246_4814_8711_0b8d50963589
@@ -2021,6 +1968,11 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/65aca9c3_ba5e_4287_910e_5329662b109a> rdf:type owl:NamedIndividual ,
                                                                                        :Council ;
                                                                               rdfs:label "Dumfries and Galloway Council"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/66bfe6f1_19c2_4d4b_aec6_383b89deca5b
+<http://entities.gov.scot/id/gov/puborg/66bfe6f1_19c2_4d4b_aec6_383b89deca5b> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Aberdeen Western Peripheral Route (AWPR) Special Purpose Vehicles (SPVs)"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/679fbc0e_ed35_4f66_bf82_1db425bc2743
@@ -2077,6 +2029,18 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "North Ayrshire"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/71a3383f_377c_4b74_b099_286c5db0bbfe
+<http://entities.gov.scot/id/gov/puborg/71a3383f_377c_4b74_b099_286c5db0bbfe> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Cruden Bay Harbour"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/71520dbe_46e7_43e6_91bb_280858be428b
+<http://entities.gov.scot/id/gov/puborg/71520dbe_46e7_43e6_91bb_280858be428b> rdf:type owl:NamedIndividual ,
+                                                                                       :ParlBody ;
+                                                                              rdfs:label "Scottish Parliamentary Corporate Body"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/74bf730b_f92f_4b09_baea_0a9fde6950bd
 <http://entities.gov.scot/id/gov/puborg/74bf730b_f92f_4b09_baea_0a9fde6950bd> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
@@ -2101,16 +2065,33 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "NHS Tayside"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/7620f2dd_f232_493b_9743_c173e4adbe75
+<http://entities.gov.scot/id/gov/puborg/7620f2dd_f232_493b_9743_c173e4adbe75> rdf:type owl:NamedIndividual ;
+                                                                              rdfs:label "Scottish Agricultural College"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/8bbbe5e3_c87a_41e4_9c32_022bdeda36f6
 <http://entities.gov.scot/id/gov/puborg/8bbbe5e3_c87a_41e4_9c32_022bdeda36f6> rdf:type owl:NamedIndividual ,
                                                                                        :AdvisoryNDPB ;
                                                                               rdfs:label "Mobility and Access Committee for Scotland"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/8d90e2fa_8de8_4e5d_85da_6384823f8d19
+<http://entities.gov.scot/id/gov/puborg/8d90e2fa_8de8_4e5d_85da_6384823f8d19> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Fraserburgh Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/8f62e289_f31a_40af_a730_30d5decd77e0
 <http://entities.gov.scot/id/gov/puborg/8f62e289_f31a_40af_a730_30d5decd77e0> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveNDPB ;
                                                                               rdfs:label "National Library of Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/800fde6d_83a2_4507_8723_6375288ef94c
+<http://entities.gov.scot/id/gov/puborg/800fde6d_83a2_4507_8723_6375288ef94c> rdf:type owl:NamedIndividual ,
+                                                                                       :ExecutiveNDPB ;
+                                                                              rdfs:label "Rowett Research Institute"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/8014c296_9e59_4e4b_b88e_b63174550d7b
@@ -2204,10 +2185,22 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                               rdfs:label "East Lothian Council"@en .
 
 
+###  http://entities.gov.scot/id/gov/puborg/9d248799_2588_4740_9095_7502f466884b
+<http://entities.gov.scot/id/gov/puborg/9d248799_2588_4740_9095_7502f466884b> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Gardenstown Harbour"@en .
+
+
 ###  http://entities.gov.scot/id/gov/puborg/9d5a88fb_2fd3_40d4_a2ae_0590442db22b
 <http://entities.gov.scot/id/gov/puborg/9d5a88fb_2fd3_40d4_a2ae_0590442db22b> rdf:type owl:NamedIndividual ,
                                                                                        :ExecutiveAgency ;
                                                                               rdfs:label "Student Awards Agency for Scotland"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/9d94d32a_df97_4e64_a6d4_bbe1f4942125
+<http://entities.gov.scot/id/gov/puborg/9d94d32a_df97_4e64_a6d4_bbe1f4942125> rdf:type owl:NamedIndividual ,
+                                                                                       :LocalHarbourTrust ;
+                                                                              rdfs:label "Scrabster Harbour"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/9ecc665b_1ff0_4fab_afc7_7bdd55bc8ef6
@@ -2224,6 +2217,13 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
                                                                                          rdf:type owl:Class
                                                                                        ] ;
                                                                               rdfs:label "Highlands and Islands Airports Ltd"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/9fb1fb52_57ea_459f_90c6_a8440df46d7b
+<http://entities.gov.scot/id/gov/puborg/9fb1fb52_57ea_459f_90c6_a8440df46d7b> rdf:type owl:NamedIndividual ,
+                                                                                       regorg:RegisteredOrganization ;
+                                                                              org:subOrganizationOf id:c8e71c45_f8f5_42f4_9f96_da7e07d6bb92 ;
+                                                                              rdfs:label "Argyll Ferries Ltd"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/9ffc6ae5_06a9_4dd4_b358_b0cf4dfb5f48
@@ -2266,6 +2266,12 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 <http://entities.gov.scot/id/gov/puborg/98e30113_87fb_4f13_8a2e_909adf97d6eb> rdf:type owl:NamedIndividual ,
                                                                                        :TerritorialNHSBoard ;
                                                                               rdfs:label "NHS Grampian"@en .
+
+
+###  http://entities.gov.scot/id/gov/puborg/99d316c3_493e_430f_9fbb_b515e3fe87ec
+<http://entities.gov.scot/id/gov/puborg/99d316c3_493e_430f_9fbb_b515e3fe87ec> rdf:type owl:NamedIndividual ,
+                                                                                       :SpecialNHSBoard ;
+                                                                              rdfs:label "Healthcare Improvement Scotland"@en .
 
 
 ###  http://entities.gov.scot/id/gov/puborg/990515cd_1df2_4fcd_94e9_b990d8a4e040
