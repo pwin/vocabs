@@ -1095,12 +1095,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/dcat#Dataset -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
-    
-
-
     <!-- http://www.w3.org/ns/legal#LegalEntity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/legal#LegalEntity">

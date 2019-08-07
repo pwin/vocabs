@@ -719,10 +719,6 @@ schema:OpeningHoursSpecification rdf:type owl:Class ;
                                  vann:usageNote "The Core Public Organization Vocabulary makes full use of schema.org's openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en .
 
 
-###  http://www.w3.org/ns/dcat#Dataset
-dcat:Dataset rdf:type owl:Class .
-
-
 ###  http://www.w3.org/ns/legal#LegalEntity
 <http://www.w3.org/ns/legal#LegalEntity> rdf:type owl:Class ;
                                          rdfs:subClassOf org:FormalOrganization ;
