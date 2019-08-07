@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://entities.gov.scot/def/gov/cpov-ap-scot/"
+     xml:base="http://entities.gov.scot/def/gov/cpov-ap-scot/"
+     xmlns:cv="http://data.europa.eu/m8g/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:id="http://entities.gov.scot/id/gov/puborg/"
+     xmlns:is="http://joinup.eu/is/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:voc="http://joinup.eu/voc/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:owner="http://joinup.eu/owner/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:joinup="http://joinup.eu/"
+     xmlns:regorg="http://www.w3.org/ns/regorg#"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+     xmlns:language="http://joinup.eu/language/"
+     xmlns:solution="http://joinup.eu/solution/">
+    <owl:Ontology rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot">
+        <owl:versionIRI rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/1/"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="http://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244"/>
+        <dct:description xml:lang="en">This is the ontology of the Scottish application profile for Organisations (Public). It allows one to model the main information on organizations (public), including the organization of the offices and their head of units. It is in draft form.</dct:description>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dct:licence rdf:resource="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</dct:modified>
+        <dct:publisher rdf:resource="http://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244"/>
+        <dct:rightsHolder rdf:resource="http://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244"/>
+        <dct:title xml:lang="en">Organization (public) ontology - Scottish application profile</dct:title>
+        <vann:preferredNamespacePrefix>cpovapscot</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">Scottish application profile for EC Core Public Organisation Vocabulary</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology of the Scottish application profile of Organisations (Public)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/"/>
+        <rdfs:label xml:lang="en">Scottish Organization (Public) ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 1 - Modified 11 July 2019 - An initial draft.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://joinup.eu/language -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/language"/>
+    
+
+
+    <!-- http://joinup.eu/search -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/search"/>
+    
+
+
+    <!-- http://joinup.eu/site-featured -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/site-featured"/>
+    
+
+
+    <!-- http://joinup.eu/site-pinned -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/site-pinned"/>
+    
+
+
+    <!-- http://joinup.eu/is/workflow_status -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/is/workflow_status"/>
+    
+
+
+    <!-- http://joinup.eu/language/default -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/language/default"/>
+    
+
+
+    <!-- http://joinup.eu/language/translation_author -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_author"/>
+    
+
+
+    <!-- http://joinup.eu/language/translation_source -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_source"/>
+    
+
+
+    <!-- http://joinup.eu/language/translation_status -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_status"/>
+    
+
+
+    <!-- http://joinup.eu/owner/uid -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/owner/uid"/>
+    
+
+
+    <!-- http://joinup.eu/solution/elibrary_creation -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/solution/elibrary_creation"/>
+    
+
+
+    <!-- http://joinup.eu/solution/moderation -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/solution/moderation"/>
+    
+
+
+    <!-- http://joinup.eu/solution/related_by_type -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/solution/related_by_type"/>
+    
+
+
+    <!-- http://joinup.eu/solution/webdav_creation -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/solution/webdav_creation"/>
+    
+
+
+    <!-- http://joinup.eu/voc/policy-domain -->
+
+    <owl:AnnotationProperty rdf:about="http://joinup.eu/voc/policy-domain"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/StillImage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcmitype/StillImage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <vann:usageNote xml:lang="en">In line with ORG and SKOS itself, an organization may have any number of alternative or informal names, irrespective of language.</vann:usageNote>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/adms#status"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#purpose -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/org#purpose">
+        <rdfs:domain rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/m8g/hasFormalFramework -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/m8g/hasFormalFramework"/>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/address -->
+
+    <owl:ObjectProperty rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/address">
+        <vann:usageNote xml:lang="en">A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary&apos;s Address class should be used.</vann:usageNote>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction">
+        <vann:usageNote xml:lang="en">Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions</vann:usageNote>
+        <rdfs:label xml:lang="en">has function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction -->
+
+    <owl:ObjectProperty rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction">
+        <rdfs:label xml:lang="en">has jurisdiction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus -->
+
+    <owl:ObjectProperty rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus">
+        <rdfs:label xml:lang="en">has legal status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-scot/hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://entities.gov.scot/def/gov/cpov-scot/hasFunction"/>
+    
+
+
+    <!-- http://purl.org/vocab/cpsv#implements -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/cpsv#implements"/>
+    
+
+
+    <!-- http://www.w3.org/1999/xhtml/vocab#next -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/xhtml/vocab#next"/>
+    
+
+
+    <!-- http://www.w3.org/1999/xhtml/vocab#prev -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/xhtml/vocab#prev"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#changedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#changedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasMember"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasSubOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasSubOrganization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasUnit"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#memberOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#originalOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#originalOrganization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#resultedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#resultedFrom">
+        <rdfs:label xml:lang="en">resulted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#resultingOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#resultingOrganization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#subOrganizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#subOrganizationOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#unitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#unitOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+        <vann:usageNote xml:lang="en">A notation is a string of characters used to uniquely identify a concept within the scope of a given concept scheme.</vann:usageNote>
+        <rdfs:label>notation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/m8g/FoundationEvent -->
+
+    <owl:Class rdf:about="http://data.europa.eu/m8g/FoundationEvent">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/m8g/PublicOrganisation -->
+
+    <owl:Class rdf:about="http://data.europa.eu/m8g/PublicOrganisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="en">The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships.</rdfs:comment>
+        <rdfs:label xml:lang="en">PublicOrganisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Function"/>
+        <rdfs:label xml:lang="en">Advisory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Advisory Non-Departmental Public Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation"/>
+        <rdfs:label xml:lang="en">Arms Length Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Central Bank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Central Government Public Corporation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Central Government Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/CommunityCouncil -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CommunityCouncil">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+        <rdfs:label xml:lang="en">Community Council</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Conservation Board for Area of Outstanding Natural Beauty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Council -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Council">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+        <owl:disjointWith rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority"/>
+        <rdfs:label xml:lang="en">Unitary Authority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Court -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Court">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Crown Estate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/DepartmentSpecificEntityType -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/DepartmentSpecificEntityType">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity"/>
+        <rdfs:label xml:lang="en">Department-specific Class of Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation"/>
+        <rdfs:label xml:lang="en">Devolved Administration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/EducationalEstablishment -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/EducationalEstablishment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="en">Educational Establishment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Executive -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Executive">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Function"/>
+        <rdfs:label xml:lang="en">Executive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Executive"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Executive Agency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Executive"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Executive Non-Departmental Public Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ExpertCommittee -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ExpertCommittee">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity"/>
+        <rdfs:label xml:lang="en">Expert Committee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Function -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Function">
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Health Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+        <rdfs:label xml:lang="en">High Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Integration Authority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+        <rdfs:label xml:lang="en">JP Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction">
+        <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus">
+        <rdfs:label xml:lang="en">Legal Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Local Government Public Corporation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Local Government Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction"/>
+                        <owl:someValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Local Harbour Trust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction"/>
+        <rdfs:label xml:lang="en">Local Jurisdiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <owl:disjointWith rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonMarketBody"/>
+        <rdfs:label xml:lang="en">Market Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Non-Departmental Public Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody"/>
+        <rdfs:label xml:lang="en">NHSBoard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction"/>
+        <rdfs:label xml:lang="en">National Jurisdiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">National Park Authority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Non-Classified Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity"/>
+        <rdfs:label xml:lang="en">Non-Classified Government Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NonMarketBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NonMarketBody">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="en">Non-Market Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/NonMinisterialDept -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NonMinisterialDept">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Non-Ministerial Department</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/OfficeOrTaskforce -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/OfficeOrTaskforce">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity"/>
+        <rdfs:label xml:lang="en">Office Or Taskforce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Other Significant Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Parliamentary Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ParlCommOrOmbuds -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ParlCommOrOmbuds">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Parliamentary Commissioner or Ombudsman</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/ParliamentaryCommissioner -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ParliamentaryCommissioner">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Parliamentary Commissioner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Public Broadcasting Authority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+        <rdfs:label xml:lang="en">Regional Transport Partnership</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+        <rdfs:label xml:lang="en">Regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+        <rdfs:label xml:lang="en">Sheriff Appeal Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+        <rdfs:label xml:lang="en">Sheriff Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialNHSBoard -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialNHSBoard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction"/>
+                        <owl:allValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Special NHS Board</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/StatutoryOfficeHolder -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/StatutoryOfficeHolder">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity"/>
+        <rdfs:label xml:lang="en">Statutory Office Holder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+        <rdfs:label xml:lang="en">Supreme Court</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/TerritorialNHSBoard -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/TerritorialNHSBoard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction"/>
+                        <owl:allValuesFrom rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Territorial NHS Board</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody"/>
+        <rdfs:label xml:lang="en">Tribunal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator"/>
+        <rdfs:label xml:lang="en">Utility Regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup -->
+
+    <owl:Class rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup">
+        <rdfs:subClassOf rdf:resource="http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity"/>
+        <rdfs:label xml:lang="en">Working Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/cpsv#FormalFramework -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/cpsv#FormalFramework"/>
+    
+
+
+    <!-- http://schema.org/ContactPoint -->
+
+    <owl:Class rdf:about="http://schema.org/ContactPoint">
+        <vann:usageNote xml:lang="en">A class representing a point of contact for the organization. The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org&apos;s ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful.</vann:usageNote>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/OpeningHoursSpecification -->
+
+    <owl:Class rdf:about="http://schema.org/OpeningHoursSpecification">
+        <vann:usageNote xml:lang="en">The Core Public Organization Vocabulary makes full use of schema.org&apos;s openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties.</vann:usageNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/legal#LegalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/legal#LegalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <dct:identifier xml:lang="en">legal:LegalEntity</dct:identifier>
+        <rdfs:comment xml:lang="en">This is the key class for the Business Core Vocabulary and represents a 
+    business that is legally registered. In many countries there is a single registry although in others, 
+    such as Spain and Germany, multiple registries exist. A Legal Entity is able to trade, is 
+    legally liable for its actions, accounts, tax affairs etc. It is a sub class of org:FormalOrganization
+    which covers a wider range of entities, such as charities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/legal#"/>
+        <rdfs:label xml:lang="en">Legal Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#ChangeEvent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#ChangeEvent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#FormalOrganization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#FormalOrganization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+        <rdfs:comment xml:lang="en">from Organization ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/regorg#RegisteredOrganization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/regorg#RegisteredOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <dct:identifier>rov:RegisteredOrganization</dct:identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal">rov:RegisteredOrganization is the key class for the Registered Organization vocabulary and represents an organization that is legally registered. In many countries there is a single registry although in others, such as Spain and Germany, multiple registries exist. A Registered Organization is able to trade, is legally liable for its actions, accounts, tax affairs etc. Legal entity status is conferred by the act of registration cf. org:FormalOrganization that applies to any legal entity, including those created by other legal means.
+    This makes registered organizations distinct from the broader concept of organizations, groups or, in some jurisdictions, sole traders. Many organizations exist that are not legal entities yet to the outside world they have staff, hierarchies, locations etc. Other organizations exist that are an umbrella for several legal entities (universities are often good examples of this). This vocabulary is concerned solely with registered organizations.
+    In RDF, Registered Organization is a sub class of the Organization Ontology&apos;s org:FormalOrganization which is itself a sub class of the more general &apos;Agent&apos; class found in FOAF and Dublin Core that does encompass organizations, natural persons, groups etc. - i.e. an Agent is any entity that is able to carry out actions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-regorg/"/>
+        <rdfs:label xml:lang="en">Registered Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:label xml:lang="en">spatial</rdfs:label>
+        <vann:usageNote xml:lang="en">This property links an organization to the administrative region(s) that it covers. The value of the properly should be the URI of the region as defined in an authoritative list of regions. In Europe, this is likely to be the Administrative Territorial Units  Named Authority List maintained by the Publications Office&apos;s Metadata Registry. The ATU list does not include a geometry. That is, the territory is only identified by its name not its spatial coordinates. This is likely to be the case for similar lists. If geometries are available for the Public Organization&apos;s territory, they can be linked from the territorial unit using the Location Core Vocabulary&apos;s locn:geometry property.</vann:usageNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/contactPoint">
+        <vann:usageNote xml:lang="en">The contact point property links to a Contact Point that provides contact information, in particular a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization&apos;s homepage that may or may not provide contact information.</vann:usageNote>
+        <rdfs:label xml:lang="en">contact point</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/email">
+        <rdfs:label xml:lang="en">has email</rdfs:label>
+        <vann:usageNote xml:lang="en">A property through which an e-mail address for the Public Organisation, or a representative of it, can be contacted.</vann:usageNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/hoursAvailable">
+        <vann:usageNote xml:lang="en">The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case.</vann:usageNote>
+        <rdfs:label xml:lang="en">availability restriction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/logo">
+        <vann:usageNote xml:lang="en">A property to link an organization to its logo. The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions. In the RDF release of the CPOV, this property is bound to schema:logo which takes either a URL or a schema:ImageObject as its value.</vann:usageNote>
+        <rdfs:label xml:lang="en">logo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/openingHours">
+        <vann:usageNote xml:lang="en">The value of this property is structured text that gives the hours at which the contact point is normally available. Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00.</vann:usageNote>
+        <rdfs:label xml:lang="en">opening hours</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/telephone">
+        <vann:usageNote xml:lang="en">A property through which a phone number for the Public Organization, or a representative of it, can be contacted.</vann:usageNote>
+        <rdfs:label xml:lang="en">has telephone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <vann:usageNote xml:lang="en">As defined in the ORG Ontology, a preferred label is used to provide the primary, legally recognised name of the organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.</vann:usageNote>
+        <rdfs:label xml:lang="en">preferred label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#identifier">
+        <vann:usageNote xml:lang="en">Many organizations are referred to by an acronym or some other identifier. For example, among the EU institutions, the ECB is the identifier for the European Central Bank, OLAF for the European Anti-Fraud Office, and so on. These are formally recognised by the European Commission which provides a list of such acronyms . Analogous lists should be used in other contexts.</vann:usageNote>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/Court"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/ParliamentaryCommissioner"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt"/>
+            <rdf:Description rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
