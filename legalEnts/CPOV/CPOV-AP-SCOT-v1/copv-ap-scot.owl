@@ -2231,11 +2231,7 @@ id:ffa00757_d039_4be2_91a6_58643a639ab5 rdf:type owl:NamedIndividual ,
 
 ###  http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d
 <http://entities.gov.scot/id/gov/puborg/9ef9f538_bf27_4cf5_a850_9165efdb531d> rdf:type owl:NamedIndividual ,
-                                                                                       [ owl:intersectionOf ( :ExecutiveNDPB
-                                                                                                              regorg:RegisteredOrganization
-                                                                                                            ) ;
-                                                                                         rdf:type owl:Class
-                                                                                       ] ;
+                                                                                       :CentralGovPB ;
                                                                               rdfs:label "Highlands and Islands Airports Ltd"@en .
 
 
