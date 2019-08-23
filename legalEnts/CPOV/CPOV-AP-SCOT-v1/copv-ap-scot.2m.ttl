@@ -19,6 +19,7 @@
 @prefix schema: <http://schema.org/> .
 @base <https://entities.gov.scot/def/gov/cpov-ap-scot> .
 
+
 <https://entities.gov.scot/def/gov/cpov-ap-scot> rdf:type owl:Ontology ;
                                                   owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/1/> ;
                                                   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
@@ -797,138 +798,6 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://data.ordnancesurvey.co.uk/id/7000000000029638
-<http://data.ordnancesurvey.co.uk/id/7000000000029638> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000029959
-<http://data.ordnancesurvey.co.uk/id/7000000000029959> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000029961
-<http://data.ordnancesurvey.co.uk/id/7000000000029961> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030022
-<http://data.ordnancesurvey.co.uk/id/7000000000030022> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030106
-<http://data.ordnancesurvey.co.uk/id/7000000000030106> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030110
-<http://data.ordnancesurvey.co.uk/id/7000000000030110> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030111
-<http://data.ordnancesurvey.co.uk/id/7000000000030111> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030215
-<http://data.ordnancesurvey.co.uk/id/7000000000030215> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030216
-<http://data.ordnancesurvey.co.uk/id/7000000000030216> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030418
-<http://data.ordnancesurvey.co.uk/id/7000000000030418> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030419
-<http://data.ordnancesurvey.co.uk/id/7000000000030419> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030421
-<http://data.ordnancesurvey.co.uk/id/7000000000030421> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030501
-<http://data.ordnancesurvey.co.uk/id/7000000000030501> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030502
-<http://data.ordnancesurvey.co.uk/id/7000000000030502> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030503
-<http://data.ordnancesurvey.co.uk/id/7000000000030503> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030504
-<http://data.ordnancesurvey.co.uk/id/7000000000030504> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030505
-<http://data.ordnancesurvey.co.uk/id/7000000000030505> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030509
-<http://data.ordnancesurvey.co.uk/id/7000000000030509> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030514
-<http://data.ordnancesurvey.co.uk/id/7000000000030514> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030628
-<http://data.ordnancesurvey.co.uk/id/7000000000030628> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030629
-<http://data.ordnancesurvey.co.uk/id/7000000000030629> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030630
-<http://data.ordnancesurvey.co.uk/id/7000000000030630> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030631
-<http://data.ordnancesurvey.co.uk/id/7000000000030631> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030632
-<http://data.ordnancesurvey.co.uk/id/7000000000030632> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030634
-<http://data.ordnancesurvey.co.uk/id/7000000000030634> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030846
-<http://data.ordnancesurvey.co.uk/id/7000000000030846> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000030847
-<http://data.ordnancesurvey.co.uk/id/7000000000030847> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000031903
-<http://data.ordnancesurvey.co.uk/id/7000000000031903> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000036549
-<http://data.ordnancesurvey.co.uk/id/7000000000036549> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000036552
-<http://data.ordnancesurvey.co.uk/id/7000000000036552> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000041429
-<http://data.ordnancesurvey.co.uk/id/7000000000041429> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000043391
-<http://data.ordnancesurvey.co.uk/id/7000000000043391> rdf:type owl:NamedIndividual .
-
-
-###  http://data.ordnancesurvey.co.uk/id/7000000000043393
-<http://data.ordnancesurvey.co.uk/id/7000000000043393> rdf:type owl:NamedIndividual .
-
-
 ###  https://entities.gov.scot/id/gov/puborg/a00d15bf_818c_4965_bc34_12302a194a72
 <https://entities.gov.scot/id/gov/puborg/a00d15bf_818c_4965_bc34_12302a194a72> rdf:type owl:NamedIndividual ;
                                                                                rdfs:label "Scottish Consolidated Fund"@en .
@@ -937,8 +806,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/a042e3b7_cd0b_43d4_93ff_be93f50efbe2
 <https://entities.gov.scot/id/gov/puborg/a042e3b7_cd0b_43d4_93ff_be93f50efbe2> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000036552> ;
-                                                                               rdfs:label "Scottish Borders Council"@en .
+                                                                               rdfs:label "Scottish Borders Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000036552> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/a0a1d863_7b36_4a22_9d49_be2a544e422f
@@ -1003,8 +872,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/a914a2cc_9b63_485c_9e58_5e41a3695001
 <https://entities.gov.scot/id/gov/puborg/a914a2cc_9b63_485c_9e58_5e41a3695001> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000043391> ;
-                                                                               rdfs:label "South Ayrshire Council"@en .
+                                                                               rdfs:label "South Ayrshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000043391> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/a98302bf_51dd_4b65_b103_f3cdb88d50b2
@@ -1093,15 +962,15 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/b6ae570a_405f_407d_b557_f9c728869203
 <https://entities.gov.scot/id/gov/puborg/b6ae570a_405f_407d_b557_f9c728869203> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030847> ;
-                                                                               rdfs:label "South Lanarkshire Council"@en .
+                                                                               rdfs:label "South Lanarkshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030847> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/b78c74ac_70bd_4836_830b_66d5b184b05e
 <https://entities.gov.scot/id/gov/puborg/b78c74ac_70bd_4836_830b_66d5b184b05e> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030215> ;
-                                                                               rdfs:label "Dundee City Council"@en .
+                                                                               rdfs:label "Dundee City Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030215>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/b7eba161_3413_4117_8914_b212ae756607
@@ -1197,8 +1066,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a
 <https://entities.gov.scot/id/gov/puborg/cd71a0ab_9bfa_4fcb_8809_07c1ef614c3a> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030501> ;
-                                                                               rdfs:label "East Dunbartonshire Council"@en .
+                                                                               rdfs:label "East Dunbartonshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030501>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/ce211f96_d1ec_43b2_8019_fd6317f8c913
@@ -1282,8 +1151,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/df5cb8bd_03f8_4fca_84a5_f666a6853f8e
 <https://entities.gov.scot/id/gov/puborg/df5cb8bd_03f8_4fca_84a5_f666a6853f8e> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029961> ;
-                                                                               rdfs:label "Orkney Islands Council"@en .
+                                                                               rdfs:label "Orkney Islands Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029961> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/e260c061_06ea_42ed_bdfb_34f84bb743f8
@@ -1349,8 +1218,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/eaf6eec5_a6cc_45af_a187_65e823b00201
 <https://entities.gov.scot/id/gov/puborg/eaf6eec5_a6cc_45af_a187_65e823b00201> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030419> ;
-                                                                               rdfs:label "Fife Council"@en .
+                                                                               rdfs:label "Fife Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030419>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/edbf2355_5ff8_49b0_8fc2_36a17afc9f4b
@@ -1477,8 +1346,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/fd902804_9a40_452a_ad54_212014a3de39
 <https://entities.gov.scot/id/gov/puborg/fd902804_9a40_452a_ad54_212014a3de39> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030106> ;
-                                                                               rdfs:label "Argyll and Bute Council"@en .
+                                                                               rdfs:label "Argyll and Bute Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030106>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/fedc1ef3_6266_4b25_b220_fdd91f0e2f32
@@ -1561,8 +1430,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/05e705e9_6bb7_4b48_9cf3_6c0551cc4f00
 <https://entities.gov.scot/id/gov/puborg/05e705e9_6bb7_4b48_9cf3_6c0551cc4f00> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030502> ;
-                                                                               rdfs:label "Stirling Council"@en .
+                                                                               rdfs:label "Stirling Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030502> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/06c72973_1d22_4fff_87ee_f5930ad71494
@@ -1584,8 +1453,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/076a09c1_d312_4c90_a4a7_96090510217d
 <https://entities.gov.scot/id/gov/puborg/076a09c1_d312_4c90_a4a7_96090510217d> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030632> ;
-                                                                               rdfs:label "West Lothian Council"@en .
+                                                                               rdfs:label "West Lothian Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030632> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/079ab57e_1b0c_4bd5_a411_730bc2667bc6
@@ -1646,8 +1515,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/1260ef94_caee_467d_9ab9_60a3672f2cca
 <https://entities.gov.scot/id/gov/puborg/1260ef94_caee_467d_9ab9_60a3672f2cca> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030216> ;
-                                                                               rdfs:label "Angus Council"@en .
+                                                                               rdfs:label "Angus Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030216>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/14cf495d_d2b8_4678_8495_0f9eebadd56d
@@ -1665,8 +1534,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/1474808a_0f21_451b_a4bc_e807f140b630
 <https://entities.gov.scot/id/gov/puborg/1474808a_0f21_451b_a4bc_e807f140b630> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000043393> ;
-                                                                               rdfs:label "East Ayrshire Council"@en .
+                                                                               rdfs:label "East Ayrshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000043393>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/14858b1e_c3c8_49af_b7ef_e8056d2d9087
@@ -1678,8 +1547,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/16c389a0_0fbc_4f3c_92cc_97f7166610a9
 <https://entities.gov.scot/id/gov/puborg/16c389a0_0fbc_4f3c_92cc_97f7166610a9> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030846> ;
-                                                                               rdfs:label "East Renfrewshire Council"@en .
+                                                                               rdfs:label "East Renfrewshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030846>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/1715ee19_648c_4e5c_b1b6_9566a42f5c28
@@ -1742,8 +1611,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/21bfd213_571b_4cdb_b553_de45f8a8c44d
 <https://entities.gov.scot/id/gov/puborg/21bfd213_571b_4cdb_b553_de45f8a8c44d> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000036549> ;
-                                                                               rdfs:label "West Dunbartonshire Council"@en .
+                                                                               rdfs:label "West Dunbartonshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000036549> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/223b638b_25f8_419a_938d_4a140f881d6e
@@ -1785,8 +1654,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/299e8b90_74d8_4e66_b32b_76fc0d13e95c
 <https://entities.gov.scot/id/gov/puborg/299e8b90_74d8_4e66_b32b_76fc0d13e95c> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030629> ;
-                                                                               rdfs:label "Inverclyde Council"@en .
+                                                                               rdfs:label "Inverclyde Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030629> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/3a7af8e0_d527_433c_9e0e_ee50059b0457
@@ -1839,8 +1708,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/36bd641c_f069_4f3e_b916_3ebfa193149f
 <https://entities.gov.scot/id/gov/puborg/36bd641c_f069_4f3e_b916_3ebfa193149f> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030631> ;
-                                                                               rdfs:label "Glasgow City Council"@en .
+                                                                               rdfs:label "Glasgow City Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030631> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/36461122_5c1e_4830_9da1_42941dc09d6a
@@ -1852,8 +1721,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/365df7dc_48f0_4c18_a4ad_f7178fd63aef
 <https://entities.gov.scot/id/gov/puborg/365df7dc_48f0_4c18_a4ad_f7178fd63aef> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030504> ;
-                                                                               rdfs:label "Falkirk Council"@en .
+                                                                               rdfs:label "Falkirk Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030504>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/37b59908_15a9_4bbc_9040_f1220880ad18
@@ -1866,8 +1735,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/37bd03c5_6032_483c_96da_16ab6076b1bc
 <https://entities.gov.scot/id/gov/puborg/37bd03c5_6032_483c_96da_16ab6076b1bc> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029638> ;
-                                                                               rdfs:label "The Highland Council"@en .
+                                                                               rdfs:label "The Highland Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029638> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/37d27d5a_a522_44d9_af79_0a14c02f09b8
@@ -1885,8 +1754,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/375c5472_4c42_4526_9cc8_f40b5738bb5d
 <https://entities.gov.scot/id/gov/puborg/375c5472_4c42_4526_9cc8_f40b5738bb5d> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029959> ;
-                                                                               rdfs:label "Moray Council"@en .
+                                                                               rdfs:label "Moray Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000029959> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/39a7db13_42f0_4941_be3f_cea9465ac6d7
@@ -1922,8 +1791,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244
 <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000041429> ;
-                                                                               rdfs:label "The Scottish Government"@en .
+                                                                               rdfs:label "The Scottish Government"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000041429> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/4ceb6522_d4de_44e3_94b3_2171a145b5fa
@@ -2010,15 +1879,15 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/5aed306d_1a71_4ef5_a394_48760f5b3fe3
 <https://entities.gov.scot/id/gov/puborg/5aed306d_1a71_4ef5_a394_48760f5b3fe3> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030630> ;
-                                                                               rdfs:label "Renfrewshire Council"@en .
+                                                                               rdfs:label "Renfrewshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030630> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c
 <https://entities.gov.scot/id/gov/puborg/5b6f8b6c_96d0_44f1_a6fa_7b64f8c6412c> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030110> ;
-                                                                               rdfs:label "Perth and Kinross Council"@en .
+                                                                               rdfs:label "Perth and Kinross Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030110> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/5d8d48e6_aafe_42cc_bb14_daf64e78c00f
@@ -2047,8 +1916,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/51c5b32a_cff2_43d4_a892_85e7bd1a81d0
 <https://entities.gov.scot/id/gov/puborg/51c5b32a_cff2_43d4_a892_85e7bd1a81d0> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030503> ;
-                                                                               rdfs:label "North Lanarkshire Council"@en .
+                                                                               rdfs:label "North Lanarkshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030503> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/53c2995f_1d1e_456b_9b13_21b89e6a6443
@@ -2066,8 +1935,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5
 <https://entities.gov.scot/id/gov/puborg/534ffd70_6cd8_4a7c_b8e1_55de7b1fa8f5> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030634> ;
-                                                                               rdfs:label "Midlothian Council"@en .
+                                                                               rdfs:label "Midlothian Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030634> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/537663e3_9971_4d3e_b09b_8b8a05221a3a
@@ -2098,8 +1967,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/56e7a6ba_b148_465d_88f5_1c563f8372d6
 <https://entities.gov.scot/id/gov/puborg/56e7a6ba_b148_465d_88f5_1c563f8372d6> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030421> ;
-                                                                               rdfs:label "Aberdeen City Council"@en .
+                                                                               rdfs:label "Aberdeen City Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers>  <http://data.ordnancesurvey.co.uk/id/7000000000030421> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/57a8edbc_8216_4496_9127_dc7dbf4aa7e8
@@ -2148,8 +2017,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/614945b1_4185_4068_bc0c_b8774d96801b
 <https://entities.gov.scot/id/gov/puborg/614945b1_4185_4068_bc0c_b8774d96801b> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030505> ;
-                                                                               rdfs:label "The City of Edinburgh Council"@en .
+                                                                               rdfs:label "The City of Edinburgh Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030505> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/62a8b7a7_cf73_438d_9dc6_5822c72b4aa5
@@ -2161,8 +2030,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/62229ac3_977c_4d68_bd6d_1a38bd29f337
 <https://entities.gov.scot/id/gov/puborg/62229ac3_977c_4d68_bd6d_1a38bd29f337> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030111> ;
-                                                                               rdfs:label "Aberdeenshire Council"@en .
+                                                                               rdfs:label "Aberdeenshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers>  <http://data.ordnancesurvey.co.uk/id/7000000000030111> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/65a24ace_e92c_484b_b65b_5e5bb1c95578
@@ -2174,8 +2043,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/65aca9c3_ba5e_4287_910e_5329662b109a
 <https://entities.gov.scot/id/gov/puborg/65aca9c3_ba5e_4287_910e_5329662b109a> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000031903> ;
-                                                                               rdfs:label "Dumfries and Galloway Council"@en .
+                                                                               rdfs:label "Dumfries and Galloway Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000031903> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/66bfe6f1_19c2_4d4b_aec6_383b89deca5b
@@ -2312,8 +2181,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/8089cafe_1747_41f9_ab2c_536f68e1e729
 <https://entities.gov.scot/id/gov/puborg/8089cafe_1747_41f9_ab2c_536f68e1e729> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030514> ;
-                                                                               rdfs:label "Shetland Islands Council"@en .
+                                                                               rdfs:label "Shetland Islands Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030514> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/8160d157_2bb3_4090_8407_5689c5c16eed
@@ -2392,8 +2261,8 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/9cdb3a89_3cc2_472a_981e_32169a515b98
 <https://entities.gov.scot/id/gov/puborg/9cdb3a89_3cc2_472a_981e_32169a515b98> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030509> ;
-                                                                               rdfs:label "East Lothian Council"@en .
+                                                                               rdfs:label "East Lothian Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030509>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/9d248799_2588_4740_9095_7502f466884b
@@ -2442,22 +2311,22 @@ regorg:RegisteredOrganization rdf:type owl:Class ;
 ###  https://entities.gov.scot/id/gov/puborg/90b4305a_7cdb_444d_9e3a_0729b0c2c76a
 <https://entities.gov.scot/id/gov/puborg/90b4305a_7cdb_444d_9e3a_0729b0c2c76a> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030418> ;
-                                                                               rdfs:label "Clackmannanshire Council"@en .
+                                                                               rdfs:label "Clackmannanshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030418>.
 
 
 ###  https://entities.gov.scot/id/gov/puborg/904596e2_c73d_4acc_9970_57c5c666855c
 <https://entities.gov.scot/id/gov/puborg/904596e2_c73d_4acc_9970_57c5c666855c> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030022> ;
-                                                                               rdfs:label "Comhairle nan Eilean Siar"@en .
+                                                                               rdfs:label "Comhairle nan Eilean Siar"@en  ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030022> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/92dbd8e1_9e59_448a_8e91_2d681dbc2901
 <https://entities.gov.scot/id/gov/puborg/92dbd8e1_9e59_448a_8e91_2d681dbc2901> rdf:type owl:NamedIndividual ,
                                                                                         <https://entities.gov.scot/def/gov/cpov-ap-scot/Council> ;
-                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030628> ;
-                                                                               rdfs:label "North Ayrshire Council"@en .
+                                                                               rdfs:label "North Ayrshire Council"@en ;
+                                                                               <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://data.ordnancesurvey.co.uk/id/7000000000030628> .
 
 
 ###  https://entities.gov.scot/id/gov/puborg/929a9546_ba45_41e5_b2dc_c16c833af8da
