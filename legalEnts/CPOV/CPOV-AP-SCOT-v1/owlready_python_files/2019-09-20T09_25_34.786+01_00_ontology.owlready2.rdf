@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://entities.gov.scot/def/gov/cpov-ap-scot/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://entities.gov.scot/def/gov/cpov-ap-scot/">
+
+<owl:Ontology rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot"/>
+
+<owl:ObjectProperty rdf:about="http://data.europa.eu/m8g/hasFormalFramework"/>
+
+<owl:ObjectProperty rdf:about="http://purl.org/vocab/cpsv#implements"/>
+
+<owl:ObjectProperty rdf:about="https://entities.gov.scot/def/gov/cpov-scot/hasFunction"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/search"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/site_featured">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site-featured</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/site_pinned">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site-pinned</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/is/workflow_status"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language/default"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_author"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_source"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language/translation_status"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/owner/uid"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/solution/elibrary_creation"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/solution/moderation"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/solution/related_by_type"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/solution/webdav_creation"/>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/voc/policy_domain">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">policy-domain</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/dcmitype/StillImage"/>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+
+<owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+
+<owl:Class rdf:about="http://schema.org/contactPoint">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact point</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/email">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has email</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/hoursAvailable">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability restriction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/logo">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">logo</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/openingHours">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opening hours</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/telephone">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has telephone</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/org#identifier">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO_0000027</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/Committee">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Government Central Purchasing Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parliamentary Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing">
+  <rdfs:subClassOf rdf:resource="https://entities.gov.scot/def/gov/cpov-ap-scot/Function"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purchasing</rdfs:label>
+</owl:Class>
+
+
+</rdf:RDF>

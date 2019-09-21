@@ -1,0 +1,66 @@
+<http://entities.gov.scot/def/gov/cpov-ap-scot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/logo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/openingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://entities.gov.scot/def/gov/cpov-ap-scot/Function> .
+<http://data.europa.eu/m8g/hasFormalFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/cpsv#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://entities.gov.scot/def/gov/cpov-scot/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://joinup.eu/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/search> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/site_featured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/site_pinned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/is/workflow_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/default> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/owner/uid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/elibrary_creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/moderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/related_by_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/webdav_creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/voc/policy_domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "has email"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "availability restriction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/logo> <http://www.w3.org/2000/01/rdf-schema#label> "logo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "has telephone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#label> "BFO_0000027"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#label> "Committee"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Local Government Central Purchasing Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#label> "Purchasing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/site_featured> <http://www.w3.org/2000/01/rdf-schema#label> "site-featured"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/site_pinned> <http://www.w3.org/2000/01/rdf-schema#label> "site-pinned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/voc/policy_domain> <http://www.w3.org/2000/01/rdf-schema#label> "policy-domain"^^<http://www.w3.org/2001/XMLSchema#string> .

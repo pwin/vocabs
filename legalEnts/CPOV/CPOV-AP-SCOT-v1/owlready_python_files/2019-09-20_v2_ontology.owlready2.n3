@@ -1,0 +1,281 @@
+<http://entities.gov.scot/def/gov/cpov-ap-scot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/logo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/openingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://entities.gov.scot/def/gov/cpov-ap-scot/Function> .
+<http://data.europa.eu/m8g/hasFormalFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/cpsv#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://entities.gov.scot/def/gov/cpov-scot/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://joinup.eu/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/search> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/site_featured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/site_pinned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/is/workflow_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/default> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/language/translation_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/owner/uid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/elibrary_creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/moderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/related_by_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/solution/webdav_creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu/voc/policy_domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://joinup.eu#default> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Function> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Executive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Executive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Function> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Function> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/EducationalEstablishment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/EducationalEstablishment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialNHSBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialNHSBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/TerritorialNHSBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/TerritorialNHSBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonMinisterialDept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonMinisterialDept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ParlCommOrOmbuds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ParlCommOrOmbuds> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Court> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Court> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Court> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Court> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Court> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Court> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Court> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CommunityCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CommunityCouncil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Council> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Council> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DepartmentSpecificEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DepartmentSpecificEntityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExpertCommittee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExpertCommittee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OfficeOrTaskforce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OfficeOrTaskforce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/StatutoryOfficeHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/StatutoryOfficeHolder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegulatedInspectedServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegulatedInspectedServiceProvider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialPurposeVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialPurposeVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "has email"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "availability restriction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/logo> <http://www.w3.org/2000/01/rdf-schema#label> "logo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "has telephone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#label> "BFO_0000027"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#label> "Committee"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Local Government Central Purchasing Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/ParlBody> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#label> "Purchasing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/site_featured> <http://www.w3.org/2000/01/rdf-schema#label> "site-featured"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/site_pinned> <http://www.w3.org/2000/01/rdf-schema#label> "site-pinned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/voc/policy_domain> <http://www.w3.org/2000/01/rdf-schema#label> "policy-domain"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/dcat#contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "keyword"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "accrual periodicity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "creator"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "issued"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "language"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/licence> <http://www.w3.org/2000/01/rdf-schema#label> "licence"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "modified"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "rights holder"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "title"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu#default> <http://www.w3.org/2000/01/rdf-schema#label> "default"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://joinup.eu/solution/elibrary_creation> <http://www.w3.org/2000/01/rdf-schema#label> "elibrary creation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "preferred namespace prefix"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/2000/01/rdf-schema#label> "usage note"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "administered by"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/administers> <http://www.w3.org/2000/01/rdf-schema#label> "administers"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has function"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "has jurisdiction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has legal status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/m8g/hasFormalFramework> <http://www.w3.org/2000/01/rdf-schema#label> "has formal framework"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/cpsv#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#subOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-organization of"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#unitOf> <http://www.w3.org/2000/01/rdf-schema#label> "unit of"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/1999/xhtml/vocab#prev> <http://www.w3.org/2000/01/rdf-schema#label> "previous"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/2000/01/rdf-schema#label> "BFO_0000027"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Advisory> <http://www.w3.org/2000/01/rdf-schema#label> "Advisory"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Executive> <http://www.w3.org/2000/01/rdf-schema#label> "Executive"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing> <http://www.w3.org/2000/01/rdf-schema#label> "Purchasing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "Jurisdiction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalJurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "Local Jurisdiction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalJurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "National Jurisdiction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#FormalOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Organisation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the key class for the Business Core Vocabulary and represents a \n        business that is legally registered. In many countries there is a single registry although in others, \n        such as Spain and Germany, multiple registries exist. A Legal Entity is able to trade, is \n        legally liable for its actions, accounts, tax affairs etc. It is a sub class of org:FormalOrganization\n        which covers a wider range of entities, such as charities."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Committee> <http://www.w3.org/2000/01/rdf-schema#label> "Committee"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/EducationalEstablishment> <http://www.w3.org/2000/01/rdf-schema#label> "Educational Establishment"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalHarbourTrust> <http://www.w3.org/2000/01/rdf-schema#label> "Local Harbour Trust"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/MarketBody> <http://www.w3.org/2000/01/rdf-schema#label> "Market Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralBank> <http://www.w3.org/2000/01/rdf-schema#label> "Central Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovernmentOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Central Government Organisation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ArmsLengthBody> <http://www.w3.org/2000/01/rdf-schema#label> "Arms Length Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveAgency> <http://www.w3.org/2000/01/rdf-schema#label> "Executive Agency"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HealthBody> <http://www.w3.org/2000/01/rdf-schema#label> "Health Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NHSBoard> <http://www.w3.org/2000/01/rdf-schema#label> "NHS Board"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialNHSBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Special NHS Board"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/TerritorialNHSBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Territorial NHS Board"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NDPB> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Departmental Public Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/AdvisoryNDPB> <http://www.w3.org/2000/01/rdf-schema#label> "Advisory Non-Departmental Public Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExecutiveNDPB> <http://www.w3.org/2000/01/rdf-schema#label> "Executive Non-Departmental Public Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonMinisterialDept> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Ministerial Department"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OtherSigBody> <http://www.w3.org/2000/01/rdf-schema#label> "Other Significant Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ParlCommOrOmbuds> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary Commissioner or Ombudsman"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Tribunal> <http://www.w3.org/2000/01/rdf-schema#label> "Tribunal"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CentralGovPC> <http://www.w3.org/2000/01/rdf-schema#label> "Central Government Public Corporation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DevolvedAdministration> <http://www.w3.org/2000/01/rdf-schema#label> "Devolved Administration"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ConservationBoardAONB> <http://www.w3.org/2000/01/rdf-schema#label> "Conservation Board for Area of Outstanding Natural Beauty"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Court> <http://www.w3.org/2000/01/rdf-schema#label> "Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/HighCourt> <http://www.w3.org/2000/01/rdf-schema#label> "High Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/JPCourt> <http://www.w3.org/2000/01/rdf-schema#label> "JP Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffAppealCourt> <http://www.w3.org/2000/01/rdf-schema#label> "Sheriff Appeal Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SheriffCourt> <http://www.w3.org/2000/01/rdf-schema#label> "Sheriff Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SupremeCourt> <http://www.w3.org/2000/01/rdf-schema#label> "Supreme Court"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CrownEstate> <http://www.w3.org/2000/01/rdf-schema#label> "Crown Estate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Local Government Organisation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/CommunityCouncil> <http://www.w3.org/2000/01/rdf-schema#label> "Community Council"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/IntegrationAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Integration Authority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Local Government Central Purchasing Body"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovPC> <http://www.w3.org/2000/01/rdf-schema#label> "Local Government Public Corporation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegionalTransportPartnership> <http://www.w3.org/2000/01/rdf-schema#label> "Regional Transport Partnership"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Council> <http://www.w3.org/2000/01/rdf-schema#label> "Unitary Authority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NationalParkAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "National Park Authority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Classified Entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/NonClassifiedGovernmentEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Classified Government Entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/DepartmentSpecificEntityType> <http://www.w3.org/2000/01/rdf-schema#label> "Department-specific Class of Entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/ExpertCommittee> <http://www.w3.org/2000/01/rdf-schema#label> "Expert Committee"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/OfficeOrTaskforce> <http://www.w3.org/2000/01/rdf-schema#label> "Office Or Taskforce"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/StatutoryOfficeHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Statutory Office Holder"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/WorkingGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Working Group"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/PublicBroadcastingAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Public Broadcasting Authority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/Regulator> <http://www.w3.org/2000/01/rdf-schema#label> "Regulator"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/UtilityRegulator> <http://www.w3.org/2000/01/rdf-schema#label> "Utility Regulator"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/RegulatedInspectedServiceProvider> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated and Inspected Service Provider"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://entities.gov.scot/def/gov/cpov-ap-scot/SpecialPurposeVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Special Purpose Vehicle"^^<http://www.w3.org/2001/XMLSchema#string> .
