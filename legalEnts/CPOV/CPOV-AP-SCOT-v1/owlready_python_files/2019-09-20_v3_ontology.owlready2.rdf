@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://entities.gov.scot/def/gov/cpov-ap-scot/"
+         xmlns="http://entities.gov.scot/def/gov/cpov-ap-scot/">
+
+<owl:Ontology rdf:about="http://entities.gov.scot/def/gov/cpov-ap-scot"/>
+
+<owl:ObjectProperty rdf:about="address">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">address</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="administeredBy">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administered by</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="administers">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administers</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="hasFunction">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has function</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="hasJurisdiction">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has jurisdiction</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="hasLegalStatus">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has legal status</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.europa.eu/m8g/hasFormalFramework">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has formal framework</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://purl.org/vocab/cpsv#implements">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implements</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#changedBy">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">changed by</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasMember">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has member</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasSubOrganization">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has sub-organization</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasUnit">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has unit</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#memberOf">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">member of</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#originalOrganization">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">original organization</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#resultingOrganization">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resulting organization</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#subOrganizationOf">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-organization of</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#unitOf">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit of</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#resultedFrom">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resulted from</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/1999/xhtml/vocab#next">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">next</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/1999/xhtml/vocab#prev">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">previous</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">notation</rdfs:label>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preferred label</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative label</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact point</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keyword</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accrual periodicity</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creator</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has version</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">language</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">licence</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publisher</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rights holder</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu#default">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/solution/elibrary_creation">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elibrary creation</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://joinup.eu/language"/>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preferred namespace prefix</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">usage note</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">note</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/adms#status">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">status</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/ns/org#purpose">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purpose</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO_0000027</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.org/vocab/cpsv#FormalFramework">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formal Framework</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://data.europa.eu/m8g/FoundationEvent">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foundation Event</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Function">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Function</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Advisory">
+  <rdfs:subClassOf rdf:resource="Function"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advisory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Executive">
+  <rdfs:subClassOf rdf:resource="Function"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executive</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Purchasing">
+  <rdfs:subClassOf rdf:resource="Function"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purchasing</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Jurisdiction">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jurisdiction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LocalJurisdiction">
+  <rdfs:subClassOf rdf:resource="Jurisdiction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Jurisdiction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NationalJurisdiction">
+  <rdfs:subClassOf rdf:resource="Jurisdiction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Jurisdiction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LegalStatus">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal Status</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/org#ChangeEvent">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change Event</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/org#FormalOrganization">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formal Organisation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/legal#LegalEntity">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the key class for the Business Core Vocabulary and represents a 
+        business that is legally registered. In many countries there is a single registry although in others, 
+        such as Spain and Germany, multiple registries exist. A Legal Entity is able to trade, is 
+        legally liable for its actions, accounts, tax affairs etc. It is a sub class of org:FormalOrganization
+        which covers a wider range of entities, such as charities.</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal Entity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/regorg#RegisteredOrganization">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Registered Organization</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/ContactPoint">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact Point</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/OpeningHoursSpecification">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening Hours Specification</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+  <owl:disjointWith rdf:resource="Jurisdiction"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from Organization ontology</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Committee">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="EducationalEstablishment">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Educational Establishment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LocalHarbourTrust">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasJurisdiction"/>
+          <owl:someValuesFrom rdf:resource="LocalJurisdiction"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Harbour Trust</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="MarketBody">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Market Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://entities.gov.scot/def/gov/cpov-ap-scot/NonMarketBody">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Market Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://data.europa.eu/m8g/PublicOrganisation">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships.</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Organisation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="CentralBank">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central Bank</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="CentralGovernmentOrganisation">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central Government Organisation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ArmsLengthBody">
+  <rdfs:subClassOf rdf:resource="CentralGovernmentOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arms Length Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ExecutiveAgency">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="ArmsLengthBody"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="Executive"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executive Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="HealthBody">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NHSBoard">
+  <rdfs:subClassOf rdf:resource="HealthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS Board</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="SpecialNHSBoard">
+  <rdfs:subClassOf rdf:resource="NHSBoard"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="NHSBoard"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasJurisdiction"/>
+          <owl:someValuesFrom rdf:resource="NationalJurisdiction"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special NHS Board</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="TerritorialNHSBoard">
+  <rdfs:subClassOf rdf:resource="NHSBoard"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="NHSBoard"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasJurisdiction"/>
+          <owl:someValuesFrom rdf:resource="LocalJurisdiction"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Territorial NHS Board</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NDPB">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Departmental Public Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="AdvisoryNDPB">
+  <rdfs:subClassOf rdf:resource="NDPB"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="NDPB"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="Advisory"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advisory Non-Departmental Public Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ExecutiveNDPB">
+  <rdfs:subClassOf rdf:resource="NDPB"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="NDPB"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="Executive"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executive Non-Departmental Public Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NonMinisterialDept">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Ministerial Department</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="OtherSigBody">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Significant Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ParlCommOrOmbuds">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parliamentary Commissioner or Ombudsman</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Tribunal">
+  <rdfs:subClassOf rdf:resource="ArmsLengthBody"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tribunal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="CentralGovPC">
+  <rdfs:subClassOf rdf:resource="CentralGovernmentOrganisation"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="CentralGovernmentOrganisation"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasLegalStatus"/>
+          <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/regorg#RegisteredOrganization"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="CentralGovernmentOrganisation"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="MarketBody"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central Government Public Corporation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="DevolvedAdministration">
+  <rdfs:subClassOf rdf:resource="CentralGovernmentOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Devolved Administration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ConservationBoardAONB">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conservation Board for Area of Outstanding Natural Beauty</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Court">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="HighCourt">
+  <rdfs:subClassOf rdf:resource="Court"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="JPCourt">
+  <rdfs:subClassOf rdf:resource="Court"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JP Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="SheriffAppealCourt">
+  <rdfs:subClassOf rdf:resource="Court"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheriff Appeal Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="SheriffCourt">
+  <rdfs:subClassOf rdf:resource="Court"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheriff Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="SupremeCourt">
+  <rdfs:subClassOf rdf:resource="Court"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supreme Court</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="CrownEstate">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crown Estate</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LocalGovernmentOrganisation">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Government Organisation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="CommunityCouncil">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Community Council</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="IntegrationAuthority">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="LocalGovernmentOrganisation"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="HealthBody"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integration Authority</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LocalGovernmentCentralPurchasingBody">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="LocalGovernmentOrganisation"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="Committee"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="Purchasing"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasMember"/>
+          <owl:onClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Government Central Purchasing Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="LocalGovPC">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="LocalGovernmentOrganisation"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="hasFunction"/>
+          <owl:someValuesFrom rdf:resource="MarketBody"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Government Public Corporation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="RegionalTransportPartnership">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regional Transport Partnership</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Council">
+  <rdfs:subClassOf rdf:resource="LocalGovernmentOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unitary Authority</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NationalParkAuthority">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Park Authority</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NonClassifiedEntity">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Classified Entity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="NonClassifiedGovernmentEntity">
+  <rdfs:subClassOf rdf:resource="NonClassifiedEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Classified Government Entity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="DepartmentSpecificEntityType">
+  <rdfs:subClassOf rdf:resource="NonClassifiedGovernmentEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Department-specific Class of Entity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ExpertCommittee">
+  <rdfs:subClassOf rdf:resource="NonClassifiedGovernmentEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Committee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="OfficeOrTaskforce">
+  <rdfs:subClassOf rdf:resource="NonClassifiedGovernmentEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Office Or Taskforce</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="StatutoryOfficeHolder">
+  <rdfs:subClassOf rdf:resource="NonClassifiedGovernmentEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statutory Office Holder</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="WorkingGroup">
+  <rdfs:subClassOf rdf:resource="NonClassifiedGovernmentEntity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Working Group</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="ParlBody">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parliamentary Body</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="PublicBroadcastingAuthority">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Broadcasting Authority</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="Regulator">
+  <rdfs:subClassOf rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulator</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="UtilityRegulator">
+  <rdfs:subClassOf rdf:resource="Regulator"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utility Regulator</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="RegulatedInspectedServiceProvider">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulated and Inspected Service Provider</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="SpecialPurposeVehicle">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Purpose Vehicle</rdfs:label>
+</owl:Class>
+
+
+</rdf:RDF>
