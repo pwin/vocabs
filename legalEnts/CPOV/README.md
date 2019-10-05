@@ -45,10 +45,10 @@ Other useful links;
 | Domain | info | 
 | :--- | :--- |
 | gov  | Scottish Government etc |
+| hsc  | Health and Social Care  |
+| edu  | SQA, Skills, Education |
+| reg  | Regulator, Inspection domains  |
 | gen  | general |
-| fss  | Food Standards Scotland |
-| sqa  | SQA |
-| shr | Scottish Housing Regulator |
 
 
 
