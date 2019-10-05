@@ -21,6 +21,7 @@ Resources;
 Other useful links;
 
 *  https://confluence.csiro.au/public/VOCAB/vocabulary-services/publishing-vocabularies/best-practice-in-formalizing-a-skos-vocabulary
+*  http://smethur.st/posts/176135860
 
 
 ## URI Patterns 
