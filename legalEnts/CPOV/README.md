@@ -18,6 +18,10 @@ Resources;
 
 * https://github.com/weso/landportalDoc/wiki/URI-Scheme
 
+Other useful links;
+
+*  https://confluence.csiro.au/public/VOCAB/vocabulary-services/publishing-vocabularies/best-practice-in-formalizing-a-skos-vocabulary
+
 
 ## URI Patterns 
 
