@@ -1,0 +1,144 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistIoT#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistIoT> .
+
+<https://ontologies.semanticarts.com/o/gistIoT> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://ontologies.semanticarts.com/o/gistIoT9.0.0> ;
+                                                 owl:imports <https://ontologies.semanticarts.com/o/gistNetwork9.0.0> ;
+                                                 rdfs:comment "gist Internet of Things.  This is meant to be the minimal covering concepts for IoT"^^xsd:string ,
+                                                              "gistIoT"^^xsd:string ;
+                                                 owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gistNetworkIoTx.x.x.vsd Page:IoT"^^xsd:string ;
+                                                 gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/accepts
+gist:accepts rdf:type owl:ObjectProperty ;
+             rdfs:comment "The types of input messages that will be allowed"^^xsd:string ;
+             rdfs:label "Accepts"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/categorizedBy
+gist:categorizedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/directs
+gist:directs rdf:type owl:ObjectProperty ;
+             rdfs:comment "Teh set of actualtors that a controller can affect"^^xsd:string ;
+             rdfs:label "Directs"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/produces
+gist:produces rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/respondsTo
+gist:respondsTo rdf:type owl:ObjectProperty ;
+                rdfs:comment "The set of sensors that a controller is attached to"^^xsd:string ;
+                rdfs:label "Responds to"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/viableRange
+gist:viableRange rdf:type owl:ObjectProperty ;
+                 rdfs:comment "The area over which the sensor can sense (might be a small geospatial area or a specific wire in a circuit)"^^xsd:string ;
+                 rdfs:label "Viable Range"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Actuator
+gist:Actuator rdf:type owl:Class ;
+              rdfs:subClassOf gist:Equipment ;
+              rdfs:comment "A device that can affect the real world via a message interface"^^xsd:string ;
+              rdfs:label "Actuator"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Controller
+gist:Controller rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( gist:Equipment
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:categorizedBy ;
+                                                             owl:someValuesFrom gist:ControllerType
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:directs ;
+                                                             owl:someValuesFrom gist:Actuator
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:respondsTo ;
+                                                             owl:someValuesFrom gist:Sensor
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "A device that takes messsages or signals from a sensor and decides through algorithms whether and which actuator to fire via messages"^^xsd:string ;
+                rdfs:label "Controller"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ControllerType
+gist:ControllerType rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Equipment
+gist:Equipment rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/MessageDefinition
+gist:MessageDefinition rdf:type owl:Class ;
+                       rdfs:subClassOf gist:SchemaMetaData ;
+                       rdfs:comment "Each pulse from a Sensor is reflected in a message, as well as each instruction to an Actuator"^^xsd:string ;
+                       rdfs:label "Message Definition"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/PhenomenaType
+gist:PhenomenaType rdf:type owl:Class ;
+                   rdfs:subClassOf gist:Category ;
+                   rdfs:comment "The things that a sensor can sense, such as light, heat, current, moisture et"^^xsd:string ;
+                   rdfs:label "Phenomena Type"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalActionType
+gist:PhysicalActionType rdf:type owl:Class ;
+                        rdfs:subClassOf gist:Category ;
+                        rdfs:comment "The effects to be realized in the real world, such as lifting a garage door, turning off a valve, dropping cadmium rods etc"^^xsd:string ;
+                        rdfs:label "Phenomena Type"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/SchemaMetaData
+gist:SchemaMetaData rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Sensor
+gist:Sensor rdf:type owl:Class ;
+            rdfs:subClassOf gist:Equipment ;
+            rdfs:comment "A device that can detect something and report it. Light sensors, temperature sensors,"^^xsd:string ;
+            rdfs:label "Sensor"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

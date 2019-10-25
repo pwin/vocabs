@@ -1,0 +1,124 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistAddress#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistAddress> .
+
+<https://ontologies.semanticarts.com/o/gistAddress> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://ontologies.semanticarts.com/o/gistAddress9.0.0> ;
+                                                     owl:imports <https://ontologies.semanticarts.com/o/gistPlace9.0.0> ;
+                                                     rdfs:comment "gist:Address where we have the various kinds of addresses (postal, building as well as electronic)"^^xsd:string ,
+                                                                  "gistAddress"^^xsd:string ;
+                                                     owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:address"^^xsd:string ;
+                                                     gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/communicationAddressOf
+gist:communicationAddressOf rdf:type owl:ObjectProperty ;
+                            owl:inverseOf gist:hasCommunicationAddress ;
+                            rdfs:comment "Whose address is this"^^xsd:string ;
+                            rdfs:label "Communication Address Of"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasCommunicationAddress
+gist:hasCommunicationAddress rdf:type owl:ObjectProperty ;
+                             rdfs:range gist:Address ;
+                             rdfs:comment "Points to a general class of places you can send messages including postal addresses, fax numbers, phone numbers, email, web site, etc."^^xsd:string ;
+                             rdfs:label "Has Communication Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasStreetAddress
+gist:hasStreetAddress rdf:type owl:ObjectProperty ;
+                      owl:inverseOf gist:streetAddressOf ;
+                      rdfs:range gist:BuildingAddress ;
+                      rdfs:comment "A place that can be found on a map, has geo coordinates; you could live or work there."^^xsd:string ;
+                      rdfs:label "Has Street Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/streetAddressOf
+gist:streetAddressOf rdf:type owl:ObjectProperty ;
+                     rdfs:comment "Whose street address is this"^^xsd:string ;
+                     rdfs:label "Street Address Of"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Address
+gist:Address rdf:type owl:Class ;
+             rdfs:subClassOf gist:Content ;
+             rdfs:comment "A reference to a place (real or virtual) that can be located by some routing algorithm, and where messages or things can be sent to or retrieved from. E.g. PO Box or URL to a pdf file."^^xsd:string ;
+             rdfs:label "Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/BuildingAddress
+gist:BuildingAddress rdf:type owl:Class ;
+                     rdfs:subClassOf gist:Address ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty gist:streetAddressOf ;
+                                       owl:someValuesFrom gist:Building
+                                     ] ;
+                     rdfs:comment "An address to which you can send mail, or that you could find in the physical world."^^xsd:string ;
+                     rdfs:label "Building Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Content
+gist:Content rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/ElectronicMessageAddress
+gist:ElectronicMessageAddress rdf:type owl:Class ;
+                              rdfs:subClassOf gist:Address ;
+                              rdfs:comment "Any place an electronic message (email, fax, etc.) can be sent."^^xsd:string ;
+                              rdfs:label "Electronic Message Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+gist:Organization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Person
+gist:Person rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PostalAddress
+gist:PostalAddress rdf:type owl:Class ;
+                   rdfs:subClassOf gist:Address ;
+                   rdfs:comment "A set of codes the postal authorities can use to deliver physical mail."^^xsd:string ,
+                                "EXAMPLES: a street address, a PO Box, an FPO code, or the route codes."^^xsd:string ;
+                   rdfs:label "Postal Address"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/TelephoneNumber
+gist:TelephoneNumber rdf:type owl:Class ;
+                     rdfs:subClassOf gist:Address ;
+                     rdfs:comment "A numeric code a telephonic device uses for contacting another telephonic device."^^xsd:string ,
+                                  "EXAMPLES:  Mobile, fax, or landline phone number."^^xsd:string ;
+                     rdfs:label "Telephone Number"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

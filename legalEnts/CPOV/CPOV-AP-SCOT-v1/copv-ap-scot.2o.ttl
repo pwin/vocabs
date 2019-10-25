@@ -194,10 +194,6 @@ org:purpose rdf:type owl:AnnotationProperty ;
             rdfs:domain cv:PublicOrganisation .
 
 
-###  http://xmlns.com/foaf/0.1/Image
-foaf:Image rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -2585,8 +2581,8 @@ schema:email rdfs:label "has email"@en ;
              vann:usageNote "A property through which an e-mail address for the Public Organisation, or a representative of it, can be contacted."@en .
 
 
-schema:hoursAvailable vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en ;
-                      rdfs:label "availability restriction"@en .
+schema:hoursAvailable rdfs:label "availability restriction"@en ;
+                      vann:usageNote "The availabilityRestriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en .
 
 
 schema:logo rdfs:label "logo"@en ;

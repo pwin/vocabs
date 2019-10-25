@@ -1,0 +1,177 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistUnitDim#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistUnitDim> .
+
+<https://ontologies.semanticarts.com/o/gistUnitDim> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://ontologies.semanticarts.com/o/gistUnitDim9.0.0> ;
+                                                     owl:imports <https://ontologies.semanticarts.com/o/gistUnit9.0.0> ;
+                                                     rdfs:comment "gist9.0.0 dimensioned units of measure.  This extension allows (and requires) you to have a conversion factor for all units with the same dimension.  If you introduce MilesPerHour you will have to supply the conversion to MetersPerSecond (even though the system \"knows\" how to convert Miles to meters and hours to seconds.  You will have to supply and addtional conversion when you introduce KilometersPerHour.  Any new combination of primtive rations requires a new Dimension.  While this is a burden, it allows units to be converted in sparql"^^xsd:string ,
+                                                                  "gistDimensionedUnits"^^xsd:string ;
+                                                     owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:UnitDim"^^xsd:string ;
+                                                     gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/denominator
+gist:denominator rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasBaseUnit
+gist:hasBaseUnit rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gist:hasStandardUnit .
+
+
+###  https://ontologies.semanticarts.com/gist/hasStandardUnit
+gist:hasStandardUnit rdf:type owl:ObjectProperty ;
+                     rdfs:domain gist:UnitOfMeasure ;
+                     rdfs:range gist:CoherentUnit ;
+                     rdfs:comment "For a complex unit refers to a unit that has all the component parts in SI"^^xsd:string ;
+                     rdfs:label "Has Standard Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/multiplicand
+gist:multiplicand rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/multiplier
+gist:multiplier rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/numerator
+gist:numerator rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/convertToBase
+gist:convertToBase rdf:type owl:DatatypeProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/convertToStandard
+gist:convertToStandard rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf gist:convertToBase ;
+                       rdfs:domain gist:UnitOfMeasure ;
+                       rdfs:range xsd:double ;
+                       rdfs:comment "Note this kind of conversion will only work with temperatures if they are in Kelvin or Rankine (with a true 0).  You multiply to get to the base, divide to go from the base. mph to mps is .44704.  The multiple from kph to mps is .277778 .  To convert 60 mph to kph is (60 * .44704 / .277778 or 96.56056 kph"^^xsd:string ;
+                       rdfs:label "Convert To Standard"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/BaseUnit
+gist:BaseUnit rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/CoherentProductUnit
+gist:CoherentProductUnit rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gist:ProductUnit
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty gist:multiplicand ;
+                                                                      owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                          owl:unionOf ( gist:BaseUnit
+                                                                                                        gist:CoherentProductUnit
+                                                                                                        gist:CoherentRatioUnit
+                                                                                                      )
+                                                                                        ]
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty gist:multiplier ;
+                                                                      owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                          owl:unionOf ( gist:BaseUnit
+                                                                                                        gist:CoherentProductUnit
+                                                                                                        gist:CoherentRatioUnit
+                                                                                                      )
+                                                                                        ]
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:comment "A ratio unit whos numerator and denominator reduce to 1"^^xsd:string ;
+                         rdfs:label "Coherent Product Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/CoherentRatioUnit
+gist:CoherentRatioUnit rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gist:RatioUnit
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty gist:denominator ;
+                                                                    owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( gist:BaseUnit
+                                                                                                      gist:CoherentProductUnit
+                                                                                                      gist:CoherentRatioUnit
+                                                                                                    )
+                                                                                      ]
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty gist:numerator ;
+                                                                    owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( gist:BaseUnit
+                                                                                                      gist:CoherentProductUnit
+                                                                                                      gist:CoherentRatioUnit
+                                                                                                    )
+                                                                                      ]
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:comment "A ratio unit whose numerator and denominator reduce to 1"^^xsd:string ;
+                       rdfs:label "Coherent Ratio Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/CoherentUnit
+gist:CoherentUnit rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:unionOf ( gist:BaseUnit
+                                                      gist:CoherentProductUnit
+                                                      gist:CoherentRatioUnit
+                                                    )
+                                      ] ;
+                  rdfs:comment "A unit that is expressed in units that have no conversions.  It may be a simple unit.  It may also be a product or ratio unit that bottoms out in simple units."^^xsd:string ,
+                               "EXAMPLEs:  a simple unit: kilogram"^^xsd:string ,
+                               "EXAMPLEs: the standard unit for acceleration is meters per square second (feet per square second  requires a conversion)"^^xsd:string ,
+                               "NOTE: coherent unit is the physics term for this, informally you might think of it as the standard unit for a given dimension."^^xsd:string ,
+                               "NOTE: in principle, the CoherentUnit for a ProductUnit or RatioUnit can be inferred by recursively decomposing the products and ratios into their respective CoherentUnits, bottoming out in SimpleUnits"^^xsd:string ;
+                  rdfs:label "Coherent Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ProductUnit
+gist:ProductUnit rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/RatioUnit
+gist:RatioUnit rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/UnitOfMeasure
+gist:UnitOfMeasure rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

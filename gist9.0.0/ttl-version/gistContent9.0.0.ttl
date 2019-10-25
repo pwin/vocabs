@@ -1,0 +1,252 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistContent#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistContent> .
+
+<https://ontologies.semanticarts.com/o/gistContent> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://ontologies.semanticarts.com/o/gistContent9.0.0> ;
+                                                     owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                     rdfs:comment "gistContent"^^xsd:string ,
+                                                                  "gistContent types of content and mediums"^^xsd:string ;
+                                                     owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:content"^^xsd:string ;
+                                                     gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/about
+gist:about rdf:type owl:ObjectProperty ;
+           owl:inverseOf gist:describedIn ;
+           rdfs:domain gist:Content ;
+           rdfs:comment "Subject matter of a document."^^xsd:string ;
+           rdfs:label "About"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/categorizedBy
+gist:categorizedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/describedIn
+gist:describedIn rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Docuemnt the subject matter appeared in"^^xsd:string ;
+                 rdfs:label "Described In"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/expressedIn
+gist:expressedIn rdf:type owl:ObjectProperty ;
+                 rdfs:comment "The language something was expressed in"^^xsd:string ;
+                 rdfs:label "Expressed In"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/fromAgent
+gist:fromAgent rdf:type owl:ObjectProperty ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( gist:Address
+                                          gist:Organization
+                                          gist:Person
+                                        )
+                          ] ;
+               rdfs:comment "The source of a message or shipment"^^xsd:string ;
+               rdfs:label "From Agent"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/renderedOn
+gist:renderedOn rdf:type owl:ObjectProperty ;
+                rdfs:comment "What media somethign was rendered On"^^xsd:string ;
+                rdfs:label "Rendered On"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/toAgent
+gist:toAgent rdf:type owl:ObjectProperty ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( gist:Address
+                                        gist:Organization
+                                        gist:Person
+                                      )
+                        ] ;
+             rdfs:comment "Comment: this is not the inverse of fromAgent. A message can be from someone. If we made it the inverse the person would be \"to\" the message"^^xsd:string ;
+             rdfs:label "To Agent"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/containedText
+gist:containedText rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Links to the string corresponding to Text"^^xsd:string ;
+                   rdfs:label "Contained Text"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/encryptedText
+gist:encryptedText rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf gist:containedText ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Links to the string corresponding to EncryptedText"^^xsd:string ;
+                   rdfs:label "Encrypted Text"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Address
+gist:Address rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Content
+gist:Content rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/ContentExpression
+gist:ContentExpression rdf:type owl:Class ;
+                       rdfs:subClassOf gist:Content ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty gist:categorizedBy ;
+                                         owl:someValuesFrom gist:GeneralMediaType
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty gist:expressedIn ;
+                                         owl:someValuesFrom gist:Language
+                                       ] ;
+                       rdfs:comment "Intellectual Property reduced to text, audio etc.  If it contains text (written or spoken), it may be in a language."^^xsd:string ;
+                       rdfs:label "Content Expression"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/FormattedContent
+gist:FormattedContent rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gist:ContentExpression
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty gist:expressedIn ;
+                                                                   owl:someValuesFrom gist:MimeType
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:comment "Content which is in a particular format. (E.g., html, pdf, jpg.)"^^xsd:string ;
+                      rdfs:label "Formatted Content"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GeneralMediaType
+gist:GeneralMediaType rdf:type owl:Class ;
+                      rdfs:subClassOf gist:Category ;
+                      rdfs:comment "EXAMPLE: audio, still image, video, textual, physical (e.g., a statue), or performance (i.e. a play).  Or it could be oil or pastel for a painting."^^xsd:string ,
+                                   "The real-world media type for content."^^xsd:string ;
+                      rdfs:label "General Media Type"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Medium
+gist:Medium rdf:type owl:Class ;
+            rdfs:subClassOf gist:Category ;
+            rdfs:comment "A physicality on which a work could be implemented or exposed. E.g., paper, clay, or a computer monitor."^^xsd:string ;
+            rdfs:label "Medium"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Message
+gist:Message rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( gist:ContentExpression
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:fromAgent ;
+                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( gist:Address
+                                                                                             gist:Organization
+                                                                                             gist:Person
+                                                                                           )
+                                                                             ]
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:toAgent ;
+                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( gist:Address
+                                                                                             gist:Organization
+                                                                                             gist:Person
+                                                                                           )
+                                                                             ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "A specific instance of content sent from an Organization, Person, or Application to at least one other Organization, Person, or Application."^^xsd:string ,
+                          "EXAMPLES: An email message, a phone call, a voice message, or a Web Service message."^^xsd:string ;
+             rdfs:label "Message"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/MimeType
+gist:MimeType rdf:type owl:Class ;
+              rdfs:subClassOf gist:Category ;
+              rdfs:comment "A digitized type that computer applications can recognize."^^xsd:string ;
+              rdfs:label "MIME Type"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+gist:Organization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Person
+gist:Person rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/RenderedContent
+gist:RenderedContent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( gist:ContentExpression
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:expressedIn ;
+                                                                  owl:someValuesFrom gist:MimeType
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:renderedOn ;
+                                                                  owl:someValuesFrom gist:Medium
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:comment "Content which has been expressed, either to print, or through speakers, or on a monitor."^^xsd:string ;
+                     rdfs:label "Rendered Content"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Text
+gist:Text rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( gist:Content
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty gist:expressedIn ;
+                                                       owl:someValuesFrom gist:Language
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty gist:containedText ;
+                                                       owl:someValuesFrom xsd:string
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:comment "Content expressed as words and numbers (not graphics)."^^xsd:string ;
+          rdfs:label "Text"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

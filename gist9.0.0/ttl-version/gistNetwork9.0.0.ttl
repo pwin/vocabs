@@ -1,0 +1,230 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistNetwork#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistNetwork> .
+
+<https://ontologies.semanticarts.com/o/gistNetwork> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://ontologies.semanticarts.com/o/gistNetwork9.0.0> ;
+                                                     owl:imports <https://ontologies.semanticarts.com/o/gistCategory9.0.0> ,
+                                                                 <https://ontologies.semanticarts.com/o/gistContent9.0.0> ,
+                                                                 <https://ontologies.semanticarts.com/o/gistMagnitude9.0.0> ,
+                                                                 <https://ontologies.semanticarts.com/o/gistPlace9.0.0> ,
+                                                                 <https://ontologies.semanticarts.com/o/gistTemporalRelation9.0.0> ;
+                                                     rdfs:comment "gist Network Concepts for a virtual or actual network (communication, pipelines etc)"^^xsd:string ,
+                                                                  "gistNetwork"^^xsd:string ;
+                                                     owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gistNetworkIoTx.x.x.vsd Page:Network"^^xsd:string ;
+                                                     gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/categorizedBy
+gist:categorizedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/contributesTo
+gist:contributesTo rdf:type owl:ObjectProperty ;
+                   rdfs:comment "The parts of a system contribute to the goal/ function of the whole system"^^xsd:string ;
+                   rdfs:label "Contributes To"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/goal
+gist:goal rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasDriectPart
+gist:hasDriectPart rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasFromNode
+gist:hasFromNode rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gist:networkConnection ;
+                 rdfs:comment "The connections at the abstract level of a network.  Note this is directed but the parent is the undirected version"^^xsd:string ;
+                 rdfs:label "Has From Node"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasIncumbent
+gist:hasIncumbent rdf:type owl:ObjectProperty ;
+                  rdfs:comment "What equipment or person is currently in this node.  Note to create a temporal view make a TemporalRelation for this property"^^xsd:string ;
+                  rdfs:label "Has Incumbant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMember
+gist:hasMember rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasToNode
+gist:hasToNode rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf gist:networkConnection ;
+               rdfs:comment "The connections at the abstract level of a network. Note this is directed but the parent is the undirected version"^^xsd:string ;
+               rdfs:label "Has To Node"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/networkConnection
+gist:networkConnection rdf:type owl:ObjectProperty ;
+                       rdfs:comment "abstract connection for when connections are undirected"^^xsd:string ;
+                       rdfs:label "Network Connection"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Artifact
+gist:Artifact rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                           owl:unionOf ( gist:Building
+                                                                         gist:Content
+                                                                         gist:Equipment
+                                                                         gist:IntellectualProperty
+                                                                         gist:PhysicalSubstance
+                                                                       )
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:goal ;
+                                                           owl:someValuesFrom gist:Function
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "An intentional person made thing, could be physical or content"^^xsd:string ;
+              rdfs:label "Artifact"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Building
+gist:Building rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Component
+gist:Component rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( gist:Artifact
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:contributesTo ;
+                                                            owl:someValuesFrom gist:System
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "A component is an artifact that contributes to a system.  Coudl be simple mechanical such as the float contributing to the toilet tank maintaining a constant level, or much more complex as in the interenet of things"^^xsd:string ;
+               rdfs:label "Component"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Content
+gist:Content rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Equipment
+gist:Equipment rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( gist:PhysicalIdentifiableItem
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:categorizedBy ;
+                                                            owl:someValuesFrom gist:EquipmentType
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "Tangible property other than land or buildings.  Any kind of equipment, could be machine, router, car etc."^^xsd:string ;
+               rdfs:label "Equipment"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/EquipmentType
+gist:EquipmentType rdf:type owl:Class ;
+                   rdfs:subClassOf gist:Category ;
+                   rdfs:comment "Categories of equipment"^^xsd:string ;
+                   rdfs:label "Equipment Type"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Function
+gist:Function rdf:type owl:Class ;
+              rdfs:subClassOf gist:Intention ;
+              rdfs:comment "A function is what a specific made item is intended to do.  For instance: transmit electricity, provide ballast, control ambient temperature."^^xsd:string ;
+              rdfs:label "Function"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/IntellectualProperty
+gist:IntellectualProperty rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Intention
+gist:Intention rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Network
+gist:Network rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( gist:Artifact
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:hasMember ;
+                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( gist:NetworkLink
+                                                                                             gist:NetworkNode
+                                                                                           )
+                                                                             ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "A network is a connected set of links and nodes"^^xsd:string ;
+             rdfs:label "Network"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/NetworkLink
+gist:NetworkLink rdf:type owl:Class ;
+                 rdfs:comment "a link in a network.  This is the abstractino of the network.  The physical instantiation couple be pipes, or wire  but may also be non physical such as wireness networks or organization structures"^^xsd:string ;
+                 rdfs:label "Networkd Link"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/NetworkNode
+gist:NetworkNode rdf:type owl:Class ;
+                 rdfs:comment "a node in a network.  Note the network is the abstract representation of the network.  It is physically instantiated with equipment, or in some cases People."^^xsd:string ;
+                 rdfs:label "Network Node"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalIdentifiableItem
+gist:PhysicalIdentifiableItem rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalSubstance
+gist:PhysicalSubstance rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/System
+gist:System rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( gist:Artifact
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty gist:hasDriectPart ;
+                                                         owl:someValuesFrom gist:Component
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:comment "A system is an artifact with component parts where the parts contribute to the goal of the system"^^xsd:string ;
+            rdfs:label "System"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/TemporalRelation
+gist:TemporalRelation rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

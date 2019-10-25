@@ -1,0 +1,349 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistAgreement#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistAgreement> .
+
+<https://ontologies.semanticarts.com/o/gistAgreement> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <https://ontologies.semanticarts.com/o/gistAgreement9.0.0> ;
+                                                       owl:imports <https://ontologies.semanticarts.com/o/gistIntention9.0.0> ;
+                                                       rdfs:comment "GistAgreement has the basics for all types of contracts"^^xsd:string ,
+                                                                    "gistAgreement"^^xsd:string ;
+                                                       owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:agree"^^xsd:string ;
+                                                       gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/affectedBy
+gist:affectedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf gist:affects ;
+                rdfs:comment "Where the effect came from"^^xsd:string ;
+                rdfs:label "Affected By"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/affects
+gist:affects rdf:type owl:ObjectProperty ;
+             rdfs:comment "the subject has or had or will have an effect on the object"^^xsd:string ;
+             rdfs:label "Affects"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/categorizedBy
+gist:categorizedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/getter
+gist:getter rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf gist:hasParty ;
+            owl:propertyDisjointWith gist:giver ;
+            rdfs:comment "The reciptient"^^xsd:string ;
+            rdfs:label "Getter"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/giver
+gist:giver rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf gist:hasParty ;
+           rdfs:comment "The active party, the one with the obligation or the one initiating the transfer"^^xsd:string ;
+           rdfs:label "Giver"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasDirectPart
+gist:hasDirectPart rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasJurisdiction
+gist:hasJurisdiction rdf:type owl:ObjectProperty ;
+                     rdfs:comment "when laws and contracts are meeted out"^^xsd:string ;
+                     rdfs:label "Has Jurisdiction"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMagnitude
+gist:hasMagnitude rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasParty
+gist:hasParty rdf:type owl:ObjectProperty ;
+              rdfs:range [ rdf:type owl:Class ;
+                           owl:unionOf ( gist:Organization
+                                         gist:Person
+                                       )
+                         ] ;
+              rdfs:comment "The people or organizations participating in an agreement or obligation"^^xsd:string ;
+              rdfs:label "Has Party"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/plannedEnd
+gist:plannedEnd rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/start
+gist:start rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/triggeredBy
+gist:triggeredBy rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Account
+gist:Account rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( gist:Agreement
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:hasMagnitude ;
+                                                          owl:someValuesFrom gist:Balance
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "An agreement having a balance, as in a bank account, or credit card account, or Accounts Receivable account."^^xsd:string ;
+             rdfs:label "Account"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Agreement
+gist:Agreement rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( gist:Commitment
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:hasParty ;
+                                                            owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                 owl:unionOf ( gist:Organization
+                                                                                               gist:Person
+                                                                                             )
+                                                                               ]
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:hasDirectPart ;
+                                                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass gist:Obligation
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "soemthing which two or more People or Organizations mutually commit to do"^^xsd:string ;
+               rdfs:label "Agreement"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Balance
+gist:Balance rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:affectedBy ;
+                                                          owl:someValuesFrom gist:Transaction
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "An amount decremented or incremented by a series of transactions."^^xsd:string ;
+             rdfs:label "Balance"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Commitment
+gist:Commitment rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                             owl:unionOf ( gist:Requirement
+                                                                           gist:Restriction
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:categorizedBy ;
+                                                             owl:someValuesFrom gist:DegreeOfCommitment
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:giver ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( gist:Organization
+                                                                                                gist:Person
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "An obligation (possibly unilateral)."^^xsd:string ;
+                rdfs:label "Commitment"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ContingentObligation
+gist:ContingentObligation rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gist:Commitment
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:giver ;
+                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( gist:Organization
+                                                                                                          gist:Person
+                                                                                                        )
+                                                                                          ]
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:triggeredBy ;
+                                                                       owl:someValuesFrom gist:Event
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:comment "An obligation that is not yet firm.  There is some contingent event, the occurrence of which will cause the obligation to become firm."^^xsd:string ,
+                                       "NOTE: A contingent obligation might have a getter counterparty (as in the case of insurance); but it might not (as in the case of an offer)."^^xsd:string ;
+                          rdfs:label "Contingent Obligation"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Contract
+gist:Contract rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:Agreement
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:hasJurisdiction ;
+                                                           owl:someValuesFrom gist:GovernmentOrganization
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "an Agreement which can be enforced by law"^^xsd:string ;
+              rdfs:label "Contract"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ContractTerm
+gist:ContractTerm rdf:type owl:Class ;
+                  rdfs:subClassOf gist:Specification ;
+                  rdfs:comment "A specification of some aspect of a contract."^^xsd:string ;
+                  rdfs:label "Contract Term"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/DegreeOfCommitment
+gist:DegreeOfCommitment rdf:type owl:Class ;
+                        rdfs:subClassOf gist:Category ;
+                        rdfs:comment "EXAMPLE:  A car rental typically has a lower degree of commitment than an airfare reservation."^^xsd:string ,
+                                     "The difficulty of reversing a commitment."^^xsd:string ;
+                        rdfs:label "Degree Of Commitment"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Event
+gist:Event rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/GovernmentOrganization
+gist:GovernmentOrganization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Magnitude
+gist:Magnitude rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Monetary
+gist:Monetary rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Obligation
+gist:Obligation rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( gist:Commitment
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:getter ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( gist:Organization
+                                                                                                gist:Person
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:giver ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( gist:Organization
+                                                                                                gist:Person
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "A future commitment from one organization or person to another. Contracts are sets of obligations to do or forebear, or to indemnify or warrant."^^xsd:string ,
+                             "NOTE: Obligations will often be governed by some Agreement or Offer."^^xsd:string ;
+                rdfs:label "Obligation"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Offer
+gist:Offer rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( gist:ContingentObligation
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:giver ;
+                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( gist:Organization
+                                                                                           gist:Person
+                                                                                         )
+                                                                           ]
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:hasDirectPart ;
+                                                        owl:someValuesFrom gist:CatalogItem
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:hasMagnitude ;
+                                                        owl:someValuesFrom gist:Monetary
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:plannedEnd ;
+                                                        owl:someValuesFrom gist:TimeInstant
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:start ;
+                                                        owl:someValuesFrom gist:TimeInstant
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:comment "A commitment to buy or sell a described or identified part or service."^^xsd:string ;
+           rdfs:label "Offer"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+gist:Organization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Person
+gist:Person rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Requirement
+gist:Requirement rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Restriction
+gist:Restriction rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Specification
+gist:Specification rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Transaction
+gist:Transaction rdf:type owl:Class ;
+                 rdfs:subClassOf gist:Event ;
+                 rdfs:comment "An event which has an effect on at least one accumulator."^^xsd:string ;
+                 rdfs:label "Transaction"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

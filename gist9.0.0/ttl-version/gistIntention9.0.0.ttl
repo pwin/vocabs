@@ -1,0 +1,211 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistIntention#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistIntention> .
+
+<https://ontologies.semanticarts.com/o/gistIntention> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <https://ontologies.semanticarts.com/o/gistIntention9.0.0> ;
+                                                       owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                       rdfs:comment "gistIntention"^^xsd:string ,
+                                                                    "gistIntention the Teleological aspect of systems.  Whey are we doing something."^^xsd:string ;
+                                                       owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:intention"^^xsd:string ;
+                                                       gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/allows
+gist:allows rdf:type owl:ObjectProperty ;
+            rdfs:domain gist:Intention ;
+            rdfs:range gist:Behavior ;
+            rdfs:comment "The intention (say a grant) allows a particular kind of activity (for instance egress)"^^xsd:string ;
+            rdfs:label "Allows"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/basedOn
+gist:basedOn rdf:type owl:ObjectProperty ;
+             owl:inverseOf gist:basisFor .
+
+
+###  https://ontologies.semanticarts.com/gist/basisFor
+gist:basisFor rdf:type owl:ObjectProperty ;
+              rdfs:comment "Reason for an event"^^xsd:string ;
+              rdfs:label "Basis For"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/categorizedBy
+gist:categorizedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/conformsTo
+gist:conformsTo rdf:type owl:ObjectProperty ;
+                rdfs:range gist:Intention ;
+                rdfs:comment "The subject conforms to the Object, e.g. meet an obligation, meet terms of an offer, adhere to a specification"^^xsd:string ;
+                rdfs:label "Conforms To"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasDirectPart
+gist:hasDirectPart rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/prevents
+gist:prevents rdf:type owl:ObjectProperty ;
+              rdfs:domain gist:Intention ;
+              rdfs:range gist:Behavior ;
+              rdfs:comment "The intention (say a law) is intended to prevent this kind of behavior (say jaywalking)"^^xsd:string ;
+              rdfs:label "Prevents"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/requires
+gist:requires rdf:type owl:ObjectProperty ;
+              rdfs:domain gist:Intention ;
+              rdfs:range gist:Behavior ;
+              rdfs:comment "An intention that sets out a state of satisfaction (you are required to drive on right side of the road)"^^xsd:string ;
+              rdfs:label "Requires"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Behavior
+gist:Behavior rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/BundledCatalogItem
+gist:BundledCatalogItem rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gist:CatalogItem
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty gist:hasDirectPart ;
+                                                                     owl:someValuesFrom gist:CatalogItem
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:comment "Any combination of descriptions of things offered together.  Could be a kit (several parts offered together), but could also be a product plus a warranty."^^xsd:string ;
+                        rdfs:label "Bundled Catalog Item"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/CatalogItem
+gist:CatalogItem rdf:type owl:Class ;
+                 rdfs:subClassOf gist:Specification ;
+                 rdfs:comment "A description of a product or service to be delivered, given in a sufficient level of detail that a receiver could determine whether delivery constituted discharge of the obligation to deliver."^^xsd:string ,
+                              "NOTE: In short, an unambiguous characterization of what it is that a potential buyer is paying for."^^xsd:string ;
+                 rdfs:label "Catalog Item"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Goal
+gist:Goal rdf:type owl:Class ;
+          rdfs:subClassOf gist:Intention ;
+          rdfs:comment "A specific intentional endpoint.  One can tell whether it has been achieved, as opposed to an intention, which may not have an evaluation function."^^xsd:string ;
+          rdfs:label "Goal"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Intention
+gist:Intention rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Permission
+gist:Permission rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( gist:Intention
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:allows ;
+                                                             owl:someValuesFrom gist:Behavior
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "A description of things one is permitted to do. This could be broad, such as free speech, but more often is very specific, such as the right of egress through a particular property."^^xsd:string ;
+                rdfs:label "Permission"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ProductCategory
+gist:ProductCategory rdf:type owl:Class ;
+                     rdfs:subClassOf gist:Category ;
+                     rdfs:comment "Any of many ways of categorizing products, including models, NATO product codes, and the like."^^xsd:string ;
+                     rdfs:label "Product Category"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ProductSpecification
+gist:ProductSpecification rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gist:CatalogItem
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:categorizedBy ;
+                                                                       owl:someValuesFrom gist:ProductCategory
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:comment "Offering something which could be physically warehoused or digitally stored."^^xsd:string ;
+                          rdfs:label "Product Specification"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Requirement
+gist:Requirement rdf:type owl:Class ;
+                 rdfs:subClassOf gist:Intention ;
+                 rdfs:comment "A documented physical or functional need that a particular design, product, or process must be able to perform.  Alternately, the obligation of a person or organization to behave in a certain way (i.e., drive on the right side of the road)."^^xsd:string ;
+                 rdfs:label "Requirement"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Restriction
+gist:Restriction rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( gist:Intention
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty gist:prevents ;
+                                                              owl:someValuesFrom gist:Behavior
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:comment "A description of things one is prevented from doing.  Most laws are restrictions."^^xsd:string ;
+                 rdfs:label "Restriction"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ServiceSpecification
+gist:ServiceSpecification rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gist:CatalogItem
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:basisFor ;
+                                                                       owl:someValuesFrom gist:Event
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:comment "A description of something that can be done for a person or organization (which produces some form of an act)."^^xsd:string ;
+                          rdfs:label "Service Specification"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Specification
+gist:Specification rdf:type owl:Class ;
+                   rdfs:subClassOf gist:Requirement ;
+                   rdfs:comment "A set of requirements to be satisfied by a material, design, product, or service."^^xsd:string ;
+                   rdfs:label "Specification"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

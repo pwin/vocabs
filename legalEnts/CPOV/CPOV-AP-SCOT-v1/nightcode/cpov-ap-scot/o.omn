@@ -1,0 +1,50 @@
+Prefix: hello: <http://www.w3id.org/ontolink/tutorial/hello#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.w3id.org/ontolink/tutorial/hello>
+
+Import: <http://www.purl.org/ontolink/tawny>
+
+Annotations: 
+    <http://www.purl.org/ontolink/tawny#name> "hello"@en
+
+AnnotationProperty: <http://www.purl.org/ontolink/tawny#name>
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: hello:hasObject
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "hasObject"@en
+    
+    
+Class: hello:Hello
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "Hello"@en
+    
+    
+Class: hello:HelloWorld
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "HelloWorld"@en
+    
+    SubClassOf: 
+        hello:Hello,
+        hello:hasObject some hello:World
+    
+    
+Class: hello:World
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "World"@en
+    
+    

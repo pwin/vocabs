@@ -1,0 +1,179 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistCategory#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistCategory> .
+
+<https://ontologies.semanticarts.com/o/gistCategory> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <https://ontologies.semanticarts.com/o/gistCategory9.0.0> ;
+                                                      owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                      rdfs:comment "gist:Category is how we model Taxonomies and Tags"^^xsd:string ,
+                                                                   "gistCategory"^^xsd:string ;
+                                                      owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:cat"^^xsd:string ;
+                                                      gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/governedBy
+gist:governedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMember
+gist:hasMember rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasNavigationalChild
+gist:hasNavigationalChild rdf:type owl:ObjectProperty ;
+                          owl:inverseOf gist:hasNavigationalParent ;
+                          rdfs:comment "Used for informal hierarchical taxonomies.  Supports polyhierarchies"^^xsd:string ;
+                          rdfs:label "Has Navigational Child"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasNavigationalParent
+gist:hasNavigationalParent rdf:type owl:ObjectProperty ;
+                           rdfs:comment "Used for informal hierarchical taxonomies.  Supports polyhierarchies"^^xsd:string ;
+                           rdfs:label "Has Navigational Parent"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasSubCategory
+gist:hasSubCategory rdf:type owl:ObjectProperty ;
+                    owl:inverseOf gist:hasSuperCategory ;
+                    rdfs:comment "Has Sub Category"^^xsd:string ;
+                    rdfs:label "Has Sub Category"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasSuperCategory
+gist:hasSuperCategory rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Categories linked in this way are to represent true sub types.  The categories aren't subtypes but classes defined by a supercategory will be a superclass of one derrived from its sub"^^xsd:string ;
+                      rdfs:label "Has Super Category"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasUniqueNavigationalParent
+gist:hasUniqueNavigationalParent rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf gist:hasNavigationalParent ;
+                                 rdf:type owl:FunctionalProperty ;
+                                 rdfs:comment "Used for taxos that must have single parents"^^xsd:string ;
+                                 rdfs:label "Has Unique Navigational Parent"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasUniqueSuperCategory
+gist:hasUniqueSuperCategory rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf gist:hasSuperCategory ;
+                            rdf:type owl:FunctionalProperty ;
+                            rdfs:comment "Used for taxos that must have single parents"^^xsd:string ;
+                            rdfs:label "Has Unique Super Category"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/hasTag
+gist:hasTag rdf:type owl:DatatypeProperty ;
+            rdfs:comment "Used for folksonomy style categories (non controlled vocabulary)"^^xsd:string ;
+            rdfs:label "has Tag"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Category
+gist:Category rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Collection
+gist:Collection rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/ControlledVocabulary
+gist:ControlledVocabulary rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gist:Collection
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:governedBy ;
+                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( gist:Organization
+                                                                                                          gist:Person
+                                                                                                        )
+                                                                                          ]
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:hasMember ;
+                                                                       owl:someValuesFrom gist:Category
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:comment "A collection of terms approved and managed by some organization or person."^^xsd:string ;
+                          rdfs:label "Controlled Vocabulary"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+gist:Organization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Person
+gist:Person rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Tag
+gist:Tag rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( gist:Category
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty gist:hasTag ;
+                                                      owl:someValuesFrom xsd:string
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:comment "This is for folksonomy type terms, which can be made up on the fly by users."^^xsd:string ;
+         rdfs:label "Tag"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Taxonomy
+gist:Taxonomy rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:ControlledVocabulary
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:hasMember ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( gist:Category
+                                                                                                     [ rdf:type owl:Class ;
+                                                                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty gist:hasSubCategory ;
+                                                                                                                       owl:someValuesFrom gist:Category
+                                                                                                                     ]
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty gist:hasSuperCategory ;
+                                                                                                                       owl:someValuesFrom gist:Category
+                                                                                                                     ]
+                                                                                                                   )
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "A controlled vocabulary arranged as a hierarchy of concepts."^^xsd:string ;
+              rdfs:label "Taxonomy"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

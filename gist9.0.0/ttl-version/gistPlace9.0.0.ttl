@@ -1,0 +1,288 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistPlace#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistPlace> .
+
+<https://ontologies.semanticarts.com/o/gistPlace> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <https://ontologies.semanticarts.com/o/gistPlace9.0.0> ;
+                                                   owl:imports <https://ontologies.semanticarts.com/o/gistMeasure9.0.0> ;
+                                                   rdfs:comment "gistPlace"^^xsd:string ,
+                                                                "gistPlace key GIS style primitives"^^xsd:string ;
+                                                   owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:place"^^xsd:string ;
+                                                   gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/directPartOf
+gist:directPartOf rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/fromPlace
+gist:fromPlace rdf:type owl:ObjectProperty ;
+               rdfs:range gist:Place ;
+               rdfs:comment "origin"^^xsd:string ;
+               rdfs:label "From Place"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoContainedIn
+gist:geoContainedIn rdf:type owl:ObjectProperty ;
+                    owl:inverseOf gist:geoContains ;
+                    rdfs:comment "All the transitive places something is located in"^^xsd:string ;
+                    rdfs:label "Geo Contained In"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoContains
+gist:geoContains rdf:type owl:ObjectProperty ,
+                          owl:TransitiveProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( gist:GeoPoint
+                                             gist:GeoRegion
+                                             gist:GeoRoute
+                                             gist:GeoSegment
+                                             gist:GeoVolume
+                                             gist:Landmark
+                                             gist:Room
+                                           )
+                             ] ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( gist:GeoPoint
+                                            gist:GeoRegion
+                                            gist:GeoRoute
+                                            gist:GeoSegment
+                                            gist:GeoVolume
+                                            gist:Landmark
+                                            gist:Room
+                                          )
+                            ] ;
+                 rdfs:comment "Transitive version of geoDirectlyContains"^^xsd:string ;
+                 rdfs:label "Geo Contains"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoDirectlyContainedIn
+gist:geoDirectlyContainedIn rdf:type owl:ObjectProperty ;
+                            owl:inverseOf gist:geoDirectlyContains ;
+                            rdfs:comment "the neighborhood is in the city"^^xsd:string ;
+                            rdfs:label "Geo Directly Contained In"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoDirectlyContains
+gist:geoDirectlyContains rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf gist:geoContains ;
+                         rdfs:comment "The subject geospatially contains the object.  E.g. the area of a city contains the area of its neighborhoods"^^xsd:string ;
+                         rdfs:label "Geo Directly Contains"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoOccupiedBy
+gist:geoOccupiedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf gist:geoOccupies ;
+                   rdfs:comment "what is in the location"^^xsd:string ;
+                   rdfs:label "Geo Occupied By"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/geoOccupies
+gist:geoOccupies rdf:type owl:ObjectProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( gist:PhysicalIdentifiableItem
+                                             gist:PhysicalSubstance
+                                           )
+                             ] ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( gist:Place
+                                          )
+                            ] ;
+                 rdfs:comment "A thing occupies are region"^^xsd:string ;
+                 rdfs:label "Geo Occupies"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasDirectPart
+gist:hasDirectPart rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMagnitude
+gist:hasMagnitude rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasPhysicalLocation
+gist:hasPhysicalLocation rdf:type owl:ObjectProperty ;
+                         rdfs:range gist:Place ;
+                         rdfs:comment "Where something is located"^^xsd:string ;
+                         rdfs:label "Has Physical Location"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/identifiedBy
+gist:identifiedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/permanentGeoOccupiedBy
+gist:permanentGeoOccupiedBy rdf:type owl:ObjectProperty ;
+                            owl:inverseOf gist:permanentGeoOccupies ;
+                            rdfs:comment "What is in the fixed location"^^xsd:string ;
+                            rdfs:label "Permanent Geo Occupied By"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/permanentGeoOccupies
+gist:permanentGeoOccupies rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf gist:geoOccupies ;
+                          rdfs:comment "To be in a fixed position on the earth"^^xsd:string ;
+                          rdfs:label "Permanent Geo Occupies"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/toPlace
+gist:toPlace rdf:type owl:ObjectProperty ;
+             rdfs:range gist:Place ;
+             rdfs:comment "Destination"^^xsd:string ;
+             rdfs:label "To Place"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Building
+gist:Building rdf:type owl:Class ;
+              rdfs:subClassOf gist:Landmark ;
+              rdfs:comment "A man-made structure for dwelling or working."^^xsd:string ;
+              rdfs:label "Building"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoPoint
+gist:GeoPoint rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoRegion
+gist:GeoRegion rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoRoute
+gist:GeoRoute rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:OrderedCollection
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:hasDirectPart ;
+                                                           owl:someValuesFrom gist:GeoSegment
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "An ordered set of GeoPoints that defines a path from starting point to ending point."^^xsd:string ;
+              rdfs:label "Geo Route"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoSegment
+gist:GeoSegment rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:fromPlace ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass gist:GeoPoint
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty gist:toPlace ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass gist:GeoPoint
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "A single portion of a GeoRegion which has been divided (i.e., segmented)."^^xsd:string ;
+                rdfs:label "Geo Segment"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoVolume
+gist:GeoVolume rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:geoDirectlyContains ;
+                                                            owl:someValuesFrom gist:GeoPoint
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:hasMagnitude ;
+                                                            owl:someValuesFrom gist:Volume
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "A three-dimensional space on or near the surface of the Earth, such as an oil reservoir, the body of a lake, or an airspace."^^xsd:string ;
+               rdfs:label "Geo Volume"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Landmark
+gist:Landmark rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:PhysicalIdentifiableItem
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:permanentGeoOccupies ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( gist:GeoRegion
+                                                                                              gist:GeoVolume
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "Something permanently attached to the Earth."^^xsd:string ;
+              rdfs:label "Landmark"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/OrderedCollection
+gist:OrderedCollection rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalIdentifiableItem
+gist:PhysicalIdentifiableItem rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalSubstance
+gist:PhysicalSubstance rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Place
+gist:Place rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( gist:GeoPoint
+                                               gist:GeoRegion
+                                               gist:GeoRoute
+                                               gist:GeoSegment
+                                               gist:GeoVolume
+                                               gist:Landmark
+                                               gist:Room
+                                             )
+                               ] ;
+           rdfs:comment "Union of all the geo classes"^^xsd:string ;
+           rdfs:label "Place"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Room
+gist:Room rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty gist:directPartOf ;
+                                                       owl:someValuesFrom gist:Building
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty gist:identifiedBy ;
+                                                       owl:someValuesFrom gist:ID
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:comment "An enclosed area within a building."^^xsd:string ;
+          rdfs:label "Room"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

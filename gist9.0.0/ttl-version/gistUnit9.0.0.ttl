@@ -1,0 +1,257 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistUnit#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistUnit> .
+
+<https://ontologies.semanticarts.com/o/gistUnit> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://ontologies.semanticarts.com/o/gistUnit9.0.0> ;
+                                                  owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                  rdfs:comment "gist Unit of Measure, extends the base units from top to cover Rations and lesser used units (this allows someone to exclude Luminosity if they don't want it )"^^xsd:string ,
+                                                               "gistUnit"^^xsd:string ;
+                                                  owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:unit"^^xsd:string ;
+                                                  gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/denominator
+gist:denominator rdf:type owl:ObjectProperty ;
+                 rdfs:domain gist:RatioUnit ;
+                 rdfs:range gist:UnitOfMeasure ;
+                 rdfs:comment "Relates a RatioUnit such as meters/second to the denominator Unit (e.g. second)."^^xsd:string ;
+                 rdfs:label "Denominator"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasBaseUnit
+gist:hasBaseUnit rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/numerator
+gist:numerator rdf:type owl:ObjectProperty ;
+               rdfs:domain gist:RatioUnit ;
+               rdfs:range gist:UnitOfMeasure ;
+               rdfs:comment "Relates a RatioUnit such as meter(s)/second to the numerator Unit (e.g. meter)."^^xsd:string ;
+               rdfs:label "Numerator"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/conversionOffset
+gist:conversionOffset rdf:type owl:DatatypeProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/unitSymbol
+gist:unitSymbol rdf:type owl:DatatypeProperty ;
+                rdfs:domain gist:UnitOfMeasure ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The standard symbol for the unit NOT using any special characters.  E.g. square meter would be m^2 rather than m?."^^xsd:string ;
+                rdfs:label "Unit Symbol"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/unitSymbolHTML
+gist:unitSymbolHTML rdf:type owl:DatatypeProperty ;
+                    rdfs:domain gist:UnitOfMeasure ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The standard symbol for the unit in HTML format for  pretty printing, may use special characters.  E.g. to show square meter as  m? rather than m^2, the value of this property would be \"m&sup2;\" This is for when Unicode not supported and the display will be HTML format."^^xsd:string ;
+                    rdfs:label "Unit Symbol HTML"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/unitSymbolUnicode
+gist:unitSymbolUnicode rdf:type owl:DatatypeProperty ;
+                       rdfs:domain gist:UnitOfMeasure ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "The standard symbol for the unit preferred for pretty printing, may use special characters.  E.g. square meter would be  m? rather than m^2."^^xsd:string ;
+                       rdfs:label "Unit Symbol Unicode"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/CountingUnit
+gist:CountingUnit rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:hasBaseUnit ;
+                                                               owl:hasValue gist:_each
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "A unit of counting, especially ?each?, but also units such as dozens."^^xsd:string ;
+                  rdfs:label "Counting Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/CurrencyUnit
+gist:CurrencyUnit rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:hasBaseUnit ;
+                                                               owl:hasValue gist:_USDollar
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "A unit of money. Note: this is the only unit whose conversion factors include time (i.e., the conversion rates change on a daily basis)."^^xsd:string ;
+                  rdfs:label "Currency Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/DataSizeUnit
+gist:DataSizeUnit rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:hasBaseUnit ;
+                                                               owl:hasValue gist:_bit
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "A unit to measure amounts of digital information."^^xsd:string ;
+                  rdfs:label "Data Size Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ElectricalCurrentUnit
+gist:ElectricalCurrentUnit rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty gist:hasBaseUnit ;
+                                                                        owl:hasValue gist:_ampere
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:comment "Unit of electrical current, which is charge per unit time.  The SI unit is the ampere.  (Note that electrical current is a composed unit.)"^^xsd:string ;
+                           rdfs:label "Electrical Current Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/LuminousIntensityUnit
+gist:LuminousIntensityUnit rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty gist:hasBaseUnit ;
+                                                                        owl:hasValue gist:_candela
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:comment "The measure of brightness. The SI unit is the candela."^^xsd:string ;
+                           rdfs:label "Luminous Intensity Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/MoleUnit
+gist:MoleUnit rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:hasBaseUnit ;
+                                                           owl:hasValue gist:_mole
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "Amount of chemical material.  Measured in Avogadro units (moles) of 6.02 x 10^23 molecules."^^xsd:string ;
+              rdfs:label "Mole Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/RatioUnit
+gist:RatioUnit rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( gist:UnitOfMeasure
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:denominator ;
+                                                            owl:someValuesFrom gist:UnitOfMeasure
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty gist:numerator ;
+                                                            owl:someValuesFrom gist:UnitOfMeasure
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "A UnitOfMeasure composed of a numerator unit and a denominator unit."^^xsd:string ,
+                            "EXAMPLE:  Miles per hour."^^xsd:string ,
+                            "NOTE: If needed, a conversion factor for a RatioUnit can be (recursively) derived from the conversion factors of the numerator and denominator units.  E.g., the derived conversion factor from km/minute to meters/second is 1000/60 or 16 2/3."^^xsd:string ;
+               rdfs:label "Ratio Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/SimpleUnitOfMeasure
+gist:SimpleUnitOfMeasure rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/TemperatureUnit
+gist:TemperatureUnit rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( gist:SimpleUnitOfMeasure
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:hasBaseUnit ;
+                                                                  owl:hasValue gist:_kelvin
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:conversionOffset ;
+                                                                  owl:someValuesFrom xsd:double
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:comment "Unit of measurement for expressing temperature.  Per SI, the base of temperature is in Kelvin, to allow for all units to be expressed relative to a real (in this case absolute) zero."^^xsd:string ;
+                     rdfs:label "Temperature Unit"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/UnitOfMeasure
+gist:UnitOfMeasure rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/_USDollar
+gist:_USDollar rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_ampere
+gist:_ampere rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_bit
+gist:_bit rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_candela
+gist:_candela rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_each
+gist:_each rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_kelvin
+gist:_kelvin rdf:type owl:Thing .
+
+
+###  https://ontologies.semanticarts.com/gist/_mole
+gist:_mole rdf:type owl:Thing .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

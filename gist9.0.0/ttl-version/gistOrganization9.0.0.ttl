@@ -1,0 +1,169 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistOrganization#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistOrganization> .
+
+<https://ontologies.semanticarts.com/o/gistOrganization> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://ontologies.semanticarts.com/o/gistOrganization9.0.0> ;
+                                                          owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                          rdfs:comment "gistOrganization"^^xsd:string ,
+                                                                       "gistOrganization Government Organizations are introduced"^^xsd:string ;
+                                                          owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:org"^^xsd:string ;
+                                                          gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/directlyRecognizedBy
+gist:directlyRecognizedBy rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf gist:recognizedBy ;
+                          rdfs:comment "The party doing the recognition"^^xsd:string ;
+                          rdfs:label "Directly RecognizedBy"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/governedBy
+gist:governedBy rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/governs
+gist:governs rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMember
+gist:hasMember rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/recognizedBy
+gist:recognizedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf gist:recognizes ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( gist:Organization
+                                             gist:Person
+                                           )
+                             ] ;
+                  rdfs:comment "The entity that formally acknowledges the existence of, as the State recognizes the existence of a particular company"^^xsd:string ;
+                  rdfs:label "Recognized By"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/recognizes
+gist:recognizes rdf:type owl:ObjectProperty ;
+                rdfs:comment "Recognizes"^^xsd:string ;
+                rdfs:label "Recognizes"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Collection
+gist:Collection rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/CountryGovernment
+gist:CountryGovernment rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gist:GovernmentOrganization
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty gist:governs ;
+                                                                    owl:someValuesFrom gist:GeoRegion
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty gist:directlyRecognizedBy ;
+                                                                    owl:hasValue gist:_unitedNations
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:comment "The geopolitical body that runs a geopolitical region recognized as a country."^^xsd:string ;
+                       rdfs:label "Country Government"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoPoliticalRegion
+gist:GeoPoliticalRegion rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( gist:Collection
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty gist:governedBy ;
+                                                                     owl:someValuesFrom gist:GovernmentOrganization
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty gist:hasMember ;
+                                                                     owl:someValuesFrom gist:GeoRegion
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:comment "A collection of GeoRegions that are being administered by a Government Organization"^^xsd:string ;
+                        rdfs:label "GeoPolitical Region"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/GovernmentOrganization
+gist:GovernmentOrganization rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( gist:Organization
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty gist:recognizedBy ;
+                                                                         owl:someValuesFrom gist:CountryGovernment
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:comment "An organization established either by fiat (as a conquering army overtakes a land and declares a government) or by delegation from a fiat government, such as a state or local government or a specific agency. Differs from a corporation in that it cannot be owned."^^xsd:string ,
+                                         "EXAMPLES: The State of Washington Office of Financial Management; the Food and Drug Administration; the Scottish Parliament."^^xsd:string ,
+                                         "NOTE: Establishment by a CountryGovernment may be indirect via local, regional, or national GovernmentOrganization(s) that ultimately are recognized by a CountryGovernment."^^xsd:string ;
+                            rdfs:label "Government Organization"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Group
+gist:Group rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( gist:Collection
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:hasMember ;
+                                                        owl:someValuesFrom gist:Person
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:comment "A collection of People. The group may or may not be an Organization.  Many organizations consist of groups of people, but that is not a defining characteristic."^^xsd:string ;
+           rdfs:label "Group"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+gist:Organization rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/Person
+gist:Person rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/_unitedNations
+gist:_unitedNations rdf:type owl:NamedIndividual ,
+                             owl:Thing ,
+                             gist:GovernmentOrganization ;
+                    rdfs:comment "if the united nations recognizes you as a country you are a country"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

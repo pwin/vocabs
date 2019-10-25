@@ -1,0 +1,321 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistEvent#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistEvent> .
+
+<https://ontologies.semanticarts.com/o/gistEvent> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <https://ontologies.semanticarts.com/o/gistEvent9.0.0> ;
+                                                   owl:imports <https://ontologies.semanticarts.com/o/gistTime9.0.0> ;
+                                                   rdfs:comment "gistEvent"^^xsd:string ,
+                                                                "gistEvent introduces distinctions between planned actual and hypothetical events"^^xsd:string ;
+                                                   owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:event"^^xsd:string ;
+                                                   gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/actual
+gist:actual rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/actualEnd
+gist:actualEnd rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/actualStart
+gist:actualStart rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/directSubTaskOf
+gist:directSubTaskOf rdf:type owl:ObjectProperty ;
+                     owl:inverseOf gist:hasDirectSubTask ;
+                     rdfs:comment "Immediate parent task"^^xsd:string ;
+                     rdfs:label "Direct Sub Task Of"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/end
+gist:end rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasDirectSubTask
+gist:hasDirectSubTask rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf gist:hasSubTask ;
+                      rdfs:domain gist:Task ;
+                      rdfs:range gist:Task ;
+                      rdfs:comment "Immediate child task"^^xsd:string ;
+                      rdfs:label "Has Direct Sub Task"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasGoal
+gist:hasGoal rdf:type owl:ObjectProperty ;
+             rdfs:comment "The reason for doing something"^^xsd:string ;
+             rdfs:label "Hs Goal"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/hasMagnitude
+gist:hasMagnitude rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasSubTask
+gist:hasSubTask rdf:type owl:ObjectProperty ;
+                owl:inverseOf gist:subTaskOf ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain gist:Task ;
+                rdfs:range gist:Task ;
+                rdfs:comment "A task that is part of a larger task. The time frame of the subtasks may overlap but may not extend beyond the timeframe of the parent task. A subtask may be part of more than one parent task."^^xsd:string ;
+                rdfs:label "Has Sub Task"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/lastModifiedOn
+gist:lastModifiedOn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf gist:actual ;
+                    rdfs:range gist:TimeInstant ;
+                    rdfs:comment "Date that something was modified."^^xsd:string ;
+                    rdfs:label "Last Modified On"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/occursAt
+gist:occursAt rdf:type owl:ObjectProperty ;
+              rdfs:comment "The geospatial place where something happened or will happen"^^xsd:string ;
+              rdfs:label "OccurAt"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/planned
+gist:planned rdf:type owl:ObjectProperty ;
+             rdfs:range gist:TimeInstant ;
+             rdfs:comment "Dates that were in the future at the time they were made."^^xsd:string ;
+             rdfs:label "Planned"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/plannedEnd
+gist:plannedEnd rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf gist:end ,
+                                   gist:planned ;
+                rdfs:range gist:TimeInstant ;
+                rdfs:comment "A date/time that was at least at some point in time in the future. It may be in the past now, but when we planned it, it was in the future."^^xsd:string ,
+                             "NOTE:  Most frequently apples to Event(s) and Offer(s). E.g. a conference or sale offer."^^xsd:string ;
+                rdfs:label "Planned End"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/plannedStart
+gist:plannedStart rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf gist:planned ,
+                                     gist:start ;
+                  rdfs:range gist:TimeInstant ;
+                  rdfs:comment "A date/time that was at least at some point in time in the future. It may be in the past now, but when we planned it, it was in the future."^^xsd:string ;
+                  rdfs:label "Planned Start"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/recordedOn
+gist:recordedOn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf gist:actual ;
+                rdfs:range gist:TimeInstant ;
+                rdfs:comment "Date that something was posted, not necessarily the date it occurred. Must be after the occurred date, but could be before or after the planned date. (Unusual, but I could record today that I expected to be paid last week.)"^^xsd:string ;
+                rdfs:label "Recorded On"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/start
+gist:start rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/subTaskOf
+gist:subTaskOf rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:comment "All the upper tasks this task belongs ot"^^xsd:string ;
+               rdfs:label "Sub Task Of"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/ContemporaneousEvent
+gist:ContemporaneousEvent rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:actualStart ;
+                                                                       owl:someValuesFrom gist:TimeInstant
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty gist:actualEnd ;
+                                                                       owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                       owl:onClass gist:TimeInstant
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:comment "An event that actually started after the present time.  When we record an end time it ceases to be contemperaneous"^^xsd:string ,
+                                       "NOTE: All contemporaneous events eventually end and, due to the nature of the open world, we can never be sure that a contemporaneous event hasn't ended. As a result, this is really a contemporaneous and historical event."^^xsd:string ;
+                          rdfs:label "Contemporaneous Event"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ContingentEvent
+gist:ContingentEvent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:hasMagnitude ;
+                                                                  owl:someValuesFrom gist:Percentage
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:plannedEnd ;
+                                                                  owl:someValuesFrom gist:TimeInstant
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:plannedStart ;
+                                                                  owl:someValuesFrom gist:TimeInstant
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:comment "An event with a probability of happening in the future, and usually dependent upon some other event or condition."^^xsd:string ;
+                     rdfs:label "Contingent Event"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Event
+gist:Event rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/HistoricalEvent
+gist:HistoricalEvent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:actualEnd ;
+                                                                  owl:someValuesFrom gist:TimeInstant
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:actualStart ;
+                                                                  owl:someValuesFrom gist:TimeInstant
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:comment "An event which occurred in time, with an actual end earlier than the present moment."^^xsd:string ;
+                     rdfs:label "Historical Event"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Percentage
+gist:Percentage rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PhysicalEvent
+gist:PhysicalEvent rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty gist:occursAt ;
+                                                                owl:someValuesFrom gist:Place
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:comment "An event that can be said to have occurred at some place in space."^^xsd:string ,
+                                "EXAMPLES:  A meeting, a car accident."^^xsd:string ,
+                                "NEGATIVE EXAMPLES:  Excludes events that have no meaningful location, such as financial events or project milestones."^^xsd:string ;
+                   rdfs:label "Physical Event"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Place
+gist:Place rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/PlannedEvent
+gist:PlannedEvent rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:plannedEnd ;
+                                                               owl:someValuesFrom gist:TimeInstant
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:plannedStart ;
+                                                               owl:someValuesFrom gist:TimeInstant
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "An event which, at the time it is created, is to occur in the future."^^xsd:string ;
+                  rdfs:label "Planned Event"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Project
+gist:Project rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( gist:Task
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty gist:hasSubTask ;
+                                                          owl:someValuesFrom gist:Task
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "A project is a task (usually a longer duration task) made up of other tasks."^^xsd:string ;
+             rdfs:label "Project"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ScheduledTask
+gist:ScheduledTask rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( gist:PlannedEvent
+                                                              gist:Task
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:comment "A task planned to occur.  When it was scheduled, it would have been in the future, but now might be in the past."^^xsd:string ;
+                   rdfs:label "Scheduled Task"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Task
+gist:Task rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( gist:Event
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty gist:hasGoal ;
+                                                       owl:someValuesFrom gist:Intention
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:comment "A task which has been defined and either scheduled or accomplished, or both."^^xsd:string ;
+          rdfs:label "Task"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/TaskTemplate
+gist:TaskTemplate rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:Template
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:hasGoal ;
+                                                               owl:someValuesFrom gist:Intention
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "An outline of task of a particular type, that will, when instantiated, generate an actual (unscheduled) task."^^xsd:string ;
+                  rdfs:label "Template Task"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Template
+gist:Template rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/TimeInstant
+gist:TimeInstant rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

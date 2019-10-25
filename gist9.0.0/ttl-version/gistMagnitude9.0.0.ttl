@@ -1,0 +1,188 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistMagnitude#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistMagnitude> .
+
+<https://ontologies.semanticarts.com/o/gistMagnitude> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <https://ontologies.semanticarts.com/o/gistMagnitude9.0.0> ;
+                                                       owl:imports <https://ontologies.semanticarts.com/o/gistUnit9.0.0> ;
+                                                       rdfs:comment "gist Magnitudes"^^xsd:string ,
+                                                                    "gistMagnitude"^^xsd:string ;
+                                                       owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:mag"^^xsd:string ;
+                                                       gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/hasUoM
+gist:hasUoM rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/Count
+gist:Count rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty gist:hasUoM ;
+                                                        owl:someValuesFrom gist:CountingUnit
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:comment "A measure that involves countable amounts (?eaches? as well as cases, etc.). Can be decimal."^^xsd:string ,
+                        "NOTE: Count is not disjoint with all the other magnitudes, as there are some magnitudes that could conceivably be counted."^^xsd:string ;
+           rdfs:label "Count"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ElectricCurrent
+gist:ElectricCurrent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gist:hasUoM ;
+                                                                  owl:someValuesFrom gist:ElectricalCurrentUnit
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:comment "A flow of electric charge."^^xsd:string ;
+                     rdfs:label "Electric Current"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/InformationQuantity
+gist:InformationQuantity rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty gist:hasUoM ;
+                                                                      owl:someValuesFrom gist:DataSizeUnit
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:comment "An amount of data, such as 6 petabytes, or 640KB."^^xsd:string ;
+                         rdfs:label "Information Quantity"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/LuminousIntensity
+gist:LuminousIntensity rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty gist:hasUoM ;
+                                                                    owl:someValuesFrom gist:LuminousIntensityUnit
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:comment "A measure of the wavelength-weighted power emitted by a light source in a particular direction per unit solid angle.  This is based on the luminosity function, a standardized model of the sensitivity of the human eye."^^xsd:string ;
+                       rdfs:label "Luminous Intensity"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Magnitude
+gist:Magnitude rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/MolarQuantity
+gist:MolarQuantity rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty gist:hasUoM ;
+                                                                owl:someValuesFrom gist:MoleUnit
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:comment "Amount of a substance, as counted molecules."^^xsd:string ;
+                   rdfs:label "Molar Quantity"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Monetary
+gist:Monetary rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:hasUoM ;
+                                                           owl:someValuesFrom gist:CurrencyUnit
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "A special type of magnitude, due to the way rounding is handled in math and the temporal aspect of conversion."^^xsd:string ;
+              rdfs:label "Monetary"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Percentage
+gist:Percentage rdf:type owl:Class ;
+                rdfs:subClassOf gist:RatioMagnitude ;
+                rdfs:comment "A ratio where the numerator and denominator are of the same unit of measure."^^xsd:string ,
+                             "NOTE: there are various ways to represent percentage: 50/100 could be represented as ?50? or ?0.5?.  gist uses the latter, as it involves fewer conversions for subsequent use."^^xsd:string ;
+                rdfs:label "Percentage"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/ProductMagnitude
+gist:ProductMagnitude rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty gist:hasUoM ;
+                                                                   owl:someValuesFrom gist:ProductUnit
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:comment "A magnitude expressed as a product of primitives.  (E.g., Force = M*A)."^^xsd:string ;
+                      rdfs:label "Product Magnitude"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/RatioMagnitude
+gist:RatioMagnitude rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty gist:hasUoM ;
+                                                                 owl:someValuesFrom gist:RatioUnit
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:comment "EXAMPLE:  Speed.  The ratio magnitude is 60, the unit of measure might be MilesPerHour."^^xsd:string ,
+                                 "NOTE:  A RatioMagnitude just has one decimal value."^^xsd:string ,
+                                 "This is a number whose unit of measure is a ratio."^^xsd:string ;
+                    rdfs:label "Ratio Magnitude"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Temperature
+gist:Temperature rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( gist:Magnitude
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty gist:hasUoM ;
+                                                              owl:someValuesFrom gist:TemperatureUnit
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:comment "The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale."^^xsd:string ;
+                 rdfs:label "Temperature"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

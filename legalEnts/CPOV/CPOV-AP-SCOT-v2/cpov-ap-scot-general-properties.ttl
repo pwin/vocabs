@@ -1,0 +1,312 @@
+@prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix regorg: <http://www.w3.org/ns/regorg#> .
+@prefix schema: <http://schema.org/> .
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot-general-properties> a owl:Ontology ;
+	owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/general/1/> ;
+	<http://purl.org/dc/terms/description> "This is the a set of general classes and properties to be used with the Scottish Organisation ontology"@en ;
+	<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ;
+	<http://purl.org/dc/terms/licence> <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
+	<http://purl.org/dc/terms/modified> "2019-10-25"^^xsd:date ;
+	<http://purl.org/dc/terms/publisher> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+	<http://purl.org/dc/terms/rightsHolder> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+	<http://purl.org/dc/terms/title> "Helper Classes and Properties for the Organisation (public realm) ontology"@en ;
+	vann:preferredNamespacePrefix "cpovapscot" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://joinup.eu/language
+
+<http://joinup.eu/language> a owl:AnnotationProperty .
+# 
+# http://joinup.eu/language/default
+
+<http://joinup.eu/language/default> a owl:AnnotationProperty .
+# 
+# http://joinup.eu/owner/uid
+
+<http://joinup.eu/owner/uid> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/accrualPeriodicity
+
+<http://purl.org/dc/terms/accrualPeriodicity> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/creator
+
+<http://purl.org/dc/terms/creator> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/description
+
+<http://purl.org/dc/terms/description> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/hasVersion
+
+<http://purl.org/dc/terms/hasVersion> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/identifier
+
+<http://purl.org/dc/terms/identifier> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/issued
+
+<http://purl.org/dc/terms/issued> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/language
+
+<http://purl.org/dc/terms/language> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/licence
+
+<http://purl.org/dc/terms/licence> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/modified
+
+<http://purl.org/dc/terms/modified> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/publisher
+
+<http://purl.org/dc/terms/publisher> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/rightsHolder
+
+<http://purl.org/dc/terms/rightsHolder> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/title
+
+<http://purl.org/dc/terms/title> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/type
+
+<http://purl.org/dc/terms/type> a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/usageNote
+
+vann:usageNote a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+
+skos:altLabel a owl:AnnotationProperty ;
+	vann:usageNote "In line with ORG and SKOS itself, an organization may have any number of alternative or informal names, irrespective of language."@en ;
+	rdfs:label "alternative label"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+
+skos:note a owl:AnnotationProperty .
+# 
+# http://www.w3.org/ns/adms#status
+
+<http://www.w3.org/ns/adms#status> a owl:AnnotationProperty .
+# 
+# http://www.w3.org/ns/dcat#contactPoint
+
+<http://www.w3.org/ns/dcat#contactPoint> a owl:AnnotationProperty .
+# 
+# http://www.w3.org/ns/dcat#keyword
+
+<http://www.w3.org/ns/dcat#keyword> a owl:AnnotationProperty .
+# 
+# http://www.w3.org/ns/org#purpose
+
+<http://www.w3.org/ns/org#purpose> a owl:AnnotationProperty ;
+	rdfs:domain <http://data.europa.eu/m8g/PublicOrganisation> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal
+
+rdf:Literal a rdfs:Datatype .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/m8g/hasFormalFramework
+
+<http://data.europa.eu/m8g/hasFormalFramework> a owl:ObjectProperty ;
+	rdfs:label "has Formal Framework"@en .
+# 
+# http://purl.org/vocab/cpsv#implements
+
+<http://purl.org/vocab/cpsv#implements> a owl:ObjectProperty ;
+	rdfs:label "implements"@en .
+# 
+# http://www.w3.org/1999/xhtml/vocab#next
+
+<http://www.w3.org/1999/xhtml/vocab#next> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.w3.org/1999/xhtml/vocab#prev> ;
+	rdfs:label "next"@en .
+# 
+# http://www.w3.org/1999/xhtml/vocab#prev
+
+<http://www.w3.org/1999/xhtml/vocab#prev> a owl:ObjectProperty ;
+	rdfs:label "prev"@en .
+# 
+# http://www.w3.org/ns/org#changedBy
+
+<http://www.w3.org/ns/org#changedBy> a owl:ObjectProperty ;
+	rdfs:label "changed By"@en .
+# 
+# http://www.w3.org/ns/org#hasMember
+
+<http://www.w3.org/ns/org#hasMember> a owl:ObjectProperty ;
+	rdfs:label "has Member"@en .
+# 
+# http://www.w3.org/ns/org#hasSubOrganization
+
+<http://www.w3.org/ns/org#hasSubOrganization> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.w3.org/ns/org#subOrganizationOf> ;
+	rdfs:label "has Sub-organization"@en .
+# 
+# http://www.w3.org/ns/org#hasUnit
+
+<http://www.w3.org/ns/org#hasUnit> a owl:ObjectProperty ;
+	rdfs:label "has Unit"@en .
+# 
+# http://www.w3.org/ns/org#memberOf
+
+<http://www.w3.org/ns/org#memberOf> a owl:ObjectProperty ;
+	rdfs:label "member Of"@en .
+# 
+# http://www.w3.org/ns/org#originalOrganization
+
+<http://www.w3.org/ns/org#originalOrganization> a owl:ObjectProperty ;
+	rdfs:label "original Organization"@en .
+# 
+# http://www.w3.org/ns/org#resultedFrom
+
+<http://www.w3.org/ns/org#resultedFrom> a owl:ObjectProperty ;
+	rdfs:label "resulted From"@en .
+# 
+# http://www.w3.org/ns/org#resultingOrganization
+
+<http://www.w3.org/ns/org#resultingOrganization> a owl:ObjectProperty ;
+	rdfs:label "resulting Organization"@en .
+# 
+# http://www.w3.org/ns/org#subOrganizationOf
+
+<http://www.w3.org/ns/org#subOrganizationOf> a owl:ObjectProperty ;
+	rdfs:label "sub-organization Of"@en .
+# 
+# http://www.w3.org/ns/org#unitOf
+
+<http://www.w3.org/ns/org#unitOf> a owl:ObjectProperty ;
+	rdfs:label "unit Of"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/address
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/address> a owl:ObjectProperty ;
+	vann:usageNote "A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used."@en ;
+	rdfs:label "address"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy> a owl:ObjectProperty ;
+	owl:inverseOf <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> ;
+	rdfs:label "administered By"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/administers
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/administers> a owl:ObjectProperty ;
+	rdfs:label "administers"@en ;
+	skos:note "This relates an organisation to either another organisation, or to a geographic area (e.g. the area administered by a unitary authority)"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> a owl:ObjectProperty ;
+	vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
+	rdfs:label "has Function"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction> a owl:ObjectProperty ;
+	rdfs:label "has Jurisdiction"@en .
+# 
+# https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus> a owl:ObjectProperty ;
+	rdfs:label "has Legal Status"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation a owl:DatatypeProperty ;
+	vann:usageNote "A notation is a string of characters used to uniquely identify a concept within the scope of a given concept scheme."@en ;
+	rdfs:label "notation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/m8g/FoundationEvent
+
+<http://data.europa.eu/m8g/FoundationEvent> a owl:Class ;
+	owl:disjointWith <http://www.w3.org/ns/org#ChangeEvent> ;
+	rdfs:label "Foundation Event"@en .
+# 
+# http://purl.org/vocab/cpsv#FormalFramework
+
+<http://purl.org/vocab/cpsv#FormalFramework> a owl:Class ;
+	rdfs:label "Formal Framework"@en .
+# 
+# http://schema.org/ContactPoint
+
+schema:ContactPoint a owl:Class ;
+	vann:usageNote "A class representing a point of contact for the organization. The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en ;
+	rdfs:label "Contact Point"@en .
+# 
+# http://schema.org/OpeningHoursSpecification
+
+schema:OpeningHoursSpecification a owl:Class ;
+	vann:usageNote "The Core Public Organization Vocabulary makes full use of schema.org's openingHours property to provide details of regular operations. The Opening Hours Specification  class can be used to provide details of exceptional circumstances, such as being closed on public holidays. Note that the property schema:opens is not used, therefore the contact point is closed. More specific closures can be indicated by including the schema:validFrom and schema:validThrough properties."@en ;
+	rdfs:label "Opening Hours Specification"@en .
+# 
+# http://www.w3.org/ns/org#ChangeEvent
+
+<http://www.w3.org/ns/org#ChangeEvent> a owl:Class ;
+	rdfs:label "Change Event"@en .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

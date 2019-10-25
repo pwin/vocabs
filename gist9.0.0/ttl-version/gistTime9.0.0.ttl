@@ -1,0 +1,277 @@
+@prefix : <https://ontologies.semanticarts.com/o/gistTime#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologies.semanticarts.com/o/gistTime> .
+
+<https://ontologies.semanticarts.com/o/gistTime> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://ontologies.semanticarts.com/o/gistTime9.0.0> ;
+                                                  owl:imports <https://ontologies.semanticarts.com/o/gistTop9.0.0> ;
+                                                  rdfs:comment "gistTime"^^xsd:string ,
+                                                               "gistTime how timezones and some common precisions are modeled"^^xsd:string ;
+                                                  owl:versionInfo "Created with e6Tools Graphical OWL Editor from S:\\_SemanticArts\\Offerings\\gist\\_daveGistGit\\gist\\gist9.0.0.vsd Page:time"^^xsd:string ;
+                                                  gist:license "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/license
+gist:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/basedOn
+gist:basedOn rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasBaseUnit
+gist:hasBaseUnit rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasPrecision
+gist:hasPrecision rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/hasUoM
+gist:hasUoM rdf:type owl:ObjectProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/offsetToUniversal
+gist:offsetToUniversal rdf:type owl:ObjectProperty ;
+                       rdfs:domain gist:TimeZone ;
+                       rdfs:range gist:Duration ;
+                       rdfs:comment "How many hours the timezone if off GMT"^^xsd:string ;
+                       rdfs:label "Offset To Universal"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/sameTimeAs
+gist:sameTimeAs rdf:type owl:ObjectProperty ;
+                rdfs:domain gist:TimeInstant ;
+                rdfs:range gist:TimeInstant ;
+                rdfs:comment "We can have two local time instants refer to the same time, the same universal time."^^xsd:string ;
+                rdfs:label "Same Time As"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/timeZoneStandardUsed
+gist:timeZoneStandardUsed rdf:type owl:ObjectProperty ;
+                          rdfs:domain gist:TimeInstant ;
+                          rdfs:range gist:TimeZoneStandard ;
+                          rdfs:comment "the \"timezone\" with Daylight savings adjust"^^xsd:string ;
+                          rdfs:label "Time Zone Standard Used"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/convertToBase
+gist:convertToBase rdf:type owl:DatatypeProperty .
+
+
+###  https://ontologies.semanticarts.com/gist/decimalValue
+gist:decimalValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/BaseUnit
+gist:BaseUnit rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/DateInstant
+gist:DateInstant rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( gist:TimeInstant
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty gist:hasPrecision ;
+                                                              owl:hasValue gist:_one_day
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:comment "A point in time known only to the accuracy of one day.  Say the signing of the declaration of independence on 7/4/1776"^^xsd:string ;
+                 rdfs:label "Date Instant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Duration
+gist:Duration rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/DurationUnit
+gist:DurationUnit rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/GeoRegion
+gist:GeoRegion rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/GreenwichInstant
+gist:GreenwichInstant rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gist:TimeInstant
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty gist:timeZoneStandardUsed ;
+                                                                   owl:hasValue gist:_greenwichTimeZone
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:comment "By default time instants are expressed in grenich, if you need to be explicit (to calculate offset for instance)"^^xsd:string ;
+                      rdfs:label "Greenwich instant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/HumanInstant
+gist:HumanInstant rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:TimeInstant
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:hasPrecision ;
+                                                               owl:hasValue gist:_one_minute
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "A point in time known only to the accuracy of one minute.  For things like calendar appointments and time reporting"^^xsd:string ;
+                  rdfs:label "Human Instant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/LocalInstant
+gist:LocalInstant rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( gist:TimeInstant
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:sameTimeAs ;
+                                                               owl:someValuesFrom gist:TimeInstant
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty gist:timeZoneStandardUsed ;
+                                                               owl:someValuesFrom gist:TimeZoneStandard
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "A point in time expressed relative to a local time zone. Can be converted to Universal Time using the time zone offset. The precision is used to state how precise this instant is.  Typical values would be day, hour, minute or second."^^xsd:string ;
+                  rdfs:label "Local Instant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/Specification
+gist:Specification rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/SystemInstant
+gist:SystemInstant rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( gist:TimeInstant
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty gist:hasPrecision ;
+                                                                owl:hasValue gist:_one_millisecond
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:comment "A point in time known to the accuracy of a millisecond.  For posting transacion recorded on times"^^xsd:string ;
+                   rdfs:label "System Instant"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/TimeInstant
+gist:TimeInstant rdf:type owl:Class .
+
+
+###  https://ontologies.semanticarts.com/gist/TimeZone
+gist:TimeZone rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( gist:GeoRegion
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty gist:offsetToUniversal ;
+                                                           owl:someValuesFrom gist:Duration
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "A region that observes a uniform standard time for legal, commercial, and social purposes.  A typical time zone averages 15? of longitude in width and typically observes a clock time one hour earlier than the zone immediately to the east."^^xsd:string ;
+              rdfs:label "Time Zone"^^xsd:string .
+
+
+###  https://ontologies.semanticarts.com/gist/TimeZoneStandard
+gist:TimeZoneStandard rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( gist:Specification
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty gist:basedOn ;
+                                                                   owl:someValuesFrom gist:TimeZone
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:comment "The algorithm for getting from Greenwich Mean Time to local time, which includes the time zone offset and rules about daylight savings time."^^xsd:string ;
+                      rdfs:label "Time Zone Standard"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://ontologies.semanticarts.com/gist/_day
+gist:_day rdf:type owl:NamedIndividual ,
+                   gist:DurationUnit ;
+          gist:hasBaseUnit gist:_second ;
+          gist:convertToBase "86400.0"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_greenwichTimeZone
+gist:_greenwichTimeZone rdf:type owl:NamedIndividual ,
+                                 owl:Thing ,
+                                 gist:TimeZoneStandard .
+
+
+###  https://ontologies.semanticarts.com/gist/_millisecond
+gist:_millisecond rdf:type owl:NamedIndividual ,
+                           gist:DurationUnit ;
+                  gist:hasBaseUnit gist:_second ;
+                  gist:convertToBase "0.001"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_minute
+gist:_minute rdf:type owl:NamedIndividual ,
+                      gist:DurationUnit ;
+             gist:hasBaseUnit gist:_second ;
+             gist:convertToBase "1.0"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_one_day
+gist:_one_day rdf:type owl:NamedIndividual ,
+                       owl:Thing ,
+                       gist:Duration ;
+              gist:hasUoM gist:_day ;
+              gist:decimalValue "1.0"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_one_millisecond
+gist:_one_millisecond rdf:type owl:NamedIndividual ,
+                               owl:Thing ,
+                               gist:Duration ;
+                      gist:hasUoM gist:_millisecond ;
+                      gist:decimalValue "1.0"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_one_minute
+gist:_one_minute rdf:type owl:NamedIndividual ,
+                          owl:Thing ,
+                          gist:Duration ;
+                 gist:hasUoM gist:_minute ;
+                 gist:decimalValue "1.0"^^xsd:double .
+
+
+###  https://ontologies.semanticarts.com/gist/_second
+gist:_second rdf:type gist:BaseUnit ,
+                      gist:DurationUnit .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
