@@ -18,6 +18,11 @@ Resources;
 
 * https://github.com/weso/landportalDoc/wiki/URI-Scheme
 
+Other useful links;
+
+*  https://confluence.csiro.au/public/VOCAB/vocabulary-services/publishing-vocabularies/best-practice-in-formalizing-a-skos-vocabulary
+*  http://smethur.st/posts/176135860
+
 
 ## URI Patterns 
 
@@ -41,10 +46,10 @@ Resources;
 | Domain | info | 
 | :--- | :--- |
 | gov  | Scottish Government etc |
+| hsc  | Health and Social Care  |
+| edu  | SQA, Skills, Education |
+| reg  | Regulator, Inspection domains  |
 | gen  | general |
-| fss  | Food Standards Scotland |
-| sqa  | SQA |
-| shr | Scottish Housing Regulator |
 
 
 
