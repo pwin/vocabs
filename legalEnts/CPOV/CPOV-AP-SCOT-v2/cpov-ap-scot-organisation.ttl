@@ -85,7 +85,6 @@ skos:note a owl:AnnotationProperty .
 # http://www.w3.org/ns/org#hasSubOrganization
 
 <http://www.w3.org/ns/org#hasSubOrganization> a owl:ObjectProperty ;
-	owl:inverseOf <http://www.w3.org/ns/org#subOrganizationOf> ;
 	rdfs:label "has Sub-organization"@en .
 # 
 # http://www.w3.org/ns/org#hasUnit
@@ -132,7 +131,6 @@ skos:note a owl:AnnotationProperty .
 # https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy
 
 <https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy> a owl:ObjectProperty ;
-	owl:inverseOf <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> ;
 	rdfs:label "administered By"@en .
 # 
 # https://entities.gov.scot/def/gov/cpov-ap-scot/administers
@@ -553,10 +551,6 @@ regorg:RegisteredOrganization a owl:Class ;
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> ;
                                                                                                                                owl:someValuesFrom <https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing>
-                                                                                                                             ]
-                                                                                                                             [ rdf:type owl:Restriction ;
-                                                                                                                               owl:onProperty <http://www.w3.org/ns/org#hasMember> ;
-                                                                                                                               owl:minCardinality "2"^^xsd:nonNegativeInteger
                                                                                                                              ]
                                                                                                                            ) ;
                                                                                                         rdf:type owl:Class

@@ -164,7 +164,6 @@ rdf:Literal a rdfs:Datatype .
 # http://www.w3.org/1999/xhtml/vocab#next
 
 <http://www.w3.org/1999/xhtml/vocab#next> a owl:ObjectProperty ;
-	owl:inverseOf <http://www.w3.org/1999/xhtml/vocab#prev> ;
 	rdfs:label "next"@en .
 # 
 # http://www.w3.org/1999/xhtml/vocab#prev
