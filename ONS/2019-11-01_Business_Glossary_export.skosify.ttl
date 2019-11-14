@@ -1,0 +1,187 @@
+@prefix : <http://www.ons.gov.uk/busgloss/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: owl:imports rdf:,
+        <http://www.w3.org/2002/07/owl>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2008/05/skos-xl> .
+
+:skosCollection_d3fb12e8 a skos:Collection ;
+    dct:created "2019-10-31T09:59:56.193000+00:00"^^xsd:dateTime ;
+    dct:modified "2019-10-31T10:00:30.830000+00:00"^^xsd:dateTime ;
+    skos:member <http://www.ons.gov.uk/busgloss/10>,
+        <http://www.ons.gov.uk/busgloss/6> ;
+    skos:prefLabel "geography"@en ;
+    skosxl:prefLabel :xl_en_5a2fee12 .
+
+<http://www.ons.gov.uk/busgloss/11> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "104 Learning Partnerships (originally 101) were set up across England in 1999 to promote lifelong learning opportunities and maximise the contribution of learning to local regeneration. The Learning Partnerships each cover one or more local education authorities (LEA), with the exception of the Essex, Lancashire and Nottinghamshire LEAs, which have each been divided into two Learning Partnerships."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "Learning Partnership"@en ;
+    skosxl:prefLabel :xl_en_9697db48 .
+
+<http://www.ons.gov.uk/busgloss/2> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Geographic Information System"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "GIS is a computer-based system for managing, analysing and presenting geographically referenced data."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "GIS"@en ;
+    skosxl:prefLabel :xl_en_77fd3def,
+        :xl_en_9922b3b7 .
+
+<http://www.ons.gov.uk/busgloss/3> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Combined Authority"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "CAUTHs were introduced under in the Local Democracy, Economic Development and Construction Act 2009 to enable councils to integrate economic development and transport functions across a functional economic area. CAUTHs operate as public bodies with their own legal personality. They can impose a levy on constituent authorities and borrow for transport purposes."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "CAUTH"@en ;
+    skosxl:prefLabel :xl_en_16d79b0f,
+        :xl_en_c4f8385e .
+
+<http://www.ons.gov.uk/busgloss/4> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "A total of nine local government regions existed in Scotland between 1975 and 1996, which were each split into a number of districts, thus forming a two-tier local government structure. During this period Scotland also had three single-tier island authorities (Orkney Islands, Shetland Islands and Western Isles). On 1 April 1996 the existing Scottish administrative structure was abolished and replaced by 32 unitary council areas."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "Region (Scottish Local Government)"@en ;
+    skosxl:prefLabel :xl_en_9be01413 .
+
+<http://www.ons.gov.uk/busgloss/5> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Topographic Identifier"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "TOIDs are the 16-digit numbers that uniquely identify every feature in the Digital National Framework (DNF) and the associated OS MasterMapÂ® product. TOIDs are a stable geographic reference because they are assigned to a feature throughout its life and are not reassigned when a feature disappears."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "TOID"@en ;
+    skosxl:prefLabel :xl_en_787cf618,
+        :xl_en_f04d4d63 .
+
+<http://www.ons.gov.uk/busgloss/7> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Fire and Rescue Authority"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "In England and Wales, each Fire and Rescue Service (see below) is distinct from and governed by an FRA. In both Scotland and Northern Ireland there is a single Fire and Rescue Service."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "FRA"@en ;
+    skosxl:prefLabel :xl_en_4c3a021e,
+        :xl_en_e6b84290 .
+
+<http://www.ons.gov.uk/busgloss/8> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Local Health Group"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "LHGs were responsible for local health administration in Wales prior to their replacement by local health boards (LHB) in April 2003. There was one LHG in each of the 22 unitary authorities (UA); the LHGs reported to health authorities (HA)."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "LHG"@en ;
+    skosxl:prefLabel :xl_en_5bbc23d4,
+        :xl_en_7bdacc69 .
+
+<http://www.ons.gov.uk/busgloss/9> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "Proportional symbol maps display data by using symbols that vary in size in proportion to the data values."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "Proportional Symbol Map"@en ;
+    skosxl:prefLabel :xl_en_81b6b083 .
+
+:xl_en_043cb5ef skosxl:literalForm "The Association for Geographic Information"@en .
+
+:xl_en_16d79b0f skosxl:literalForm "Combined Authority"@en .
+
+:xl_en_1860f506 a skosxl:Label ;
+    dct:created "2019-10-30T13:21:49.891000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "ONS Business Glossary"@en .
+
+:xl_en_483dec07 skosxl:literalForm "AGI"@en .
+
+:xl_en_4c3a021e skosxl:literalForm "FRA"@en .
+
+:xl_en_59559fab skosxl:literalForm "Public Health England Centre"@en .
+
+:xl_en_5a2fee12 a skosxl:Label ;
+    dct:created "2019-10-31T09:59:56.193000+00:00"^^xsd:dateTime ;
+    skosxl:literalForm "geography"@en .
+
+:xl_en_5bbc23d4 skosxl:literalForm "Local Health Group"@en .
+
+:xl_en_6116ef90 skosxl:literalForm "PHEC"@en .
+
+:xl_en_77fd3def skosxl:literalForm "GIS"@en .
+
+:xl_en_787cf618 skosxl:literalForm "Topographic Identifier"@en .
+
+:xl_en_78b50aeb skosxl:literalForm "A Beginners Guide to UK Geography"@en .
+
+:xl_en_7bdacc69 skosxl:literalForm "LHG"@en .
+
+:xl_en_81b6b083 skosxl:literalForm "Proportional Symbol Map"@en .
+
+:xl_en_9697db48 skosxl:literalForm "Learning Partnership"@en .
+
+:xl_en_9922b3b7 skosxl:literalForm "Geographic Information System"@en .
+
+:xl_en_9be01413 skosxl:literalForm "Region (Scottish Local Government)"@en .
+
+:xl_en_c4f8385e skosxl:literalForm "CAUTH"@en .
+
+:xl_en_e6b84290 skosxl:literalForm "Fire and Rescue Authority"@en .
+
+:xl_en_f04d4d63 skosxl:literalForm "TOID"@en .
+
+<http://www.ons.gov.uk/busgloss/10> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "The Association for Geographic Information"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "The AGI is a non-commercial organisation representing users and vendors of Geographic Information (GI) and Geographic Information Systems (GIS). It aims to encourage the use of GI and GIS in both public and private sectors. As well as its annual conference and trade exhibition, The AGI does this by producing various publications and by arranging meetings and seminars across the country. It also plays a key role in developing and implementing GI standards and is involved in many important UK geographic initiatives."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "AGI"@en ;
+    skosxl:prefLabel :xl_en_043cb5ef,
+        :xl_en_483dec07 .
+
+<http://www.ons.gov.uk/busgloss/6> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:altLabel "Public Health England Centre"@en ;
+    skos:broader <http://www.ons.gov.uk/busgloss/1> ;
+    skos:definition "PHE was established on 1 April 2013 to bring together public health specialists from more than 70 organisations into a single public health service. They have 15 centres across four regions and these centres are the front door for most of PHEâ€™s local services across health improvement, healthcare public health and health protection."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:prefLabel "PHEC"@en ;
+    skosxl:prefLabel :xl_en_59559fab,
+        :xl_en_6116ef90 .
+
+<http://www.ons.gov.uk/busgloss/1> a skos:Concept ;
+    dct:modified "2019-10-31T09:53:45.587000+00:00"^^xsd:dateTime ;
+    skos:definition "This updated guide is a simple tour of the UK geographical areas used in National Statistics work. Â You can use it to get basic facts on each type of area as well as more specialist information."@langArg ;
+    skos:inScheme :conceptScheme_9be8d9e6 ;
+    skos:narrower <http://www.ons.gov.uk/busgloss/10>,
+        <http://www.ons.gov.uk/busgloss/11>,
+        <http://www.ons.gov.uk/busgloss/2>,
+        <http://www.ons.gov.uk/busgloss/3>,
+        <http://www.ons.gov.uk/busgloss/4>,
+        <http://www.ons.gov.uk/busgloss/5>,
+        <http://www.ons.gov.uk/busgloss/6>,
+        <http://www.ons.gov.uk/busgloss/7>,
+        <http://www.ons.gov.uk/busgloss/8>,
+        <http://www.ons.gov.uk/busgloss/9> ;
+    skos:prefLabel "A Beginners Guide to UK Geography"@en ;
+    skos:topConceptOf :conceptScheme_9be8d9e6 ;
+    skosxl:prefLabel :xl_en_78b50aeb .
+
+:conceptScheme_9be8d9e6 a skos:ConceptScheme ;
+    dct:created "2019-10-30T13:21:49.891000+00:00"^^xsd:dateTime ;
+    skos:hasTopConcept <http://www.ons.gov.uk/busgloss/1> ;
+    skos:prefLabel "ONS Business Glossary"@en ;
+    skosxl:prefLabel :xl_en_1860f506 .
+

@@ -1,0 +1,46 @@
+@prefix : <http://entities.gov.scot/def/gov/cpov-ap-scot/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix regorg: <http://www.w3.org/ns/regorg#> .
+@prefix schema: <http://schema.org/> .
+
+<https://entities.gov.scot/def/gov/cpov-ap-scot-legalstatus> a owl:Ontology ;
+	owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/legalstatus/1> ;
+	<http://purl.org/dc/terms/description> "This is the a set of classes and properties covering Legal Status to be used with the Scottish Organisation ontology"@en ;
+	<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ;
+	<http://purl.org/dc/terms/licence> <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3> ;
+	<http://purl.org/dc/terms/modified> "2019-11-14"^^xsd:date ;
+	<http://purl.org/dc/terms/publisher> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+	<http://purl.org/dc/terms/rightsHolder> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
+	<http://purl.org/dc/terms/title> "Legal Status Classes and Properties for the Organisation (public realm) ontology"@en ;
+	vann:preferredNamespacePrefix "cpovapscot-legalstatus" .
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+
+###  https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus
+<https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus> rdf:type owl:ObjectProperty ;
+                                                                rdfs:label "has Legal Status"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LegalStatus> rdf:type owl:Class ;
+                                                             rdfs:label "Legal Status"@en .
+
+

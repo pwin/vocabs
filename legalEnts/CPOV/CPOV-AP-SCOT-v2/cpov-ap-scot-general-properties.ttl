@@ -12,10 +12,10 @@
 @prefix schema: <http://schema.org/> .
 
 <https://entities.gov.scot/def/gov/cpov-ap-scot-general-properties> a owl:Ontology ;
-	owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/general/1/> ;
+	owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/general/1> ;
 	<http://purl.org/dc/terms/description> "This is the a set of general classes and properties to be used with the Scottish Organisation ontology"@en ;
 	<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ;
-	<http://purl.org/dc/terms/licence> <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
+	<http://purl.org/dc/terms/licence> <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3> ;
 	<http://purl.org/dc/terms/modified> "2019-10-25"^^xsd:date ;
 	<http://purl.org/dc/terms/publisher> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
 	<http://purl.org/dc/terms/rightsHolder> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
@@ -172,90 +172,8 @@ rdf:Literal a rdfs:Datatype .
 <http://www.w3.org/1999/xhtml/vocab#prev> a owl:ObjectProperty ;
 	rdfs:label "prev"@en .
 # 
-# http://www.w3.org/ns/org#changedBy
 
-<http://www.w3.org/ns/org#changedBy> a owl:ObjectProperty ;
-	rdfs:label "changed By"@en .
-# 
-# http://www.w3.org/ns/org#hasMember
 
-<http://www.w3.org/ns/org#hasMember> a owl:ObjectProperty ;
-	rdfs:label "has Member"@en .
-# 
-# http://www.w3.org/ns/org#hasSubOrganization
-
-<http://www.w3.org/ns/org#hasSubOrganization> a owl:ObjectProperty ;
-	owl:inverseOf <http://www.w3.org/ns/org#subOrganizationOf> ;
-	rdfs:label "has Sub-organization"@en .
-# 
-# http://www.w3.org/ns/org#hasUnit
-
-<http://www.w3.org/ns/org#hasUnit> a owl:ObjectProperty ;
-	rdfs:label "has Unit"@en .
-# 
-# http://www.w3.org/ns/org#memberOf
-
-<http://www.w3.org/ns/org#memberOf> a owl:ObjectProperty ;
-	rdfs:label "member Of"@en .
-# 
-# http://www.w3.org/ns/org#originalOrganization
-
-<http://www.w3.org/ns/org#originalOrganization> a owl:ObjectProperty ;
-	rdfs:label "original Organization"@en .
-# 
-# http://www.w3.org/ns/org#resultedFrom
-
-<http://www.w3.org/ns/org#resultedFrom> a owl:ObjectProperty ;
-	rdfs:label "resulted From"@en .
-# 
-# http://www.w3.org/ns/org#resultingOrganization
-
-<http://www.w3.org/ns/org#resultingOrganization> a owl:ObjectProperty ;
-	rdfs:label "resulting Organization"@en .
-# 
-# http://www.w3.org/ns/org#subOrganizationOf
-
-<http://www.w3.org/ns/org#subOrganizationOf> a owl:ObjectProperty ;
-	rdfs:label "sub-organization Of"@en .
-# 
-# http://www.w3.org/ns/org#unitOf
-
-<http://www.w3.org/ns/org#unitOf> a owl:ObjectProperty ;
-	rdfs:label "unit Of"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/address
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/address> a owl:ObjectProperty ;
-	vann:usageNote "A property to link a public organization to its address. For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used."@en ;
-	rdfs:label "address"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/administeredBy> a owl:ObjectProperty ;
-	owl:inverseOf <https://entities.gov.scot/def/gov/cpov-ap-scot/administers> ;
-	rdfs:label "administered By"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/administers
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/administers> a owl:ObjectProperty ;
-	rdfs:label "administers"@en ;
-	skos:note "This relates an organisation to either another organisation, or to a geographic area (e.g. the area administered by a unitary authority)"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> a owl:ObjectProperty ;
-	vann:usageNote "Organizations typically have one or more functions, and these can be from other taxonomies, but this can also be used in class expressions to indicate overlapping functions"@en ;
-	rdfs:label "has Function"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/hasJurisdiction> a owl:ObjectProperty ;
-	rdfs:label "has Jurisdiction"@en .
-# 
-# https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus
-
-<https://entities.gov.scot/def/gov/cpov-ap-scot/hasLegalStatus> a owl:ObjectProperty ;
-	rdfs:label "has Legal Status"@en .
 # 
 # 
 # 
