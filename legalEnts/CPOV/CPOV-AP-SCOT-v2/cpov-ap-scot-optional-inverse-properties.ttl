@@ -45,3 +45,32 @@
 <http://www.w3.org/1999/xhtml/vocab#next> a owl:ObjectProperty ;
 	owl:inverseOf <http://www.w3.org/1999/xhtml/vocab#prev> ;
 	rdfs:label "next"@en .
+
+
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+
+## This Class has cardinality constraints
+
+###  https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody
+<https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentCentralPurchasingBody> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ owl:intersectionOf ( <https://entities.gov.scot/def/gov/cpov-ap-scot/LocalGovernmentOrganisation>
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> ;
+                                                                                                                                   owl:someValuesFrom <https://entities.gov.scot/def/gov/cpov-ap-scot/Committee>
+                                                                                                                                 ]
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <https://entities.gov.scot/def/gov/cpov-ap-scot/hasFunction> ;
+                                                                                                                                   owl:someValuesFrom <https://entities.gov.scot/def/gov/cpov-ap-scot/Purchasing>
+                                                                                                                                 ]
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.w3.org/ns/org#hasMember> ;
+                                                                                                                                   owl:minCardinality "2"^^xsd:nonNegativeInteger
+                                                                                                                                 ]
+                                                                                                                               ) ;
+                                                                                                            rdf:type owl:Class
+                                                                                                          ] ;
+                                                                                      rdfs:label "Local Government Central Purchasing Body"@en .
