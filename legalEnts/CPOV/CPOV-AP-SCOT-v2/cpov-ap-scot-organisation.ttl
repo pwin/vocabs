@@ -13,7 +13,9 @@
 
 <https://entities.gov.scot/def/gov/cpov-ap-scot-organisation> a owl:Ontology ;
 	owl:versionIRI <https://entities.gov.scot/def/gov/cpov-ap-scot/organisation/1> ;
-	owl:imports <https://entities.gov.scot/def/gov/cpov-ap-scot/function/1> , <https://entities.gov.scot/def/gov/cpov-ap-scot/jurisdiction/1> , <https://entities.gov.scot/def/gov/cpov-ap-scot/legalstatus/1> ;
+	owl:imports <https://entities.gov.scot/def/gov/cpov-ap-scot/function/1> , 
+			<https://entities.gov.scot/def/gov/cpov-ap-scot/jurisdiction/1> , 
+			<https://entities.gov.scot/def/gov/cpov-ap-scot/legalstatus/1> ;
 	<http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
 	<http://purl.org/dc/terms/creator> <https://entities.gov.scot/id/gov/puborg/4cc96a2c_e780_47c9_ac0c_633e285a1244> ;
 	<http://purl.org/dc/terms/description> """This is the core ontology, based mainly on the needs of Scottish Government for organisations in th public realm. 

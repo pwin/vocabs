@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://entities.gov.scot/def/gov/cpov-ap-scot/core/1" uri="cpov-ap-scot-core.ttl"/>
     <uri id="User Entered Import Resolution" name="https://entities.gov.scot/def/gov/cpov-ap-scot/general/1" uri="cpov-ap-scot-general-properties.ttl"/>
     <uri id="User Entered Import Resolution" name="https://entities.gov.scot/def/gov/cpov-ap-scot/legalstatus/1" uri="cpov-ap-scot-legalstatus.ttl"/>
     <uri id="User Entered Import Resolution" name="https://entities.gov.scot/def/gov/cpov-ap-scot/jurisdiction/1" uri="cpov-ap-scot-jurisdiction.ttl"/>
